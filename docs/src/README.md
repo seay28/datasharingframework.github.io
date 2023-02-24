@@ -5,61 +5,40 @@ title: Home
 heroImage: /logo.png
 heroText: The Data Sharing Framework
 tagline: A performant, secure, and innovative framework that enables biomedical researchers to extract value from routine data. # A performant, secure and innovative framework that enables healthcare data exchange across organizational boundaries. 
-actions:
-  - text: Get Started 💡
-    link: /demo/
-    type: primary
+#actions:
+#  - text: Get Started 💡
+#    link: /demo/
+#    type: primary
 
-  - text: Learn More
-    link: /about/
+#  - text: Learn More
+#    link: /about/
 
 features:
-  - title: Introduction
-    icon: info
-    details: introduction to the DSF Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    link: /demo/guide/introduction.md
-
-  - title: Recorded Talks
-    icon: slides
-    details: Talks from GMDS 2020 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    link: /demo/guide/publications.md
-
-  - title: Publications
-    icon: blog
-    details: further material Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    link: /demo/guide/publications.md
-
-  - title: General Information
-    icon: comment
-    details: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    link: /about
-
-  - title: Code
+  - title: Get Started 
     icon: config
-    details: write code Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    link: /demo/guide/code.md
+    details: Get technical insights about the DSF. Do Tutorials. Start Coding 
+    link: /demo/guide/
 
-  - title: Tutorial
+  - title: About Us
     icon: support
-    details: Hands on tutorials! Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    link: /demo/guide/tutorial.md
+    details: Information about the Team behind the DSF and more.
+    link: /about/learnmore/
 
-  - title: Build & Test
-    icon: palette
-    details: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    link: /demo/guide/code.md
+  - title: GitHub
+    icon: git
+    details: Take a look at the open-source reference implementation.
+    link: https://github.com/highmed/highmed-dsf
 
-  - title: Releases / Deployment
-    icon: rss
-    details: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    link: /demo/guide/code.md
 
 
 copyright: false
 footer: MIT Licensed, Copyright © 2019-present Mr.Hope
 ---
+---
+## Lorem
 
-The HiGHmed Data Sharing Framework (HiGHmed DSF) implements a distributed process engine based on the BPMN 2.0 and FHIR R4 standards. Within the HiGHmed medical informatics consortium, the DSF is used to support biomedical research with routine data. Every participating site runs a FHIR endpoint (dsf-fhir) accessible by other sites and a business process engine (dsf-bpe) in the local secured network. Authentication between sites is handled using X.509 client/server certificates. The process engines execute BPMN processes in order to coordinate local and remote steps necessary to enable cross-site data sharing and feasibility analyses. This includes access to local data repositories, use-and-access-committee decision support, consent filtering, and privacy preserving record-linkage and pseudonymization.
-
-
-
+- Funded by BMBF Logo
+- Explanation DSF:
+    - not too technical —> Motivation for extraction from Routinedata
+    - saftey & privacy (vlt. with videos)
+- Example project CODEX —> what was achieved? Who installed DSF?
