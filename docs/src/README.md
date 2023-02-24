@@ -2,9 +2,11 @@
 home: true
 icon: home
 title: Home
-heroImage: /logo.png
+#heroImage: /logo.png
 heroText: The Data Sharing Framework
-tagline: A performant, secure, and innovative framework that enables biomedical researchers to extract value from routine data. # A performant, secure and innovative framework that enables healthcare data exchange across organizational boundaries. 
+tagline: A performant, secure, and innovative framework that enables biomedical researchers to extract value from routine data. 
+# A performant, secure and innovative framework that enables healthcare data exchange across organizational boundaries. 
+
 #actions:
 #  - text: Get Started 💡
 #    link: /demo/
