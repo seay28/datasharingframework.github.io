@@ -15,8 +15,13 @@ export default hopeTheme({
   logo: "/logo.png",
 
   repo: "https://github.com/highmed/highmed-dsf/",
+  // Customizing the header label
+  // Defaults to "GitHub" / "GitLab" / "Gitee" / "Bitbucket" or "Source" depending on `repo`
+  repoLabel: "GitHub",
+  // Whether to display repo link, default is `true`
+  repoDisplay: true,
 
-  docsDir: "demo/theme-docs/src",
+ // docsDir: "demo/theme-docs/src",
 
   locales: {
     "/": {

@@ -17,42 +17,42 @@ features:
   - title: Introduction
     icon: info
     details: introduction to the DSF Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    link: https://github.com/highmed/highmed-dsf/wiki#introduction
+    link: /demo/guide/introduction.md
 
   - title: Recorded Talks
     icon: slides
     details: Talks from GMDS 2020 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    link: https://github.com/highmed/highmed-dsf/wiki#recorded-talks
+    link: /demo/guide/publications.md
 
   - title: Publications
     icon: blog
     details: further material Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    link: https://github.com/highmed/highmed-dsf/wiki#publications
+    link: /demo/guide/publications.md
 
   - title: General Information
     icon: comment
     details: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    link: https://github.com/highmed/highmed-dsf/wiki#general-information
+    link: /about
 
   - title: Code
     icon: config
     details: write code Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    link: https://github.com/highmed/highmed-dsf/wiki#code
+    link: /demo/guide/code.md
 
   - title: Tutorial
     icon: support
     details: Hands on tutorials! Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    link: https://github.com/highmed/highmed-dsf/wiki#tutorial
+    link: /demo/guide/tutorial.md
 
   - title: Build & Test
     icon: palette
     details: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    link: https://github.com/highmed/highmed-dsf/wiki#build--test
+    link: /demo/guide/code.md
 
   - title: Releases / Deployment
     icon: rss
     details: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-    link: https://github.com/highmed/highmed-dsf/wiki#releases--deployment
+    link: /demo/guide/code.md
 
 
 copyright: false
