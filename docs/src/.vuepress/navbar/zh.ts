@@ -6,19 +6,13 @@ export const zhNavbar = navbar([
   {
     text: "指南",
     icon: "creative",
-    prefix: "/zh/guide/",
+    prefix: "/zh/about/",
     children: [
       {
         text: "Architecture",
         icon: "creative",
-        prefix: "architecture/",
+        prefix: "about/",
         children: ["Overview", { text: "...", icon: "more", link: "" }, "Team", { text: "...", icon: "more", link: ""}],
-      },
-      {
-        text: "Foo",
-        icon: "config",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "more", link: "" }],
       },
     ],
   },

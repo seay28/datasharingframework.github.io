@@ -8,12 +8,12 @@ export default defineUserConfig({
     "/": {
       lang: "en-US",
       title: "",
-      // description: "A docs demo for DSF",
+      description: "A performant, secure and innovative framework that enables healthcare data exchange across organizational boundaries.",
     },
     "/zh/": {
       lang: "zh-CN",
       title: "",
-     // description: "docs for DSF",
+      description: "A performant, secure and innovative framework that enables healthcare data exchange across organizational boundaries.",
     },
   },
 

@@ -11,7 +11,7 @@ actions:
     type: primary
 
   - text: 文档
-    link: /zh/guide/
+    link: /zh/about/
 
 features:
   - title: Markdown 增强

@@ -1,17 +1,17 @@
 ---
-title: 主要功能与配置演示
+title: Guide
 index: false
 icon: discover
 category:
-  - 使用指南
+  - Guide
 ---
 
-## 目录
+## Catalog
 
-- [Markdown 展示](markdown.md)
+- [Introduction](introduction.md)
 
-- [页面展示](page.md)
+- [Tutorial](tutorial.md)
 
-- [禁用展示](disable.md)
+- [Code](code.md)
 
-- [加密展示](encrypt.md)
+- [Publications](publications.md)

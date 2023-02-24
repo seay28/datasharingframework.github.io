@@ -1,5 +1,5 @@
 ---
-title: Features Demo
+title: Guide
 index: false
 icon: discover
 category:
@@ -8,10 +8,11 @@ category:
 
 ## Catalog
 
-- [Markdown Enhance](markdown.md)
+- [Introduction](introduction.md)
 
-- [Page Config](page.md)
+- [Tutorial](tutorial.md)
 
-- [Function Disable](disable.md)
+- [Code](code.md)
 
-- [Encryption Demo](encrypt.md)
+- [Publications](publications.md)
+
