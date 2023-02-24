@@ -2,23 +2,28 @@ import { navbar } from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
   "/zh/",
-  { text: "案例", icon: "discover", link: "/zh/demo/" },
+  { text: "Docs", 
+  icon: "discover", 
+  link: "/demo/",
+  children: [
+    {
+      text: "Guide",
+      icon: "creative",
+      prefix: "guide/",
+      children: ["Introduction", "Tutorial", "Code", "Publications"],
+    }
+  ],},
   {
-    text: "指南",
+    text: "About",
     icon: "creative",
-    prefix: "/zh/about/",
+    prefix: "/about/",  
     children: [
       {
-        text: "Architecture",
+        text: "Learn More",
         icon: "creative",
-        prefix: "about/",
-        children: ["Overview", { text: "...", icon: "more", link: "" }, "Team", { text: "...", icon: "more", link: ""}],
+        prefix: "learnmore/", 
+        children: ["FAQ", "Team", "Releases", "Community"],
       },
     ],
-  },
-  {
-    text: "V2 文档",
-    icon: "note",
-    link: "https://theme-hope.vuejs.press/zh/",
   },
 ]);

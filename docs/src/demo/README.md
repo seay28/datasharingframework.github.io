@@ -1,5 +1,5 @@
 ---
-title: Guide
+title: Docs
 index: false
 icon: discover
 category:
@@ -8,11 +8,5 @@ category:
 
 ## Catalog
 
-- [Introduction](introduction.md)
 
-- [Tutorial](tutorial.md)
-
-- [Code](code.md)
-
-- [Publications](publications.md)
 

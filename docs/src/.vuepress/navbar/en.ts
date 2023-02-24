@@ -9,8 +9,8 @@ export const enNavbar = navbar([
       {
         text: "Guide",
         icon: "creative",
-        prefix: "guide/",
-        children: ["Introduction", "Tutorial", "Code", "Publications"],
+        prefix: "demo/",
+        children: ["guide/introduction.md", "guide/tutorial.md", "guide/code.md", "guide/publications.md"],
       }
     ],},
   {

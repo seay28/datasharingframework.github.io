@@ -7,7 +7,7 @@ export default hopeTheme({
 
   author: {
     name: "DSF-Team",
-    url: "/team",
+    url: "/about/learnmore/team.html", // ToDo
   },
 
   iconAssets: "iconfont",
