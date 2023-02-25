@@ -1,6 +1,6 @@
 ---
 title: Releases
-icon: info
+icon: loop
 ---
  
 Some information how we release.

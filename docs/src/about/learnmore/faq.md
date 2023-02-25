@@ -1,6 +1,6 @@
 ---
 title: FAQ
-icon: question mark
+icon: ask
 ---
  
 some questions and answers...

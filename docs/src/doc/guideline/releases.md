@@ -1,6 +1,6 @@
 ---
 title: Releases and Deployment
-icon: info
+icon: install
 ---
 ## DSF 0.9.0 Configuration Parameters FHIR ReverseProxy
 

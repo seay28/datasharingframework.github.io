@@ -1,6 +1,6 @@
 ---
 title: Publications and Talks
-icon: info
+icon: blog
 ---
 ### Publications
 

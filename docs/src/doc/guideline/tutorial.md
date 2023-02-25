@@ -1,6 +1,6 @@
 ---
 title: Tutorial
-icon: info
+icon: slides
 ---
 ## DSF Process Plugin Tutorial
 

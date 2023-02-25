@@ -1,6 +1,6 @@
 ---
 title: Team
-icon: info
+icon: group
 ---
  ## Gecko Institut
 ![](/logo-gecko.png)

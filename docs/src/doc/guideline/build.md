@@ -1,6 +1,6 @@
 ---
 title: Build and Test
-icon: info
+icon: back-stage
 ---
 ## Build Project
 Prerequisite: Java 11, Maven 3.6, Docker

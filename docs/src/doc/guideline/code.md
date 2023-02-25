@@ -1,6 +1,6 @@
 ---
 title: Code
-icon: info
+icon: code
 ---
 ## Writing Code
 
