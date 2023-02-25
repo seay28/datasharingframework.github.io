@@ -2,7 +2,6 @@
 title: Code
 icon: info
 ---
- 
 ## Writing Code
 
 ### Code Style

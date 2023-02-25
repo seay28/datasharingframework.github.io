@@ -2,7 +2,6 @@
 title: Publications and Talks
 icon: info
 ---
- 
 ### Publications
 
 - H. Hund, R. Wettstein, C.M. Heidt, C. Fegeler, Executing Distributed Healthcare and Research Processes – The HiGHmed Data Sharing Framework, Stud Health Technol Inform, 278 (2021) 126-133, doi:10.3233/SHTI210060

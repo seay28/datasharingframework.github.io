@@ -4,15 +4,15 @@ export const enSidebar = sidebar({
   "/": [
     "",
     {
-      icon: "info",
       text: "Docs",
-      prefix: "demo/",
-      link: "demo/",
-      children: ["guide/introduction.md", "guide/tutorial.md", "guide/code.md", "guide/build_and_test.md", "guide/releases_and_deployment.md", "guide/publications.md"], 
+      icon: "info",
+      prefix: "/doc/",
+      link: "doc/",
+      children:["guideline/Introduction.md", "guideline/Tutorial.md", "guideline/code.md", "guideline/build.md", "guideline/releases.md", "guideline/publications.md"],
     },
     {
       text: "About",
-      icon: "note",
+      icon: "creative",
       prefix: "about/",
       link: "about/",
       children: ["learnmore/FAQ.md", "learnmore/Team.md", "learnmore/Releases.md", "learnmore/Community.md"], 

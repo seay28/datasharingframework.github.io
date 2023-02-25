@@ -2,7 +2,6 @@
 title: Tutorial
 icon: info
 ---
- 
 ## DSF Process Plugin Tutorial
 
 This repository contains exercises to learn how to implement process plugins for the Data Sharing Framework (DSF). The tutorial is divided into several exercises that build on each other. For each exercise, a sample solution is provided in a separate branch.
