@@ -2,24 +2,30 @@ import { navbar } from "vuepress-theme-hope";
 
 export const enNavbar = navbar([
   "/",
-  { text: "Guide", icon: "discover", link: "/demo/" },
+    {
+      text: "Docs",
+      icon: "info",
+      prefix: "/doc/",
+      children: [
+        {
+          text: "Guideline",
+          icon: "info",
+          prefix: "guideline/",
+          children: ["Introduction", "Tutorial", "Code", "Build", "Releases", "Publications"],
+        }
+      ]
+    },
   {
-    text: "Learn More",
+    text: "About",
     icon: "creative",
-    prefix: "/guide/",  //update text and prefix later to "learnmore"
+    prefix: "/about/",  
     children: [
       {
-        text: "Architecture",
+        text: "Learn More",
         icon: "creative",
-        prefix: "architecture/",
-        children: ["Overview", "Team"],
-      },
-      {
-        text: "Foo",
-        icon: "config",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "more", link: "" }],
+        prefix: "learnmore/", 
+        children: ["FAQ", "Team", "Releases", "Community"],
       },
     ],
-  },
+  }
 ]);
