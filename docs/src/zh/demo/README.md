@@ -1,7 +1,7 @@
 ---
-title: Guide
+title: Docs
 index: false
-icon: discover
+icon: info
 category:
   - Guide
 ---

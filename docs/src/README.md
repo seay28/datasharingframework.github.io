@@ -22,7 +22,7 @@ features:
     link: /demo/guide/
 
   - title: About Us
-    icon: support
+    icon: creative
     details: Information about the Team behind the DSF and more.
     link: /about/learnmore/
 
@@ -39,7 +39,7 @@ footer: MIT Licensed, Copyright © 2019-present Mr.Hope
 ---
 ## Lorem
 
-- Funded by BMBF Logo
+![Sponsored by the Federal Ministry of Education and Research ](/bmbf.svg)
 - Explanation DSF:
     - not too technical —> Motivation for extraction from Routinedata
     - saftey & privacy (vlt. with videos)

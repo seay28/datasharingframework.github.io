@@ -3,4 +3,4 @@ title: Releases
 icon: info
 ---
  
-Some information about the DSF-Team.
+Some information how we release.

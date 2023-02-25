@@ -4,11 +4,11 @@ export const enSidebar = sidebar({
   "/": [
     "",
     {
-      icon: "discover",
+      icon: "info",
       text: "Docs",
       prefix: "demo/",
       link: "demo/",
-      children: ["guide/introduction.md", "guide/tutorial.md", "guide/code.md", "guide/publications.md"], 
+      children: ["guide/introduction.md", "guide/tutorial.md", "guide/code.md", "guide/build_and_test.md", "guide/releases_and_deployment.md", "guide/publications.md"], 
     },
     {
       text: "About",
