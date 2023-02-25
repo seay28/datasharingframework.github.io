@@ -3,10 +3,10 @@ title: Learn More
 icon: creative
 ---
 
-## Introduction
+## Overview
 
-Some introduction text
-
-## Details
-
+- [FAQ](learnmore/faq.md)
+- [Team](learnmore/team.md)
+- [Releases](learnmore/releases.md)
+- [Community Guide](learnmore/community.md)
 

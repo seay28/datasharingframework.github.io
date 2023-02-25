@@ -19,7 +19,7 @@ features:
   - title: Get Started 
     icon: config
     details: Get technical insights about the DSF. Do Tutorials. Start Coding 
-    link: /demo/guide/
+    link: /doc/guideline
 
   - title: About Us
     icon: creative
