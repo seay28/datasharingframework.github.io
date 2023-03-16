@@ -11,7 +11,7 @@ export const enNavbar = navbar([
           text: "Guideline",
           icon: "info",
           prefix: "guideline/",
-          children: ["Introduction", "Tutorial", "Code", "Build", "Releases", "Publications"],
+          children: ["Introduction", "Code", "Build", "Libraries", "Releases", "Publications", "Tutorial"],
         }
       ]
     },
@@ -24,7 +24,7 @@ export const enNavbar = navbar([
         text: "Learn More",
         icon: "creative",
         prefix: "learnmore/", 
-        children: ["FAQ", "Team", "Releases", "Community"],
+        children: ["FAQ", "Contributors", "Partners", "Public", "Projects", "Releases", "Community"],
       },
     ],
   }

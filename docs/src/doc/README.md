@@ -1,6 +1,6 @@
 ---
 title: Guideline
-icon: map
+icon: guide
 ---
 
 ## Overview

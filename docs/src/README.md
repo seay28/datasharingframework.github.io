@@ -14,17 +14,18 @@ tagline: A performant, secure, and innovative framework that enables biomedical 
 
 #  - text: Learn More
 #    link: /about/
+#![Sponsored by the Federal Ministry of Education and Research ](/bmbf.svg)
 
 features:
   - title: Get Started 
     icon: config
     details: Get technical insights about the DSF. Do Tutorials. Start Coding 
-    link: /doc/guideline
+    link: /doc/
 
   - title: About Us
     icon: creative
     details: Information about the Team behind the DSF and more.
-    link: /about/learnmore/
+    link: /about/
 
   - title: GitHub
     icon: git
@@ -32,14 +33,16 @@ features:
     link: https://github.com/highmed/highmed-dsf
 
 
-copyright: false
-footer: MIT Licensed, Copyright © 2019-present Mr.Hope
----
----
-## Lorem
 
-![Sponsored by the Federal Ministry of Education and Research ](/bmbf.svg)
+footer: TODO 
+copyright: MIT Licensed, Copyright © 2019-present Mr.Hope
+---
+---
+
+
 - Explanation DSF:
-    - not too technical —> Motivation for extraction from Routinedata
-    - saftey & privacy (vlt. with videos)
-- Example project CODEX —> what was achieved? Who installed DSF?
+    - Sponsored by the Federal Ministry of Education and Research 
+    - not too technical —> Motivation for extraction of routine data
+    - safety & privacy 
+- Example project CODEX? —> what was achieved? Who installed DSF?
+- contact 
