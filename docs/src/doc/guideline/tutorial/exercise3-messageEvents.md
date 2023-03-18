@@ -2,7 +2,7 @@
 title: Exercise 3 - Message Events
 icon: slides
 ---
-[Prerequisites](/doc/guideline/tutorial/prerequisites.md) | [Exercise 1](/doc/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/doc/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/doc/guideline/tutorial/exercise2-inputParameters.md) | Exercise 3 | [Exercise 4](/doc/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/doc/guideline/tutorial/exercise5-eventBasedGateways.md)
+ [Prerequisites](/doc/guideline/tutorial/prerequisites.md) | [Exercise 1](/doc/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/doc/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/doc/guideline/tutorial/exercise2-inputParameters.md) | Exercise 3 | [Exercise 4](/doc/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/doc/guideline/tutorial/exercise5-eventBasedGateways.md)
 
 ## Exercise 3 - Message Events
 Communication between organizations is modeled using message flow in BPMN processes. The third exercise shows how a process at one organization can trigger a process at another organization.

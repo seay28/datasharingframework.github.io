@@ -3,6 +3,7 @@ title: Exercise 4 - Exclusive Gateways
 icon: slides
 ---
  [Prerequisites](/doc/guideline/tutorial/prerequisites.md) | [Exercise 1](/doc/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/doc/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/doc/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/doc/guideline/tutorial/exercise3-messageEvents.md) | Exercise 4 | [Exercise 5](/doc/guideline/tutorial/exercise5-eventBasedGateways.md)
+ 
 ##  Exercise 4 - Exclusive Gateways
 Different execution paths in a process based on the state of process variables can be achieved using Exclusive Gateways. In Exercise 4 we will examine how this can be implemented by modifying the ``highmedorg_helloDic`` process.
 
