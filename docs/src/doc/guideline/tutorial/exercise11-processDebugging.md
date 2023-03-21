@@ -27,10 +27,10 @@ docker-compose up dic-bpe
 3. Configure your Java IDE for remote debugging
 
 - Eclipse:
-![sdf](/aiwffrpa.png)
+![Eclipse](/photos/guideline/tutorial/eclipse.png)
 
 - IntelliJ:
-![sdf](/3n3sc772.png)
+![IntelliJ](/photos/guideline/tutorial/intelliJ.png)
 
 
 4. Create a debug breakpoint in the first line of the ``HelloDic`` class ``doExecute`` method.

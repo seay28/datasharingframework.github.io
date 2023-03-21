@@ -16,7 +16,7 @@ If an existing and started process instance is waiting for a message from anothe
 
 In order to solve this problem we can add an [Event Based Gateway](https://docs.camunda.org/manual/7.17/reference/bpmn20/gateways/event-based-gateway/) to the process waiting for a response and then either handle a  [Task](http://hl7.org/fhir/R4/task.html) resource with the response and finish the process in a success state or fire of an [Intermediate Timer Catch Event](https://docs.camunda.org/manual/7.17/reference/bpmn20/events/timer-events/#timer-intermediate-catching-event) after a defined wait period and finish the process in an error state. The following BPMN collaboration diagram shows how the process at the first organization would look like if two different message or no message could be received:
 
-![](/ex5.bmp)
+![](/photos/guideline/tutorial/ex5.png)
 
 ##### Timer Events
 

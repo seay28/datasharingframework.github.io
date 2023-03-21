@@ -17,7 +17,7 @@ BPMN processes are instantiated and started within the DSF by creating a matchin
 
 In order to exchange information between different processes, for example at two different organizations, BPMN message flow is used. Typically represented by a dashed line arrow between elements with black (send) and white (receive) envelop icons. The following BPMN collaboration diagram shows two processes. The process at "Organization 1" is sending a message to "Organization 2" which results in the instantiation and execution of new process instance at the second organization.
 
-![](/txpu1ow8.bmp)
+![Message Flow](/photos/guideline/tutorial/ex3.png)
 
 Every time message flow is used in a BPMN process for the DSF, a corresponding FHIR [Task](http://hl7.org/fhir/R4/task.html) profile needs to be specified for every interaction. This profile specifies which process should be started or continued and what the message name is when correlating the appropriate [Message Start Event](https://docs.camunda.org/manual/7.17/reference/bpmn20/events/message-events/#message-start-event) or [Intermediate Message Catch Event](https://docs.camunda.org/manual/7.17/reference/bpmn20/events/message-events/#message-intermediate-catching-event). A *Business Key* and a *Correlation Key* are specified if different process instances need to be linked to a single execution, for example to be able to send a message back.
 

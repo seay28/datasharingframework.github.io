@@ -17,6 +17,6 @@ export const enSidebar = sidebar({
       link: "about/",
       children: ["learnmore/FAQ.md", "learnmore/Contributors.md", "learnmore/Partners.md", "learnmore/Public.md", "learnmore/Projects.md", "learnmore/Community.md"], 
     },
-    "slides",
+    // "slides",
   ],
 });

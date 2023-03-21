@@ -46,3 +46,12 @@ copyright: MIT Licensed, Copyright © 2019-present Mr.Hope
     - safety & privacy 
 - Example project CODEX? —> what was achieved? Who installed DSF?
 - contact 
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h1  style="text-align:center;">My First Heading</h1>
+<p style="color:red;">My first paragraph.</p>
+<p title="I'm a tooltip">This is a paragraph.</p> 
+</body>
+</html>

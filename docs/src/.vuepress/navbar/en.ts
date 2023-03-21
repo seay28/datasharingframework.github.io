@@ -27,5 +27,10 @@ export const enNavbar = navbar([
         children: ["FAQ", "Contributors", "Partners", "Public", "Projects", "Community"],
       },
     ],
+  },
+  {
+    text: "v 0.9.0",
+    icon: "creative",
+    children:["/v1/"],
   }
 ]);

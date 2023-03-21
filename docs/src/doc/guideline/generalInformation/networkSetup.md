@@ -4,7 +4,7 @@ icon: customize
 ---
 The HiGHmed Data Sharing Framework consists of two components: A FHIR Endpoint Server used to except Task resources and provide resources for download by other organizations and a Business Process Engine Server run internal and not accessible by other organization to execute and coordinate processes.
 
-![HiGHmed Network Setup Diagramm](https://github.com/highmed/highmed-dsf/wiki/resources/highmed_dsf_network_setup.svg)
+![HiGHmed Network Setup Diagramm](/photos/guideline/generalInformation/highmed_dsf_network_setup.svg)
 
 * FHIR Reverse Proxy: The FHIR Reverse Proxy is used to terminate incoming https connections to the FHIR App Server. The Reverse Proxy needs to be accessible on port 443 from the internet. Incoming https connection will be delegate as http on a docker internal network to the FHIR App Server.
 * FHIR App Server: The FHIR App Server is used as a FHIR Endpoint for incoming Task resources and providing resources for download by other organizations. In order to validate incoming FHIR resources the server will communicate with FHIR Servers at other organizations. Access to resources and authorization for creating or updating resources is granted based on the content of the resource and/or based on the client (identified by its client certificate) being part of an allow list. JDBC connections to the FHIR DB Server
@@ -21,7 +21,7 @@ More information on Client- and Server-Certificates are available on the dedicat
 ## Additional Reverse Proxy in external DMZ
 In some organizations an additional reverse proxy in an external DMZ is needed. This can be accomplished by using for example nginx or haproxy as a TCP-Proxy. Example configurations routing traffic using SNI can be found below. Configuring an additional reverse proxy to terminate the incoming TLS connection early is not recommended.
 
-![HiGHmed Network Setup Diagramm](https://github.com/highmed/highmed-dsf/wiki/resources/highmed_dsf_network_setup_ext_dmz.svg)
+![HiGHmed Network Setup Diagramm](/photos/guideline/generalInformation/highmed_dsf_network_setup_ext_dmz.svg)
 
 **nginx**
 ```
