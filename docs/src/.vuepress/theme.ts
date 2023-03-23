@@ -1,6 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
@@ -20,23 +19,114 @@ export default hopeTheme({
   // repoDisplay: true,
 
  // docsDir: "demo/theme-docs/src",
+ navbar: [
+  {
+    text: "Home",
+    icon: "home",
+    link: "/",
+  },  
+  {
+      text: "Docs",
+      icon: "info",
+      prefix: "/doc/",
+      children: [
+        {
+          text: "Guideline",
+          icon: "info",
+          prefix: "guideline/",
+          children: ["Introduction", "generalInformation", "Code", "Build", "Releases", "Publications", "Tutorial"],
+        }
+      ]
+    },
+  {
+    text: "About",
+    icon: "creative",
+    prefix: "/about/",  
+    children: [
+      {
+        text: "Learn More",
+        icon: "creative",
+        prefix: "learnmore/", 
+        children: ["FAQ", "Contributors", "Partners", "Public", "Projects", "Community"],
+      },
+    ],
+  },
+  {
+    text: "Versions",
+    icon: "note",
+    // children:["/v1/"],
+    children: [{ text: "V 0.0.9", link: "/doc/" }, { text: "V 1.0.0", link: "/v1/" }],
+  },
+  {
+    text: "",
+    icon: "github",
+    link: "https://github.com/highmed/highmed-dsf",
+  },
+ ],
 
-  locales: {
+
+ sidebar: {
+  "/doc/": [
+    "",
+    {
+      text: "",
+      icon: "",
+      prefix: "guideline/",
+      link: "guideline/",
+      children:["Introduction.md", "generalInformation/", "code/", "build/", "releases/", "publications.md", "tutorial/"],
+    },
+    {
+      text: "About",
+      icon: "creative",
+      prefix: "about/",
+      link: "about/",
+      children: ["learnmore/FAQ.md", "learnmore/Contributors.md", "learnmore/Partners.md", "learnmore/Public.md", "learnmore/Projects.md", "learnmore/Community.md"], 
+    },
+  ],
+  "/v1/":  [
+    "",
+    {
+      text: "",
+      icon: "",
+      prefix: "guideline/",
+      link: "guideline/",
+      children:["Introduction.md", "generalInformation/", "code/", "build/", "releases/", "publications.md", "tutorial/"], 
+    },
+    {
+      text: "About",
+      icon: "creative",
+      prefix: "about/",
+      link: "about/",
+      children: ["learnmore/FAQ.md", "learnmore/Contributors.md", "learnmore/Partners.md", "learnmore/Public.md", "learnmore/Projects.md", "learnmore/Community.md"], 
+    },
+  ],
+  "/": [
+    {
+      text: "About",
+      icon: "creative",
+      prefix: "about/",
+      link: "about/",
+      children: ["learnmore/FAQ.md", "learnmore/Contributors.md", "learnmore/Partners.md", "learnmore/Public.md", "learnmore/Projects.md", "learnmore/Community.md"], 
+    },
+  ]
+ },
+
+ footer: "Default footer",
+ 
+  /*locales: {
     "/": {
       // navbar
       navbar: enNavbar,
 
       // sidebar
-      sidebar: enSidebar,
+      sidebar: enSidebar, 
 
       footer: "Default footer",
 
       displayFooter: true,
     },
 
-    /**
-     * Chinese locale config
-     */
+    
     "/zh/": {
       // navbar
       navbar: zhNavbar,
@@ -48,7 +138,7 @@ export default hopeTheme({
 
       displayFooter: true,
     },
-  },
+  },*/
 
   encrypt: {
     config: {
