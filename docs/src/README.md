@@ -28,7 +28,7 @@ features:
     link: /about/
 
   - title: GitHub
-    icon: git
+    icon: github
     details: Take a look at the open-source reference implementation.
     link: https://github.com/highmed/highmed-dsf
 

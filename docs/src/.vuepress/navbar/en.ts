@@ -30,7 +30,19 @@ export const enNavbar = navbar([
   },
   {
     text: "v 0.9.0",
-    icon: "creative",
-    children:["/v1/"],
-  }
+    icon: "note",
+    // children:["/v1/"],
+    children: ["/v1/", { text: "v 1.0", link: "https://www.google.com/" }],
+  },
+  {
+    text: "V 1.0 ",
+    icon: "note",
+    link: "https://www.google.com/",
+  },
+  {
+    text: "",
+    icon: "github",
+    link: "https://github.com/highmed/highmed-dsf",
+  },
 ]);
+
