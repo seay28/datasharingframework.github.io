@@ -31,7 +31,7 @@ export default hopeTheme({
       prefix: "/doc/",
       children: [
         {
-          text: "Guideline",
+          text: "Guideline v 0.9.0",
           icon: "info",
           prefix: "guideline/",
           children: ["Introduction", "generalInformation", "Code", "Build", "Releases", "Publications", "Tutorial"],
@@ -55,7 +55,7 @@ export default hopeTheme({
     text: "Versions",
     icon: "note",
     // children:["/v1/"],
-    children: [{ text: "V 0.0.9", link: "/doc/" }, { text: "V 1.0.0", link: "/v1/" }],
+    children: [{ text: "V 0.9.0", link: "/doc/" }, { text: "V 1.0.0", link: "/v1/" }],
   },
   {
     text: "",
