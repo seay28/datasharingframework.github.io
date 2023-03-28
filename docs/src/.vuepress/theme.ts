@@ -11,7 +11,7 @@ export default hopeTheme({
 
   iconAssets: "iconfont",
 
-  logo: "/logo.png",
+  logo: "/photos/home/logo.png",
   darkmode: "toggle",
   
   // repo: "https://github.com/highmed/highmed-dsf/",
@@ -168,6 +168,20 @@ export default hopeTheme({
       provider: "Waline",
     },*/
 
+    components: {
+      // components you want
+      components: [
+        "AudioPlayer",
+        "Badge",
+        "BiliBili",
+        "CodePen",
+        "PDF",
+        "Replit",
+        "StackBlitz",
+        "VideoPlayer",
+        "YouTube",
+      ],
+    },
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,

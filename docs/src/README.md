@@ -39,6 +39,31 @@ copyright:
 ---
 ---
 
+### The extraction of routine data in research is motivated by several factors:
+![](photos/learnmore/funding/bmbf.png =228x158)
+
+- Efficiency: Routine data can be used to conduct research more efficiently and cost-effectively. Instead of collecting new data, researchers can analyze existing data to answer research questions, which can save time and resources.
+
+- Generalizability: Routine data can provide a large and diverse sample of patients, which can increase the generalizability of research findings. Since routine data is collected from a wide range of patients and settings, it can provide a more representative sample than studies that recruit a specific patient population.
+
+- Longitudinal analysis: Routine data is collected over time, which allows researchers to conduct longitudinal analysis and track changes in patient outcomes over time. This can provide valuable insights into the natural history of diseases, the effectiveness of treatments, and the impact of healthcare policies.
+
+- Rare events: Routine data can be used to study rare events or outcomes that may not be feasible to study in a clinical trial. Since routine data captures data from a large and diverse population, it can provide sufficient data to study rare events that may not occur frequently enough to be studied in a clinical trial.
+
+- Clinical practice improvement: Routine data can be used to improve clinical practice by identifying patterns and trends in patient outcomes. By analyzing routine data, researchers can identify areas for improvement in clinical practice and develop strategies to optimize patient care.
+
+Overall, the extraction of routine data in research is an important tool for advancing our understanding of healthcare outcomes and improving patient care. By leveraging the large and diverse data captured in routine clinical practice, researchers can conduct efficient and generalizable research that can inform clinical practice and healthcare policies.
+
+
+<testimage src="learnmore/funding/bmbf.png" caption="Caption Example"></testimage>
+
+
+
+
+
+
+
+
 
 - Explanation DSF:
     - Sponsored by the Federal Ministry of Education and Research 
@@ -47,11 +72,3 @@ copyright:
 - Example project CODEX? —> what was achieved? Who installed DSF?
 - contact 
 
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<h1  style="text-align:center;">My First Heading</h1>
-<p style="color:red;">My first paragraph.</p>
-<p title="I'm a tooltip">This is a paragraph.</p> 
-</body>
-</html>
