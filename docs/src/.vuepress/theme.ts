@@ -69,6 +69,11 @@ export default hopeTheme({
   "/doc/": [
     "",
     {
+      text: "Home",
+      icon: "home",
+      link: "/",
+    },
+    {
       text: "",
       icon: "",
       prefix: "guideline/",
@@ -86,6 +91,11 @@ export default hopeTheme({
   "/v1/":  [
     "",
     {
+      text: "Home",
+      icon: "home",
+      link: "/",
+    },
+    {
       text: "",
       icon: "",
       prefix: "guideline/",
@@ -101,6 +111,11 @@ export default hopeTheme({
     },
   ],
   "/": [
+    {
+      text: "Home",
+      icon: "home",
+      link: "/",
+    },
     {
       text: "About",
       icon: "creative",
