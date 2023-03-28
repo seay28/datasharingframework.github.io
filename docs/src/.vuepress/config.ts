@@ -5,7 +5,7 @@ import theme from "./theme.js";
 export default defineUserConfig({
   base: "/",
 
-  locales: {
+  /*locales: {
     "/": {
       lang: "en-US",
       title: "",
@@ -16,7 +16,7 @@ export default defineUserConfig({
       title: "",
       description: "A performant, secure and innovative framework that enables healthcare data exchange across organizational boundaries.",
     },
-  },
+  },*/
 
   // Enable it with pwa
   shouldPrefetch: false,
