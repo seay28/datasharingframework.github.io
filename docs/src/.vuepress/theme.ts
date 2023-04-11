@@ -2,8 +2,6 @@ import { hopeTheme } from "vuepress-theme-hope";
 
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
-
   author: {
     name: "DSF-Team",
     url: "/about/learnmore/team.html", // ToDo
@@ -80,13 +78,13 @@ export default hopeTheme({
       link: "guideline/",
       children:["Introduction.md", "generalInformation/", "code/", "build/", "releases/", "publications.md", "tutorial/"],
     },
-    {
+   /* {
       text: "About",
       icon: "creative",
       prefix: "about/",
       link: "about/",
       children: ["learnmore/FAQ.md", "learnmore/Contributors.md", "learnmore/Partners.md", "learnmore/Public.md", "learnmore/Projects.md", "learnmore/Community.md"], 
-    },
+    },*/
   ],
   "/v1/":  [
     "",
@@ -102,13 +100,13 @@ export default hopeTheme({
       link: "guideline/",
       children:["Introduction.md", "generalInformation/", "code/", "build/", "releases/", "publications.md", "tutorial/"], 
     },
-    {
+   /* {
       text: "About",
       icon: "creative",
       prefix: "about/",
       link: "about/",
       children: ["learnmore/FAQ.md", "learnmore/Contributors.md", "learnmore/Partners.md", "learnmore/Public.md", "learnmore/Projects.md", "learnmore/Community.md"], 
-    },
+    },*/
   ],
   "/": [
     {
@@ -225,9 +223,9 @@ export default hopeTheme({
       vPre: true,
       vuePlayground: true,
     },
-
+   
      pwa: {
-       favicon: "/favicon.ico",
+       favicon: "/assets/icon/favicon.ico",
        cacheHTML: true,
        cachePic: true,
        appendBase: true,
