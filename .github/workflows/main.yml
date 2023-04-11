@@ -27,7 +27,7 @@ jobs:
         run: cd docs && npm i -D vuepress@next && npm i
 
       - name: Build VuePress site
-        run: cd docs && npm run docs:build
+        run: cd docs && NODE_OPTIONS=--max_old_space_size=5120 npm run docs:build
 
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
