@@ -7,7 +7,6 @@ DSF's community is growing... Lorem ipsum dolor sit amet, consetetur sadipscing 
 
 ### Stay up to Date
 - [GitHub](https://github.com/highmed/highmed-dsf/wiki)
-- [Subscribe](TODO) for E-Mail Newsletter
 - Follow our [contributors](/about/learnmore/contributors.md) on GitHub
 
 ### Contribute Code

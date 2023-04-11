@@ -2,8 +2,6 @@ import { hopeTheme } from "vuepress-theme-hope";
 
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
-
   author: {
     name: "DSF-Team",
     url: "/about/learnmore/team.html", // ToDo
@@ -11,7 +9,7 @@ export default hopeTheme({
 
   iconAssets: "iconfont",
 
-  logo: "/logo.png",
+  logo: "/photos/home/logo.png",
   darkmode: "toggle",
   
   // repo: "https://github.com/highmed/highmed-dsf/",
@@ -80,13 +78,13 @@ export default hopeTheme({
       link: "guideline/",
       children:["Introduction.md", "generalInformation/", "code/", "build/", "releases/", "publications.md", "tutorial/"],
     },
-    {
+   /* {
       text: "About",
       icon: "creative",
       prefix: "about/",
       link: "about/",
       children: ["learnmore/FAQ.md", "learnmore/Contributors.md", "learnmore/Partners.md", "learnmore/Public.md", "learnmore/Projects.md", "learnmore/Community.md"], 
-    },
+    },*/
   ],
   "/v1/":  [
     "",
@@ -102,13 +100,13 @@ export default hopeTheme({
       link: "guideline/",
       children:["Introduction.md", "generalInformation/", "code/", "build/", "releases/", "publications.md", "tutorial/"], 
     },
-    {
+   /* {
       text: "About",
       icon: "creative",
       prefix: "about/",
       link: "about/",
       children: ["learnmore/FAQ.md", "learnmore/Contributors.md", "learnmore/Partners.md", "learnmore/Public.md", "learnmore/Projects.md", "learnmore/Community.md"], 
-    },
+    },*/
   ],
   "/": [
     {
@@ -168,6 +166,20 @@ export default hopeTheme({
       provider: "Waline",
     },*/
 
+    components: {
+      // components you want
+      components: [
+        "AudioPlayer",
+        "Badge",
+        "BiliBili",
+        "CodePen",
+        "PDF",
+        "Replit",
+        "StackBlitz",
+        "VideoPlayer",
+        "YouTube",
+      ],
+    },
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,
@@ -211,9 +223,9 @@ export default hopeTheme({
       vPre: true,
       vuePlayground: true,
     },
-
+   
      pwa: {
-       favicon: "/favicon.ico",
+       favicon: "/assets/icon/favicon.ico",
        cacheHTML: true,
        cachePic: true,
        appendBase: true,
