@@ -1,13 +1,14 @@
 ---
 title: Guideline
-icon: map
+icon: guide
 ---
 
-## Overview
+## Overview (v 0.9.0)
 
 - [Introduction](guideline/introduction.md)
-- [Tutorial](guideline/tutorial.md)
-- [Code](guideline/code.md)
-- [Build and Test](guideline/build.md)
-- [Releases](guideline/releases.md)
+- [General Information](guideline/generalInformation/)
+- [Code](guideline/code/)
+- [Build and Test](guideline/build/)
+- [Releases and Deployment](guideline/releases/)
 - [Publications and Talks](guideline/publications.md)
+- [DSF Process Plugin Tutorial](guideline/tutorial/)

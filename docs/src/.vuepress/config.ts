@@ -1,10 +1,11 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
+// import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 
 export default defineUserConfig({
   base: "/",
 
-  locales: {
+  /*locales: {
     "/": {
       lang: "en-US",
       title: "",
@@ -15,10 +16,9 @@ export default defineUserConfig({
       title: "",
       description: "A performant, secure and innovative framework that enables healthcare data exchange across organizational boundaries.",
     },
-  },
-
-  theme,
+  },*/
 
   // Enable it with pwa
   shouldPrefetch: false,
+  theme
 });
