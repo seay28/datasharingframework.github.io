@@ -40,7 +40,7 @@ copyright:
 ---
 
 ### The extraction of routine data in research is motivated by several factors:
-![](photos/learnmore/funding/bmbf.png =228x158)
+![](/photos/learnmore/funding/bmbf.png =228x158)
 
 - Efficiency: Routine data can be used to conduct research more efficiently and cost-effectively. Instead of collecting new data, researchers can analyze existing data to answer research questions, which can save time and resources.
 

@@ -109,7 +109,7 @@ icon: group
     <div class="CommunityPartner" style="padding: 0 0 30px 82px; margin: 0 auto; display: flex; align-items: flex-start; max-width: 960px;">
             <div class="header-pic" style="left: 0; padding: 0 24px 0 0; width: 256px;">
                 <h3> Florian Seidl </h3>
-                <img src="/photos/learnmore/contributors/TODO.jpg" style="height:200px; width:200px"/>
+                <!--<img src="/photos/learnmore/contributors/TODO.jpg" style="height:200px; width:200px"/>-->
             </div>
             <div class="text" style="flex-grow: 1; padding-top: 100px;">
             <ul>
