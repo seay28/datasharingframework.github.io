@@ -3,18 +3,15 @@ title: Community
 icon: community
 ---
 ## Guide
-DSF's community is growing... Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum
+DSF's community is growing and we welcome anyone who would like to join! :rocket:
 
 ### Stay up to Date
-- [GitHub](https://github.com/highmed/highmed-dsf/wiki)
+- [GitHub](https://github.com/highmed/highmed-dsf)
 - Follow our [contributors](/about/learnmore/contributors.md) on GitHub
 
 ### Contribute Code
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum
+You can get familiar with the DSF code on GitHub. Branching follows the git-flow model, for the latest development version see branch [develop](https://github.com/highmed/highmed-dsf/tree/develop). Additionally, you can find more information [here](/doc/guideline/code/) in the documentation.
 
-### Share your Experience 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum
-
-### Get support
-- GitHub:  If you have a bug to report or feature to request, that's what the GitHub issues are for. Please respect the rules specified in each repository's issue template.
+### Share your Experience & Get support 
+You´re welcome to share your experience with the Community. If you have a bug to report or feature to request, that's what the [GitHub issues](https://github.com/highmed/highmed-dsf/issues) are for. Please respect the [rules](https://opensource.guide/) specified in each repository's issue template.
 

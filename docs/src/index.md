@@ -38,6 +38,18 @@ footer: <a href="https://github.com/highmed/highmed-dsf" target="https://github.
 copyright:
 ---
 ---
+
+::: note Visit us at EFMI MIE 2023 
+::: center
+Visit our TUTORIAL at MAY 22 - between 10am to 2pm:
+[Cross Organizational Health Data Sharing Using the Data Sharing Framework](https://drive.google.com/file/d/18-gbYB5eJ8SkoqkF2dBddKybox1uQzXm/view)
+
+ <a href="https://www.mie2023.org/home-page" target="_blank"><img src="/photos/home/mie.png" ></a>
+
+[Register here](https://www.mie2023.org/tutorials)
+:::
+
+
 ### Which value does the extraction and research of routine data provide?
 - Efficiency: Routine data can be used to conduct research more efficiently and cost-effectively. Instead of collecting new data, researchers can analyze existing data to answer research questions, which can save time and resources.
 
@@ -49,3 +61,4 @@ copyright:
 
 ### Visit [Projects](/about/learnmore/projects/) to learn how the DSF is used productively.
  <img src="/photos/learnmore/funding/bmbf.png" style="height:135px; width:200px; padding: 0px 0px 0px 880px;" />
+
