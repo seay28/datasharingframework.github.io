@@ -119,53 +119,17 @@ export default hopeTheme({
       icon: "creative",
       prefix: "about/",
       link: "about/",
-      children: ["learnmore/FAQ.md", "learnmore/Contributors.md", "learnmore/Partners.md", "learnmore/Public.md", "learnmore/Projects.md", "learnmore/Community.md"], 
+      children: ["learnmore/FAQ.md", "learnmore/Contributors.md", "learnmore/Partners.md", "learnmore/Public.md", "learnmore/projects/", "learnmore/Community.md"], 
     },
   ]
  },
 
  footer: "Default footer",
  
-  /*locales: {
-    "/": {
-      // navbar
-      navbar: enNavbar,
-
-      // sidebar
-      sidebar: enSidebar, 
-
-      footer: "Default footer",
-
-      displayFooter: true,
-    },
-
-    
-    "/zh/": {
-      // navbar
-      navbar: zhNavbar,
-
-      // sidebar
-      sidebar: zhSidebar,
-
-      footer: "默认页脚",
-
-      displayFooter: true,
-    },
-  },
-
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
-    },
-  },*/
 
   plugins: {
-    /* comment: {
-      // @ts-expect-error: You should generate and use your own comment service
-      provider: "Waline",
-    },*/
 
+    photoSwipe: false,
     components: {
       // components you want
       components: [
@@ -194,6 +158,7 @@ export default hopeTheme({
       gfm: true,
       imgLazyload: true,
       imgSize: true,
+      imgMark: true,
       include: true,
       katex: true,
       mark: true,
