@@ -1,9 +1,9 @@
 ---
-title: Version 1.0.0
+title: Guideline
 icon: guide
 ---
 
-## Overview
+## Overview (v 0.9.1)
 
 - [Introduction](guideline/introduction.md)
 - [General Information](guideline/generalInformation/)

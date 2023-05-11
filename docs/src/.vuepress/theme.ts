@@ -9,7 +9,7 @@ export default hopeTheme({
 
   iconAssets: "iconfont",
 
-  logo: "/photos/home/logo.png",
+  logo: "/photos/home/logo-small.svg",
   darkmode: "toggle",
   
   // repo: "https://github.com/highmed/highmed-dsf/",
@@ -26,10 +26,10 @@ export default hopeTheme({
   {
       text: "Docs",
       icon: "info",
-      prefix: "/doc/",
+      prefix: "/stable/",
       children: [
         {
-          text: "Guideline v 0.9.0",
+          text: "Guideline v0.9.1 (stable)",
           icon: "info",
           prefix: "guideline/",
           children: ["Introduction", "generalInformation", "Code", "Build", "Releases", "Publications", "Tutorial"],
@@ -53,7 +53,13 @@ export default hopeTheme({
     text: "Versions",
     icon: "note",
     // children:["/v1/"],
-    children: [{ text: "V 0.9.0", link: "/doc/" }, { text: "V 1.0.0", link: "/v1/" }],
+    children: [{ text: "V0.9.1 (stable)", link: "/stable/" }, { text: "V1.0.0-M1 (next)", link: "/v1.0.0/" }],
+  },
+  {
+    text: "Tutorials",
+    icon: 'guide',
+    prefix: '/tutorials/',
+    children: [ {text: "On-Site: MIE 2023", link: "MIE2023.md"}, {text: "Online: Recorded talks", link: "Talks.md"}, {text: "Online: GMDS 2022: Process development", link: "GMDS2022-dev.md"} ]
   },
   {
     text: "",
@@ -120,11 +126,13 @@ export default hopeTheme({
       prefix: "about/",
       link: "about/",
       children: ["learnmore/FAQ.md", "learnmore/Contributors.md", "learnmore/Partners.md", "learnmore/Public.md", "learnmore/Projects.md", "learnmore/Community.md"], 
-    },
+    }
   ]
  },
 
- footer: "Default footer",
+ footer: "<a href='https://www.hs-heilbronn.de/impressum'>Imprint</a> • <a href='https://www.hs-heilbronn.de/de/datenschutz'>Data Privacy</a>",
+ copyright: false,
+ displayFooter: true,
  
 
   plugins: {

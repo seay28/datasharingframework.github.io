@@ -1,7 +1,6 @@
----
-title: DSF 0.9.0 Configuration Parameters - FHIR Reverse Proxy
-icon: install
----
+##  DSF 0.9.1 Configuration Parameters - FHIR Reverse Proxy
+
+
 ## APP_SERVER_IP
 - **Required:** Yes  
 - **Description:** Hostname or IP-Address of the DSF FHIR servers application container, the reverse proxy target

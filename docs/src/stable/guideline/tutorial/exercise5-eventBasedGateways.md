@@ -2,7 +2,7 @@
 title: Exercise 5 - Event Based Gateways and Intermediate Events
 icon: slides
 ---
- [Prerequisites](/doc/guideline/tutorial/prerequisites.md) | [Exercise 1](/doc/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/doc/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/doc/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/doc/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/doc/guideline/tutorial/exercise4-exclusiveGateways.md) | Exercise 5
+ [Prerequisites](/stable/guideline/tutorial/prerequisites.md) | [Exercise 1](/stable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/stable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/stable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/stable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/stable/guideline/tutorial/exercise4-exclusiveGateways.md) | Exercise 5
 
  ## Exercise 5 - Event Based Gateways and Intermediate Events
 
@@ -201,4 +201,4 @@ Verify that the ``highmedorg_helloDic`` process either finishes with the arrival
 
 
 ---
- [Prerequisites](/doc/guideline/tutorial/prerequisites.md) | [Exercise 1](/doc/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/doc/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/doc/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/doc/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/doc/guideline/tutorial/exercise4-exclusiveGateways.md) | Exercise 5
+ [Prerequisites](/stable/guideline/tutorial/prerequisites.md) | [Exercise 1](/stable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/stable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/stable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/stable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/stable/guideline/tutorial/exercise4-exclusiveGateways.md) | Exercise 5
