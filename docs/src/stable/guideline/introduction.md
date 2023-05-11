@@ -6,5 +6,3 @@ The Data Sharing Framework implements a distributed process engine based on the 
 
 ![DSF Architecture](/photos/guideline/introduction/dsf_architecture.png)
 
-
-> TODO
