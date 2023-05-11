@@ -11,6 +11,7 @@ export default hopeTheme({
 
   logo: "/photos/home/logo-small.svg",
   darkmode: "toggle",
+  contributors: false,
   
   // repo: "https://github.com/highmed/highmed-dsf/",
   // repoLabel: "GitHub",
