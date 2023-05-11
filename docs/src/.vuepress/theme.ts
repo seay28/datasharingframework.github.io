@@ -46,7 +46,7 @@ export default hopeTheme({
         text: "Learn More",
         icon: "creative",
         prefix: "learnmore/", 
-        children: ["FAQ", "Contributors", "Partners", "Public", "Projects", "Community"],
+        children: ["contact", "contributors", "partners", "public", "projects", "community"],
       },
     ],
   },
@@ -71,7 +71,7 @@ export default hopeTheme({
 
 
  sidebar: {
-  "/doc/": [
+  "/stable/": [
     "",
     {
       text: "Home",
@@ -83,7 +83,7 @@ export default hopeTheme({
       icon: "",
       prefix: "guideline/",
       link: "guideline/",
-      children:["Introduction.md", "generalInformation/", "code/", "build/", "releases/", "publications.md", "tutorial/"],
+      children: ["introduction", "generalinformation", "code", "build", "releases", "publications", "tutorial"],
     },
    /* {
       text: "About",
@@ -126,7 +126,7 @@ export default hopeTheme({
       icon: "creative",
       prefix: "about/",
       link: "about/",
-      children: ["learnmore/FAQ.md", "learnmore/Contributors.md", "learnmore/Partners.md", "learnmore/Public.md", "learnmore/Projects.md", "learnmore/Community.md"], 
+      children: ["learnmore/contact.md", "learnmore/contributors.md", "learnmore/partners.md", "learnmore/public.md", "learnmore/projects.md", "learnmore/community.md"], 
     }
   ]
  },
