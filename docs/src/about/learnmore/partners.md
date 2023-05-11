@@ -2,11 +2,8 @@
 title: Partners
 icon: proxy
 ---
-::: center
- ![](/photos/learnmore/funding/hd.jpg =160x160)  ![](/photos/learnmore/partners/hhn-logo.png =230x130 ) ![](/photos/learnmore/funding/leipzig.png =160x160) 
-:::
-<br>
-<br>
+
+Funded for further development of the Data Sharing Framework are:
 
 ## Heilbronn University of Applied Sciences | Gecko Institute
 The [GECKO Institute](https://www.hs-heilbronn.de/de/gecko) is a research institution of [Heilbronn University of Applied Sciences](https://www.hs-heilbronn.de/de) and conducts research and development at the interfaces between medicine, economics and computer science. The DSF is part of Prof. Fegeler's research area: Interoperability and Digital Processes in Medicine. Other areas of research include educational technologies, health economics, and consumer health informatics.

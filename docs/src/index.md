@@ -57,7 +57,7 @@ Visit our TUTORIAL at MAY 22 - between 10am to 2pm:
 
 
 ### Visit [Projects](/about/learnmore/projects/) to learn how the DSF is used in production.
- <img src="/photos/learnmore/funding/bmbf.png" style="height:135px; width:200px; padding: 0px 0px 0px 880px;" />
+ <img src="/photos/learnmore/funding/bmbf-mii.png" style="height:150px; width:361px; padding: 0px 0px 0px 719px;" />
 
 <style>
 .hero-info {

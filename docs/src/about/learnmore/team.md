@@ -1,8 +1,9 @@
 ---
-title: Contributors
+title: Team
 icon: group
 ---
 
+The funded project team includes:
 
 - Prof. Dr. Christian Fegeler • [Homepage](https://www.hs-heilbronn.de/de/christian.fegeler)
 - Hauke Hund • [GitHub](https://github.com/hhund)
@@ -12,4 +13,7 @@ icon: group
 - Simon Mödinger • [GitHub](https://github.com/simonmoedinger)
 - Reto Wettstein • [GitHub](https://github.com/wetret)
 - Alexander Kiel • [GitHub](https://github.com/alexanderkiel)
+
+
+We thank additional contributors, including:
 - Florian Seidl • [GitHub](https://github.com/FloSeidel)
