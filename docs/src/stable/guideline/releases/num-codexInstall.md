@@ -1,9 +1,5 @@
----
-title: HiGHmed DSF 0.9.0 Deployment
-icon: install
----
-This setup guide uses pre-build docker images for DSF Version 0.9.0. This guide is **only** suitable for HiGHmed organizations.  
-If you are not a member of HiGHmed, see [NUM-CODEX Install](num-codexInstall.md).
+This setup guide uses pre-build docker images for DSF Version 0.9.1. This guide is not suitable for HiGHmed organizations.  
+If you are a member of HiGHmed, see [HiGHmed Install](HiGHmed-DSF-0.9.1-Deployment).
 
 ## Prerequisites
 ### Virtual Machines
@@ -22,19 +18,19 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
-docker-compose (warning: [2.11.2](https://github.com/docker/compose/releases/tag/v2.11.2) might not be [latest](https://github.com/docker/compose/releases)):
+docker-compose (warning: [2.17.3](https://github.com/docker/compose/releases/tag/v2.17.3) might not be [latest](https://github.com/docker/compose/releases)):
 ```
-sudo curl -L "https://github.com/docker/compose/releases/download/v2.11.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.17.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 ### Client/Server Certificates
-Two Certificates from the DFN-PKI Global G2 (via DFN e.V.), GÉANT TCS (via DFN e.V.) or D-Trust (via TMF e.V.) are needed, more infos see [Authentication](authentication.md) TODO
+Two Certificates from the DFN-PKI Global G2 (via DFN e.V.), GÉANT TCS (via DFN e.V.) or D-Trust (via TMF e.V.) are needed, more infos see [Authentication](Authentication)
 * Certificate A: Server Certificate (DFN PKI Profile: 'Web Server', Common-Name: Your external DSF FHIR Servers FQDN)
 * Certificate B: Client Certificate (DFN PKI Profile: '802.1X Client', Common-Name: Your DSF BPE Servers FQDN)
 
 ### Network setup / Network access
-For additional information on the network setup see [Network-and-Architecture](networkSetup.md). TODO
+For additional information on the network setup see [Network-and-Architecture](Network-and-Architecture).
 * The DSF FHIR server needs to be accessible via the internet and able to access the internet without TLS interception.
 * The BPE FHIR server should only be accessible by the internal network and able to access your DSF FHIR server via its external FQDN and the internet without TLS interception.
 
@@ -48,7 +44,6 @@ Here is a quick overview of the expected network setup. Connections to the fTTP,
 | DSF BPE (GECCO Transfer Hub)  | DSF FHIR (local)              | 443  | https                  |
 | DSF FHIR (GECCO Transfer Hub) | DSF FHIR (local)              | 443  | https (HTTP HEAD only) |
 
-
 ### On-Boarding Excel Spreadsheet
 You are required to fill out the on-boarding Excel spreadsheet, provided with the NUM-CODEX hackathon invite, and send it to the GECCO Transfer Hub. If the GECCO Transfer Hub already received and validated your On-Boarding Excel spreadsheet and you do not have to change any information, you can skip this step.
 
@@ -59,7 +54,7 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
     * Store PEM encoded certificate as `ssl_certificate_file.pem`
     * Store unencrypted, PEM encoded private-key as `ssl_certificate_key_file.pem`
 
-2. Client Certificate (certificate B)  
+1. Client Certificate (certificate B)  
     _This certificate will be used as the DSF BPE servers client certificate (client_certificate.pem, client_certificate_private_key.pem) as well as the DSF FHIR servers client certificate (client_certificate.pem, client_certificate_private_key.pem)_
     * Store PEM encoded certificate as `client_certificate.pem`
     * Store encrypted or not encrypted, PEM encoded private-key as `client_certificate_private_key.pem`
@@ -72,28 +67,28 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
     sudo adduser --system --no-create-home --uid 2101 --gid 2101 fhir
     ```
 
-2. Download and Extract Config Files  
+1. Download and Extract Config Files  
     Download prepared DSF FHIR server config files and folder structure from  
-    * **Test HiGHmed** instance:
-        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_test_fhir_0_9_0.tar.gz
+    * **Test NUM-CODEX** instance:
+        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_codex_test_fhir_0_9_1.tar.gz
         ```
         cd /opt
-        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_test_fhir_0_9_0.tar.gz
-        sudo tar --same-owner -zxvf dsf_highmed_test_fhir_0_9_0.tar.gz
+        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_codex_test_fhir_0_9_1.tar.gz
+        sudo tar --same-owner -zxvf dsf_codex_test_fhir_0_9_1.tar.gz
         ```
-    * **Production HiGHmed** instance:
-        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_prod_fhir_0_9_0.tar.gz
+    * **Production NUM-CODEX** instance:
+        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_codex_prod_fhir_0_9_1.tar.gz
         ```
         cd /opt
-        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_prod_fhir_0_9_0.tar.gz
-        sudo tar --same-owner -zxvf dsf_highmed_prod_fhir_0_9_0.tar.gz
+        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_codex_prod_fhir_0_9_1.tar.gz
+        sudo tar --same-owner -zxvf dsf_codex_prod_fhir_0_9_1.tar.gz
         ```
     _The `tar` command will unpack the config files at `/opt/fhir` assuming you changed into the `/opt` directory._
 
-3. Verify that the `fhir` system user or group can write into the following folder
+1. Verify that the `fhir` system user or group can write into the following folder
    * `/opt/fhir/log`
 
-4. Add certificates and keys
+1. Add certificates and keys
     * Add the server certificate (certificate A) and the corresponding private-key to **/opt/fhir/secrets/**
         * ssl_certificate_file.pem (chmod: 440, chown: fhir:docker)
         * ssl_certificate_key_file.pem (chmod: 440, chown: fhir:docker)
@@ -108,17 +103,17 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
         ...
         L56:      ORG_HIGHMED_DSF_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
         ...
-        L136:  app_client_certificate_private_key.pem.password:
-        L137:    file: ./secrets/client_certificate_private_key.pem.password
+        L137:  app_client_certificate_private_key.pem.password:
+        L138:    file: ./secrets/client_certificate_private_key.pem.password
         ```
 
-5. Uncomment one of the certificate chain entries in the docker-compose file base on the certificate authority that signed your DSF FHIR server certificate (certificate A). For example use the following two lines if the server certificate is signed by `DFN-Verein Global Issuing CA`
+1. Uncomment one of the certificate chain entries in the docker-compose file base on the certificate authority that signed your DSF FHIR server certificate (certificate A). For example use the following two lines if the server certificate is signed by `DFN-Verein Global Issuing CA`
     ```
-    L101:  ssl_certificate_chain_file.pem:
-    L102:    file: ./secrets/ssl_certificate_chain_file_DFN-Verein.pem
+    L102:  ssl_certificate_chain_file.pem:
+    L103:    file: ./secrets/ssl_certificate_chain_file_DFN-Verein.pem
     ```
 
-6. Modify database passwords
+1. Modify database passwords
     * **/opt/fhir/secrets/db_liquibase.password**
         * Generate a random password (min. 32 characters recommended) and replace the content of the file.
     * **/opt/fhir/secrets/db_user.password**
@@ -126,12 +121,14 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
     * **/opt/fhir/secrets/db_user_permanent_delete.password**
         * Generate a random password (min. 16 characters recommended) and replace the content of the file.
 
-7. Modify the docker-compose.yml file and set environment variables to the appropriate values
+1. Modify the docker-compose.yml file and set environment variables to the appropriate values
     * **services -> proxy -> environment:**
         * **HTTPS_SERVER_NAME_PORT**: __TODO_DSF_FRIR_SERVER_EXTERNAL_FQDN:443__
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `foo.bar.de:443`
-        * For additional environment variables, see [DSF 0.9.0 configuration parameters - FHIR Reverse Proxy](configFhirReverseProxy.md)
+        * For additional environment variables, see [DSF 0.9.1 configuration parameters - FHIR Reverse Proxy](DSF-0.9.0-Configuration-Parameters-FHIR-ReverseProxy)
     * **services -> app -> environment:**
+        * **ORG_HIGHMED_DSF_FHIR_SERVER_FQDN**: _TODO_DSF_FRIR_SERVER_EXTERNAL_FQDN_  
+            Set your FHIR servers external FQDN, e.g. `foo.bar.de`
         * **ORG_HIGHMED_DSF_FHIR_SERVER_BASE_URL**: https://_TODO_DSF_FRIR_SERVER_EXTERNAL_FQDN_/fhir  
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `https://foo.bar.de/fhir`
         * **ORG_HIGHMED_DSF_FHIR_SERVER_ORGANIZATION_IDENTIFIER_VALUE**: _TODO_ORGANIZATION_IDENTIFIER_  
@@ -149,7 +146,7 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
             This parameter is a comma separated list e.g. `ab12...37ff,f3a2...bb22`. Usually it is not necessary to add additional thumbprints other than your client certificate (certificate B) here. When a client uses a certificate with a thumbprint listed here, the client is allowed to permanently delete FHIR resources.
         * For additional environment variables, see [DSF 0.9.0 configuration parameters - FHIR Server](DSF-0.9.0-Configuration-Parameters-FHIR)
 
-8. Start the DSF FHIR Server  
+1. Start the DSF FHIR Server  
     Start using: `docker-compose up -d && docker-compose logs -f` (Ctrl-C will close log, but not stop container)
 
 ### DSF BPE Server
@@ -159,29 +156,28 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
     sudo addgroup --gid 2202 bpe
     sudo adduser --system --no-create-home --uid 2202 --gid 2202 bpe
     ```
-2. Download and Extract Config Files  
+1. Download and Extract Config Files  
     Download prepared DSF BPE server config files and folder structure from  
-    * **Test HiGHmed** instance:
-        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_test_bpe_0_9_0.tar.gz
+    * **Test NUM-CODEX** instance:
+        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_codex_test_bpe_0_9_1.tar.gz
         ```
         cd /opt
-        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_test_bpe_0_9_0.tar.gz
-        sudo tar --same-owner -zxvf dsf_highmed_test_bpe_0_9_0.tar.gz
+        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_codex_test_bpe_0_9_1.tar.gz
+        sudo tar --same-owner -zxvf dsf_codex_test_bpe_0_9_1.tar.gz
         ```
-    * **Production HiGHmed** instance:
-        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_prod_bpe_0_9_0.tar.gz
+    * **Production NUM-CODEX** instance:
+        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_codex_prod_bpe_0_9_1.tar.gz
         ```
         cd /opt
-        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_prod_bpe_0_9_0.tar.gz
-        sudo tar --same-owner -zxvf dsf_highmed_prod_bpe_0_9_0.tar.gz
+        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_codex_prod_bpe_0_9_1.tar.gz
+        sudo tar --same-owner -zxvf dsf_codex_prod_bpe_0_9_1.tar.gz
         ```
     _The `tar` command will unpack the config files at `/opt/bpe` assuming you changed into the `/opt` directory._
 
-3. Verify that the `bpe` system user or group can write into the following folders
+1. Verify that the `bpe` system user or group can write into the following folders
    * `/opt/bpe/log`
-   * `/opt/bpe/psn`
 
-4. Add certificates and keys
+1. Add certificates and keys
     * Add the client certificate (certificate B) and the corresponding private-key to **/opt/bpe/secrets/**
         * client_certificate.pem (chmod: 440 chown: bpe:docker)
         * client_certificate_private_key.pem (chmod: 440 chown: bpe:docker)
@@ -191,10 +187,10 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
         ```
         L13:      - app_client_certificate_private_key.pem.password
         ...
-        L41:      ORG_HIGHMED_DSF_BPE_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
+        L38:      ORG_HIGHMED_DSF_BPE_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
         ...
-        L99:  app_client_certificate_private_key.pem.password:
-        L100:    file: ./secrets/client_certificate_private_key.pem.password
+        L92:  app_client_certificate_private_key.pem.password:
+        L93:    file: ./secrets/client_certificate_private_key.pem.password
         ```
     * Add the CRR public-key used for asymmetrically encrypting the GECCO FHIR Bundles to **/opt/bpe/secrets/**
         * crr_public_key.pem (chmod: 440 chown: bpe:docker)
@@ -204,7 +200,7 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
             * a **Production** instance from:  
                 https://keys.num-codex.de/crr_public-key-prod.pem  
 
-5. Modify database passwords
+1. Modify database passwords
     * **/opt/bpe/secrets/db_liquibase.password**
         * Generate a random password (min. 32 characters recommended) and replace the content of the file.
     * **/opt/bpe/secrets/db_user.password**
@@ -212,18 +208,18 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
     * **/opt/bpe/secrets/db_user_camunda.password**
         * Generate a random password (min. 16 characters recommended) and replace the content of the file.
 
-6. Modify the docker-compose.yml file and set environment variables to the appropriate values
+1. Modify the docker-compose.yml file and set environment variables to the appropriate values
     * **services -> app -> environment:**
         * **ORG_HIGHMED_DSF_BPE_FHIR_SERVER_ORGANIZATION_IDENTIFIER_VALUE**: _TODO_ORGANIZATION_IDENTIFIER_  
             Set your Organizations DSF identifier, aka the shortest FQDN that resolves the main homepage of the organization, e.g. hs-heilbronn.de
         * **ORG_HIGHMED_DSF_BPE_FHIR_SERVER_BASE_URL**: https://__TODO_DSF_FRIR_SERVER_FQDN__/fhir  
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `https://foo.bar.de/fhir`
-        * For additional environment variables, see [DSF 0.9.0 configuration parameters - BPE Server](configBpe.md)
+        * For additional environment variables, see [DSF 0.9.0 configuration parameters - BPE Server](DSF-0.9.0-Configuration-Parameters-BPE)
 
-7. Start the DSF BPE Server (without process plugins)  
+1. Start the DSF BPE Server (without process plugins)  
     Start using: `docker-compose up -d && docker-compose logs -f` (Ctrl-C will close log, but not stop container)
 
-8. Verify DSF BPE Startup  
+1. Verify DSF BPE Startup  
     * Check that the BPE was able to download new Task resources from the DSF FHIR server during startup.
     * Check that the BPE was able to download a Subscription resource from the DSF FHIR server during startup.
     * Check that the BPE was able to connect to the websocket endpoint of the DSF FHIR server during startup.
@@ -232,32 +228,19 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
     `docker run -it --rm alpine/openssl s_client your-fhir-server.fqdn:443`  
     The command above should print the server certificate of your DSF FHIR server (certificate A) and end with a message like `[...]tlsv13 alert certificate required[...]`
 
-9. Stop the DSF BPE Server  
+1. Stop the DSF BPE Server  
     * Hit Ctrl-C to close log
     * Stop using: `docker-compose stop`
 
-10. Add the following DSF BPE process plugins, for instructions on how to configure the plugin, see release notes.
+1. Add the following DSF BPE process plugins, for instructions on how to configure the plugin, see release notes.
     * **num-codex / codex-processes-ap1** version 0.7.0 or later:  
         https://github.com/num-codex/codex-processes-ap1/releases/tag/v0.7.0  
-        See [NUM-CODEX: Process Deployment and Configuration](https://github.com/num-codex/codex-processes-ap1/wiki/Process-Deployment-and-Configuration-v0.7.0) on how to configure the process plugin.
-    * **highmed / highmed-processes / data-sharing** version 0.7.0 or later:  
-        https://github.com/highmed/highmed-processes/releases/tag/v0.7.0  
-    * **highmed / highmed-processes / feasibility** version 0.7.0 or later:  
-        https://github.com/highmed/highmed-processes/releases/tag/v0.7.0  
-    * **highmed / highmed-processes / feasibility-mpc** version 0.7.0 or later:  
-        https://github.com/highmed/highmed-processes/releases/tag/v0.7.0  
-    * **highmed / highmed-processes / local-services** version 0.7.0 or later:  
-        https://github.com/highmed/highmed-processes/releases/tag/v0.7.0  
+        See [NUM-CODEX: Process Deployment and Configuration](https://github.com/num-codex/codex-processes-ap1/wiki/Process-Deployment-and-Configuration-v0.7.0) on how to deploy and configure the process plugin.
     * **highmed / highmed-processes / ping** version 0.7.0 or later:  
-        https://github.com/highmed/highmed-processes/releases/tag/v0.7.0  
-    * **highmed / highmed-processes / update-allow-list** version 0.7.0 or later:  
         https://github.com/highmed/highmed-processes/releases/tag/v0.7.0  
         See [HiGHmed: Process Ping Deployment](https://github.com/highmed/highmed-processes/wiki/Process-Ping-Deployment-v0.7.0) on how to deploy and configure the process plugin.
 
     _Notice: Jar-files within the folders `/opt/bpe/process` and `/opt/bpe/plugin` need to be readable by the linxux `bpe` user -> `chown root:bpe`, `chmod 440`_  
 
-11. Start the DSF BPE Server (with process plugins)  
+1. Start the DSF BPE Server (with process plugins)  
     Start using: `docker-compose up -d && docker-compose logs -f` (Ctrl-C will close log, but not stop container)
-
-12. Request Allow-List upload from HiGHmed TTP  
-    The Allow-List upload is needed in order to execute HiGHmed and NUM-CODEX processes.

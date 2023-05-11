@@ -9,6 +9,7 @@ icon: install
 - [Configuration Parameters BPE](configBpe.md)
 - [Upgrade from 0.7.0](upgradeFrom7.md)
 - [Upgrade from 0.8.0](upgradeFrom8.md)
+- [Upgrade from 0.9.0](upgradeFrom90.md)
 - [Older Versions](https://github.com/highmed/highmed-dsf/wiki/Deployment-Archive)
 - [NUM-CODEX Install](num-codexInstall.md)
 - [HiGHmed Install](highmedInstall.md)

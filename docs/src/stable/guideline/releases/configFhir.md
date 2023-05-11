@@ -1,8 +1,4 @@
----
-title: DSF 0.9.0 Configuration Parameters - FHIR Server
-icon: install
----
-
+## DSF 0.9.1 Configuration Parameters - FHIR Server
 Please note: Additional parameters (not listed here) are used to define elements of the external FHIR bundle.
 
 ### ORG_HIGHMED_DSF_FHIR_CLIENT_CERTIFICATE

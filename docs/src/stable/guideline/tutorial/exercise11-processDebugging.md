@@ -2,7 +2,7 @@
 title: Exercise 1.1 - Process Debugging
 icon: slides
 ---
- [Prerequisites](/doc/guideline/tutorial/prerequisites.md) | [Exercise 1](/doc/guideline/tutorial/exercise1-simpleProcess.md) | Exercise 1.1 | [Exercise 2](/doc/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/doc/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/doc/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/doc/guideline/tutorial/exercise5-eventBasedGateways.md)
+ [Prerequisites](/stable/guideline/tutorial/prerequisites.md) | [Exercise 1](/stable/guideline/tutorial/exercise1-simpleProcess.md) | Exercise 1.1 | [Exercise 2](/stable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/stable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/stable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/stable/guideline/tutorial/exercise5-eventBasedGateways.md)
 
 ## Exercise 1.1 - Process Debugging
 
@@ -12,7 +12,7 @@ This exercise looks at how to use the Java debugger of your IDE to remote debug 
 --- 
 The DSF FHIR server and the DSF BPE server applications are written in Java and as such are execute on a headless JRE 11 within their docker containers. Command line arguments can be passed to the JVM inside the ghcr.io/highmed/fhir and ghcr.io/highmed/bpe docker images by specifying the environment variable ``EXTRA_JVM_ARGS``. This can be used for example to configure the minimum and maximum heap of the JVM; but can also be used to specify a remote debugging port, which we will use in this exercise.
 
-An ``EXTRA_JVM_ARGS`` environment variable is already configure for all DSF FHIR server and DSF BPE server docker containers in the tutorial docker-compose test setup. Take a look at the [docker-compose.yml](/doc/guideline/tutorial/ex11-docker-composeyml.md) file to lookup the port numbers specified for the different DSF FHIR and DSF BPE servers.
+An ``EXTRA_JVM_ARGS`` environment variable is already configure for all DSF FHIR server and DSF BPE server docker containers in the tutorial docker-compose test setup. Take a look at the [docker-compose.yml](/stable/guideline/tutorial/ex11-docker-composeyml.md) file to lookup the port numbers specified for the different DSF FHIR and DSF BPE servers.
 
 ### Exercise Tasks
 ---
@@ -41,7 +41,7 @@ docker-compose up dic-bpe
 
 7. User your IDE's debugger to step thru the code of the ``HelloDic`` class ``doExecute`` method.
 
-Continue with  [Exercise 2](/doc/guideline/tutorial/exercise2-inputParameters.md).
+Continue with  [Exercise 2](/stable/guideline/tutorial/exercise2-inputParameters.md).
 
 ---
- [Prerequisites](/doc/guideline/tutorial/prerequisites.md) | [Exercise 1](/doc/guideline/tutorial/exercise1-simpleProcess.md) | Exercise 1.1 | [Exercise 2](/doc/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/doc/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/doc/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/doc/guideline/tutorial/exercise5-eventBasedGateways.md)
+ [Prerequisites](/stable/guideline/tutorial/prerequisites.md) | [Exercise 1](/stable/guideline/tutorial/exercise1-simpleProcess.md) | Exercise 1.1 | [Exercise 2](/stable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/stable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/stable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/stable/guideline/tutorial/exercise5-eventBasedGateways.md)
