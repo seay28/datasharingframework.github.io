@@ -125,7 +125,7 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
     * **services -> proxy -> environment:**
         * **HTTPS_SERVER_NAME_PORT**: __TODO_DSF_FRIR_SERVER_EXTERNAL_FQDN:443__
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `foo.bar.de:443`
-        * For additional environment variables, see [DSF 0.9.1 configuration parameters - FHIR Reverse Proxy](DSF-0.9.0-Configuration-Parameters-FHIR-ReverseProxy)
+        * For additional environment variables, see [DSF 0.9.1 configuration parameters - FHIR Reverse Proxy](DSF-0.9.1-Configuration-Parameters-FHIR-ReverseProxy)
     * **services -> app -> environment:**
         * **ORG_HIGHMED_DSF_FHIR_SERVER_FQDN**: _TODO_DSF_FRIR_SERVER_EXTERNAL_FQDN_  
             Set your FHIR servers external FQDN, e.g. `foo.bar.de`
@@ -144,7 +144,7 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
         * **ORG_HIGHMED_DSF_FHIR_SERVER_USER_THUMBPRINTS_PERMANENT_DELETE**: _TODO_CLIENT_CERTIFICATE_THUMBPRINTS_  
             Set the SHA-512 Hash (lowercase hex) of your client certificate (certificate B)  
             This parameter is a comma separated list e.g. `ab12...37ff,f3a2...bb22`. Usually it is not necessary to add additional thumbprints other than your client certificate (certificate B) here. When a client uses a certificate with a thumbprint listed here, the client is allowed to permanently delete FHIR resources.
-        * For additional environment variables, see [DSF 0.9.0 configuration parameters - FHIR Server](DSF-0.9.0-Configuration-Parameters-FHIR)
+        * For additional environment variables, see [DSF 0.9.1 configuration parameters - FHIR Server](DSF-0.9.1-Configuration-Parameters-FHIR)
 
 1. Start the DSF FHIR Server  
     Start using: `docker-compose up -d && docker-compose logs -f` (Ctrl-C will close log, but not stop container)
@@ -214,7 +214,7 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
             Set your Organizations DSF identifier, aka the shortest FQDN that resolves the main homepage of the organization, e.g. hs-heilbronn.de
         * **ORG_HIGHMED_DSF_BPE_FHIR_SERVER_BASE_URL**: https://__TODO_DSF_FRIR_SERVER_FQDN__/fhir  
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `https://foo.bar.de/fhir`
-        * For additional environment variables, see [DSF 0.9.0 configuration parameters - BPE Server](DSF-0.9.0-Configuration-Parameters-BPE)
+        * For additional environment variables, see [DSF 0.9.1 configuration parameters - BPE Server](DSF-0.9.1-Configuration-Parameters-BPE)
 
 1. Start the DSF BPE Server (without process plugins)  
     Start using: `docker-compose up -d && docker-compose logs -f` (Ctrl-C will close log, but not stop container)
