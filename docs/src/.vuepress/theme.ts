@@ -33,7 +33,7 @@ export default hopeTheme({
           text: "Guideline v0.9.1 (stable)",
           icon: "info",
           prefix: "guideline/",
-          children: ["Introduction", "generalInformation", "Code", "Build", "Releases", "Publications", "Tutorial"],
+          children: ["introduction", "generalinformation", "code", "build", "releases", "publications", "tutorial"],
         }
       ]
     },
