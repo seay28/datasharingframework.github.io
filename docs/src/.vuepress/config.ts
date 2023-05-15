@@ -2,6 +2,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 // import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { sitemapPlugin } from "vuepress-plugin-sitemap2";
 
 export default defineUserConfig({
   base: "/",
@@ -22,6 +23,10 @@ export default defineUserConfig({
     searchProPlugin({
       // index all contents
       indexContent: true,
+    }),
+    sitemapPlugin({
+      // your options
+      hostname: 'dsf.dev'
     }),
   ],
 
