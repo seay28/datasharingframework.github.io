@@ -18,9 +18,10 @@ icon: blog
 
 - H. Hund, R. Wettstein, M. Kurscheidt, S.T. Schweizer, C. Zilske, C. Fegeler, Interoperability Is a Process- The Data Sharing Framework [DOI coming soon](TODO)
 
-- H.Hund, R. Wettstein, C. Hampf, M. Bialke, M. Kurscheidt, S.T. Schweizer, C. Zilske, S. Mödinger, C. Fegeler, No Transfer Without Validation: A Data Sharing Framework Use Case [DOI comming soon](TODO)
+- C. Zilske, M. Kurscheidt, S.T. Schweizer, H. Hund, S. Mödinger, C. Fegeler, Monitoring Distributed Business Processes in Biomedical Research, [doi:10.3233/SHTI230113](https://ebooks.iospress.nl/doi/10.3233/SHTI230113)
 
-- C. Zilske, M. Kurscheidt, S.T. Schweizer, H. Hund, S. Mödinger, C. Fegeler, Monitoring Distributed Business Processes in Biomedical Research, [DOI comming soon](TODO)
+- H.Hund, R. Wettstein, C. Hampf, M. Bialke, M. Kurscheidt, S.T. Schweizer, C. Zilske, S. Mödinger, C. Fegeler, No Transfer Without Validation: A Data Sharing Framework Use Case [doi:10.3233/SHTI230066 ](https://ebooks.iospress.nl/doi/10.3233/SHTI230066)
+
 
 ### Recorded Talks
 #### GMDS Conference 2022
