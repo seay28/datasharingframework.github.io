@@ -32,7 +32,6 @@ features:
     details: Take a look at the open-source reference implementation.
     link: https://github.com/highmed/highmed-dsf
 
-
 ---
 ---
 ## The Data Sharing Framework
