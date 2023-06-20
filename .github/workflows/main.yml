@@ -24,7 +24,7 @@ jobs:
           node-version: 18
           
       - name: Install dependencies
-        run: cd docs && npm i -D vuepress@next && npm i
+        run: cd docs && npm i -D vuepress@next && npm ci
 
       - name: Build VuePress site
         run: cd docs && NODE_OPTIONS=--max_old_space_size=5120 npm run docs:build
