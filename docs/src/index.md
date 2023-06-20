@@ -63,7 +63,7 @@ Visit one of our Tutorials at September 17 - from 9am to 6pm:
 
 [T09 – Hands-on! – Introduction to the Data Sharing Framework from a User Perspective](https://www.gmds2023.de/programm/tutorials/tutorial-09/)
 
- <a href="https://www.gmds2023.de/" target="_blank"><img src="/photos/home/gmds.png" ></a>
+ <a href="https://www.gmds2023.de/" target="_blank"><img src="/photos/home/gmds2023.jpg" ></a>
 :::center
 [Register here](https://www.gmds2023.de/registrierung/)
 :::
@@ -77,7 +77,7 @@ Visit one of our Tutorials at September 17 - from 9am to 6pm:
  <img src="/photos/learnmore/funding/bmbf-mii.png" style="height:150px; width:361px; padding: 0px 0px 0px 719px;" />
 
 <style>
-.hero-info {
+.vp-hero-infos {
   display: none;
 }
 </style>
