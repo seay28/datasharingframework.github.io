@@ -54,7 +54,7 @@ export default hopeTheme({
     text: "Versions",
     icon: "note",
     // children:["/v1/"],
-    children: [{ text: "V0.9.1 (stable)", link: "/stable/" }, { text: "V1.0.0-M1 (next)", link: "/v1.0.0/" }],
+    children: [{ text: "0.9.1 (stable)", link: "/stable/" }, { text: "1.0.0-M1 (next)", link: "/v1.0.0/" }],
   },
   {
     text: "Tutorials",

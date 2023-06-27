@@ -3,7 +3,7 @@ title: Guideline
 icon: guide
 ---
 
-## Overview (v 0.9.1)
+## Overview (version 0.9.1)
 
 - [Introduction](guideline/introduction.md)
 - [General Information](guideline/generalInformation/)
