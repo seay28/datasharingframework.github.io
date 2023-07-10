@@ -128,12 +128,12 @@ Here is a quick overview of the expected network setup.
     * **services -> proxy -> environment:**
         * **HTTPS_SERVER_NAME_PORT**: __TODO_DSF_FHIR_SERVER_EXTERNAL_FQDN:443__
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `foo.bar.de:443`
-        * For additional environment variables, see [DSF configuration parameters - FHIR Reverse Proxy](DSF-0.9.2-Configuration-Parameters-FHIR-ReverseProxy)
+        * For additional environment variables, see [DSF configuration parameters - FHIR Reverse Proxy](configuration/reverseproxy)
     * **services -> app -> environment:**
         * **DEV_DSF_FHIR_SERVER_BASE_URL**: https://_TODO_DSF_FRIR_SERVER_EXTERNAL_FQDN_/fhir  
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `https://foo.bar.de/fhir`
         * **DEV_DSF_FHIR_SERVER_ORGANIZATION_IDENTIFIER_VALUE**: _TODO_ORGANIZATION_IDENTIFIER_  
-            Set your Organizations DSF identifier, aka the shortest FQDN that resolves to the main homepage of the organization, e.g. hs-heilbronn.de
+            Set your Organizations DSF identifier, aka the shortest FQDN that resolves to the main homepage of the organization, e.g. `hs-heilbronn.de`
         * **DEV_DSF_FHIR_SERVER_ORGANIZATION_THUMBPRINT**: _TODO_CLIENT_CERTIFICATE_THUMBPRINT_  
             Set the SHA-512 Hash (lowercase hex) of your client certificate (certificate B)  
             Use `certtool --fingerprint --hash=sha512 --infile=client_certificate.pem` to generate the hash.
@@ -189,10 +189,10 @@ Here is a quick overview of the expected network setup.
 1. Modify the docker-compose.yml file and set environment variables to the appropriate values
     * **services -> app -> environment:**
         * **DEV_DSF_BPE_FHIR_SERVER_ORGANIZATION_IDENTIFIER_VALUE**: _TODO_ORGANIZATION_IDENTIFIER_  
-            Set your Organizations DSF identifier, aka the shortest FQDN that resolves the main homepage of the organization, e.g. hs-heilbronn.de
+            Set your Organizations DSF identifier, aka the shortest FQDN that resolves the main homepage of the organization, e.g. `hs-heilbronn.de`
         * **DEV_DSF_BPE_FHIR_SERVER_BASE_URL**: https://__TODO_DSF_FRIR_SERVER_FQDN__/fhir  
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `https://foo.bar.de/fhir`
-        * For additional environment variables, see [DSF 0.9.2 configuration parameters - BPE Server](configuration/bpe)
+        * For additional environment variables, see [DSF configuration parameters - BPE Server](configuration/bpe)
 
 1. Start the DSF BPE Server (without process plugins)  
     Start using: `docker compose up -d && docker compose logs -f` (Ctrl-C will close log, but not stop container)
