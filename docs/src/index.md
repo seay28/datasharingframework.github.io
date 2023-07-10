@@ -30,7 +30,7 @@ features:
   - title: GitHub
     icon: github
     details: Take a look at the open-source reference implementation.
-    link: https://github.com/highmed/highmed-dsf
+    link: https://github.com/datasharingframework/dsf
 
 ---
 ---

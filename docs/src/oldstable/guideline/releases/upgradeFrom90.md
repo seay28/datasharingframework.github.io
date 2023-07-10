@@ -1,8 +1,8 @@
 ---
-title: Upgrading from 0.9.0 to 0.9.0
+title: Upgrading from 0.9.0 to 0.9.1
 icon: install
 ---
-Upgrading the DSF from 0.9.0 to 0.9.0 involves modifying the docker-compose.yml files, replacing the process plugins and recreating the containers.
+Upgrading the DSF from 0.9.0 to 0.9.1 involves modifying the docker-compose.yml files, replacing the process plugins and recreating the containers.
 
 
 **If you are upgrading from 0.8.0 please see the [Upgrade from 0.8.0 to 0.9.0 guide](upgradeFrom8.md).**

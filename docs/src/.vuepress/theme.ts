@@ -30,10 +30,9 @@ export default hopeTheme({
       prefix: "/stable/",
       children: [
         {
-          text: "Guideline v0.9.1 (stable)",
+          text: "Guideline v1.0.0 (stable)",
           icon: "info",
-          prefix: "guideline/",
-          children: ["introduction", "generalinformation", "code", "build", "releases", "publications", "tutorial"],
+          children: ["introduction", "maintain/install", "maintain/upgrade-from-0", "develop/create"],
         }
       ]
     },
@@ -54,7 +53,7 @@ export default hopeTheme({
     text: "Versions",
     icon: "note",
     // children:["/v1/"],
-    children: [{ text: "0.9.1 (stable)", link: "/stable/" }, { text: "1.0.0-M1 (next)", link: "/v1.0.0/" }],
+    children: [{ text: "V1.0.0 (stable)", link: "/stable/" }, { text: "V0.9.2 (oldstable)", link: "/oldstable/" }],
   },
   {
     text: "Tutorials",
@@ -65,7 +64,7 @@ export default hopeTheme({
   {
     text: "",
     icon: "github",
-    link: "https://github.com/highmed/highmed-dsf",
+    link: "https://github.com/datasharingframework/dsf",
   },
  ],
 
@@ -74,16 +73,31 @@ export default hopeTheme({
   "/stable/": [
     "",
     {
-      text: "Home",
+      text: "Introduction",
       icon: "home",
-      link: "/",
+      link: "introduction",
     },
     {
-      text: "",
+      text: "Maintain a DSF instance",
       icon: "",
-      prefix: "guideline/",
-      link: "guideline/",
-      children: ["introduction", "generalinformation", "code", "build", "releases", "publications", "tutorial"],
+      prefix: "maintain/",
+      link: "maintain/",
+      children: ["install", "upgrade-from-0", {
+        text: "Configuration parameters",
+        icon: "",
+        prefix: "configuration/",
+        link: "configuration/",
+        children: ["common", "fhir", "bpe"]
+
+      }
+     ],
+    },
+    {
+      text: "Develop process plugins",
+      icon: "",
+      prefix: "develop/",
+      link: "develop/",
+      children: ["create", "upgrade-from-0" ],
     },
    /* {
       text: "About",
@@ -200,8 +214,8 @@ export default hopeTheme({
    
      pwa: {
        favicon: "/assets/icon/favicon.ico",
-       cacheHTML: true,
-       cachePic: true,
+       cacheHTML: false,
+       cachePic: false,
        appendBase: true,
      },
   },

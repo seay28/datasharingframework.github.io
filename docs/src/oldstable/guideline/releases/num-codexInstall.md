@@ -1,5 +1,5 @@
-This setup guide uses pre-build docker images for DSF Version 0.9.1. This guide is **only** suitable for HiGHmed organizations.  
-If you are not a member of HiGHmed, see [NUM-CODEX Install](NUM‐CODEX-DSF-0.9.1-Deployment).
+This setup guide uses pre-build docker images for DSF Version 0.9.2. This guide is not suitable for HiGHmed organizations.  
+If you are a member of HiGHmed, see [HiGHmed Install](HiGHmed-DSF-0.9.2-Deployment).
 
 ## Prerequisites
 ### Virtual Machines
@@ -44,7 +44,6 @@ Here is a quick overview of the expected network setup. Connections to the fTTP,
 | DSF BPE (GECCO Transfer Hub)  | DSF FHIR (local)              | 443  | https                  |
 | DSF FHIR (GECCO Transfer Hub) | DSF FHIR (local)              | 443  | https (HTTP HEAD only) |
 
-
 ### On-Boarding Excel Spreadsheet
 You are required to fill out the on-boarding Excel spreadsheet, provided with the NUM-CODEX hackathon invite, and send it to the GECCO Transfer Hub. If the GECCO Transfer Hub already received and validated your On-Boarding Excel spreadsheet and you do not have to change any information, you can skip this step.
 
@@ -70,19 +69,19 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
 
 1. Download and Extract Config Files  
     Download prepared DSF FHIR server config files and folder structure from  
-    * **Test HiGHmed** instance:
-        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_test_fhir_0_9_1.tar.gz
+    * **Test NUM-CODEX** instance:
+        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_codex_test_fhir_0.9.2.tar.gz
         ```
         cd /opt
-        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_test_fhir_0_9_1.tar.gz
-        sudo tar --same-owner -zxvf dsf_highmed_test_fhir_0_9_1.tar.gz
+        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_codex_test_fhir_0.9.2.tar.gz
+        sudo tar --same-owner -zxvf dsf_codex_test_fhir_0.9.2.tar.gz
         ```
-    * **Production HiGHmed** instance:
-        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_prod_fhir_0_9_1.tar.gz
+    * **Production NUM-CODEX** instance:
+        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_codex_prod_fhir_0.9.2.tar.gz
         ```
         cd /opt
-        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_prod_fhir_0_9_1.tar.gz
-        sudo tar --same-owner -zxvf dsf_highmed_prod_fhir_0_9_1.tar.gz
+        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_codex_prod_fhir_0.9.2.tar.gz
+        sudo tar --same-owner -zxvf dsf_codex_prod_fhir_0.9.2.tar.gz
         ```
     _The `tar` command will unpack the config files at `/opt/fhir` assuming you changed into the `/opt` directory._
 
@@ -104,14 +103,14 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
         ...
         L56:      ORG_HIGHMED_DSF_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
         ...
-        L136:  app_client_certificate_private_key.pem.password:
-        L137:    file: ./secrets/client_certificate_private_key.pem.password
+        L137:  app_client_certificate_private_key.pem.password:
+        L138:    file: ./secrets/client_certificate_private_key.pem.password
         ```
 
 1. Uncomment one of the certificate chain entries in the docker-compose file base on the certificate authority that signed your DSF FHIR server certificate (certificate A). For example use the following two lines if the server certificate is signed by `DFN-Verein Global Issuing CA`
     ```
-    L101:  ssl_certificate_chain_file.pem:
-    L102:    file: ./secrets/ssl_certificate_chain_file_DFN-Verein.pem
+    L102:  ssl_certificate_chain_file.pem:
+    L103:    file: ./secrets/ssl_certificate_chain_file_DFN-Verein.pem
     ```
 
 1. Modify database passwords
@@ -126,8 +125,10 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
     * **services -> proxy -> environment:**
         * **HTTPS_SERVER_NAME_PORT**: __TODO_DSF_FRIR_SERVER_EXTERNAL_FQDN:443__
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `foo.bar.de:443`
-        * For additional environment variables, see [DSF 0.9.1 configuration parameters - FHIR Reverse Proxy](DSF-0.9.1-Configuration-Parameters-FHIR-ReverseProxy)
+        * For additional environment variables, see [DSF 0.9.2 configuration parameters - FHIR Reverse Proxy](DSF-0.9.2-Configuration-Parameters-FHIR-ReverseProxy)
     * **services -> app -> environment:**
+        * **ORG_HIGHMED_DSF_FHIR_SERVER_FQDN**: _TODO_DSF_FRIR_SERVER_EXTERNAL_FQDN_  
+            Set your FHIR servers external FQDN, e.g. `foo.bar.de`
         * **ORG_HIGHMED_DSF_FHIR_SERVER_BASE_URL**: https://_TODO_DSF_FRIR_SERVER_EXTERNAL_FQDN_/fhir  
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `https://foo.bar.de/fhir`
         * **ORG_HIGHMED_DSF_FHIR_SERVER_ORGANIZATION_IDENTIFIER_VALUE**: _TODO_ORGANIZATION_IDENTIFIER_  
@@ -143,7 +144,7 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
         * **ORG_HIGHMED_DSF_FHIR_SERVER_USER_THUMBPRINTS_PERMANENT_DELETE**: _TODO_CLIENT_CERTIFICATE_THUMBPRINTS_  
             Set the SHA-512 Hash (lowercase hex) of your client certificate (certificate B)  
             This parameter is a comma separated list e.g. `ab12...37ff,f3a2...bb22`. Usually it is not necessary to add additional thumbprints other than your client certificate (certificate B) here. When a client uses a certificate with a thumbprint listed here, the client is allowed to permanently delete FHIR resources.
-        * For additional environment variables, see [DSF 0.9.1 configuration parameters - FHIR Server](DSF-0.9.1-Configuration-Parameters-FHIR)
+        * For additional environment variables, see [DSF 0.9.2 configuration parameters - FHIR Server](DSF-0.9.2-Configuration-Parameters-FHIR)
 
 1. Start the DSF FHIR Server  
     Start using: `docker-compose up -d && docker-compose logs -f` (Ctrl-C will close log, but not stop container)
@@ -157,25 +158,24 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
     ```
 1. Download and Extract Config Files  
     Download prepared DSF BPE server config files and folder structure from  
-    * **Test HiGHmed** instance:
-        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_test_bpe_0_9_1.tar.gz
+    * **Test NUM-CODEX** instance:
+        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_codex_test_bpe_0.9.2.tar.gz
         ```
         cd /opt
-        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_test_bpe_0_9_1.tar.gz
-        sudo tar --same-owner -zxvf dsf_highmed_test_bpe_0_9_1.tar.gz
+        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_codex_test_bpe_0.9.2.tar.gz
+        sudo tar --same-owner -zxvf dsf_codex_test_bpe_0.9.2.tar.gz
         ```
-    * **Production HiGHmed** instance:
-        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_prod_bpe_0_9_1.tar.gz
+    * **Production NUM-CODEX** instance:
+        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_codex_prod_bpe_0.9.2.tar.gz
         ```
         cd /opt
-        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_prod_bpe_0_9_1.tar.gz
-        sudo tar --same-owner -zxvf dsf_highmed_prod_bpe_0_9_1.tar.gz
+        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_codex_prod_bpe_0.9.2.tar.gz
+        sudo tar --same-owner -zxvf dsf_codex_prod_bpe_0.9.2.tar.gz
         ```
     _The `tar` command will unpack the config files at `/opt/bpe` assuming you changed into the `/opt` directory._
 
 1. Verify that the `bpe` system user or group can write into the following folders
    * `/opt/bpe/log`
-   * `/opt/bpe/psn`
 
 1. Add certificates and keys
     * Add the client certificate (certificate B) and the corresponding private-key to **/opt/bpe/secrets/**
@@ -187,10 +187,10 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
         ```
         L13:      - app_client_certificate_private_key.pem.password
         ...
-        L41:      ORG_HIGHMED_DSF_BPE_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
+        L38:      ORG_HIGHMED_DSF_BPE_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
         ...
-        L99:  app_client_certificate_private_key.pem.password:
-        L100:    file: ./secrets/client_certificate_private_key.pem.password
+        L92:  app_client_certificate_private_key.pem.password:
+        L93:    file: ./secrets/client_certificate_private_key.pem.password
         ```
     * Add the CRR public-key used for asymmetrically encrypting the GECCO FHIR Bundles to **/opt/bpe/secrets/**
         * crr_public_key.pem (chmod: 440 chown: bpe:docker)
@@ -214,7 +214,7 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
             Set your Organizations DSF identifier, aka the shortest FQDN that resolves the main homepage of the organization, e.g. hs-heilbronn.de
         * **ORG_HIGHMED_DSF_BPE_FHIR_SERVER_BASE_URL**: https://__TODO_DSF_FRIR_SERVER_FQDN__/fhir  
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `https://foo.bar.de/fhir`
-        * For additional environment variables, see [DSF 0.9.1 configuration parameters - BPE Server](DSF-0.9.1-Configuration-Parameters-BPE)
+        * For additional environment variables, see [DSF 0.9.2 configuration parameters - BPE Server](DSF-0.9.2-Configuration-Parameters-BPE)
 
 1. Start the DSF BPE Server (without process plugins)  
     Start using: `docker-compose up -d && docker-compose logs -f` (Ctrl-C will close log, but not stop container)
@@ -235,18 +235,8 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
 1. Add the following DSF BPE process plugins, for instructions on how to configure the plugin, see release notes.
     * **num-codex / codex-processes-ap1** version 0.7.0 or later:  
         https://github.com/num-codex/codex-processes-ap1/releases/tag/v0.7.0  
-        See [NUM-CODEX: Process Deployment and Configuration](https://github.com/num-codex/codex-processes-ap1/wiki/Process-Deployment-and-Configuration-v0.7.0) on how to configure the process plugin.
-    * **highmed / highmed-processes / data-sharing** version 0.7.0 or later:  
-        https://github.com/highmed/highmed-processes/releases/tag/v0.7.0  
-    * **highmed / highmed-processes / feasibility** version 0.7.0 or later:  
-        https://github.com/highmed/highmed-processes/releases/tag/v0.7.0  
-    * **highmed / highmed-processes / feasibility-mpc** version 0.7.0 or later:  
-        https://github.com/highmed/highmed-processes/releases/tag/v0.7.0  
-    * **highmed / highmed-processes / local-services** version 0.7.0 or later:  
-        https://github.com/highmed/highmed-processes/releases/tag/v0.7.0  
+        See [NUM-CODEX: Process Deployment and Configuration](https://github.com/num-codex/codex-processes-ap1/wiki/Process-Deployment-and-Configuration-v0.7.0) on how to deploy and configure the process plugin.
     * **highmed / highmed-processes / ping** version 0.7.0 or later:  
-        https://github.com/highmed/highmed-processes/releases/tag/v0.7.0  
-    * **highmed / highmed-processes / update-allow-list** version 0.7.0 or later:  
         https://github.com/highmed/highmed-processes/releases/tag/v0.7.0  
         See [HiGHmed: Process Ping Deployment](https://github.com/highmed/highmed-processes/wiki/Process-Ping-Deployment-v0.7.0) on how to deploy and configure the process plugin.
 
@@ -254,6 +244,3 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
 
 1. Start the DSF BPE Server (with process plugins)  
     Start using: `docker-compose up -d && docker-compose logs -f` (Ctrl-C will close log, but not stop container)
-
-1. Request Allow-List upload from HiGHmed TTP  
-    The Allow-List upload is needed in order to execute HiGHmed and NUM-CODEX processes.

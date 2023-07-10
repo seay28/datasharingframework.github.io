@@ -1,4 +1,4 @@
-##  DSF 0.9.1 Configuration Parameters - FHIR Reverse Proxy
+##  DSF 0.9.2 Configuration Parameters - FHIR Reverse Proxy
 
 
 ## APP_SERVER_IP
