@@ -14,7 +14,5 @@ Data Sharing Framework 1.0.0 is the new major release of the Data Sharing Framew
 
 
 # Developers
-
-## Upgrade process plugins
-
-## Develop a new process plugin
+- [Create a new process plugin](develop/create)
+- [Upgrade from DSF 0.9.x.](develop/upgrade-from-0)

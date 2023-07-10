@@ -1,10 +1,13 @@
 # Install DSF 1.0.0
 
-This setup guide uses pre-build docker images for DSF Version 1.0.0. 
-
+::: tip Work in progress
+We are currently in the process of updating the written documentation on how to install the DSF. Please keep in mind that the installation guide can be incomplete and have some small mistakes.
 ::: warning Member of existing networks
 If you are part of an existing network (e.g. the German MII), please install the appropriate DSF version. For the MII and NUM this is currently [DSF 0.9.x](/oldstable).
 :::
+
+
+In the following installation manual we will show you how you can install your own DSF instance to be part of an already existing DSF network.
 
 ::: tip Unified installation manual
 
@@ -125,7 +128,7 @@ Here is a quick overview of the expected network setup.
     * **services -> proxy -> environment:**
         * **HTTPS_SERVER_NAME_PORT**: __TODO_DSF_FHIR_SERVER_EXTERNAL_FQDN:443__
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `foo.bar.de:443`
-        * For additional environment variables, see [DSF 0.9.2 configuration parameters - FHIR Reverse Proxy](DSF-0.9.2-Configuration-Parameters-FHIR-ReverseProxy)
+        * For additional environment variables, see [DSF configuration parameters - FHIR Reverse Proxy](DSF-0.9.2-Configuration-Parameters-FHIR-ReverseProxy)
     * **services -> app -> environment:**
         * **DEV_DSF_FHIR_SERVER_BASE_URL**: https://_TODO_DSF_FRIR_SERVER_EXTERNAL_FQDN_/fhir  
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `https://foo.bar.de/fhir`
