@@ -1,7 +1,6 @@
 # Install DSF 1.0.0
 
-::: tip Work in progress
-We are currently in the process of updating the written documentation on how to install the DSF. Please keep in mind that the installation guide can be incomplete and have some small mistakes.
+
 ::: warning Member of existing networks
 If you are part of an existing network (e.g. the German MII), please install the appropriate DSF version. For the MII and NUM this is currently [DSF 0.9.x](/oldstable).
 :::
@@ -211,3 +210,7 @@ Here is a quick overview of the expected network setup.
 
 ### On-Boarding
 Please visit the on boarding website of your network for more information.
+
+::: tip Ideas for improvement?
+Have you found an error or is something unclear to you? Then please feel free to write to us at gth-gecko@hs-heilbronn.de. Thank you very much!
+:::

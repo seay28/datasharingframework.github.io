@@ -156,7 +156,7 @@ export default hopeTheme({
     components: {
       // components you want
       components: [
-        "AudioPlayer",
+       /* "AudioPlayer",
         "Badge",
         "BiliBili",
         "CodePen",
@@ -164,7 +164,7 @@ export default hopeTheme({
         "Replit",
         "StackBlitz",
         "VideoPlayer",
-        "YouTube",
+        "YouTube",*/
       ],
     },
     // all features are enabled for demo, only preserve features you need here
