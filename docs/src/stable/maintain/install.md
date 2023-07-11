@@ -175,7 +175,7 @@ Here is a quick overview of the expected network setup.
         ```
               - app_client_certificate_private_key.pem.password
         ...
-              ORG_HIGHMED_DSF_BPE_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
+              DEV_DSF_BPE_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
         ...
           app_client_certificate_private_key.pem.password:
             file: ./secrets/client_certificate_private_key.pem.password
