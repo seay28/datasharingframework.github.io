@@ -99,22 +99,32 @@ Here is a quick overview of the expected network setup.
     * Add the client certificate (Certificate _B_) and the corresponding private-key to **/opt/fhir/secrets/**
         * client_certificate.pem (chmod: 440, chown: fhir:docker)
         * client_certificate_private_key.pem (chmod: 440, chown: fhir:docker)
-    * If the private key is encrypted, add a password file with the password as the only content to **/opt/fhir/secrets/**
-        * client_certificate_private_key.pem.password
+    * If the private key is encrypted, add a password file with the password as the only content to **/opt/fhir/secrets/client_certificate_private_key.pem.password**
     * If the private key is not encrypted, remove the corresponding docker secret lines from the `docker-compose.yml` file
         ```
-              - app_client_certificate_private_key.pem.password
+        L44:      - app_client_certificate_private_key.pem.password
         ...
-              DEV_DSF_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
+        L59:      DEV_DSF_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
         ...
-          app_client_certificate_private_key.pem.password:
-            file: ./secrets/client_certificate_private_key.pem.password
+        L149:  app_client_certificate_private_key.pem.password:
+        L150:    file: ./secrets/client_certificate_private_key.pem.password
         ```
+
+    ::: tip How to chmod / chown
+    For the example *ssl_certificate_file.pem (chmod: 440, chown: fhir:docker)* you must:
+
+    1. Set the file content as requested
+    2. Change the file permissions to 440 (allow read access to the owner of the file and the group the file belongs to, deny write access to everybody and deny read for other users):
+    `chmod 440 /opt/fhir/secrets/ssl_certificate_file.pem`
+    3. Change the owner of the file to the user `fhir` and the group the file belongs to to `docker`:
+    `chown fhir:docker /opt/fhir/secrets/ssl_certificate_file.pem`
+
+    :::
 
 1. Uncomment one of the certificate chain entries in the docker-compose file base on the certificate authority that signed your DSF FHIR server certificate (certificate A). For example use the following two lines if the server certificate is signed by `DFN-Verein Global Issuing CA`
     ```
-    L112:  ssl_certificate_chain_file.pem:
-    L113:    file: ./secrets/ssl_certificate_chain_file_DFN-Verein.pem
+    L114:  ssl_certificate_chain_file.pem:
+    L115:    file: ./secrets/ssl_certificate_chain_file_DFN-Verein.pem
     ```
 
 1. Modify database passwords
@@ -127,7 +137,7 @@ Here is a quick overview of the expected network setup.
 
 1. Modify the docker-compose.yml file and set environment variables to the appropriate values
     * **services -> proxy -> environment:**
-        * **HTTPS_SERVER_NAME_PORT**: __TODO_DSF_FHIR_SERVER_EXTERNAL_FQDN:443__
+        * **HTTPS_SERVER_NAME_PORT**: _TODO_DSF_FHIR_SERVER_EXTERNAL_FQDN:443_
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `foo.bar.de:443`
         * For additional environment variables, see [DSF configuration parameters - FHIR Reverse Proxy](configuration/reverseproxy)
     * **services -> app -> environment:**
@@ -139,7 +149,7 @@ Here is a quick overview of the expected network setup.
             Set the SHA-512 Hash (lowercase hex) of your client certificate (Certificate _B_)  
             Use `certtool --fingerprint --hash=sha512 --infile=client_certificate.pem` to generate the hash.
         * **DEV_DSF_FHIR_SERVER_ROLECONFIG**: You can add other client certificates (e.g. personal DFN PKI S/MIME certificates, e.g. from admins) to your DSF instance.
-            Set the SHA-512 Hash (lowercase hex) of your additional client certificates. The parameter TODO_REPLACE_ME_WITH_THUMBPRINTS can be a single thumbprint or can be expanded to a list (like dsf-role). If you don't have additional thumbprints you want to add, simply remove the *DEV_DSF_FHIR_SERVER_ROLECONFIG* variable from your docker-compose file.
+            Set the SHA-512 Hash (lowercase hex) of your additional client certificates. The parameter TODO_WEBUSER_CLIENT_CERTIFICATE_THUMBPRINT can be a single thumbprint or can be expanded to a list (like dsf-role). If you don't have additional thumbprints you want to add, simply remove the *DEV_DSF_FHIR_SERVER_ROLECONFIG* variable from your docker-compose file.
         * For additional environment variables, see [DSF configuration parameters - FHIR Server](configuration/fhir)
 
 1. Start the DSF FHIR Server  
@@ -168,16 +178,15 @@ Here is a quick overview of the expected network setup.
     * Add the client certificate (Certificate _B_) and the corresponding private-key to **/opt/bpe/secrets/**
         * client_certificate.pem (chmod: 440 chown: bpe:docker)
         * client_certificate_private_key.pem (chmod: 440 chown: bpe:docker)
-    * If the private key is encrypted, add a password file with the password as the only content to **/opt/bpe/secrets/**
-        * client_certificate_private_key.pem.password
+    * If the private key is encrypted, add a password file with the password as the only content to **/opt/bpe/secrets/client_certificate_private_key.pem.password**
     * If the private key is not encrypted, remove the corresponding docker secret lines from the `docker-compose.yml` file
         ```
-              - app_client_certificate_private_key.pem.password
+        L18:      - app_client_certificate_private_key.pem.password
         ...
-              DEV_DSF_BPE_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
+        L40:      DEV_DSF_BPE_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
         ...
-          app_client_certificate_private_key.pem.password:
-            file: ./secrets/client_certificate_private_key.pem.password
+        L89:  app_client_certificate_private_key.pem.password:
+        L90:    file: ./secrets/client_certificate_private_key.pem.password
         ```
 1. Modify database passwords
     * **/opt/bpe/secrets/db_liquibase.password**
@@ -191,7 +200,7 @@ Here is a quick overview of the expected network setup.
     * **services -> app -> environment:**
         * **DEV_DSF_BPE_FHIR_SERVER_ORGANIZATION_IDENTIFIER_VALUE**: _TODO_ORGANIZATION_IDENTIFIER_  
             Set your Organizations DSF identifier, aka the shortest FQDN that resolves the main homepage of the organization, e.g. `hs-heilbronn.de`
-        * **DEV_DSF_BPE_FHIR_SERVER_BASE_URL**: https://__TODO_DSF_FRIR_SERVER_FQDN__/fhir  
+        * **DEV_DSF_BPE_FHIR_SERVER_BASE_URL**: https://_TODO_DSF_FHIR_SERVER_FQDN_/fhir  
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `https://foo.bar.de/fhir`
         * For additional environment variables, see [DSF configuration parameters - BPE Server](configuration/bpe)
 
@@ -205,8 +214,18 @@ Here is a quick overview of the expected network setup.
 
     If you need to debug the TLS connection to your DSF FHIR server use for example:  
     `docker run -it --rm alpine/openssl s_client your-fhir-server.fqdn:443`  
-    The command above should print the server certificate of your DSF FHIR server (certificate A) and end with a message like `[...]tlsv13 alert certificate required[...]`
+    The command above should print the server certificate of your DSF FHIR server (certificate _A_) and end with a message like `[...]tlsv13 alert certificate required[...]`
 
+
+### Logs
+By default, we will log both to the console (collected by docker) and to files in the log directory, so you can use `docker compose logs -f` in `/opt/bpe` and `/opt/fhir` to view informational, warning and error logs. If you encounter any error and the reported information is not detailled enough, you can also check the logs in the `/opt/fhir/log` and `/opt/bpe/log` directories with debugging logs. There, you will also find older log files. If you have any questions and can't resolve them by yourself please always include the latest logs from `/opt/fhir/log` and `/opt/bpe/log` in your support request.
+
+On a successful BPE start, you should see the following entries in your BPE log:
+
+```
+INFO Grizzly(1) - ClientEndpoint.onOpen(37) | Websocket connected {uri: wss://FHIR_SERVER_FQDN/fhir/ws, session-id: SOME_RANDOM_UUID1}
+INFO Grizzly(1) - ClientEndpoint.onOpen(37) | Websocket connected {uri: wss://FHIR_SERVER_FQDN/fhir/ws, session-id: SOME_RANDOM_UUID2}
+```
 
 ### On-Boarding
 Please visit the on boarding website of your network for more information.
