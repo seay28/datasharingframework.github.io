@@ -2,7 +2,7 @@
 title: Exercise 5 - Event Based Gateways and Intermediate Events
 icon: slides
 ---
- [Prerequisites](/stable/guideline/tutorial/prerequisites.md) | [Exercise 1](/stable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/stable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/stable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/stable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/stable/guideline/tutorial/exercise4-exclusiveGateways.md) | Exercise 5
+ [Prerequisites](/oldstable/guideline/tutorial/prerequisites.md) | [Exercise 1](/oldstable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/oldstable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/oldstable/guideline/tutorial/exercise4-exclusiveGateways.md) | Exercise 5
 
  ## Exercise 5 - Event Based Gateways and Intermediate Events
 
@@ -201,4 +201,4 @@ Verify that the ``highmedorg_helloDic`` process either finishes with the arrival
 
 
 ---
- [Prerequisites](/stable/guideline/tutorial/prerequisites.md) | [Exercise 1](/stable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/stable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/stable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/stable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/stable/guideline/tutorial/exercise4-exclusiveGateways.md) | Exercise 5
+ [Prerequisites](/oldstable/guideline/tutorial/prerequisites.md) | [Exercise 1](/oldstable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/oldstable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/oldstable/guideline/tutorial/exercise4-exclusiveGateways.md) | Exercise 5

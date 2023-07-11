@@ -2,7 +2,7 @@
 title: Exercise 1 - Simple Process
 icon: slides
 ---
- [Prerequisites](/stable/guideline/tutorial/prerequisites.md) | Exercise 1 | [Exercise 1.1](/stable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/stable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/stable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/stable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/stable/guideline/tutorial/exercise5-eventBasedGateways.md)
+ [Prerequisites](/oldstable/guideline/tutorial/prerequisites.md) | Exercise 1 | [Exercise 1.1](/oldstable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/oldstable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/oldstable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/oldstable/guideline/tutorial/exercise5-eventBasedGateways.md)
 
 ## Exercise 1 - Simple Process
 
@@ -32,7 +32,7 @@ Business process instances are started or the execution continued via FHIR [Task
 
 FHIR [ActivityDefinition](http://hl7.org/fhir/R4/activitydefinition.html) resources are used to announce what processes can be instantiated at a given DSF instance. These resources are used by the DSF to specify what profile the [Task](http://hl7.org/fhir/R4/task.html) resource needs to conform to and what BPMN message name is used to correlate the appropriate start or intermediate event within the BPMN model. The [ActivityDefinition](http://hl7.org/fhir/R4/activitydefinition.html) also defines what kind of organization can request the instantiation or continuation of a process instance and what kind of organization are allowed to fulfill the request.
 
-We will take a closer look as [ActivityDefinition](http://hl7.org/fhir/R4/activitydefinition.html) resources in [Exercise 3](/stable/guideline/tutorial/exercise3-messageEvents.md) and [Exercise 5](/stable/guideline/tutorial/exercise5-eventBasedGateways.md).
+We will take a closer look as [ActivityDefinition](http://hl7.org/fhir/R4/activitydefinition.html) resources in [Exercise 3](/oldstable/guideline/tutorial/exercise3-messageEvents.md) and [Exercise 5](/oldstable/guideline/tutorial/exercise5-eventBasedGateways.md).
 
 ### Exercise Tasks
 ---
@@ -83,7 +83,7 @@ Verify that the FHIR [Task](http://hl7.org/fhir/R4/task.html) resource could be 
 Verify that the ``highmedorg_helloDic`` process was executed by the DSF BPE server. The BPE server should print a message showing that the process was started, print the log message you added to the ``HelloDic`` class and end with a message showing that the process finished.
 
 
-Continue with [Exercise 1.1](/stable/guideline/tutorial/exercise11-processDebugging.md).
+Continue with [Exercise 1.1](/oldstable/guideline/tutorial/exercise11-processDebugging.md).
 
 ---
-[Prerequisites](/stable/guideline/tutorial/prerequisites.md) | Exercise 1 | [Exercise 1.1](/stable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/stable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/stable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/stable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/stable/guideline/tutorial/exercise5-eventBasedGateways.md)
+[Prerequisites](/oldstable/guideline/tutorial/prerequisites.md) | Exercise 1 | [Exercise 1.1](/oldstable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/oldstable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/oldstable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/oldstable/guideline/tutorial/exercise5-eventBasedGateways.md)

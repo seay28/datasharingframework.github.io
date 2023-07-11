@@ -1,7 +1,9 @@
 ---
-title: Guideline
-icon: guide
+title: DSF 0.9.x
 ---
+
+
+- [Install or Upgrade](guideline/releases/)
 
 ## Overview (v 0.9.2)
 

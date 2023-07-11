@@ -2,7 +2,7 @@
 title: Exercise 2 - Input Parameters
 icon: slides
 ---
- [Prerequisites](/stable/guideline/tutorial/prerequisites.md) | [Exercise 1](/stable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/stable/guideline/tutorial/exercise11-processDebugging.md) | Exercise 2 | [Exercise 3](/stable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/stable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/stable/guideline/tutorial/exercise5-eventBasedGateways.md)
+ [Prerequisites](/oldstable/guideline/tutorial/prerequisites.md) | [Exercise 1](/oldstable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/guideline/tutorial/exercise11-processDebugging.md) | Exercise 2 | [Exercise 3](/oldstable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/oldstable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/oldstable/guideline/tutorial/exercise5-eventBasedGateways.md)
 
 
 ## Exercise 2 - Input Parameters
@@ -48,7 +48,7 @@ The read access rules for [Task](http://hl7.org/fhir/R4/task.html) resources are
 
 It is also possible to restrict read access of FHIR resources to organizations with a specific role in a consortium or a specific identifier, but this is not covered in the tutorial.
 
-The write access rules for [Task](http://hl7.org/fhir/R4/task.html) resources are defined through the [ActivityDefinition](http://hl7.org/fhir/R4/activitydefinition.html) resources belonging to the process. We will take a look at this in [exercise 3](/stable/guideline/tutorial/exercise3-messageEvents.md) and [exercise 5](/stable/guideline/tutorial/exercise5-eventBasedGateways.md).
+The write access rules for [Task](http://hl7.org/fhir/R4/task.html) resources are defined through the [ActivityDefinition](http://hl7.org/fhir/R4/activitydefinition.html) resources belonging to the process. We will take a look at this in [exercise 3](/oldstable/guideline/tutorial/exercise3-messageEvents.md) and [exercise 5](/oldstable/guideline/tutorial/exercise5-eventBasedGateways.md).
 
 
 ### Exercise Tasks
@@ -91,7 +91,7 @@ docker-compose up dic-bpe
 ```
 Verify the DSF BPE server started successfully and deployed the highmedorg_helloDic process.
 
-3. Start the ``highmedorg_helloDic`` process by posting an appropriate FHIR [Task](http://hl7.org/fhir/R4/task.html) resource to the DSF FHIR server of the ``Test_DIC`` organization: Execute the ``main`` method of the ``org.highmed.dsf.process.tutorial.TutorialExampleStarter`` class as in [exercise 1](/stable/guideline/tutorial/exercise1-simpleProcess.md) to create the [Task](http://hl7.org/fhir/R4/task.html) resource needed to start the ``highmedorg_helloDic`` process.
+3. Start the ``highmedorg_helloDic`` process by posting an appropriate FHIR [Task](http://hl7.org/fhir/R4/task.html) resource to the DSF FHIR server of the ``Test_DIC`` organization: Execute the ``main`` method of the ``org.highmed.dsf.process.tutorial.TutorialExampleStarter`` class as in [exercise 1](/oldstable/guideline/tutorial/exercise1-simpleProcess.md) to create the [Task](http://hl7.org/fhir/R4/task.html) resource needed to start the ``highmedorg_helloDic`` process.
 
 Verify that the ``highmedorg_helloDic`` process was executed by the DSF BPE server. The BPE server should:
 - Print a message showing that the process was started.
@@ -103,7 +103,7 @@ Note: Changes to environment variable require recreating the docker container.
 
 Also check that modification to the [Task](http://hl7.org/fhir/R4/task.html) input parameter specified in the ``TutorialExampleStarter`` class, have the appropriate effect on your log message.
 
-Continue with [Exercise 3](/stable/guideline/tutorial/exercise3-messageEvents.md).
+Continue with [Exercise 3](/oldstable/guideline/tutorial/exercise3-messageEvents.md).
 
 ---
- [Prerequisites](/stable/guideline/tutorial/prerequisites.md) | [Exercise 1](/stable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/stable/guideline/tutorial/exercise11-processDebugging.md) | Exercise 2 | [Exercise 3](/stable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/stable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/stable/guideline/tutorial/exercise5-eventBasedGateways.md)
+ [Prerequisites](/oldstable/guideline/tutorial/prerequisites.md) | [Exercise 1](/oldstable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/guideline/tutorial/exercise11-processDebugging.md) | Exercise 2 | [Exercise 3](/oldstable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/oldstable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/oldstable/guideline/tutorial/exercise5-eventBasedGateways.md)

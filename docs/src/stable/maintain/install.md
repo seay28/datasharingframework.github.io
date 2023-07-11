@@ -28,6 +28,8 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o 
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
 ```
 
 The current version of docker compose is installed with the current docker version.
@@ -83,8 +85,8 @@ Here is a quick overview of the expected network setup.
     Download and unpack the prepared DSF FHIR server config files and folder structure:
     ```
     cd /opt
-    wget TODO
-    sudo tar --same-owner -zxvf dsf__fhir_1_0_0.tar.gz
+    wget https://dsf.dev/download/dsf_fhir_1_0_0.tar.gz
+    sudo tar --same-owner -zxvf dsf_fhir_1_0_0.tar.gz
     ```
     _The `tar` command will unpack the config files at `/opt/fhir` assuming you changed into the `/opt` directory._
 
@@ -102,18 +104,18 @@ Here is a quick overview of the expected network setup.
         * client_certificate_private_key.pem.password
     * If the private key is not encrypted, remove the corresponding docker secret lines from the `docker-compose.yml` file
         ```
-        L39:      - app_client_certificate_private_key.pem.password
+              - app_client_certificate_private_key.pem.password
         ...
-        L56:      DEV_DSF_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
+              DEV_DSF_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
         ...
-        L137:  app_client_certificate_private_key.pem.password:
-        L138:    file: ./secrets/client_certificate_private_key.pem.password
+          app_client_certificate_private_key.pem.password:
+            file: ./secrets/client_certificate_private_key.pem.password
         ```
 
 1. Uncomment one of the certificate chain entries in the docker-compose file base on the certificate authority that signed your DSF FHIR server certificate (certificate A). For example use the following two lines if the server certificate is signed by `DFN-Verein Global Issuing CA`
     ```
-    L102:  ssl_certificate_chain_file.pem:
-    L103:    file: ./secrets/ssl_certificate_chain_file_DFN-Verein.pem
+    L112:  ssl_certificate_chain_file.pem:
+    L113:    file: ./secrets/ssl_certificate_chain_file_DFN-Verein.pem
     ```
 
 1. Modify database passwords
@@ -130,7 +132,7 @@ Here is a quick overview of the expected network setup.
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `foo.bar.de:443`
         * For additional environment variables, see [DSF configuration parameters - FHIR Reverse Proxy](configuration/reverseproxy)
     * **services -> app -> environment:**
-        * **DEV_DSF_FHIR_SERVER_BASE_URL**: https://_TODO_DSF_FRIR_SERVER_EXTERNAL_FQDN_/fhir  
+        * **DEV_DSF_FHIR_SERVER_BASE_URL**: https://_TODO_DSF_FHIR_SERVER_EXTERNAL_FQDN_/fhir  
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `https://foo.bar.de/fhir`
         * **DEV_DSF_FHIR_SERVER_ORGANIZATION_IDENTIFIER_VALUE**: _TODO_ORGANIZATION_IDENTIFIER_  
             Set your Organizations DSF identifier, aka the shortest FQDN that resolves to the main homepage of the organization, e.g. `hs-heilbronn.de`
@@ -155,7 +157,7 @@ Here is a quick overview of the expected network setup.
     Download and extract prepared DSF BPE server config files and folder structure:  
     ```
     cd /opt
-    wget TODO
+    wget https://dsf.dev/download/dsf_bpe_1_0_0.tar.gz
     sudo tar --same-owner -zxvf dsf_bpe_1_0_0.tar.gz
     ```
     _The `tar` command will unpack the config files at `/opt/bpe` assuming you changed into the `/opt` directory._
@@ -171,12 +173,12 @@ Here is a quick overview of the expected network setup.
         * client_certificate_private_key.pem.password
     * If the private key is not encrypted, remove the corresponding docker secret lines from the `docker-compose.yml` file
         ```
-        L13:      - app_client_certificate_private_key.pem.password
+              - app_client_certificate_private_key.pem.password
         ...
-        L38:      ORG_HIGHMED_DSF_BPE_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
+              ORG_HIGHMED_DSF_BPE_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
         ...
-        L92:  app_client_certificate_private_key.pem.password:
-        L93:    file: ./secrets/client_certificate_private_key.pem.password
+          app_client_certificate_private_key.pem.password:
+            file: ./secrets/client_certificate_private_key.pem.password
         ```
 1. Modify database passwords
     * **/opt/bpe/secrets/db_liquibase.password**

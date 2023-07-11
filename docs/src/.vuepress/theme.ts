@@ -212,11 +212,11 @@ export default hopeTheme({
       vuePlayground: true,
     },
    
-     pwa: {
+     /*pwa: {
        favicon: "/assets/icon/favicon.ico",
        cacheHTML: false,
        cachePic: false,
        appendBase: true,
-     },
+     },*/
   },
 });

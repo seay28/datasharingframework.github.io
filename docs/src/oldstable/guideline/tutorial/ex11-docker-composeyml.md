@@ -2,7 +2,7 @@
 title: Exercise 1.1 - Process Debugging
 icon: slides
 ---
- [Prerequisites](/stable/guideline/tutorial/prerequisites.md) | [Exercise 1](/stable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/stable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/stable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/stable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/stable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/stable/guideline/tutorial/exercise5-eventBasedGateways.md)
+ [Prerequisites](/oldstable/guideline/tutorial/prerequisites.md) | [Exercise 1](/oldstable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/oldstable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/oldstable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/oldstable/guideline/tutorial/exercise5-eventBasedGateways.md)
 
 ### docker-compose.yml
 ```yml
@@ -466,4 +466,4 @@ volumes:
     name: dsf-process-tutorial-db
 ```
 
- [Prerequisites](/stable/guideline/tutorial/prerequisites.md) | [Exercise 1](/stable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/stable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/stable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/stable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/stable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/stable/guideline/tutorial/exercise5-eventBasedGateways.md)
+ [Prerequisites](/oldstable/guideline/tutorial/prerequisites.md) | [Exercise 1](/oldstable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/oldstable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/oldstable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/oldstable/guideline/tutorial/exercise5-eventBasedGateways.md)

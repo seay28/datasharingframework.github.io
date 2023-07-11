@@ -86,4 +86,4 @@ To simplify modeling of BPMN processes, we recommend a graphical editor, e.g. th
 The minimum hardware requirements to run all simulated organizations as part of the Docker test-setup is 16 GB of RAM.
 
 ---
- Prerequisites | [Exercise 1](/stable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/stable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/stable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/stable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/stable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/stable/guideline/tutorial/exercise5-eventBasedGateways.md)
+ Prerequisites | [Exercise 1](/oldstable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/oldstable/guideline/tutorial/exercise3-messageEvents.md) | [Exercise 4](/oldstable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/oldstable/guideline/tutorial/exercise5-eventBasedGateways.md)

@@ -1,7 +1,7 @@
 # Upgrading from 0.9.1
 Upgrading the DSF from 0.9.1 to 0.9.2 involves modifying the docker-compose.yml files and recreating the containers.
 
-**If you are upgrading from 0.9.0 please see the [Upgrade from 0.9.0 to 0.9.1 guide](DSF-Upgrade-From-0.9.0-to-0.9.1) first.**
+**If you are upgrading from 0.9.0 please see the [Upgrade from 0.9.0 to 0.9.1 guide](upgradeFrom90) first.**
 
 **As the upgrade from 0.9.0 to 0.9.1 does not require any changes except the change of the version numbers, you can directly follow the following instructions.**
 
