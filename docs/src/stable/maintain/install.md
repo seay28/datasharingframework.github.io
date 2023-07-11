@@ -2,7 +2,7 @@
 
 
 ::: warning Member of existing networks
-If you are part of an existing network (e.g. the German MII), please install the appropriate DSF version. For the MII and NUM this is currently [DSF 0.9.x](/oldstable).
+If you are part of an existing network (e.g. the German MII), please install the appropriate DSF version. For the production environment of MII and NUM this is currently [DSF 0.9.x](/oldstable).
 :::
 
 
@@ -18,7 +18,7 @@ The installation instructions of DSF 0.9.x for different application use cases (
 * DSF FHIR VM: min. 4 GB RAM, 4 vCPU, 20 GB HDD
 * DSF BPE VM: min. 4 GB RAM, 4 vCPU, 20 GB HDD
 ### Docker / Docker-Compose
-Both VMs need latest docker and docker compose. For the latest install guide see https://docs.docker.com/engine/install. 
+Both VMs need latest docker (>= 24.0.0) and docker compose. For the latest install guide see https://docs.docker.com/engine/install. 
 
 ```
 sudo apt-get update
@@ -35,8 +35,8 @@ The current version of docker compose is installed with the current docker versi
 
 ### Client/Server Certificates
 Two Certificates from the GÉANT TCS (via DFN e.V.), D-Trust (via TMF e.V.) or DFN-PKI Global G2 (legacy, no new certificates are issued) are needed:
-* Certificate A: Server Certificate (DFN PKI Profile: 'Web Server', Common-Name: Your external DSF FHIR Servers FQDN)
-* Certificate B: Client Certificate (DFN PKI Profile: '802.1X Client', Common-Name: Your DSF BPE Servers FQDN)
+* Certificate _A_: Server Certificate  - `TLS Web Server Authentication` (DFN PKI Profile: 'Web Server', Common-Name: Your external DSF FHIR Servers FQDN)
+* Certificate _B_: Client Certificate  - `TLS Web Client Authentication` (DFN PKI Profile: '802.1X Client', Common-Name: Your DSF BPE Servers FQDN)
 
 If you use GÉANT TCS certificates, then they are configured by default with the necessary *X509v3 Extended Key Usage*s: `TLS Web Server Authentication, TLS Web Client Authentication`.
 
@@ -62,12 +62,12 @@ Here is a quick overview of the expected network setup.
 
 ## Setup
 ### Prepare Certificates
-1. Server Certificate (certificate A)  
+1. Server Certificate (certificate _A_)  
     _This certificate will be used as the DSF FHIR servers server certificate (ssl_certificate_file.pem, ssl_certificate_key_file.pem)_
     * Store PEM encoded certificate as `ssl_certificate_file.pem`
     * Store unencrypted, PEM encoded private-key as `ssl_certificate_key_file.pem`
 
-1. Client Certificate (certificate B)  
+1. Client Certificate (Certificate _B_)  
     _This certificate will be used as the DSF BPE servers client certificate (client_certificate.pem, client_certificate_private_key.pem) as well as the DSF FHIR servers client certificate (client_certificate.pem, client_certificate_private_key.pem)_
     * Store PEM encoded certificate as `client_certificate.pem`
     * Store encrypted or not encrypted, PEM encoded private-key as `client_certificate_private_key.pem`
@@ -93,10 +93,10 @@ Here is a quick overview of the expected network setup.
    * `/opt/fhir/log`
 
 1. Add certificates and keys
-    * Add the server certificate (certificate A) and the corresponding private-key to **/opt/fhir/secrets/**
+    * Add the server certificate (certificate _A_) and the corresponding private-key to **/opt/fhir/secrets/**
         * ssl_certificate_file.pem (chmod: 440, chown: fhir:docker)
         * ssl_certificate_key_file.pem (chmod: 440, chown: fhir:docker)
-    * Add the client certificate (certificate B) and the corresponding private-key to **/opt/fhir/secrets/**
+    * Add the client certificate (Certificate _B_) and the corresponding private-key to **/opt/fhir/secrets/**
         * client_certificate.pem (chmod: 440, chown: fhir:docker)
         * client_certificate_private_key.pem (chmod: 440, chown: fhir:docker)
     * If the private key is encrypted, add a password file with the password as the only content to **/opt/fhir/secrets/**
@@ -136,7 +136,7 @@ Here is a quick overview of the expected network setup.
         * **DEV_DSF_FHIR_SERVER_ORGANIZATION_IDENTIFIER_VALUE**: _TODO_ORGANIZATION_IDENTIFIER_  
             Set your Organizations DSF identifier, aka the shortest FQDN that resolves to the main homepage of the organization, e.g. `hs-heilbronn.de`
         * **DEV_DSF_FHIR_SERVER_ORGANIZATION_THUMBPRINT**: _TODO_CLIENT_CERTIFICATE_THUMBPRINT_  
-            Set the SHA-512 Hash (lowercase hex) of your client certificate (certificate B)  
+            Set the SHA-512 Hash (lowercase hex) of your client certificate (Certificate _B_)  
             Use `certtool --fingerprint --hash=sha512 --infile=client_certificate.pem` to generate the hash.
         * **DEV_DSF_FHIR_SERVER_ROLECONFIG**: You can add other client certificates (e.g. personal DFN PKI S/MIME certificates, e.g. from admins) to your DSF instance.
             Set the SHA-512 Hash (lowercase hex) of your additional client certificates. The parameter TODO_REPLACE_ME_WITH_THUMBPRINTS can be a single thumbprint or can be expanded to a list (like dsf-role). If you don't have additional thumbprints you want to add, simply remove the *DEV_DSF_FHIR_SERVER_ROLECONFIG* variable from your docker-compose file.
@@ -165,7 +165,7 @@ Here is a quick overview of the expected network setup.
    * `/opt/bpe/log`
 
 1. Add certificates and keys
-    * Add the client certificate (certificate B) and the corresponding private-key to **/opt/bpe/secrets/**
+    * Add the client certificate (Certificate _B_) and the corresponding private-key to **/opt/bpe/secrets/**
         * client_certificate.pem (chmod: 440 chown: bpe:docker)
         * client_certificate_private_key.pem (chmod: 440 chown: bpe:docker)
     * If the private key is encrypted, add a password file with the password as the only content to **/opt/bpe/secrets/**
