@@ -42,7 +42,7 @@ If you use GÉANT TCS certificates, then they are configured by default with the
 
 
 ### Network setup / Network access
-For additional information on the network setup see [Network-and-Architecture](Network-and-Architecture).
+
 * The DSF FHIR server needs to be accessible via the internet and able to access the internet without TLS interception.
 * The BPE FHIR server should only be accessible by the internal network and able to access your DSF FHIR server via its external FQDN and the internet without TLS interception.
 
