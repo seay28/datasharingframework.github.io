@@ -7,7 +7,10 @@ export default hopeTheme({
     url: "/about/learnmore/team.html", // ToDo
   },
 
-  iconAssets: "iconfont",
+  iconAssets: "/assets/font/font.css",
+  //iconAssets: "iconfont",
+  iconPrefix: "iconfont icon-",
+
 
   logo: "/photos/home/logo-small.svg",
   darkmode: "toggle",
