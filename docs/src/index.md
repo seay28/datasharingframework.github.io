@@ -7,15 +7,6 @@ heroText: Data Sharing Framework
 tagline: A performant, secure, and innovative framework that enables biomedical researchers to extract value from routine data. 
 # A performant, secure and innovative framework that enables healthcare data exchange across organizational boundaries. 
 
-#actions:
-#  - text: Get Started 💡
-#    link: /demo/
-#    type: primary
-
-#  - text: Learn More
-#    link: /about/
-#![Sponsored by the Federal Ministry of Education and Research ](/bmbf.svg)
-
 features:
   - title: Get Started 
     icon: config
@@ -44,17 +35,6 @@ We are very pleased to have won the Rolf Hansen Memorial Award at [EFMI MIE 2023
 
 
 ## Upcoming Events
-
-::: info Visit us at MEDINFO 2023 in Sydney  
-::: center
-Visit our Presentation at JULY 11 - from 2:30pm to 2:40pm:
-[Interoperability is a process: The Data Sharing Framework](/photos/home/interoperability_is_a_process.pdf)
-
- <a href="https://medinfo2023.org/" target="_blank"><img src="/photos/home/medinfo.png" ></a>
-
-[Register here](https://medinfo2023.org/register/s)
-:::
-
 ::: info Visit us at GMDS 2023 in Heilbronn 
 ::: left
 Visit one of our Tutorials at September 17 - from 9am to 6pm:
