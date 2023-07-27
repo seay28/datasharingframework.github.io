@@ -1,6 +1,6 @@
 ---
 title: GMDS2022 - Process Development
-icon: globe
+icon: code
 ---
 
 Redirect to [this webpage](/oldstable/guideline/tutorial/).

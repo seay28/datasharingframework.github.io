@@ -8,20 +8,26 @@ tagline: A performant, secure, and innovative framework that enables biomedical 
 # A performant, secure and innovative framework that enables healthcare data exchange across organizational boundaries. 
 
 features:
+  - title: Introduction
+    icon: info
+    details: Introduction to the DSF and informations about use cases. 
+    link: /intro/
+
   - title: Get Started 
-    icon: config
-    details: Get technical insights about the DSF. Do Tutorials. Start Coding 
+    icon: launch
+    details:  Get technical insights and install the DSF | Develop Process Plugins.
     link: /stable/
 
   - title: About Us
     icon: creative
-    details: Information about the Team behind the DSF and more.
+    details: Contact, partners, the team behind the DSF and more... Join our community!
     link: /about/
-
+  
   - title: GitHub
     icon: github
     details: Take a look at the open-source reference implementation.
     link: https://github.com/datasharingframework/dsf
+
 
 ---
 ---

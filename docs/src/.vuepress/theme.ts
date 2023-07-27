@@ -27,15 +27,27 @@ export default hopeTheme({
   {
       text: "Docs",
       icon: "info",
+      prefix: "/intro/",
+      children: [
+        {
+          text: "Introduction",
+          icon: "info",
+          children: ["introduction", "publications", "tutorials/"],
+        }
+      ]
+  },
+  {
+      text: "Get Started",
+      icon: "launch",
       prefix: "/stable/",
       children: [
         {
           text: "Guideline v1.0.0 (stable)",
           icon: "info",
-          children: ["introduction", "maintain/install", "maintain/upgrade-from-0", "develop/create"],
+          children: ["index", "maintain/install", "maintain/upgrade-from-0", "develop/create"],
         }
       ]
-    },
+  },
   {
     text: "About",
     icon: "creative",
@@ -53,13 +65,7 @@ export default hopeTheme({
     text: "Versions",
     icon: "note",
     // children:["/v1/"],
-    children: [{ text: "V1.0.0 (stable)", link: "/stable/" }, { text: "V0.9.2 (oldstable)", link: "/oldstable/" }],
-  },
-  {
-    text: "Tutorials",
-    icon: 'guide',
-    prefix: '/tutorials/',
-    children: [ {text: "On-Site: MIE 2023", link: "MIE2023.md"}, {text: "Online: Recorded talks", link: "Talks.md"}, {text: "Online: GMDS 2022: Process development", link: "GMDS2022-dev.md"} ]
+    children: [{ text: "V1.0.0 (stable)", link: "/stable/" }, { text: "V0.9.2 (oldstable)", link: "https://dsf.dev/oldstable/"}],
   },
   {
     text: "",
@@ -70,13 +76,27 @@ export default hopeTheme({
 
 
  sidebar: {
-  "/stable/": [
-    "",
+  "/": [
     {
-      text: "Introduction",
+      text: "Home",
       icon: "home",
-      link: "introduction",
+      link: "/",
     },
+    {
+      text: "Docs",
+      icon: "info",
+      prefix: "intro/",
+      link: "intro/",
+      children: ["introduction.md", "publications", "tutorials/"], 
+    }
+  ],
+  "/stable/": [
+    {
+      text: "Home",
+      icon: "home",
+      link: "/",
+    },
+    "",
     {
       text: "Maintain a DSF instance",
       icon: "",
@@ -99,49 +119,34 @@ export default hopeTheme({
       link: "develop/",
       children: ["create", "upgrade-from-0" ],
     },
-   /* {
-      text: "About",
-      icon: "creative",
-      prefix: "about/",
-      link: "about/",
-      children: ["learnmore/FAQ.md", "learnmore/Contributors.md", "learnmore/Partners.md", "learnmore/Public.md", "learnmore/Projects.md", "learnmore/Community.md"], 
-    },*/
   ],
-  "/v1/":  [
-    "",
+  "/about/":  [
     {
       text: "Home",
       icon: "home",
       link: "/",
     },
     {
-      text: "",
-      icon: "",
+      text: "About",
+      icon: "creative",
+      prefix: "learnmore/",
+      link: "learnmore/",
+      children: ["contact", "team", "partners", "public", "projects", "community"], 
+    },
+  ],
+  "/oldstable/":  [
+    {
+      text: "Home",
+      icon: "home",
+      link: "/",
+    },
+    {
+      text: "Version 0.9.x",
+      icon: "guide",
       prefix: "guideline/",
       link: "guideline/",
-      children:["introduction.md", "generalinformation/", "code/", "build/", "releases/", "publications.md", "tutorial/"], 
+      children: ["generalinformation/", "code/", "build/", "releases/", "tutorial/"], 
     },
-   /* {
-      text: "About",
-      icon: "creative",
-      prefix: "about/",
-      link: "about/",
-      children: ["learnmore/FAQ.md", "learnmore/Contributors.md", "learnmore/Partners.md", "learnmore/Public.md", "learnmore/Projects.md", "learnmore/Community.md"], 
-    },*/
-  ],
-  "/": [
-    {
-      text: "Home",
-      icon: "home",
-      link: "/",
-    },
-    {
-      text: "About",
-      icon: "creative",
-      prefix: "about/",
-      link: "about/",
-      children: ["learnmore/contact.md", "learnmore/team.md", "learnmore/partners.md", "learnmore/public.md", "learnmore/projects.md", "learnmore/community.md"], 
-    }
   ]
  },
 
