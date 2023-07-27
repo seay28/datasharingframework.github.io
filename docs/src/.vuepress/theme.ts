@@ -32,7 +32,7 @@ export default hopeTheme({
         {
           text: "Introduction",
           icon: "info",
-          children: ["introduction", "publications", "tutorials/"],
+          children: ["", "use-cases/", "publications", "tutorials/"],
         }
       ]
   },
@@ -87,7 +87,24 @@ export default hopeTheme({
       icon: "info",
       prefix: "intro/",
       link: "intro/",
-      children: ["introduction.md", "publications", "tutorials/"], 
+      children: ["info/introduction.md", "info/basics", "info/architecture", "info/security", "info/allowList", "info/process-plugins"], 
+    },
+    {
+      text: "Use-Cases",
+      icon: "any",
+      prefix: "intro/use-cases/",
+      link: "intro/use-cases/",
+      children: ["feasibility"], 
+    },
+    {
+      text: "Publications",
+      icon: "blog",
+      link: "/intro/publications",
+    },
+    {
+      text: "Tutorials",
+      icon: "edit",
+      link: "/intro/tutorials",
     }
   ],
   "/stable/": [

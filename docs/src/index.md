@@ -34,7 +34,10 @@ features:
 # The Data Sharing Framework
 The Data Sharing Framework implements a distributed process engine based on the BPMN 2.0 and FHIR R4 standards. The DSF is used to support biomedical research with routine data. Every participating site runs a FHIR endpoint (dsf-fhir) accessible by other sites and a business process engine (dsf-bpe) in the local secured network. Authentication between sites is handled using X.509 client/server certificates. The process engines execute BPMN processes in order to coordinate local and remote steps necessary to enable cross-site data sharing and feasibility analyses. This includes access to local data repositories, use-and-access-committee decision support, consent filtering, and privacy preserving record-linkage and pseudonymization.
 
-![DSF Architecture](/photos/guideline/introduction/dsf_architecture.svg)
+![](/photos/guideline/introduction/dsf_architecture.svg#light)
+
+
+![DSF Architecture](/photos/guideline/introduction/architecture-dark.svg#dark)
 
 ## Rolf Hansen Memorial Award 2023 goes to [Hauke Hund](/about/learnmore/team/)
 We are very pleased to have won the Rolf Hansen Memorial Award at [EFMI MIE 2023](https://www.mie2023.org/) in Gothenburg. The Rolf Hansen Memorial Award is presented annually by the European Federation for Medical Informatics (EFMI) for an outstanding paper as well as for an excellent presentation. It is named after Rolf Hansen (1931-1993), a well-known Norwegian medical informatician and former president of EFMI. Hauke Hund presented his Paper: *No Transfer Without Validation: A Data Sharing Framework Use Case* in May at the EFMI MIE. [doi:10.3233/SHTI230066 ](https://ebooks.iospress.nl/doi/10.3233/SHTI230066) 

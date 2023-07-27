@@ -7,7 +7,7 @@ DSF's community is growing and we welcome anyone who would like to join! :rocket
 
 ### Stay up to Date
 - [GitHub](https://github.com/highmed/highmed-dsf)
-- Follow our [contributors](/about/learnmore/contributors.md) on GitHub
+- Follow our [contributors](/about/learnmore/team.md) on GitHub
 - [Zulip Chat - MII](https://mii.zulipchat.com) (If you would like access, please write us an <a href="mailto:dsf-gecko@hs-heilbronn.de">E-MAIL</a>)
 
 ### Contribute Code

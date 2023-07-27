@@ -6,7 +6,7 @@ icon: creative
 ## Overview
 
 - [Contact](learnmore/contact.md)
-- [Contributors](learnmore/contributors.md)
+- [Contributors](learnmore/team.md)
 - [Partners](learnmore/partners.md)
 - [Public Funding](learnmore/public.md)
 - [Projects](learnmore/projects.md)

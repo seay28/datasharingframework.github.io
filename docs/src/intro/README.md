@@ -1,13 +1,13 @@
 ---
-title: Introduction
+title: Documentation
+icon: info
 ---
-## Overview (v 0.9.2)
+## Overview 
 
 
-- [Introduction](introduction.md)
-- 
--
--
--
--
--
+- [Introduction](info/introduction.md)
+- [Basics & Standards](info/basics.md)
+- [Architecture](info/architecture.md)
+- [Security](info/security.md)
+- [Allow Lists](info/allowList.md)
+- [Process Plugins](info/process-plugins.md)

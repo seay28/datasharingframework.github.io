@@ -13,5 +13,4 @@ Data Sharing Framework 0.9.x is an old version of the Data Sharing Framework. Cl
 - [Code](code/)
 - [Build and Test](build/)
 - [Releases and Deployment](releases/)
-- [Publications and Talks](publications.md)
 - [DSF Process Plugin Tutorial](tutorial/)
