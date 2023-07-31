@@ -13,7 +13,7 @@ The following architecture diagram also shows three organisations, each of which
 
 ![DSF Architecture](/photos/info/architecture/architecture-dark.svg#dark)
 
-## DSF FHIR Server
+## DSF FHIR Server :mailbox:
 As mentioned above, the externally accessible DSF FHIR server acts as a mailbox for communication. This means that an organisation creates a task resource in its DSF and drops the task resource (letters) into the mailbox of another organisation, requesting that something happen. Task resources have been explained in more detail in the section [Basics and Standards](basics). 
 It is important to understand that the DSF FHIR server is not used for persisting medical data. 
 
