@@ -94,7 +94,7 @@ export default hopeTheme({
       icon: "any",
       prefix: "intro/use-cases/",
       link: "intro/use-cases/",
-      children: ["feasibility"], 
+      children: ["ping-pong", "feasibility"], 
     },
     {
       text: "Publications",
