@@ -34,4 +34,4 @@ In the following picture you can see parts of BPMN. These *Message Events* enabl
 
 The *ActivityDefinition* is needed to publish what can be done in an instance. That means the *ActivityDefinition* contains the process description with the authorisation who is allowed to send a message. 
 
-![BPMN *MessageEvents*](/photos/info/basics/bpmn2.png =600x700)
+![BPMN *MessageEvents*](/photos/info/basics/bpmn2.png =250x400)

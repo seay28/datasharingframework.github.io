@@ -11,7 +11,4 @@ icon: info
     - [Security](info/security.md)
     - [Allow Lists](info/allowList.md)
     - [Process Plugins](info/process-plugins.md)
-- [Use-Cases](use-cases/)
-    - [Feasibility](use-cases/feasibility.md)
-- [Publications](publications)
-- [Tutorials](tutorials/)
+

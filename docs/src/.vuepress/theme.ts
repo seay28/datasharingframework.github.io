@@ -57,7 +57,7 @@ export default hopeTheme({
         text: "Learn More",
         icon: "creative",
         prefix: "learnmore/", 
-        children: ["contact", "team", "partners", "public", "projects", "community"],
+        children: ["contact", "team", "partners", "public", "projects"],
       },
     ],
   },
@@ -148,7 +148,7 @@ export default hopeTheme({
       icon: "creative",
       prefix: "learnmore/",
       link: "learnmore/",
-      children: ["contact", "team", "partners", "public", "projects", "community"], 
+      children: ["contact", "team", "partners", "public", "projects"], 
     },
   ],
   "/oldstable/":  [

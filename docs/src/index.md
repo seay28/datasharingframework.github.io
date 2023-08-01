@@ -57,9 +57,7 @@ Visit one of our Tutorials at September 17 - from 9am to 6pm:
 [Register here](https://www.gmds2023.de/registrierung/)
 :::
 
-### Visit [Projects](/about/learnmore/projects/) to learn how the DSF is used in production.
-
-
+#### Feel free to contact us via <a href="mailto:dsf-gecko@hs-heilbronn.de">dsf-gecko@hs-heilbronn.de</a> and we will take care of your request as soon as possible.
 
 <div class="image-container">
     <img src="/photos/learnmore/funding/bmbf-mii.png">
