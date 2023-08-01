@@ -116,12 +116,12 @@ export default hopeTheme({
     "",
     {
       text: "Maintain a DSF instance",
-      icon: "",
+      icon: "tool",
       prefix: "maintain/",
       link: "maintain/",
       children: ["install", "upgrade-from-0", {
         text: "Configuration parameters",
-        icon: "",
+        icon: "config",
         prefix: "configuration/",
         link: "configuration/",
         children: ["common", "fhir", "bpe", "reverseproxy"]
@@ -131,7 +131,7 @@ export default hopeTheme({
     },
     {
       text: "Develop process plugins",
-      icon: "",
+      icon: "plugin",
       prefix: "develop/",
       link: "develop/",
       children: ["create", "upgrade-from-0" ],
