@@ -8,7 +8,7 @@ It is important to understand that the DSF is *only* the silent helper in the ba
 However, it is possible to deploy several process plugins together, even the same process plugin in different versions. A process plugin is basically an archive of BPMN 2.0 models, FHIR R4 resources and Java code. This process plugin is deployed as a Jar file on the BPE.
 
 ## BPMN: Example
-BPMN models can be created with [Camunda Modeler](https://camunda.com/de) or with [SAP Signavio](https://www.signavio.com/de/prozessmodellierung-mit-bpmn-2-0/). The following model is a BPMN model consisting of two lanes: These are the square boxes, i.e. Organization A and B. This process is intended only as an example to illustrate the formalities. We will look at realistic processes in the next [chapter](/intro/use-cases).
+BPMN models can be created with [Camunda Modeler](https://camunda.com/de). The following model is a BPMN model consisting of two lanes: These are the square boxes, i.e. Organization A and B. This process is intended only as an example to illustrate the formalities. We will look at realistic processes in the next [chapter](/intro/use-cases).
 
 ![BPMN: Example](/photos/info/plugins/bpmn-example.png)
 
