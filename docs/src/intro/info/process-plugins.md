@@ -4,7 +4,7 @@ icon: plugin
 ---
 
 ## Overview
-It is important to understand that the DSF is *only* the silent helper in the background: a middleware. The DSF is use case agnostic. This means that process plugins make it possible to execute almost any use case you can imagine with the DSF. Process plugins provide individual functionality. For example, it is possible to use the [Ping Pong](TODO) process to test bilateral communication or the [Feasibility process](/intro/use-cases/feasibility) to perform feasibility queries for research.
+It is important to understand that the DSF is *only* the silent helper in the background: a middleware. The DSF is use case agnostic. This means that process plugins make it possible to execute almost any use case you can imagine with the DSF. Process plugins provide individual functionality. For example, it is possible to use the Ping Pong process to test bilateral communication or the [Feasibility process](/intro/use-cases/feasibility) to perform feasibility queries for research.
 However, it is possible to deploy several process plugins together, even the same process plugin in different versions. A process plugin is basically an archive of BPMN 2.0 models, FHIR R4 resources and Java code. This process plugin is deployed as a Jar file on the BPE.
 
 ## BPMN: Example
