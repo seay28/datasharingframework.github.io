@@ -1,5 +1,7 @@
-# Install DSF 1.0.0
-
+---
+title: Install DSF 1.0.0
+icon: install
+---
 
 ::: warning Member of existing networks
 If you are part of an existing network (e.g. the German MII), please install the appropriate DSF version. For the production environment of MII and NUM this is currently [DSF 0.9.x](/oldstable).
