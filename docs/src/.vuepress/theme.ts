@@ -57,7 +57,7 @@ export default hopeTheme({
         text: "Learn More",
         icon: "creative",
         prefix: "learnmore/", 
-        children: ["contact", "team", "partners", "public", "projects"],
+        children: ["contact", "team", "partners", "public"],
       },
     ],
   },
@@ -94,7 +94,7 @@ export default hopeTheme({
       icon: "any",
       prefix: "intro/use-cases/",
       link: "intro/use-cases/",
-      children: ["ping-pong", "feasibility"], 
+      children: ["feasibility", "NUM"], 
     },
     {
       text: "Publications",
@@ -148,7 +148,7 @@ export default hopeTheme({
       icon: "creative",
       prefix: "learnmore/",
       link: "learnmore/",
-      children: ["contact", "team", "partners", "public", "projects"], 
+      children: ["contact", "team", "partners", "public"], 
     },
   ],
   "/oldstable/":  [

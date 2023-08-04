@@ -5,7 +5,6 @@ icon: call
 ## :envelope: <a href="mailto:dsf-gecko@hs-heilbronn.de"> E-MAIL</a>
 Feel free to contact us via <a href="mailto:dsf-gecko@hs-heilbronn.de"> E-Mail (dsf-gecko@hs-heilbronn.de)</a> and we will take care of your request as soon as possible.
 
-
 ## :busts_in_silhouette: COMMUNITY
 DSF's community is growing and we welcome anyone who would like to join! :rocket:
 
