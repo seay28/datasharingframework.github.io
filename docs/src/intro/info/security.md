@@ -15,6 +15,8 @@ Authentication of organizations within the DSF is handled by the use of X.509 cl
 
 A webserver certificate is needed to run the FHIR endpoint and a 802.1X client certificate is used to authenticate against other organizations endpoints and as a server certificate for the business process engine. For available certificate profiles see [DFN-PKI-Zertifikatprofile_Global.pdf](https://www.pki.dfn.de/fileadmin/PKI/anleitungen/DFN-PKI-Zertifikatprofile_Global.pdf)
 
+More information about client and server certificates can be found [here](/stable/maintain/install#client-server-certificates).
+
 ### Certificate Requests :lock:
 #### FHIR Endpoint
 Server certificates are used to authenticate the FHIR endpoint on the local network and to other organisations
@@ -37,5 +39,4 @@ In addition, client certificates are used to authenticate the Business Process E
 * Common name: FQDN of the server used while accessing from the local network (local FQDN)
 
 More information: [Parameters BPE Server](/stable/maintain/configuration/bpe)
-
 

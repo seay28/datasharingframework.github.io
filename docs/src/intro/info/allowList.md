@@ -11,11 +11,7 @@ A Allow List consists of the organisation-, endpoint- andorganisationAffiliation
 
 ![Architecture](/photos/info/allowList/allowList-architecture.png)
 
-## Handling
-The parent organisation will provide their participants „their allow list“:
-- On change (e.g. new client certificate / new organisation)
-- Organization will tell the change the parent organisation
-- Parent organization will review the change request & update the allow list
-- All affected organisations have to update their allow list
+## Allow List Managment
+[Here](/stable/maintain/allowList-mgm.md) you can read all the information if you want to create or update an Allow List.
 
 #### Feel free to contact us via <a href="mailto:dsf-gecko@hs-heilbronn.de"> E-Mail (dsf-gecko@hs-heilbronn.de)</a> and we will take care of your request as soon as possible.
