@@ -21,11 +21,11 @@ Initially, the Allow List Management Tool is only for DSF test infrastructure. F
 
 ## Start [here](TODO)
 When you have fulfilled all the prerequisites, you can start managing your Allow Lists. 
-At the beginning, a popup will appear where you have to select your certificate. Only then you will have access to the website. [www.dsf-allowlistmgm.de](TODO)
+At the beginning, a popup will appear where you have to select your certificate. Only then you will have access to the website. [coming soon](TODO)
 
 
 ::: tip Ideas for improvement?
-Have you found an error or is something unclear to you? Then please feel free to write to us at gth-gecko@hs-heilbronn.de. Thank you very much!
+Have you found an error or is something unclear to you? Then please feel free to write to us at <a href="mailto:dsf-gecko@hs-heilbronn.de">gth-gecko@hs-heilbronn.de</a>. Thank you very much!
 :::
 
 
