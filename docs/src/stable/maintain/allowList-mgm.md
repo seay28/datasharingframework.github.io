@@ -22,7 +22,7 @@ Currently, the Allow List Management Tool is only for DSF <b>TEST</b> infrastruc
  
 
 ## Start [here](TODO)
-When you have fulfilled all the prerequisites, you can start managing your Allow Lists on the <a href="https://allowlist-test.gecko.hs-heilbronn.de/>DSF Allow List Management Tool</a>.
+When you have fulfilled all the prerequisites, you can start managing your Allow Lists on the <a href="https://allowlist-test.gecko.hs-heilbronn.de/">DSF Allow List Management Tool</a>.
 At the beginning, a popup will appear where you have to select your certificate. Only then you will have access to the website.
 
 
