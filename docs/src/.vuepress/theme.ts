@@ -47,7 +47,7 @@ export default hopeTheme({
         {
           text: "Guideline v1.0.0 (stable)",
           icon: "info",
-          children: ["index", "maintain/install", "maintain/upgrade-from-0", "develop/create"],
+          children: ["index", "maintain/install", "maintain/upgrade-from-0", "maintain/allowList-mgm", "develop/create"],
         }
       ]
   },
@@ -122,7 +122,7 @@ export default hopeTheme({
       icon: "tool",
       prefix: "maintain/",
       link: "maintain/",
-      children: ["install", "upgrade-from-0", {
+      children: ["install", "upgrade-from-0", "allowList-mgm", {
         text: "Configuration parameters",
         icon: "config",
         prefix: "configuration/",
