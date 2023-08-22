@@ -10,8 +10,8 @@ Data Sharing Framework 0.9.x is an old version of the Data Sharing Framework. Cl
 - [Allow List Management](/stable/maintain/allowList-mgm)
 
 ## Overview (v 0.9.2)
-- [General Information](generalInformation/)
-- [Code](code/)
-- [Build and Test](build/)
-- [Releases and Deployment](releases/)
-- [DSF Process Plugin Tutorial](tutorial/)
+- [General Information](guideline/generalInformation/)
+- [Code](guideline/code/)
+- [Build and Test](guideline/build/)
+- [Releases and Deployment](guideline/releases/)
+- [DSF Process Plugin Tutorial](guideline/tutorial/)

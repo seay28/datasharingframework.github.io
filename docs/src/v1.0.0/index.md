@@ -1,9 +1,9 @@
 ---
-title: DSF 1.1.0
+title: DSF 1.0.0
 icon: guide
 ---
 
-Data Sharing Framework 1.x is the new major release of the Data Sharing Framework. Click [here](/intro/) to find more information about the DSF in general.
+Data Sharing Framework 1.0.0 is the new major release of the Data Sharing Framework. Click [here](/intro/) to find more information about the DSF in general.
 ::: tip Important note
 This is a major DSF release not compatible with 0.9.x and older version developed at https://github.com/highmed/highmed-dsf.
 :::
@@ -11,8 +11,7 @@ This is a major DSF release not compatible with 0.9.x and older version develope
 # System Administrators
 
 - [Upgrade from DSF 0.9.x.](maintain/upgrade-from-0)
-- [Update from DSF 1.x.](maintain/update-from-1)
-- [Install DSF 1.1.0](maintain/install)
+- [Install DSF 1.0.0](maintain/install)
 
 
 # Developers
