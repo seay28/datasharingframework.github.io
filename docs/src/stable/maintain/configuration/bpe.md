@@ -1,6 +1,6 @@
 # Parameters BPE Server
 
-Please also check [common parameters](common) for additional configration options.
+Please also check [common parameters](common) for additional configuration options.
 
 ### DEV_DSF_BPE_DB_LIQUIBASE_FORCEUNLOCK
 - **Property:** dev.dsf.bpe.db.liquibase.forceUnlock

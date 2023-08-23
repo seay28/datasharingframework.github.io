@@ -1,6 +1,6 @@
 # Parameters FHIR Server
 
-Please also check [common parameters](common) for additional configration options.
+Please also check [common parameters](common) for additional configuration options.
 
 ### DEV_DSF_FHIR_CLIENT_CERTIFICATE
 - **Property:** dev.dsf.fhir.client.certificate
