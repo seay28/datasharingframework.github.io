@@ -5,10 +5,10 @@ icon: update
 
 
 ::: warning Do not upgrade unless prompted!
-Please do not upgrade your DSF installation from DSF 0.9.x to DSF 1.0.0 unless prompted to do so (e.g. from the German MII). 
+Please do not upgrade your DSF installation from DSF 0.9.x to DSF 1.x unless prompted to do so (e.g. from the German MII). 
 :::
 
-A direct upgrade from DSF 0.9.x to DSF 1.0.0 is not supported. Instead, please perform the following steps:
+A direct upgrade from DSF 0.9.x to DSF 1.x is not supported. Instead, please perform the following steps:
 
 
 1. shut down your DSF instances (DSF FHIR Server and DSF BPE).
