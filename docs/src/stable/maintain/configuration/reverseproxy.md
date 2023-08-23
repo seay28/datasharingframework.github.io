@@ -69,3 +69,9 @@
 - **Description:** Server certificate private key file, PEM encoded, unencrypted, sets the apache httpd parameter `SSLCertificateKeyFile`  
 - **Recommendation:** Use docker secret file to configure
 - **Example:** `/run/secrets/ssl_certificate_key_file.pem`
+
+### SSL_VERIFY_CLIENT
+- **Required:** No
+- **Description:** Modifies the apache mod_ssl config parameter `SSLVerifyClient `
+- **Recommendation:** Set to `optional` when using OIDC authentication
+- **Default:** `require`
