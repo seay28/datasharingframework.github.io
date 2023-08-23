@@ -45,7 +45,7 @@ export default hopeTheme({
       prefix: "/stable/",
       children: [
         {
-          text: "Guideline v1.0.0 (stable)",
+          text: "Guideline v1.1.0 (stable)",
           icon: "info",
           children: ["index", "maintain/install", "maintain/upgrade-from-0", "maintain/allowList-mgm", "develop/create"],
         }
@@ -68,7 +68,7 @@ export default hopeTheme({
     text: "Versions",
     icon: "note",
     // children:["/v1/"],
-    children: [{ text: "V1.0.0 (stable)", link: "/stable/" }, { text: "V0.9.2 (oldstable)", link: "https://dsf.dev/oldstable/"}],
+    children: [{ text: "v1.1.0 (stable)", link: "/stable/" }, { text: "v1.0.0", link: "/v1.0.0/" }, { text: "v0.9.3 (oldstable)", link: "/oldstable/"}],
   },
   {
     text: "",
@@ -122,6 +122,40 @@ export default hopeTheme({
       icon: "tool",
       prefix: "maintain/",
       link: "maintain/",
+      children: ["install", "update-from-1", "upgrade-from-0", "allowList-mgm", {
+        text: "Configuration parameters",
+        icon: "config",
+        prefix: "configuration/",
+        link: "configuration/",
+        children: [{ text: "FHIR Reverse Proxy", link:"reverseproxy"}, { text: "FHIR Server", link: "fhir" }, { text: "BPE Server", link: "bpe" }]
+
+      }
+     ],
+    },
+    {
+      text: "Develop process plugins",
+      icon: "plugin",
+      prefix: "develop/",
+      link: "develop/",
+      children: ["create", "upgrade-from-0" ],
+    },
+  ],
+  "/v1.0.0/": [
+    {
+      text: "Home",
+      icon: "home",
+      link: "/",
+    },
+    {
+      text: "Current version",
+      icon: "update",
+      link: "/stable",
+    },
+    {
+      text: "Maintain a DSF instance",
+      icon: "tool",
+      prefix: "maintain/",
+      link: "maintain/",
       children: ["install", "upgrade-from-0", "allowList-mgm", {
         text: "Configuration parameters",
         icon: "config",
@@ -163,9 +197,7 @@ export default hopeTheme({
     {
       text: "Version 0.9.x",
       icon: "guide",
-      prefix: "guideline/",
-      link: "guideline/",
-      children: ["generalinformation/", "code/", "build/", "releases/", "tutorial/"], 
+      children: ["introduction", "generalinformation/", "code/", "build/", "releases/", "tutorial/"], 
     },
   ]
  },
