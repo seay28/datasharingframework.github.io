@@ -4,6 +4,6 @@ icon: config
 ---
 
 ## Overview
-- [Parameters FHIR Server](fhir)
-- [Parameters BPE Server](bpe)
-- [Parameters FHIR Reverse Proxy](reverseproxy)
+- [FHIR Reverse Proxy](reverseproxy)
+- [FHIR Server](fhir)
+- [BPE Server](bpe)
