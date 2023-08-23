@@ -68,7 +68,7 @@ export default hopeTheme({
     text: "Versions",
     icon: "note",
     // children:["/v1/"],
-    children: [{ text: "V1.1.0 (stable)", link: "/stable/" }, { text: "V1.0.0", link: "/v1.0.0/" }, { text: "V0.9.2 (oldstable)", link: "https://dsf.dev/oldstable/"}],
+    children: [{ text: "v1.1.0 (stable)", link: "/stable/" }, { text: "v1.0.0", link: "/v1.0.0/" }, { text: "v0.9.2 (oldstable)", link: "https://dsf.dev/oldstable/"}],
   },
   {
     text: "",
