@@ -20,7 +20,7 @@ services:
 ...
   app:
 -   image: ghcr.io/datasharingframework/fhir:1.0.0
-+   image: ghcr.io/datasharingframework/fhir:1.0.0
++   image: ghcr.io/datasharingframework/fhir:1.1.0
     restart: on-failure
 ...
 ```
