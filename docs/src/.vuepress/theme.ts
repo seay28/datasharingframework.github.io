@@ -122,7 +122,7 @@ export default hopeTheme({
       icon: "tool",
       prefix: "maintain/",
       link: "maintain/",
-      children: ["install", "update-from-1", "upgrade-from-0", "allowList-mgm", {
+      children: ["install", "upgrade-from-1", "upgrade-from-0", "allowList-mgm", {
         text: "Configuration parameters",
         icon: "config",
         prefix: "configuration/",
