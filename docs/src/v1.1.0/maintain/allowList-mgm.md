@@ -15,7 +15,7 @@ Currently, the Allow List Management Tool is only for DSF <b>TEST</b> infrastruc
     1.1  If none exists yet, read [here](install)
 2. Certificate 
     2.1  If none exists yet, read [here](install#client-server-certificates)
-3. Organization identifier (FQDN of your organization, e.g. *hs-heilbronn.de*)
+3. Organization identifier (FQDN of your organization website, e.g. *hs-heilbronn.de*)
 4. FHIR Endpoint URL (e.g. *https://gth.gecko.hs-heilbronn.de/fhir* )
 5. Contact details from a responsible person of your organization
 6. Access to the E-Mail address from your organization for verification 
