@@ -1,5 +1,5 @@
 ---
-title: Update from DSF 1.x
+title: Upgrade from DSF 1.x
 icon: update
 ---
 

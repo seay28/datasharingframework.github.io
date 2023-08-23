@@ -11,7 +11,7 @@ This is a major DSF release not compatible with 0.9.x and older version develope
 # System Administrators
 
 - [Upgrade from DSF 0.9.x.](maintain/upgrade-from-0)
-- [Update from DSF 1.x.](maintain/update-from-1)
+- [Upgrade from DSF 1.x.](maintain/upgrade-from-1)
 - [Install DSF 1.1.0](maintain/install)
 
 
