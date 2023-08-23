@@ -2,7 +2,7 @@
 title: Exercise 4 - Exclusive Gateways
 icon: slides
 ---
- [Prerequisites](/oldstable/guideline/tutorial/prerequisites.md) | [Exercise 1](/oldstable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/oldstable/guideline/tutorial/exercise3-messageEvents.md) | Exercise 4 | [Exercise 5](/oldstable/guideline/tutorial/exercise5-eventBasedGateways.md)
+ [Prerequisites](/oldstable/tutorial/prerequisites.md) | [Exercise 1](/oldstable/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/tutorial/exercise2-inputParameters.md) | [Exercise 3](/oldstable/tutorial/exercise3-messageEvents.md) | Exercise 4 | [Exercise 5](/oldstable/tutorial/exercise5-eventBasedGateways.md)
  
 ##  Exercise 4 - Exclusive Gateways
 Different execution paths in a process based on the state of process variables can be achieved using Exclusive Gateways. In Exercise 4 we will examine how this can be implemented by modifying the ``highmedorg_helloDic`` process.
@@ -73,10 +73,10 @@ Verify the DSF BPE server started successfully and deployed the ``highmedorg_hel
 Verify that the ``highmedorg_helloDic`` process was executed successfully by the ``Test_DIC`` DSF BPE server and possibly the ``highmedorg_helloCos`` process by the ``Test_COS`` DSF BPE server, depending on whether decision of your algorithm based on the input parameter allowed to start the ``highmedorg_helloDic`` process.
 
 
-Continue with [exercise 5](/oldstable/guideline/tutorial/exercise5-eventBasedGateways.md)
+Continue with [exercise 5](/oldstable/tutorial/exercise5-eventBasedGateways.md)
 
 
 
 
 ---
- [Prerequisites](/oldstable/guideline/tutorial/prerequisites.md) | [Exercise 1](/oldstable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/guideline/tutorial/exercise2-inputParameters.md) | [Exercise 3](/oldstable/guideline/tutorial/exercise3-messageEvents.md) | Exercise 4 | [Exercise 5](/oldstable/guideline/tutorial/exercise5-eventBasedGateways.md)
+ [Prerequisites](/oldstable/tutorial/prerequisites.md) | [Exercise 1](/oldstable/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/tutorial/exercise2-inputParameters.md) | [Exercise 3](/oldstable/tutorial/exercise3-messageEvents.md) | Exercise 4 | [Exercise 5](/oldstable/tutorial/exercise5-eventBasedGateways.md)

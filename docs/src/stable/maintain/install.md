@@ -151,7 +151,10 @@ Here is a quick overview of the expected network setup.
             Set the SHA-512 Hash (lowercase hex) of your client certificate (Certificate _B_)  
             Use `certtool --fingerprint --hash=sha512 --infile=client_certificate.pem` to generate the hash.
         * **DEV_DSF_FHIR_SERVER_ROLECONFIG**: You can add other client certificates (e.g. personal DFN PKI S/MIME certificates, e.g. from admins) to your DSF instance.
-            Set the SHA-512 Hash (lowercase hex) of your additional client certificates. The parameter TODO_WEBUSER_CLIENT_CERTIFICATE_THUMBPRINT can be a single thumbprint or can be expanded to a list (like dsf-role). If you don't have additional thumbprints you want to add, simply remove the *DEV_DSF_FHIR_SERVER_ROLECONFIG* variable from your docker-compose file.
+            Set the SHA-512 Hash (lowercase hex) of your additional client certificates. The parameter TODO_WEBUSER_CLIENT_CERTIFICATE_THUMBPRINT can be a single thumbprint or can be expanded to a list (like dsf-role). If you don't have additional thumbprints you want to add, change the  *DEV_DSF_FHIR_SERVER_ROLECONFIG* variable to the following:
+            ```
+            DEV_DSF_FHIR_SERVER_ROLECONFIG: |
+            ```
         * For additional environment variables, see [DSF configuration parameters - FHIR Server](configuration/fhir)
 
 1. Start the DSF FHIR Server  

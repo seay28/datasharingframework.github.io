@@ -2,7 +2,7 @@
 title: Exercise 3 - Message Events
 icon: slides
 ---
- [Prerequisites](/oldstable/guideline/tutorial/prerequisites.md) | [Exercise 1](/oldstable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/guideline/tutorial/exercise2-inputParameters.md) | Exercise 3 | [Exercise 4](/oldstable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/oldstable/guideline/tutorial/exercise5-eventBasedGateways.md)
+ [Prerequisites](/oldstable/tutorial/prerequisites.md) | [Exercise 1](/oldstable/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/tutorial/exercise2-inputParameters.md) | Exercise 3 | [Exercise 4](/oldstable/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/oldstable/tutorial/exercise5-eventBasedGateways.md)
 
 ## Exercise 3 - Message Events
 Communication between organizations is modeled using message flow in BPMN processes. The third exercise shows how a process at one organization can trigger a process at another organization.
@@ -177,9 +177,9 @@ Verify that the FHIR [Task](http://hl7.org/fhir/R4/task.html) resource was creat
 Verify that a FHIR [Task](http://hl7.org/fhir/R4/task.html) resource was created at the DSF FHIR server of the ``Test_COS`` organization and the ``highmedorg_helloCos`` process was then executed by the DSF BPE server of the ``Test_COS`` organization.
 
 
-Continue with [exercise 4](/oldstable/guideline/tutorial/exercise4-exclusiveGateways.md).
+Continue with [exercise 4](/oldstable/tutorial/exercise4-exclusiveGateways.md).
 
 
 
 ---
- [Prerequisites](/oldstable/guideline/tutorial/prerequisites.md) | [Exercise 1](/oldstable/guideline/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/guideline/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/guideline/tutorial/exercise2-inputParameters.md) | Exercise 3 | [Exercise 4](/oldstable/guideline/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/oldstable/guideline/tutorial/exercise5-eventBasedGateways.md)
+ [Prerequisites](/oldstable/tutorial/prerequisites.md) | [Exercise 1](/oldstable/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/tutorial/exercise2-inputParameters.md) | Exercise 3 | [Exercise 4](/oldstable/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/oldstable/tutorial/exercise5-eventBasedGateways.md)
