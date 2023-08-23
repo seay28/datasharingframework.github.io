@@ -127,7 +127,7 @@ export default hopeTheme({
         icon: "config",
         prefix: "configuration/",
         link: "configuration/",
-        children: ["common", "fhir", "bpe", "reverseproxy"]
+        children: ["fhir", "bpe", "reverseproxy"]
 
       }
      ],
