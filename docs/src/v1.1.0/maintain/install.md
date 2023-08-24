@@ -86,8 +86,8 @@ Here is a quick overview of the expected network setup.
     Download and unpack the prepared DSF FHIR server config files and folder structure:
     ```
     cd /opt
-    wget https://dsf.dev/download/dsf_fhir_1.1.0.tar.gz
-    sudo tar --same-owner -zxvf dsf_fhir_1.1.0.tar.gz
+    wget https://dsf.dev/download/dsf_fhir_1_1_0.tar.gz
+    sudo tar --same-owner -zxvf dsf_fhir_1_1_0.tar.gz
     ```
     _The `tar` command will unpack the config files at `/opt/fhir` assuming you changed into the `/opt` directory._
 
@@ -171,8 +171,8 @@ Here is a quick overview of the expected network setup.
     Download and extract prepared DSF BPE server config files and folder structure:  
     ```
     cd /opt
-    wget https://dsf.dev/download/dsf_bpe_1.1.0.tar.gz
-    sudo tar --same-owner -zxvf dsf_bpe_1.1.0.tar.gz
+    wget https://dsf.dev/download/dsf_bpe_1_1_0.tar.gz
+    sudo tar --same-owner -zxvf dsf_bpe_1_1_0.tar.gz
     ```
     _The `tar` command will unpack the config files at `/opt/bpe` assuming you changed into the `/opt` directory._
 
