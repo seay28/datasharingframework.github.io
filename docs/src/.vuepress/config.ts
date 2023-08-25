@@ -5,6 +5,7 @@ import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { sitemapPlugin } from "vuepress-plugin-sitemap2";
 
 export default defineUserConfig({
+  host: "127.0.0.1",
   base: "/",
 
   /*locales: {
