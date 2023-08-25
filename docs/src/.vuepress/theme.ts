@@ -224,31 +224,29 @@ export default hopeTheme({
         "YouTube",*/
       ],
     },
-    // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,
       attrs: true,
       chart: true,
       codetabs: true,
       container: true,
-      demo: true,
+      demo: false,
       echarts: true,
       figure: true,
-      flowchart: true,
+      flowchart: false,
       gfm: true,
       imgLazyload: true,
       imgSize: true,
       imgMark: true,
       include: true,
-      katex: true,
+      katex: false,
       mark: true,
+      mathjax: false,
       mermaid: true,
       playground: {
-        presets: ["ts", "vue"],
+        presets: [],
       },
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
+      presentation: false,
       stylize: [
         {
           matcher: "Recommended",
@@ -264,9 +262,11 @@ export default hopeTheme({
       ],
       sub: true,
       sup: true,
-      tabs: true,
-      vPre: true,
-      vuePlayground: true,
+      tabs: false,
+      tasklist: false,
+      vPre: false,
+      vuePlayground: false,
+      checkLinks: { status: "always"}
     },
    
      /*pwa: {
