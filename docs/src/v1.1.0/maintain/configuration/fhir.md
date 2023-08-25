@@ -162,6 +162,13 @@
 - **Example:** `hospital.com`
 
 
+### DEV_DSF_FHIR_SERVER_ORGANIZATION_THUMBPRINT
+- **Property:** dev.dsf.fhir.server.organization.thumbprint
+- **Required:** Yes
+- **Description:** The SHA-512 thumbprint of the local organization client certificate
+- **Recommendation:** The thumbprint can be calculated via `certtool --fingerprint --hash=sha512 --infile=client_certificate.pem`
+
+
 ### DEV_DSF_FHIR_SERVER_PAGE_COUNT
 - **Property:** dev.dsf.fhir.server.page.count
 - **Required:** No
