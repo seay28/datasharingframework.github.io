@@ -108,8 +108,8 @@ Here is a quick overview of the expected network setup.
         ...
         L59:      DEV_DSF_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
         ...
-        L149:  app_client_certificate_private_key.pem.password:
-        L150:    file: ./secrets/client_certificate_private_key.pem.password
+        L146:  app_client_certificate_private_key.pem.password:
+        L147:    file: ./secrets/client_certificate_private_key.pem.password
         ```
 
     ::: tip How to chmod / chown
@@ -141,21 +141,19 @@ Here is a quick overview of the expected network setup.
     * **services -> proxy -> environment:**
         * **HTTPS_SERVER_NAME_PORT**: _TODO_DSF_FHIR_SERVER_EXTERNAL_FQDN:443_
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `foo.bar.de:443`
-        * For additional environment variables, see [DSF configuration parameters - FHIR Reverse Proxy](configuration/reverseproxy)
+        * For additional environment variables, see [DSF configuration parameters - FHIR Reverse Proxy](fhir-reverse-proxy/configuration)
     * **services -> app -> environment:**
-        * **DEV_DSF_FHIR_SERVER_BASE_URL**: https://_TODO_DSF_FHIR_SERVER_EXTERNAL_FQDN_/fhir  
-            Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `https://foo.bar.de/fhir`
-        * **DEV_DSF_FHIR_SERVER_ORGANIZATION_IDENTIFIER_VALUE**: _TODO_ORGANIZATION_IDENTIFIER_  
+        * **DEV_DSF_FHIR_SERVER_ORGANIZATION_IDENTIFIER_VALUE**: `todo.organization.com`  
             Set your Organizations DSF identifier, aka the shortest FQDN that resolves to the main homepage of the organization, e.g. `hs-heilbronn.de`
-        * **DEV_DSF_FHIR_SERVER_ORGANIZATION_THUMBPRINT**: _TODO_CLIENT_CERTIFICATE_THUMBPRINT_  
+        * **DEV_DSF_FHIR_SERVER_BASE_URL**: `https://dsf.todo.organization.com/fhir`  
+            Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `https://foo.bar.de/fhir`
+        * **DEV_DSF_FHIR_SERVER_ORGANIZATION_THUMBPRINT**: `f4344032fe77bffb912ff5abfd44da89fe64d355affb8d0f14c9ecb8bdbf92c7fe5f995b1ec0c453e4228b395e331052e4639044df4933d57721de508a84d26f`  
             Set the SHA-512 Hash (lowercase hex) of your client certificate (Certificate _B_)  
             Use `certtool --fingerprint --hash=sha512 --infile=client_certificate.pem` to generate the hash.
-        * **DEV_DSF_FHIR_SERVER_ROLECONFIG**: You can add other client certificates (e.g. personal DFN PKI S/MIME certificates, e.g. from admins) to your DSF instance.
-            Set the SHA-512 Hash (lowercase hex) of your additional client certificates. The parameter TODO_WEBUSER_CLIENT_CERTIFICATE_THUMBPRINT can be a single thumbprint or can be expanded to a list (like dsf-role). If you don't have additional thumbprints you want to add, change the  *DEV_DSF_FHIR_SERVER_ROLECONFIG* variable to the following:
-            ```
-            DEV_DSF_FHIR_SERVER_ROLECONFIG: |
-            ```
-        * For additional environment variables, see [DSF configuration parameters - FHIR Server](configuration/fhir)
+        * **DEV_DSF_FHIR_SERVER_ROLECONFIG**: `|`
+            You can add other client certificates (e.g. personal certificates from admins) to your DSF instance. For additional information, see the FHIR server [Access Control](fhir/access-control) page.
+            
+        * For additional environment variables, see FHIR server [Configuration Parameters](fhir/configuration) page.
 
 1. Start the DSF FHIR Server  
     Start using: `docker compose up -d && docker compose logs -f` (Ctrl-C will close log, but not stop container)
@@ -190,8 +188,8 @@ Here is a quick overview of the expected network setup.
         ...
         L40:      DEV_DSF_BPE_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
         ...
-        L89:  app_client_certificate_private_key.pem.password:
-        L90:    file: ./secrets/client_certificate_private_key.pem.password
+        L97:  app_client_certificate_private_key.pem.password:
+        L98:    file: ./secrets/client_certificate_private_key.pem.password
         ```
 1. Modify database passwords
     * **/opt/bpe/secrets/db_liquibase.password**
@@ -203,11 +201,12 @@ Here is a quick overview of the expected network setup.
 
 1. Modify the docker-compose.yml file and set environment variables to the appropriate values
     * **services -> app -> environment:**
-        * **DEV_DSF_BPE_FHIR_SERVER_ORGANIZATION_IDENTIFIER_VALUE**: _TODO_ORGANIZATION_IDENTIFIER_  
+        * **DEV_DSF_BPE_FHIR_SERVER_ORGANIZATION_IDENTIFIER_VALUE**: `todo.organization.com`  
             Set your Organizations DSF identifier, aka the shortest FQDN that resolves the main homepage of the organization, e.g. `hs-heilbronn.de`
-        * **DEV_DSF_BPE_FHIR_SERVER_BASE_URL**: https://_TODO_DSF_FHIR_SERVER_FQDN_/fhir  
+        * **DEV_DSF_BPE_FHIR_SERVER_BASE_URL**: `https://dsf.todo.organization.com/fhir`  
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `https://foo.bar.de/fhir`
-        * For additional environment variables, see [DSF configuration parameters - BPE Server](configuration/bpe)
+            
+        * For additional environment variables, see the BPE server [Configuration Parameters](bpe/configuration) page.
 
 1. Start the DSF BPE Server (without process plugins)  
     Start using: `docker compose up -d && docker compose logs -f` (Ctrl-C will close log, but not stop container)
