@@ -1,5 +1,7 @@
-# Parameters BPE Server
-
+---
+title: Configuration Parameters
+icon: config
+---
 
 ### DEV_DSF_SERVER_API_HOST
 - **Property:** dev.dsf.server.api.host
