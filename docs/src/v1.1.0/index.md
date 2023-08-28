@@ -22,7 +22,7 @@ This is a major DSF release not compatible with 0.9.x and older version develope
 ## New features
 - Improved versioning to support up- and downwards-compatibility
 - Enhanced web ui to start processes in the web browser
-- Allow user authenitication and authorization with OpenID Connect
+- Allow local user authentication and authorization with OpenID Connect
 - New process plugin API
 - Removed mostly unused features to simplify instance configuration
 - Unified proxy setup
