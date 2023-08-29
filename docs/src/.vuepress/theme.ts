@@ -4,11 +4,10 @@ import { hopeTheme } from "vuepress-theme-hope";
 export default hopeTheme({
   author: {
     name: "DSF-Team",
-    url: "/about/learnmore/team.html", // ToDo
+    url: "/about/learnmore/team.html", 
   },
 
   iconAssets: "/assets/font/font.css",
-  //iconAssets: "iconfont",
   iconPrefix: "iconfont icon-",
 
 
@@ -16,11 +15,6 @@ export default hopeTheme({
   darkmode: "toggle",
   contributors: false,
   
-  // repo: "https://github.com/highmed/highmed-dsf/",
-  // repoLabel: "GitHub",
-  // repoDisplay: true,
-
- // docsDir: "demo/theme-docs/src",
  navbar: [
   {
     text: "Home",
@@ -268,12 +262,5 @@ export default hopeTheme({
       vuePlayground: false,
       checkLinks: { status: "always"}
     },
-   
-     /*pwa: {
-       favicon: "/assets/icon/favicon.ico",
-       cacheHTML: false,
-       cachePic: false,
-       appendBase: true,
-     },*/
   },
 });

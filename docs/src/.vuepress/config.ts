@@ -1,6 +1,5 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-// import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { sitemapPlugin } from "vuepress-plugin-sitemap2";
 
@@ -12,12 +11,12 @@ export default defineUserConfig({
     "/": {
       lang: "en-US",
       title: "",
-      description: "A performant, secure and innovative framework that enables healthcare data exchange across organizational boundaries.",
+      description: "",
     },
     "/zh/": {
       lang: "zh-CN",
       title: "",
-      description: "A performant, secure and innovative framework that enables healthcare data exchange across organizational boundaries.",
+      description: "",
     },
   },*/
   plugins: [
