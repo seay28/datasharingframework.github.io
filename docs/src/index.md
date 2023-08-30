@@ -1,7 +1,7 @@
 ---
 home: true
 icon: home
-title: Home
+title: Data Sharing Framework
 heroImage: /photos/home/logo.svg
 heroText: Data Sharing Framework
 tagline: A performant, secure, and innovative framework that enables biomedical researchers to extract value from routine data. 
@@ -42,13 +42,11 @@ We are very pleased to have won the Rolf Hansen Memorial Award at [EFMI MIE 2023
 
 
 ## Upcoming Events
-::: info Visit us at GMDS 2023 in Heilbronn 
+::: info GMDS 2023 in Heilbronn 
 ::: left
-Visit one of our Tutorials at September 17 - from 9am to 6pm:
+Listen to our talk in session *VS02 Forschungsdateninfrastruktur*, September 19 - from 11am to 12:30pm:
 
-[T08 – Hands-on! – Creating Process Plugins for the Data Sharing Framework](https://www.gmds2023.de/programm/tutorials/tutorial-08/)
-
-[T09 – Hands-on! – Introduction to the Data Sharing Framework from a User Perspective](https://www.gmds2023.de/programm/tutorials/tutorial-09/)
+**Deployment of the Data Sharing Framework at German University Hospitals - Lessons Learned.**
 
  <a href="https://www.gmds2023.de/" target="_blank"><img src="/photos/home/gmds2023.jpg" ></a>
 :::center

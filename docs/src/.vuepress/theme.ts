@@ -117,14 +117,44 @@ export default hopeTheme({
       prefix: "maintain/",
       link: "maintain/",
       children: ["install", "upgrade-from-1", "upgrade-from-0", "allowList-mgm", {
-        text: "Configuration parameters",
-        icon: "config",
-        prefix: "configuration/",
-        link: "configuration/",
-        children: [{ text: "FHIR Reverse Proxy", link:"reverseproxy"}, { text: "FHIR Server", link: "fhir" }, { text: "BPE Server", link: "bpe" }]
-
-      }
-     ],
+        text: "FHIR Reverse Proxy",
+        icon: "module",
+        prefix: "fhir-reverse-proxy/",
+        link: "fhir-reverse-proxy/",
+        children: [{
+			icon: "config", 
+			text: "Configuration",
+			link: "configuration"
+		}]
+      }, {
+        text: "FHIR Server",
+        icon: "module",
+        prefix: "fhir/",
+        link: "fhir/",
+        children: [{
+			icon: "config", 
+			text: "Configuration",
+			link: "configuration"
+		}, {
+			icon: "config",
+			text: "Access Control",
+			link: "access-control"
+		}, {
+			icon: "config",
+			text: "OpenID Connect",
+			link: "oidc"
+			}]
+      }, {
+        text: "BPE Server",
+        icon: "module",
+        prefix: "bpe/",
+        link: "bpe/",
+        children: [{
+			icon: "config", 
+			text: "Configuration",
+			link: "configuration"
+		}]
+      }],
     },
     {
       text: "Develop process plugins",

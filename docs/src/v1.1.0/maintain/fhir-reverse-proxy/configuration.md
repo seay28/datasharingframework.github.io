@@ -1,4 +1,7 @@
-# Parameters FHIR Reverse Proxy
+---
+title: Configuration Parameters
+icon: config
+---
 
 ### APP_SERVER_IP
 - **Required:** Yes  
