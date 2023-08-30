@@ -8,7 +8,7 @@ icon: config
 The DSF FHIR server implements a subset of the FHIR R4 [REST API](http://hl7.org/fhir/R4/http.html). When accessing the API with a web browser a limited graphical user interface is shown. Without any additional configuration the API and user interface is only accessible with the X.509 client certificate configured for the organization via the configuration parameter: [DEV_DSF_FHIR_SERVER_ORGANIZATION_THUMBPRINT](configuration#dev-dsf-fhir-server-organization-thumbprint)
 
 ::: tip OpenID Connect
-To enable OpenID Connect Authentication of local user, see the DSF FHIR server OpenID Connect [configuration page](oidc).
+To enable OpenID Connect authentication of local user, see the DSF FHIR server OpenID Connect [configuration page](oidc).
 :::
 
 Access to the API and user interface can be enabled for additional client certificates and local users authenticating via OAuth 2.0 OpenID Connect. Access can be configured for so called roles, with all roles specified using the configuration parameter [DEV_DSF_FHIR_SERVER_ROLECONFIG](configuration#dev-dsf-fhir-server-roleconfig). The value for this environment variable is specified as YAML using the block scalar `|`.
@@ -27,7 +27,7 @@ The listing below shows a minimal configuration to enable read access for a spec
 The list of user roles above contains a single entry `example_read_only_role`, matching the user via a client certificate SHA-512 thumprint and assigning three DSF roles.
 
 ::: tip Certificate Thumbprints
-SHA-512 certificate thumbprints in the HEX form `[a-f0-9]{128}` can be calculated using:
+SHA-512 certificate thumbprints in HEX form `[a-f0-9]{128}` can be calculated using:
 ```sh
 certtool --fingerprint --hash=sha512 --infile=certificate.pem
 ```
@@ -49,7 +49,7 @@ Using the property `email` users can be matched against e-mail addresses specifi
 
 #### token-role and token-group
 
-With the properties `token-role` and `token-group` role and group names can be specified to match agains role and group claims within OAuth 2.0 access tokens.
+With the properties `token-role` and `token-group` role and group names can be specified to match against role and group claims within OAuth 2.0 access tokens.
 
 
 ## DSF and Practitioner Roles

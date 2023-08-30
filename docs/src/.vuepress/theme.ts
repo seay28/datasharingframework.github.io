@@ -130,7 +130,7 @@ export default hopeTheme({
         children: [{
 			icon: "config", 
 			text: "Configuration",
-			link:"configuration"
+			link: "configuration"
 		}]
       }, {
         text: "FHIR Server",
@@ -140,7 +140,7 @@ export default hopeTheme({
         children: [{
 			icon: "config", 
 			text: "Configuration",
-			link:"configuration"
+			link: "configuration"
 		}, {
 			icon: "config",
 			text: "Access Control",
@@ -158,7 +158,7 @@ export default hopeTheme({
         children: [{
 			icon: "config", 
 			text: "Configuration",
-			link:"configuration"
+			link: "configuration"
 		}]
       }],
     },

@@ -33,7 +33,7 @@ To enable bearer token authentication, set the configuration parameter [DEV_DSF_
 
 ## Additional ODIC Configuration Parameter
 
-A number of additional `DEV_DSF_SERVER_AUTH_OIDC ...` configuration parameter are specify on the DSF FHIR Server [configuration parameter page](configuration).
+A number of additional `DEV_DSF_SERVER_AUTH_OIDC ...` configuration parameter are specify on the DSF FHIR server [configuration parameter page](configuration).
 
 For example the configuration parameter [DEV_DSF_SERVER_AUTH_OIDC_PROVIDER_CLIENT_TRUST_SERVER_CERTIFICATE_CAS](configuration#dev-dsf-server-auth-oidc-provider-client-trust-server-certificate-cas) can be used to specify a PEM encoded file with trusted root certificates to be used when accessing the OpenID Connect provider. If not specify the JVM default trusted root certificates are used for this connection.
 
