@@ -10,22 +10,6 @@ Upgrading the DSF 1.x to the current version involves modifying the docker-compo
 If you want to migrate from DSF 0.9.x, please follow [these instructions](upgrade-from-0).
 :::
 
-```diff
-version: '3.8'
-services:
-  proxy:
--   image: ghcr.io/datasharingframework/fhir_proxy:1.0.0
-+   image: ghcr.io/datasharingframework/fhir_proxy:1.1.0
-    restart: on-failure
-...
-  app:
--   image: ghcr.io/datasharingframework/fhir:1.0.0
-+   image: ghcr.io/datasharingframework/fhir:1.1.0
-    restart: on-failure
-...
-```
-
-
 
 ## Modify DSF FHIR Server Setup
 1. Preparation / Backup
