@@ -10,10 +10,10 @@ The funded project team includes:
 - Maximilian Kurscheidt • [GitHub](https://github.com/MadMax93)
 - Simon Schweizer • [GitHub](https://github.com/schwzr)
 - Christoph Zilske • [GitHub](https://github.com/ZilskeC)
-- Simon Mödinger • [GitHub](https://github.com/simonmoedinger)
 - Reto Wettstein • [GitHub](https://github.com/wetret)
 - Alexander Kiel • [GitHub](https://github.com/alexanderkiel)
 
 
 We thank additional contributors, including:
-- Florian Seidl • [GitHub](https://github.com/FloSeidel)
+- Florian Seidel • [GitHub](https://github.com/FloSeidel)
+- Simon Mödinger • [GitHub](https://github.com/simonmoedinger)
