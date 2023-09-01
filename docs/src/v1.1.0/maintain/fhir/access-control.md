@@ -33,7 +33,7 @@ certtool --fingerprint --hash=sha512 --infile=certificate.pem
 ```
 :::
 
-Multiple user roles can be specified and all matching roles will be applied to an authenticated users. Use an empty string `""` or a single block scalar `|` character as the value for the configuration parameter [DEV_DSF_FHIR_SERVER_ORGANIZATION_THUMBPRINT](configuration#dev-dsf-fhir-server-organization-thumbprint) if no roles should be configured.
+Multiple user roles can be specified and all matching roles will be applied to an authenticated users. Use an empty string `""` or a single block scalar `|` character as the value for the configuration parameter [DEV_DSF_FHIR_SERVER_ROLECONFIG](configuration#dev-dsf-fhir-server-roleconfig) if no roles should be configured.
 
 ## Matching Users
 
