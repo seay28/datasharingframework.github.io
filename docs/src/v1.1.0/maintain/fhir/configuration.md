@@ -181,7 +181,7 @@ icon: config
 ### DEV_DSF_FHIR_SERVER_ROLECONFIG
 - **Property:** dev.dsf.fhir.server.roleConfig
 - **Required:** Yes
-- **Description:** Role config YAML as defined in [FHIR Server: Access Control](../access-control).
+- **Description:** Role config YAML as defined in [FHIR Server: Access Control](access-control).
 - **Recommendation:** Use an empty string `""` or a single block scalar `|` character if no roles should be configured
 
 
