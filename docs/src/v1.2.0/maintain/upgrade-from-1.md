@@ -10,6 +10,9 @@ Upgrading the DSF 1.x to the current version involves modifying the docker-compo
 If you want to migrate from DSF 0.9.x, please follow [these instructions](upgrade-from-0).
 :::
 
+## Changes
+We implemented a new health check based on curl, that requires much less resources. Therefore, you have to adapt the docker-compose.yml-files to reflect these changes (as shown below).
+
 
 ## Modify DSF FHIR Server Setup
 1. Preparation / Backup
@@ -29,6 +32,12 @@ services:
 -   image: ghcr.io/datasharingframework/fhir:1.1.0
 +   image: ghcr.io/datasharingframework/fhir:1.2.0
     restart: on-failure
+    healthcheck:
+-     test: ["CMD", "java", "-cp", "dsf_fhir.jar", "dev.dsf.common.status.client.StatusClient"]
++     test: ["CMD", "./healthcheck.sh"]
+      interval: 10s
+      timeout: 15s
+      retries: 5
 ...
 ```
 
@@ -51,6 +60,12 @@ services:
 -   image: ghcr.io/datasharingframework/bpe:1.1.0
 +   image: ghcr.io/datasharingframework/bpe:1.2.0
     restart: on-failure
+    healthcheck:
+-     test: ["CMD", "java", "-cp", "dsf_bpe.jar", "dev.dsf.common.status.client.StatusClient"]
++     test: ["CMD", "./healthcheck.sh"]
+      interval: 10s
+      timeout: 15s
+      retries: 5
 ...
 ```
 

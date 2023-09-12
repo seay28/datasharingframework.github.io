@@ -277,7 +277,15 @@ icon: config
 ### DEV_DSF_BPE_DEBUG_LOG_MESSAGE_VARIABLES
 - **Property:** dev.dsf.bpe.debug.log.message.variables
 - **Required:** No
-- **Description:** To enable loging bpmn variables for every bpmn activity start or end, when logging of these events is enabled, set to `true`.
+- **Description:** To enable logging of bpmn variables for every bpmn activity start or end, when logging of these events is enabled, set to `true`.
+- **Recommendation:** This debug function should only be activated during process plugin development. WARNNING: Confidential information may be leaked via the debug log!
+- **Default:** `false`
+
+
+### DEV_DSF_BPE_DEBUG_LOG_MESSAGE_VARIABLESLOCAL
+- **Property:** dev.dsf.bpe.debug.log.message.variablesLocal
+- **Required:** No
+- **Description:** To enable logging of local bpmn variables for every bpmn activity start or end, when logging of these events is enabled, set to `true`.
 - **Recommendation:** This debug function should only be activated during process plugin development. WARNNING: Confidential information may be leaked via the debug log!
 - **Default:** `false`
 
@@ -372,14 +380,6 @@ icon: config
 - **Required:** Yes
 - **Description:** The base address of the local DSF FHIR server to read/store fhir resources
 - **Example:** `https://foo.bar/fhir`
-
-
-### DEV_DSF_BPE_FHIR_SERVER_ORGANIZATION_IDENTIFIER_VALUE
-- **Property:** dev.dsf.bpe.fhir.server.organization.identifier.value
-- **Required:** Yes
-- **Description:** The local identifier value used in the Allow-List
-- **Recommendation:** By convention: The shortest possible FQDN that resolve the homepage of the organization
-- **Example:** `hospital.com`
 
 
 ### DEV_DSF_BPE_FHIR_TASK_SUBSCRIPTION_RETRY_MAX
@@ -543,11 +543,33 @@ icon: config
 - **Default:** `false`
 
 
+### DEV_DSF_BPE_PROCESS_ENGINE_COREPOOLSIZE
+- **Property:** dev.dsf.bpe.process.engine.corePoolSize
+- **Required:** No
+- **Description:** Process engine job executor core pool size
+- **Default:** `4`
+
+
+### DEV_DSF_BPE_PROCESS_ENGINE_MAXPOOLSIZE
+- **Property:** dev.dsf.bpe.process.engine.maxPoolSize
+- **Required:** No
+- **Description:** Process engine job executor max pool size, additional threads until max pool size are created if the queue is full
+- **Default:** `10`
+
+
+### DEV_DSF_BPE_PROCESS_ENGINE_QUEUESIZE
+- **Property:** dev.dsf.bpe.process.engine.queueSize
+- **Required:** No
+- **Description:** Process engine job executor queue size, jobs are added to the queue if all core pool threads are busy
+- **Default:** `40`
+
+
 ### DEV_DSF_BPE_PROCESS_EXCLUDED
 - **Property:** dev.dsf.bpe.process.excluded
 - **Required:** No
 - **Description:** List of process names that should be excluded from deployment during startup of the DSF BPE server; comma or space separated list, YAML block scalars supported
 - **Recommendation:** Only deploy processes that can be started depending on your organization's roles in the Allow-List
+- **Example:** `dsfdev_updateAllowList|1.0, another_process|x.y`
 
 
 ### DEV_DSF_BPE_PROCESS_FHIR_SERVER_RETRY_MAX
@@ -577,6 +599,14 @@ icon: config
 - **Required:** No
 - **Description:** List of already deployed process names that should be retired during startup of the DSF BPE server; comma or space separated list, YAML block scalars supported
 - **Recommendation:** Retire processes that where deployed previously but are not anymore available
+- **Example:** `old_process|x.y`
+
+
+### DEV_DSF_BPE_PROCESS_THREADS
+- **Property:** dev.dsf.bpe.process.threads
+- **Required:** No
+- **Description:** Number of parallel Task / QuestionnaireResponse threads to start new or continue existing processes, a value `<= 0` means number of cpu cores
+- **Default:** `-1`
 
 
 ### DEV_DSF_PROXY_NOPROXY
