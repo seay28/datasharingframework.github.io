@@ -21,6 +21,7 @@ If you want to migrate from DSF 0.9.x, please follow [these instructions](upgrad
       # TODO specify role configuration to allow access to the UI via web-browser or REST API for specific users, see documentation at dsf.dev
 -     DEV_DSF_FHIR_SERVER_ROLECONFIG: |
 ```
+* DSF v1.2.0 is not compatible with DSF Ping Pong v1.0.0.0, upgrade/use the [Ping Pong plugin v1.0.1.0](https://github.com/datasharingframework/dsf-process-ping-pong/releases) or later if your are upgrading/using this version.
 
 ## Modify DSF FHIR Server Setup
 1. Preparation / Backup
