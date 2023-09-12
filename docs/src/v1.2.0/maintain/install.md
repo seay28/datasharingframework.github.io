@@ -151,7 +151,7 @@ Here is a quick overview of the expected network setup.
             Set the SHA-512 Hash (lowercase hex) of your client certificate (Certificate _B_)  
             Use `certtool --fingerprint --hash=sha512 --infile=client_certificate.pem` to generate the hash.
         * **DEV_DSF_FHIR_SERVER_ROLECONFIG**: `|`
-            You can add other client certificates (e.g. personal certificates from admins) to your DSF instance. For additional information, see the FHIR server [Access Control](fhir/access-control) page.
+            (Optional) You can add other client certificates (e.g. personal certificates from admins) to your DSF instance. For additional information, see the FHIR server [Access Control](fhir/access-control) page.
             
         * For additional environment variables, see FHIR server [Configuration Parameters](fhir/configuration) page.
 
