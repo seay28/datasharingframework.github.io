@@ -11,8 +11,16 @@ If you want to migrate from DSF 0.9.x, please follow [these instructions](upgrad
 :::
 
 ## Changes
-We implemented a new health check based on curl, that requires much less resources. Therefore, you have to adapt the docker-compose.yml-files to reflect these changes (as shown below).
-
+* We implemented a new health check based on curl, that requires much less resources. Therefore, you have to adapt the docker-compose.yml-files to reflect these changes (as shown below).
+* The role configuration is now optional. If you don't use roles, you can remove the role config (default for new installations):
+```diff
+  app:
+...
+    environment:
+...
+      # TODO specify role configuration to allow access to the UI via web-browser or REST API for specific users, see documentation at dsf.dev
+-     DEV_DSF_FHIR_SERVER_ROLECONFIG: |
+```
 
 ## Modify DSF FHIR Server Setup
 1. Preparation / Backup
