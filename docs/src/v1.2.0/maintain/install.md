@@ -78,8 +78,8 @@ Here is a quick overview of the expected network setup.
 1. Add Group/User  
     Add group and user used by the DSF FHIR java application. Ubuntu compatible commands below:
     ```
-    sudo addgroup --gid 2101 fhir
-    sudo adduser --system --no-create-home --uid 2101 --gid 2101 fhir
+    sudo groupadd --gid 2101 fhir
+    sudo useradd --system --no-create-home --uid 2101 --gid 2101 fhir
     ```
 
 1. Download and Extract Config Files  
@@ -162,8 +162,8 @@ Here is a quick overview of the expected network setup.
 1. Add Group/User  
     Add group and user used by the DSF BPE java application. Ubuntu compatible commands below:
     ```
-    sudo addgroup --gid 2202 bpe
-    sudo adduser --system --no-create-home --uid 2202 --gid 2202 bpe
+    sudo groupadd --gid 2202 bpe
+    sudo useradd --system --no-create-home --uid 2202 --gid 2202 bpe
     ```
 1. Download and Extract Config Files  
     Download and extract prepared DSF BPE server config files and folder structure:  
