@@ -40,12 +40,11 @@ services:
 -   image: ghcr.io/datasharingframework/fhir:1.1.0
 +   image: ghcr.io/datasharingframework/fhir:1.2.0
     restart: on-failure
-    healthcheck:
+-   healthcheck:
 -     test: ["CMD", "java", "-cp", "dsf_fhir.jar", "dev.dsf.common.status.client.StatusClient"]
-+     test: ["CMD", "./healthcheck.sh"]
-      interval: 10s
-      timeout: 15s
-      retries: 5
+-     interval: 10s
+-     timeout: 15s
+-     retries: 5
 ...
 ```
 
@@ -68,12 +67,11 @@ services:
 -   image: ghcr.io/datasharingframework/bpe:1.1.0
 +   image: ghcr.io/datasharingframework/bpe:1.2.0
     restart: on-failure
-    healthcheck:
+-   healthcheck:
 -     test: ["CMD", "java", "-cp", "dsf_bpe.jar", "dev.dsf.common.status.client.StatusClient"]
-+     test: ["CMD", "./healthcheck.sh"]
-      interval: 10s
-      timeout: 15s
-      retries: 5
+-     interval: 10s
+-     timeout: 15s
+-     retries: 5
 ...
 ```
 
