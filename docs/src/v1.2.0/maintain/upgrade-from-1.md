@@ -75,13 +75,15 @@ services:
 
 3. DSF v1.2.0 is not compatible with the Ping/Pong process plugin v1.0.0.0, upgrade to the [Ping/Pong plugin v1.0.1.0](https://github.com/datasharingframework/dsf-process-ping-pong/releases) by removing the old jar file and replacing it with the new v1.0.1.0 one.
 
-4. Upgrade the DSF BPE containers  
+4. We have released a new version of the Allow List Process plugin where we added support for delete operations. Please upgrade to the [Allow-List process v1.0.0.1](https://github.com/datasharingframework/dsf-process-allow-list/releases) by removing the old jar file and replacing it with the new v1.0.0.1 one.
+
+5. Upgrade the DSF BPE containers  
     From `/opt/bpe` execute  
     ```
     docker compose up -d && docker compose logs -f
     ```
 
-5. Verify your upgrade:
+6. Verify your upgrade:
     * Verify the DSF FHIR server is running in version 1.2.0. The log should contain a message:  
         `INFO main - BuildInfoReaderImpl.logBuildInfo(137) | Artifact: dsf-fhir-server-jetty, version: 1.2.0, [...]`
     * Verify the DSF FHIR server started without errors
