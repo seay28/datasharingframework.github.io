@@ -1,5 +1,5 @@
-This setup guide uses pre-build docker images for DSF Version 0.9.2. This guide is **only** suitable for HiGHmed organizations.  
-If you are not a member of HiGHmed, see [NUM-CODEX Install](NUM‐CODEX-DSF-0.9.2-Deployment).
+This setup guide uses pre-build docker images for DSF Version 0.9.3. This guide is **only** suitable for HiGHmed organizations.  
+If you are not a member of HiGHmed, see [NUM-CODEX Install](NUM‐CODEX-DSF-0.9.3-Deployment).
 
 ## Prerequisites
 ### Virtual Machines
@@ -25,12 +25,12 @@ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 ### Client/Server Certificates
-Two Certificates from the DFN-PKI Global G2 (via DFN e.V.), GÉANT TCS (via DFN e.V.) or D-Trust (via TMF e.V.) are needed, more infos see [Authentication](Authentication)
+Two Certificates from the DFN-PKI Global G2 (via DFN e.V.), GÉANT TCS (via DFN e.V.) or D-Trust (via TMF e.V.) are needed, more infos see [Authentication](../generalinformation/authentication)
 * Certificate A: Server Certificate (DFN PKI Profile: 'Web Server', Common-Name: Your external DSF FHIR Servers FQDN)
 * Certificate B: Client Certificate (DFN PKI Profile: '802.1X Client', Common-Name: Your DSF BPE Servers FQDN)
 
 ### Network setup / Network access
-For additional information on the network setup see [Network-and-Architecture](Network-and-Architecture).
+For additional information on the network setup see [Network-and-Architecture](../generalinformation/networkSetup).
 * The DSF FHIR server needs to be accessible via the internet and able to access the internet without TLS interception.
 * The BPE FHIR server should only be accessible by the internal network and able to access your DSF FHIR server via its external FQDN and the internet without TLS interception.
 
@@ -71,18 +71,18 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
 1. Download and Extract Config Files  
     Download prepared DSF FHIR server config files and folder structure from  
     * **Test HiGHmed** instance:
-        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_test_fhir_0.9.2.tar.gz
+        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_test_fhir_0_9_3.tar.gz
         ```
         cd /opt
-        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_test_fhir_0.9.2.tar.gz
-        sudo tar --same-owner -zxvf dsf_highmed_test_fhir_0.9.2.tar.gz
+        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_test_fhir_0_9_3.tar.gz
+        sudo tar --same-owner -zxvf dsf_highmed_test_fhir_0_9_3.tar.gz
         ```
     * **Production HiGHmed** instance:
-        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_prod_fhir_0.9.2.tar.gz
+        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_prod_fhir_0_9_3.tar.gz
         ```
         cd /opt
-        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_prod_fhir_0.9.2.tar.gz
-        sudo tar --same-owner -zxvf dsf_highmed_prod_fhir_0.9.2.tar.gz
+        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_prod_fhir_0_9_3.tar.gz
+        sudo tar --same-owner -zxvf dsf_highmed_prod_fhir_0_9_3.tar.gz
         ```
     _The `tar` command will unpack the config files at `/opt/fhir` assuming you changed into the `/opt` directory._
 
@@ -126,7 +126,7 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
     * **services -> proxy -> environment:**
         * **HTTPS_SERVER_NAME_PORT**: __TODO_DSF_FRIR_SERVER_EXTERNAL_FQDN:443__
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `foo.bar.de:443`
-        * For additional environment variables, see [DSF 0.9.2 configuration parameters - FHIR Reverse Proxy](DSF-0.9.2-Configuration-Parameters-FHIR-ReverseProxy)
+        * For additional environment variables, see [DSF 0.9.3 FHIR Reverse Proxy configuration parameters](configFhirReverseProxy)
     * **services -> app -> environment:**
         * **ORG_HIGHMED_DSF_FHIR_SERVER_BASE_URL**: https://_TODO_DSF_FRIR_SERVER_EXTERNAL_FQDN_/fhir  
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `https://foo.bar.de/fhir`
@@ -143,7 +143,7 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
         * **ORG_HIGHMED_DSF_FHIR_SERVER_USER_THUMBPRINTS_PERMANENT_DELETE**: _TODO_CLIENT_CERTIFICATE_THUMBPRINTS_  
             Set the SHA-512 Hash (lowercase hex) of your client certificate (certificate B)  
             This parameter is a comma separated list e.g. `ab12...37ff,f3a2...bb22`. Usually it is not necessary to add additional thumbprints other than your client certificate (certificate B) here. When a client uses a certificate with a thumbprint listed here, the client is allowed to permanently delete FHIR resources.
-        * For additional environment variables, see [DSF 0.9.2 configuration parameters - FHIR Server](DSF-0.9.2-Configuration-Parameters-FHIR)
+        * For additional environment variables, see [DSF 0.9.3 FHIR Server configuration parameters](configFhir)
 
 1. Start the DSF FHIR Server  
     Start using: `docker-compose up -d && docker-compose logs -f` (Ctrl-C will close log, but not stop container)
@@ -158,18 +158,18 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
 1. Download and Extract Config Files  
     Download prepared DSF BPE server config files and folder structure from  
     * **Test HiGHmed** instance:
-        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_test_bpe_0.9.2.tar.gz
+        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_test_bpe_0_9_3.tar.gz
         ```
         cd /opt
-        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_test_bpe_0.9.2.tar.gz
-        sudo tar --same-owner -zxvf dsf_highmed_test_bpe_0.9.2.tar.gz
+        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_test_bpe_0_9_3.tar.gz
+        sudo tar --same-owner -zxvf dsf_highmed_test_bpe_0_9_3.tar.gz
         ```
     * **Production HiGHmed** instance:
-        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_prod_bpe_0.9.2.tar.gz
+        https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_prod_bpe_0_9_3.tar.gz
         ```
         cd /opt
-        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_prod_bpe_0.9.2.tar.gz
-        sudo tar --same-owner -zxvf dsf_highmed_prod_bpe_0.9.2.tar.gz
+        wget https://github.com/highmed/highmed-dsf/wiki/resources/dsf_highmed_prod_bpe_0_9_3.tar.gz
+        sudo tar --same-owner -zxvf dsf_highmed_prod_bpe_0_9_3.tar.gz
         ```
     _The `tar` command will unpack the config files at `/opt/bpe` assuming you changed into the `/opt` directory._
 
@@ -214,7 +214,7 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
             Set your Organizations DSF identifier, aka the shortest FQDN that resolves the main homepage of the organization, e.g. hs-heilbronn.de
         * **ORG_HIGHMED_DSF_BPE_FHIR_SERVER_BASE_URL**: https://__TODO_DSF_FRIR_SERVER_FQDN__/fhir  
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `https://foo.bar.de/fhir`
-        * For additional environment variables, see [DSF 0.9.2 configuration parameters - BPE Server](DSF-0.9.2-Configuration-Parameters-BPE)
+        * For additional environment variables, see [DSF 0.9.3 BPE Server configuration parameters](configBpe)
 
 1. Start the DSF BPE Server (without process plugins)  
     Start using: `docker-compose up -d && docker-compose logs -f` (Ctrl-C will close log, but not stop container)

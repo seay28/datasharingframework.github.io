@@ -1,4 +1,4 @@
-## DSF 0.9.2 Configuration Parameters - BPE Server
+## DSF 0.9.3 Configuration Parameters - BPE Server
 Please note: Additional parameters (not listed here) are used to configure process plugins.
 
 ### ORG_HIGHMED_DSF_BPE_CONSENT_WEBSERVICE_FACTORY_CLASS
