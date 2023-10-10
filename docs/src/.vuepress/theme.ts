@@ -39,7 +39,7 @@ export default hopeTheme({
       prefix: "/stable/",
       children: [
         {
-          text: "Guideline v1.2.0 (stable)",
+          text: "Guideline v1.3.0 (stable)",
           icon: "info",
           children: ["index", "maintain/install", "maintain/upgrade-from-0", "maintain/allowList-mgm", "develop/create"],
         }
@@ -62,7 +62,7 @@ export default hopeTheme({
     text: "Versions",
     icon: "note",
     // children:["/v1/"],
-    children: [{ text: "v1.2.0 (stable)", link: "/stable/" }, { text: "v1.1.0", link: "/v1.1.0/" }, { text: "v1.0.0", link: "/v1.0.0/" }, { text: "v0.9.3 (oldstable)", link: "/oldstable/"}],
+    children: [{ text: "v1.3.0 (stable)", link: "/stable/" }, { text: "v1.2.0", link: "/v1.2.0/" }, { text: "v1.1.0", link: "/v1.1.0/" }, { text: "v1.0.0", link: "/v1.0.0/" }, { text: "v0.9.3 (oldstable)", link: "/oldstable/"}],
   },
   {
     text: "",
@@ -164,13 +164,77 @@ export default hopeTheme({
       children: ["create", "upgrade-from-0" ],
     },
   ],
-  "/v1.2.0/": [
+  "/v1.3.0/": [
     {
       text: "Home",
       icon: "home",
       link: "/",
     },
     "",
+    {
+      text: "Maintain a DSF instance",
+      icon: "tool",
+      prefix: "maintain/",
+      link: "maintain/",
+      children: ["install", "upgrade-from-1", "upgrade-from-0", "allowList-mgm", {
+        text: "FHIR Reverse Proxy",
+        icon: "module",
+        prefix: "fhir-reverse-proxy/",
+        link: "fhir-reverse-proxy/",
+        children: [{
+			icon: "config", 
+			text: "Configuration",
+			link: "configuration"
+		}]
+      }, {
+        text: "FHIR Server",
+        icon: "module",
+        prefix: "fhir/",
+        link: "fhir/",
+        children: [{
+			icon: "config", 
+			text: "Configuration",
+			link: "configuration"
+		}, {
+			icon: "config",
+			text: "Access Control",
+			link: "access-control"
+		}, {
+			icon: "config",
+			text: "OpenID Connect",
+			link: "oidc"
+			}]
+      }, {
+        text: "BPE Server",
+        icon: "module",
+        prefix: "bpe/",
+        link: "bpe/",
+        children: [{
+			icon: "config", 
+			text: "Configuration",
+			link: "configuration"
+		}]
+      }],
+    },
+    {
+      text: "Develop process plugins",
+      icon: "plugin",
+      prefix: "develop/",
+      link: "develop/",
+      children: ["create", "upgrade-from-0" ],
+    },
+  ],
+  "/v1.2.0/": [
+    {
+      text: "Home",
+      icon: "home",
+      link: "/",
+    },
+    {
+      text: "Current version",
+      icon: "update",
+      link: "/stable",
+    },
     {
       text: "Maintain a DSF instance",
       icon: "tool",
