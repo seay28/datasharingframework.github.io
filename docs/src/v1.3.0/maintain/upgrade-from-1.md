@@ -11,7 +11,7 @@ If you want to migrate from DSF 0.9.x, please follow [these instructions](upgrad
 :::
 
 ::: warning Update to DSF 1.2.0 first
-It is important to migrate to DSF 1.2.0 first using [these instructions](/v1.2.0/maintain/upgrade-from-1).
+It is important to migrate to [DSF 1.2.0 first](/v1.2.0/maintain/upgrade-from-1).
 :::
 
 
@@ -36,7 +36,7 @@ services:
 ...
 ```
 
-4. Upgrade the DSF FHIR containers  
+3. Upgrade the DSF FHIR containers  
     From `/opt/fhir` execute  
     ```
     docker compose up -d && docker compose logs -f
@@ -58,19 +58,18 @@ services:
 ...
 ```
 
-
-5. Upgrade the DSF BPE containers  
+3. Upgrade the DSF BPE containers  
     From `/opt/bpe` execute  
     ```
     docker compose up -d && docker compose logs -f
     ```
 
-6. Verify your upgrade:
-    * Verify the DSF FHIR server is running in version 1.2.0. The log should contain a message:  
+4. Verify your upgrade:
+    * Verify the DSF FHIR server is running in version 1.3.0. The log should contain a message:  
         `INFO main - BuildInfoReaderImpl.logBuildInfo(137) | Artifact: dsf-fhir-server-jetty, version: 1.3.0, [...]`
     * Verify the DSF FHIR server started without errors
     * Verify the DSF FHIR server is accessible via https, for example by browsing to https://your-dsf-endpoint.de/fhir/ (authentication with your client-certificate)
-    * Verify the DSF BPE server is running in version 1.2.0. The log should contain a message:  
+    * Verify the DSF BPE server is running in version 1.3.0. The log should contain a message:  
         `INFO main - BuildInfoReaderImpl.logBuildInfo(137) | Artifact: dsf-bpe-server-jetty, version: 1.3.0, [...]`
     * Verify the DSF BPE server started without errors
     * Verify your install with a ping/pong test  
