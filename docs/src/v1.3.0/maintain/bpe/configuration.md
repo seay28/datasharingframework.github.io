@@ -365,7 +365,7 @@ icon: config
 - **Required:** Yes
 - **Description:** PEM encoded file with one or more trusted root certificates to validate server certificates for https connections to local and remote DSF FHIR servers
 - **Recommendation:** Use docker secret file to configure
-- **Example:** `/run/secrets/app_server_trust_certificates.pem`
+- **Example:** `/run/secrets/app_client_trust_certificates.pem`
 
 
 ### DEV_DSF_BPE_FHIR_QUESTIONNAIRE_RESPONSE_SUBSCRIPTION_SEARCH_PARAMETER
