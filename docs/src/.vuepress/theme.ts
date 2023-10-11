@@ -104,6 +104,7 @@ export default hopeTheme({
       link: "/intro/tutorials",
     }
   ],
+  "/hackathon": [],
   "/stable/": [
     {
       text: "Home",
