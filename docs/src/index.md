@@ -40,18 +40,13 @@ The **Data Sharing Framework (DSF)** is a concept for a secure middleware to dis
 ## Rolf Hansen Memorial Award 2023 goes to [Hauke Hund](/about/learnmore/team/)
 We are very pleased to have won the Rolf Hansen Memorial Award at [EFMI MIE 2023](https://www.mie2023.org/) in Gothenburg. The Rolf Hansen Memorial Award is presented annually by the European Federation for Medical Informatics (EFMI) for an outstanding paper as well as for an excellent presentation. It is named after Rolf Hansen (1931-1993), a well-known Norwegian medical informatician and former president of EFMI. Hauke Hund presented his Paper: *No Transfer Without Validation: A Data Sharing Framework Use Case* in May at the EFMI MIE. [doi:10.3233/SHTI230066 ](https://ebooks.iospress.nl/doi/10.3233/SHTI230066) 
 
-
+<!--
 ## Upcoming Events
-::: info GMDS 2023 in Heilbronn 
+::: info TODO title 
 ::: left
-Listen to our talk in session *VS02 Forschungsdateninfrastruktur*, September 19 - from 11am to 12:30pm:
-
-**Deployment of the Data Sharing Framework at German University Hospitals - Lessons Learned.**
-
- <a href="https://www.gmds2023.de/" target="_blank"><img src="/photos/home/gmds2023.jpg" ></a>
-:::center
-[Register here](https://www.gmds2023.de/registrierung/)
+TODO text
 :::
+-->
 
 #### Feel free to contact us via <a href="mailto:dsf-gecko@hs-heilbronn.de">dsf-gecko@hs-heilbronn.de</a> and we will take care of your request as soon as possible.
 
