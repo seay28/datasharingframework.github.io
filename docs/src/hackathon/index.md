@@ -10,4 +10,4 @@ Hinweise zur Teilnahme finden Sie rechtzeitig auf dieser Seite.
 
 
 ## Vorbereitende Hinweise
-Zur aktiven Teilnahme an einem Hackathon mit DSF Bezug empfehlen wir die Installation der aktuellen DSF-Version auf Ihrer Infrastruktur. Weitere Details dazu finden Sie [auf der Installationsseite](/stable/maintain/install) beziehungsweise in der [Upgradeanleitung](/stable/maintain/upgrade-from-1).
+Zur aktiven Teilnahme an einem Hackathon mit DSF Bezug empfehlen wir die Installation der aktuellen DSF-Version auf Ihrer Infrastruktur. Weitere Details dazu finden Sie [auf der Installationsseite](/stable/maintain/install) beziehungsweise in der [Upgradeanleitung](/stable/maintain/upgrade-from-0).
