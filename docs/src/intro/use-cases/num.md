@@ -14,4 +14,4 @@ The [Data Transfer Process](https://github.com/num-codex/codex-processes-ap1) is
 
 ![](/photos/learnmore/projects/ap1.png)
 
-More technical information can be found on [GitHub](https://github.com/num-codex/codex-processes-ap1/wiki/Process-Description-v0.7.0).
+More technical information can be found on [GitHub](https://github.com/num-codex/codex-processes-ap1/wiki/Process-Description-v1.0.0.0).
