@@ -41,7 +41,7 @@ export default hopeTheme({
         {
           text: "Guideline v1.3.0 (stable)",
           icon: "info",
-          children: ["index", "maintain/install", "maintain/upgrade-from-0", "maintain/allowList-mgm", "develop/create"],
+          children: ["index", "maintain/install", "maintain/upgrade-from-0", "maintain/allowList-mgm", "maintain/install-plugins", "develop/create"],
         }
       ]
   },
@@ -155,7 +155,13 @@ export default hopeTheme({
 			text: "Configuration",
 			link: "configuration"
 		}]
-      }],
+      },
+      {
+        text: "Install Plugins",
+        icon: "plugin",
+        link: "install-plugins"
+    }
+    ],
     },
     {
       text: "Develop process plugins",
@@ -215,7 +221,12 @@ export default hopeTheme({
 			text: "Configuration",
 			link: "configuration"
 		}]
-      }],
+      },
+      {
+        text: "Install Plugins",
+        icon: "plugin",
+        link: "install-plugins"
+    }],
     },
     {
       text: "Develop process plugins",
