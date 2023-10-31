@@ -1,3 +1,7 @@
+---
+title: Einladung DSF-Community PROD Hackathon - 13.11.2023
+icon: guide
+---
 
 **Betreff: Einladung DSF-Community PROD Hackathon - 13.11.2023**
 **Wann: Mo 13.11.2023 10:00-16:00**
