@@ -99,12 +99,12 @@ Here is a quick overview of the expected network setup.
     * If the private key is encrypted, add a password file with the password as the only content to **/opt/fhir/secrets/client_certificate_private_key.pem.password**
     * If the private key is not encrypted, remove the corresponding docker secret lines from the `docker-compose.yml` file
         ```
-        L44:      - app_client_certificate_private_key.pem.password
+        L39:      - app_client_certificate_private_key.pem.password
         ...
-        L59:      DEV_DSF_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
+        L54:      DEV_DSF_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
         ...
-        L146:  app_client_certificate_private_key.pem.password:
-        L147:    file: ./secrets/client_certificate_private_key.pem.password
+        L141:  app_client_certificate_private_key.pem.password:
+        L142:    file: ./secrets/client_certificate_private_key.pem.password
         ```
 
     ::: tip How to chmod / chown
@@ -179,12 +179,12 @@ Here is a quick overview of the expected network setup.
     * If the private key is encrypted, add a password file with the password as the only content to **/opt/bpe/secrets/client_certificate_private_key.pem.password**
     * If the private key is not encrypted, remove the corresponding docker secret lines from the `docker-compose.yml` file
         ```
-        L18:      - app_client_certificate_private_key.pem.password
+        L13:      - app_client_certificate_private_key.pem.password
         ...
-        L40:      DEV_DSF_BPE_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
+        L35:      DEV_DSF_BPE_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
         ...
-        L97:  app_client_certificate_private_key.pem.password:
-        L98:    file: ./secrets/client_certificate_private_key.pem.password
+        L89:  app_client_certificate_private_key.pem.password:
+        L90:    file: ./secrets/client_certificate_private_key.pem.password
         ```
 1. Modify database passwords
     * **/opt/bpe/secrets/db_liquibase.password**
@@ -196,8 +196,6 @@ Here is a quick overview of the expected network setup.
 
 1. Modify the docker-compose.yml file and set environment variables to the appropriate values
     * **services -> app -> environment:**
-        * **DEV_DSF_BPE_FHIR_SERVER_ORGANIZATION_IDENTIFIER_VALUE**: `todo.organization.com`  
-            Set your Organizations DSF identifier, aka the shortest FQDN that resolves the main homepage of the organization, e.g. `hs-heilbronn.de`
         * **DEV_DSF_BPE_FHIR_SERVER_BASE_URL**: `https://dsf.todo.organization.com/fhir`  
             Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `https://foo.bar.de/fhir`
             
