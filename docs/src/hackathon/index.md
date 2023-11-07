@@ -6,8 +6,8 @@ icon: guide
 ::: tip Nächster Hackathon
 Der nächste Hackathon findet am 13.11. um 10:00 Uhr statt.
 Hinweise zur Teilnahme finden Sie rechtzeitig auf dieser Seite.
-
-Gemeinsame technische Sprechstunde der DSF-Community und des FDPG+
+:::
+::: tip Gemeinsame technische Sprechstunde der DSF-Community und des FDPG+
 - 22.11.2023 (Mi) 10:30-11:30 Uhr
 - 27.11.2023 (Mo) 10:00-11:00 Uhr
 - 05.12.2023 (Di) 16:00-17:00 Uhr
