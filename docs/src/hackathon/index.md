@@ -6,6 +6,12 @@ icon: guide
 ::: tip Nächster Hackathon
 Der nächste Hackathon findet am 13.11. um 10:00 Uhr statt.
 Hinweise zur Teilnahme finden Sie rechtzeitig auf dieser Seite.
+
+Gemeinsame technische Sprechstunde der DSF-Community und des FDPG+
+- 22.11.2023 (Mi) 10:30-11:30 Uhr
+- 27.11.2023 (Mo) 10:00-11:00 Uhr
+- 05.12.2023 (Di) 16:00-17:00 Uhr
+- Ort: [https://dsf.dev/hackathon/](https://dsf.dev/hackathon/)
 :::
 
 
@@ -50,3 +56,10 @@ Die produktiven Systeme der FDPG auf zentraler Seite werden bereits am Freitag d
 **Die produktiven Systeme der FDPG auf zentraler Seite werden bereits am Freitag den 10.11.2023 upgedated, sodass von Freitag- bis Montagnachmittag mit Einschränkungen in der Funktionalität des FDPG zu rechnen ist.** Im Nachgang an den Hackathon wird ein intensiver Support der DSF-Community und des FDPG+ Teams angeboten. Nutzen Sie das NUM-MII-DIZ Meeting für Fragen. Zusätzlich werden weitere Sprechstunden zeitnah bekannt gegeben.
  
 Falls Sie fragen zu den DSF Community Hackathons oder der Installation des DSF haben, melden Sie sich gerne über den [DSF-Community Zulip-Channel](https://mii.zulipchat.com/#narrow/stream/392426-Data-Sharing-Framework-.28DSF.29). Falls Sie Fragen zu der Installation des Feasibility Triangle haben, melden Sie sich bitte in dem [DIZ-Techchanel](https://mii.zulipchat.com/#narrow/stream/375397-DIZ-Tech-Channel) auf Zulip oder bei julian.gruendner@fau.de. Falls Sie Fragen zur FDPG im Allgemeinen haben: Philip.Kleinert@tmf-ev.de
+
+
+## Gemeinsame technische Sprechstunde der DSF-Community und des FDPG+
+- 22.11.2023 (Mi) 10:30-11:30 Uhr
+- 27.11.2023 (Mo) 10:00-11:00 Uhr
+- 05.12.2023 (Di) 16:00-17:00 Uhr
+- Ort: [https://dsf.dev/hackathon/](https://dsf.dev/hackathon/)
