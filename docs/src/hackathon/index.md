@@ -3,15 +3,18 @@ title: Hackathon
 icon: guide
 ---
 
+<meta http-equiv="refresh" content="0;url=https://audimax.heiconf.uni-heidelberg.de/jxh4-jxx2-tm6c-d37q">
+
 ::: tip Nächster Hackathon
 Der nächste Hackathon findet am 13.11. um 10:00 Uhr statt.
-Hinweise zur Teilnahme finden Sie rechtzeitig auf dieser Seite.
+
+Verwenden Se den folgenden Link, falls Sie nicht automatisch weitergeleitet werden: https://audimax.heiconf.uni-heidelberg.de/jxh4-jxx2-tm6c-d37q
 :::
 ::: tip Gemeinsame technische Sprechstunde der DSF-Community und des FDPG+
 - 22.11.2023 (Mi) 10:30-11:30 Uhr
 - 27.11.2023 (Mo) 10:00-11:00 Uhr
 - 05.12.2023 (Di) 16:00-17:00 Uhr
-- Ort: [https://dsf.dev/hackathon/](https://dsf.dev/hackathon/)
+- Ort: https://dsf.dev/hackathon
 :::
 
 
@@ -21,9 +24,9 @@ Zur aktiven Teilnahme an einem Hackathon mit DSF Bezug empfehlen wir die Install
 ## Hackathon Informationen
 **Betreff: Einladung DSF-Community PROD Hackathon - 13.11.2023**
 **Wann: Mo 13.11.2023 10:00-16:00**
-Ort:  https://dsf.dev/hackathon/
+Ort: https://audimax.heiconf.uni-heidelberg.de/jxh4-jxx2-tm6c-d37q
 			 
-Wir laden Sie herzlich zu dem nächsten DSF Community Hackathon am Montag den 13.11.2023 von 10:00-16:00 Uhr ein. Ziel ist das Etablieren der nach unten inkompatiblen Upgrades (DSF und Feasibility) in ihrer produktiven Instanz (möglichst identisch zu Ihrer Testumgebung). Der Einwahllink ist: [https://dsf.dev/hackathon/](https://dsf.dev/hackathon/)
+Wir laden Sie herzlich zu dem nächsten DSF Community Hackathon am Montag den 13.11.2023 von 10:00-16:00 Uhr ein. Ziel ist das Etablieren der nach unten inkompatiblen Upgrades (DSF und Feasibility) in ihrer produktiven Instanz (möglichst identisch zu Ihrer Testumgebung). Der Einwahllink ist: https://audimax.heiconf.uni-heidelberg.de/jxh4-jxx2-tm6c-d37q
 
 **Dieses Mal geht es um das Upgrade der PRODUKTIVEN DSF Infrastruktur und der damit verbundenen Anbindung an die produktive Instanz der FDPG. Alle Standorte sollten idealerweise am 13.11.2023 ihre produktiven DSF Instanzen von v0.9.x auf v.1.3.1. upgraden, da ab dem 13.11.2023 eine Anbindung an das FDPG und den NTH (NUM RDP) mit den veralteten Komponenten nicht mehr möglich ist.**
 
@@ -62,4 +65,4 @@ Falls Sie fragen zu den DSF Community Hackathons oder der Installation des DSF h
 - 22.11.2023 (Mi) 10:30-11:30 Uhr
 - 27.11.2023 (Mo) 10:00-11:00 Uhr
 - 05.12.2023 (Di) 16:00-17:00 Uhr
-- Ort: [https://dsf.dev/hackathon/](https://dsf.dev/hackathon/)
+- Ort: https://dsf.dev/hackathon
