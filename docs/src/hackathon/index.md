@@ -12,3 +12,5 @@ icon: guide
 - Ort: https://dsf.dev/hackathon
 :::
 
+
+Klicken Sie [hier](https://lecture.senfcall.de/sim-ock-1vk-l8o), um der Sprechstunde beizutreten.
