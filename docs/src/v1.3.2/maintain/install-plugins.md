@@ -14,8 +14,8 @@ You can find an overview of compatable process plugins below.
 
 - Feasibility: https://github.com/medizininformatik-initiative/feasibility-dsf-process/releases
 - KDS-Report: https://github.com/medizininformatik-initiative/mii-process-report/releases
-<!-- - MII-Data-Sharing: https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases
-- MII-Data-Transfer: https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases -->
+<!-- - MII-Data-Sharing: https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases -->
+- MII-Data-Transfer: https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases
 
 ## NUM processes
 - NUM-RDP: https://github.com/num-codex/codex-processes-ap1/releases
