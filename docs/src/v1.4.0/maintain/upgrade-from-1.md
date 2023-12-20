@@ -73,13 +73,15 @@ services:
 
 ## Troubleshooting
 
-DSF 1.4.0 and newer will refuse to start if the DSF FHIR instance of your site contains the same FHIR resources multiple times, which should only be there once. This no longer occurs with a new installation from DSF 1.4.0.
+DSF 1.4.0 and newer will refuse to start if the DSF FHIR instance of your site contains the same FHIR ActivityDefintion resources multiple times, which should only be there once. A ActivityDefinition resource is considered as duplicate, if there are multiple resources with the same url and version.
 
-The following steps are necessary to resolve the issue during an update from 1.3.2 or less:
+This no longer occurs with a new installation from DSF 1.4.0.
 
-1. shut down the DSF FHIR server and the DSF BPE (docker compose down in /opt/fhir and /opt/bpe).
-2. start the DSF FHIR server (docker compose up -d in /opt/fhir)
-3. delete the ActivityDefinitions as described below:
+The following steps are necessary to resolve the issue after an update from 1.3.2 or older versions:
+
+1. Ensure, that the DSF FHIR server (version 1.4.0) is started (as described above)
+2. Make sure, that the DSF BPE is properly stopped (`docker compose down` in /opt/bpe)
+3. Delete the ActivityDefinition resources as described below:
 
 Note: Only duplicate ActivityDefinitions need to be deleted, i.e. ActivityDefinitions with the same url and version. However, all ActivityDefinitions can also be deleted without any issues; they are created again at the start of the BPE.
 
@@ -94,4 +96,4 @@ curl --cert client_certificate.pem --key client_certificate_private_key.pem -X D
 ```
 
 
-4. start the DSF BPE
+4. Start the DSF BPE (`docker compose up -d && docker compose logs -f` in /opt/bpe). You should **not** see any errors containing `dev.dsf.bpe.plugin.FhirResourceHandlerImpl - Error while executing process plugins resource bundle`.
