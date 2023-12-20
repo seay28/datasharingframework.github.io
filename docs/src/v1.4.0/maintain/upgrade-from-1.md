@@ -69,3 +69,29 @@ services:
         `INFO main - BuildInfoReaderImpl.logBuildInfo(137) | Artifact: dsf-bpe-server-jetty, version: 1.4.0, [...]`
     * Verify the DSF BPE server started without errors
     * Verify your install with a ping/pong test  
+
+
+## Troubleshooting
+
+DSF 1.4.0 and newer will refuse to start if the DSF FHIR instance of your site contains the same FHIR resources multiple times, which should only be there once. This no longer occurs with a new installation from DSF 1.4.0.
+
+The following steps are necessary to resolve the issue during an update from 1.3.2 or less:
+
+1. shut down the DSF FHIR server and the DSF BPE (docker compose down in /opt/fhir and /opt/bpe).
+2. start the DSF FHIR server (docker compose up -d in /opt/fhir)
+3. delete the ActivityDefinitions as described below:
+
+Note: Only duplicate ActivityDefinitions need to be deleted, i.e. ActivityDefinitions with the same url and version. However, all ActivityDefinitions can also be deleted without any issues; they are created again at the start of the BPE.
+
+In the folder /opt/fhir/secrets of the FHIR server:
+```
+curl --cert client_certificate.pem --key client_certificate_private_key.pem https://DSF_FHIR_SERVER/fhir/ActivityDefinition?_sort=url,version
+```
+Execute the following commands using the "fullUrl "s output there:
+
+```
+curl --cert client_certificate.pem --key client_certificate_private_key.pem -X DELETE fullUrl
+```
+
+
+4. start the DSF BPE
