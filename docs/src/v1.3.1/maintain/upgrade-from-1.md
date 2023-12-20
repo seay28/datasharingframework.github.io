@@ -3,11 +3,11 @@ title: Upgrade from DSF 1.3.0
 icon: update
 ---
 
-Upgrading the DSF 1.x to the current version involves modifying the docker-compose.yml files and recreating the containers.
+Upgrading the DSF from 1.3.0 to 1.3.1 involves modifying the docker-compose.yml files and recreating the containers.
 
 
 ::: warning Update to DSF 1.2.0 first
-It is important to migrate to [DSF 1.2.0 first](/v1.2.0/maintain/upgrade-from-1).
+When upgrading from 1.0.0 or 1.1.0 it is important to migrate to [DSF 1.2.0 first](/v1.2.0/maintain/upgrade-from-1).
 :::
 
 
