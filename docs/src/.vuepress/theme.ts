@@ -24,12 +24,17 @@ export default hopeTheme({
   {
       text: "Docs",
       icon: "info",
-      prefix: "/intro/",
+      prefix: "",
       children: [
         {
           text: "Introduction",
           icon: "info",
-          children: ["", "use-cases/", "publications", "tutorials/"],
+          children: ["/intro", "/intro/use-cases/", "/intro/publications", "/intro/tutorials/"],
+        },
+        {
+          text: "Security",
+          icon: "safe",
+          link: "security",
         }
       ]
   },
@@ -41,7 +46,7 @@ export default hopeTheme({
         {
           text: "Guideline v1.4.0 (stable)",
           icon: "info",
-          children: ["index", "maintain/install", "maintain/upgrade-from-0", "maintain/allowList-mgm", "maintain/install-plugins", "develop/create"],
+          children: ["index", "maintain/install", "maintain/upgrade-from-0", "maintain/allowList-mgm", "maintain/install-plugins", "develop/create", "contribute"],
         }
       ]
   },
@@ -85,6 +90,11 @@ export default hopeTheme({
       prefix: "intro/",
       link: "intro/",
       children: ["info/introduction.md", "info/basics", "info/architecture", "info/security", "info/allowList", "info/process-plugins"], 
+    },
+    {
+      text: "Security",
+      icon: "safe",
+      link: "/security",
     },
     {
       text: "Use-Cases",
@@ -169,6 +179,24 @@ export default hopeTheme({
       prefix: "develop/",
       link: "develop/",
       children: ["create", "upgrade-from-0" ],
+    },
+    {
+      text: "Contribute",
+      icon: "info",
+      link: "contribute",
+      prefix: "contribute/",
+      children: [
+      {
+        text: "Code",
+        link: "code",
+        icon: "code"
+      },
+      {
+        text: "Documentation",
+        link: "documentation",
+        icon: "info"
+      }
+    ]
     },
   ],
   "/v1.4.0/": [
