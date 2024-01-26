@@ -16,12 +16,11 @@ icon: blog
 
 - R. Wettstein, T. Kussel, H. Hund, C. Fegeler, M. Dugas, K. Hamacher, **Secure Multi-Party Computation Based Distributed Feasibility Queries – A HiGHmed Use Case**, Stud Health Technol Inform, 296 (2022) 41-49, [doi:10.3233/SHTI220802](https://ebooks.iospress.nl/doi/10.3233/SHTI220802)
 
-- H. Hund, R. Wettstein, M. Kurscheidt, S.T. Schweizer, C. Zilske, C. Fegeler, **Interoperability Is a Process- The Data Sharing Framework** [DOI coming soon](TODO)
+- C. Zilske, M. Kurscheidt, S.T. Schweizer, H. Hund, S. Mödinger, C. Fegeler, **Monitoring Distributed Business Processes in Biomedical Research**, Stud Health Technol Inform, 302 (2023) 252-256, [doi:10.3233/SHTI230113](https://ebooks.iospress.nl/doi/10.3233/SHTI230113)
 
-- C. Zilske, M. Kurscheidt, S.T. Schweizer, H. Hund, S. Mödinger, C. Fegeler, **Monitoring Distributed Business Processes in Biomedical Research**, [doi:10.3233/SHTI230113](https://ebooks.iospress.nl/doi/10.3233/SHTI230113)
+- H.Hund, R. Wettstein, C. Hampf, M. Bialke, M. Kurscheidt, S.T. Schweizer, C. Zilske, S. Mödinger, C. Fegeler, **No Transfer Without Validation: A Data Sharing Framework Use Case**, Stud Health Technol Inform, 302 (2023) 68-72, [doi:10.3233/SHTI230066](https://ebooks.iospress.nl/doi/10.3233/SHTI230066)
 
-- H.Hund, R. Wettstein, C. Hampf, M. Bialke, M. Kurscheidt, S.T. Schweizer, C. Zilske, S. Mödinger, C. Fegeler, **No Transfer Without Validation: A Data Sharing Framework Use Case** [doi:10.3233/SHTI230066 ](https://ebooks.iospress.nl/doi/10.3233/SHTI230066)
-
+- H. Hund, R. Wettstein, M. Kurscheidt, S.T. Schweizer, C. Zilske, C. Fegeler, **Interoperability Is a Process- The Data Sharing Framework**, Stud Health Technol Inform, 310 (2024) 28-32, [doi:10.3233/SHTI230921](https://ebooks.iospress.nl/doi/10.3233/SHTI230921)
 
 ### Recorded Talks
 #### GMDS Conference 2022
