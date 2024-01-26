@@ -18,7 +18,7 @@ icon: blog
 
 - C. Zilske, M. Kurscheidt, S.T. Schweizer, H. Hund, S. Mödinger, C. Fegeler, **Monitoring Distributed Business Processes in Biomedical Research**, Stud Health Technol Inform, 302 (2023) 252-256, [doi:10.3233/SHTI230113](https://ebooks.iospress.nl/doi/10.3233/SHTI230113)
 
-- H.Hund, R. Wettstein, C. Hampf, M. Bialke, M. Kurscheidt, S.T. Schweizer, C. Zilske, S. Mödinger, C. Fegeler, **No Transfer Without Validation: A Data Sharing Framework Use Case**, Stud Health Technol Inform, 302 (2023) 68-72, [doi:10.3233/SHTI230066](https://ebooks.iospress.nl/doi/10.3233/SHTI230066)
+- H. Hund, R. Wettstein, C. Hampf, M. Bialke, M. Kurscheidt, S.T. Schweizer, C. Zilske, S. Mödinger, C. Fegeler, **No Transfer Without Validation: A Data Sharing Framework Use Case**, Stud Health Technol Inform, 302 (2023) 68-72, [doi:10.3233/SHTI230066](https://ebooks.iospress.nl/doi/10.3233/SHTI230066)
 
 - H. Hund, R. Wettstein, M. Kurscheidt, S.T. Schweizer, C. Zilske, C. Fegeler, **Interoperability Is a Process- The Data Sharing Framework**, Stud Health Technol Inform, 310 (2024) 28-32, [doi:10.3233/SHTI230921](https://ebooks.iospress.nl/doi/10.3233/SHTI230921)
 
