@@ -4,7 +4,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 export default hopeTheme({
   author: {
     name: "DSF-Team",
-    url: "/about/learnmore/team.html", 
+    url: "/about/team.html", 
   },
 
   iconAssets: "/assets/font/font.css",
@@ -22,52 +22,53 @@ export default hopeTheme({
     link: "/",
   },  
   {
-      text: "Docs",
+      text: "Introduction",
       icon: "info",
-      prefix: "",
+      prefix: "/introduction/",
+      link: "/introduction/",
       children: [
         {
-          text: "Introduction",
           icon: "info",
-          children: ["/intro", "/intro/use-cases/", "/intro/publications", "/intro/tutorials/"],
+          children: ["docs/", "use-cases/", "publications", "security", "tutorials/"],
         },
-        {
-          text: "Security",
-          icon: "safe",
-          link: "/security",
-        }
       ]
   },
   {
       text: "Get Started",
       icon: "launch",
       prefix: "/stable/",
+      link: "/stable",
       children: [
         {
-          text: "Guideline v1.4.0 (stable)",
           icon: "info",
           children: ["index", "maintain/install", "maintain/upgrade-from-0", "maintain/allowList-mgm", "maintain/install-plugins", "develop/create", "contribute"],
-        }
+        },
       ]
+  },
+  {
+    text: "Versions",
+    icon: "code",
+    prefix: "/versions/",
+    link: "/versions/",
+    children: [
+      {
+        icon: "code",
+        children: ["docs/", "use-cases/", "publications", "security", "tutorials/"],
+      },
+
+    children: [{ text: "v1.4.0 (stable)", link: "/stable/" }, { text: "v1.3.2", link: "/v1.3.2/" }, { text: "v1.3.1", link: "/v1.3.1/" }, { text: "v1.3.0", link: "/v1.3.0/" }, { text: "v1.2.0", link: "/v1.2.0/" }, { text: "v1.1.0", link: "/v1.1.0/" }, { text: "v1.0.0", link: "/v1.0.0/" }, { text: "v0.9.3 (oldstable)", link: "/oldstable/"}],
   },
   {
     text: "About",
     icon: "creative",
-    prefix: "/about/",  
+    prefix: "/about/",
+    link: "/about/",  
     children: [
       {
-        text: "Learn More",
         icon: "creative",
-        prefix: "learnmore/", 
-        children: ["contact", "team", "partners", "public"],
+        children: ["contact", "team", "partners", "public", "faq"],
       },
     ],
-  },
-  {
-    text: "Versions",
-    icon: "note",
-    // children:["/v1/"],
-    children: [{ text: "v1.4.0 (stable)", link: "/stable/" }, { text: "v1.3.2", link: "/v1.3.2/" }, { text: "v1.3.1", link: "/v1.3.1/" }, { text: "v1.3.0", link: "/v1.3.0/" }, { text: "v1.2.0", link: "/v1.2.0/" }, { text: "v1.1.0", link: "/v1.1.0/" }, { text: "v1.0.0", link: "/v1.0.0/" }, { text: "v0.9.3 (oldstable)", link: "/oldstable/"}],
   },
   {
     text: "",
@@ -85,36 +86,37 @@ export default hopeTheme({
       link: "/",
     },
     {
-      text: "Docs",
+      text: "Dokumentation",
       icon: "info",
-      prefix: "intro/",
-      link: "intro/",
-      children: ["info/introduction.md", "info/basics", "info/architecture", "info/security", "info/allowList", "info/process-plugins"], 
-    },
-    {
-      text: "Security",
-      icon: "safe",
-      link: "/security",
+      prefix: "/introduction/docs/",
+      link: "/introduction/docs/",
+      children: ["introduction.md", "basics", "architecture", "securityDesign", "allowList", "process-plugins", "networkSetup"], 
     },
     {
       text: "Use-Cases",
       icon: "any",
-      prefix: "intro/use-cases/",
-      link: "intro/use-cases/",
-      children: ["feasibility", "NUM"], 
+      prefix: "/introduction/use-cases/",
+      link: "/introduction/use-cases/",
+      children: ["feasibility", "num"], 
     },
     {
-      text: "Publications",
+      text: "Publications and Talks",
       icon: "blog",
-      link: "/intro/publications",
+      link: "/introduction/publications",
+    },
+    {
+      text: "Security",
+      icon: "safe",
+      link: "/introduction/security",
     },
     {
       text: "Tutorials",
       icon: "edit",
-      link: "/intro/tutorials",
+      prefix: "/introduction/tutorials/",
+      link: "/introduction/tutorials/",
+      children: ["MIE2023", "ProcessPlugin"], 
     }
   ],
-  "/hackathon": [],
   "/stable/": [
     {
       text: "Home",
@@ -633,20 +635,6 @@ export default hopeTheme({
       children: ["create", "upgrade-from-0" ],
     },
   ],
-  "/about/":  [
-    {
-      text: "Home",
-      icon: "home",
-      link: "/",
-    },
-    {
-      text: "About",
-      icon: "creative",
-      prefix: "learnmore/",
-      link: "learnmore/",
-      children: ["contact", "team", "partners", "public"], 
-    },
-  ],
   "/oldstable/":  [
     {
       text: "Home",
@@ -658,10 +646,24 @@ export default hopeTheme({
       icon: "guide",
       children: ["introduction", "generalinformation/", "code/", "build/", "releases/", "tutorial/"], 
     },
-  ]
+  ],
+  "/about/":  [
+    {
+      text: "Home",
+      icon: "home",
+      link: "/",
+    },
+    {
+      text: "About",
+      icon: "creative",
+      link: "/about",
+      children: ["contact", "team", "partners", "public", "faq"], 
+    },
+  ],
+  "/hackathon": [],
  },
 
- footer: "<a href='https://www.hs-heilbronn.de/impressum'>Imprint</a> • <a href='https://www.hs-heilbronn.de/de/datenschutz'>Data Privacy</a>",
+ footer: "<a href='https://www.hs-heilbronn.de/impressum'>Imprint</a>  |  <a href='https://www.hs-heilbronn.de/de/datenschutz'>Data Privacy</a>  |  <a href='/about/contact'>Contact</a>",
  copyright: false,
  displayFooter: true,
  

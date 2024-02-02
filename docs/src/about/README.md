@@ -2,10 +2,12 @@
 title: About
 icon: creative
 ---
+---
 
 ## Overview
 
-- [Contact & Community Guide](learnmore/contact)
-- [Contributors](learnmore/team)
-- [Partners](learnmore/partners)
-- [Public Funding](learnmore/public)
+- [Contact & Community](contact.md)
+- [Contributors](team.md)
+- [Partners](partners.md)
+- [Public Funding](public.md)
+- [FAQ](faq.md)
