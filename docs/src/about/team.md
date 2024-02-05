@@ -2,6 +2,7 @@
 title: Team
 icon: group
 ---
+---
 
 <B>The funded project team includes:</B>
 

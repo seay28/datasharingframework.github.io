@@ -1,16 +1,16 @@
 # Documentation for the DSF
 - [https://dsf.dev/](https://dsf.dev/)
 
-## Get started
-### Requirements
+# Get started
+#### Requirements
 - install [Node.js](https://nodejs.org/en)
 - GitHub: [https://github.com/datasharingframework/datasharingframework.github.io](https://github.com/datasharingframework/datasharingframework.github.io)
 
-### Move into docs folder
+#### Move into docs folder
 cd docs
-### Build 
+#### Build 
 npm run docs:build
-### Run
+#### Run
 npm run docs:dev
 
 #### Information about [theme](https://theme-hope.vuejs.press/cookbook/)

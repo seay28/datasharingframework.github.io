@@ -1,11 +1,18 @@
 ---
 title: Contribute
-icon: info
+icon: creative 
+---
+---
+
+# Overview
+- [Code](code.md)
+- [Documentation](documentation.md)
+
 ---
 
 We are thrilled that you consider contributing to our projects. Your contributions, big or small, are greatly valued and play a significant role in the success and improvement of our work. Whether you're a seasoned developer or just starting out, there's a place for you here to make a meaningful impact.
 
-### **Ways you can contribute:**
+#### **Ways you can contribute:**
 
 
 1. **Helping other users**:

@@ -2,6 +2,7 @@
 title: Partners
 icon: proxy
 ---
+---
 
 Funded for further development of the <B>Data Sharing Framework</B> are:
 

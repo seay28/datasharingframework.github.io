@@ -2,7 +2,7 @@
 title: Release a new version
 icon: back-stage
 ---
-## Release a new final version
+# Release a new final version
 
 1. Write release notes
 2. Create new release/x.y.z branch from develop
@@ -26,7 +26,7 @@ icon: back-stage
 20. Increase version
 21. Merge next development cycle issue branch into develop via PR
 
-## Release a new candidate version
+# Release a new candidate version
 
 1. Write release notes
 2. Create new release/x.y.z-RC# branch from develop

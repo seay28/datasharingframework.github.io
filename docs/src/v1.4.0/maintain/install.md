@@ -10,11 +10,11 @@ In the following installation manual we will show you how you can install your o
 The installation instructions of DSF 0.9.x for different application use cases (e.g. NUM CODEX or HiGHmed) are now combined under one common manual. The specific steps for process installation and configuration are documented at the process plugin documentation pages.
 :::
 
-## Prerequisites
-### Virtual Machines
+# Prerequisites
+#### Virtual Machines
 * DSF FHIR VM: min. 4 GB RAM, 4 vCPU, 20 GB HDD
 * DSF BPE VM: min. 4 GB RAM, 4 vCPU, 20 GB HDD
-### Docker / Docker-Compose
+#### Docker / Docker-Compose
 Both VMs need latest docker (>= 24.0.0) and docker compose. For the latest install guide see https://docs.docker.com/engine/install. 
 
 ```
@@ -30,7 +30,7 @@ sudo systemctl enable containerd.service
 
 The current version of docker compose is installed with the current docker version.
 
-### Client/Server Certificates
+#### Client/Server Certificates
 Two Certificates from the GÉANT TCS (via DFN e.V.), D-Trust (via TMF e.V.) or DFN-PKI Global G2 (legacy, no new certificates are issued) are needed:
 * Certificate _A_: Server Certificate  - `TLS Web Server Authentication` (DFN PKI Profile: 'Web Server', Common-Name: Your external DSF FHIR Servers FQDN)
 * Certificate _B_: Client Certificate  - `TLS Web Client Authentication` (DFN PKI Profile: '802.1X Client', Common-Name: Your DSF BPE Servers FQDN)
@@ -38,7 +38,7 @@ Two Certificates from the GÉANT TCS (via DFN e.V.), D-Trust (via TMF e.V.) or D
 If you use GÉANT TCS certificates, then they are configured by default with the necessary *X509v3 Extended Key Usage*s: `TLS Web Server Authentication, TLS Web Client Authentication`.
 
 
-### Network setup / Network access
+#### Network setup / Network access
 
 * The DSF FHIR server needs to be accessible via the internet and able to access the internet without TLS interception.
 * The BPE FHIR server should only be accessible by the internal network and able to access your DSF FHIR server via its external FQDN and the internet without TLS interception.
@@ -57,8 +57,8 @@ Here is a quick overview of the expected network setup.
 
 
 
-## Setup
-### Prepare Certificates
+# Setup
+#### Prepare Certificates
 1. Server Certificate (certificate _A_)  
     _This certificate will be used as the DSF FHIR servers server certificate (ssl_certificate_file.pem, ssl_certificate_key_file.pem)_
     * Store PEM encoded certificate as `ssl_certificate_file.pem`
@@ -69,7 +69,7 @@ Here is a quick overview of the expected network setup.
     * Store PEM encoded certificate as `client_certificate.pem`
     * Store encrypted or not encrypted, PEM encoded private-key as `client_certificate_private_key.pem`
 
-### DSF FHIR Server
+#### DSF FHIR Server
 1. Add Group/User  
     Add group and user used by the DSF FHIR java application. Ubuntu compatible commands below:
     ```
@@ -153,7 +153,7 @@ Here is a quick overview of the expected network setup.
 1. Start the DSF FHIR Server  
     Start using: `docker compose up -d && docker compose logs -f` (Ctrl-C will close log, but not stop container)
 
-### DSF BPE Server
+#### DSF BPE Server
 1. Add Group/User  
     Add group and user used by the DSF BPE java application. Ubuntu compatible commands below:
     ```
@@ -214,7 +214,7 @@ Here is a quick overview of the expected network setup.
     The command above should print the server certificate of your DSF FHIR server (certificate _A_) and end with a message like `[...]tlsv13 alert certificate required[...]`
 
 
-### Logs
+#### Logs
 By default, we will log both to the console (collected by docker) and to files in the log directory, so you can use `docker compose logs -f` in `/opt/bpe` and `/opt/fhir` to view informational, warning and error logs. If you encounter any error and the reported information is not detailled enough, you can also check the logs in the `/opt/fhir/log` and `/opt/bpe/log` directories with debugging logs. There, you will also find older log files. If you have any questions and can't resolve them by yourself please always include the latest logs from `/opt/fhir/log` and `/opt/bpe/log` in your support request.
 
 On a successful BPE start, you should see the following entries in your BPE log:
@@ -224,9 +224,9 @@ INFO Grizzly(1) - ClientEndpoint.onOpen(37) | Websocket connected {uri: wss://FH
 INFO Grizzly(1) - ClientEndpoint.onOpen(37) | Websocket connected {uri: wss://FHIR_SERVER_FQDN/fhir/ws, session-id: SOME_RANDOM_UUID2}
 ```
 
-### On-Boarding
+#### On-Boarding
 Please visit the on boarding website of your network for more information.
 
 ::: tip Ideas for improvement?
-Have you found an error or is something unclear to you? Then please feel free to write to us at <a href="mailto:dsf-gecko@hs-heilbronn.de">gth-gecko@hs-heilbronn.de</a>. Thank you very much!
+Have you found an error or is something unclear to you? Then please feel free to write to us at <a href="mailto:dsf-gecko@hs-heilbronn.de">dsf-gecko@hs-heilbronn.de</a>. Thank you very much!
 :::

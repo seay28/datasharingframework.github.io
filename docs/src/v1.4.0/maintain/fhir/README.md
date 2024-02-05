@@ -2,7 +2,7 @@
 title: FHIR Server
 icon: module
 ---
-## Overview
+# Overview
 - [Configuration Parameters](configuration)
 - [Access Control](access-control)
 - [OpenID Connect](oidc)

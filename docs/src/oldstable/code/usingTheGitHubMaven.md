@@ -2,7 +2,7 @@
 title: Using the Github Maven Package Registry
 icon: code
 ---
-## Authenticating to GitHub Packages
+# Authenticating to GitHub Packages
 
 For more information take a look at this GitHub documentation about [authentication](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry#authenticating-to-github-packages).
 
@@ -44,7 +44,7 @@ After that, add the following configuration to your local .m2/settings.xml. Repl
   </servers>
 </settings>
 ```
-## Installing a Package
+# Installing a Package
 For more information take a look at this GitHub documentation about [package installation](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry#installing-a-package).
 
 To install an Apache Maven package from GitHub Packages edit the element ``dependencies`` in the *pom.xml* file by including the package. This could look as follows to include the ``dsf-bpe-process-base`` package (replace ``VERSION`` with the package version, e.g. ``0.4.0-SNAPSHOT``):

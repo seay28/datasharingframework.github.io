@@ -2,5 +2,7 @@
 title: FHIR Reverse Proxy
 icon: module
 ---
-## Overview
+---
+
+# Overview
 - [Configuration Parameters](configuration)

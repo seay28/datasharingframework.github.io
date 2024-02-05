@@ -4,7 +4,7 @@ icon: slides
 ---
  [Prerequisites](/oldstable/tutorial/prerequisites.md) | [Exercise 1](/oldstable/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/tutorial/exercise2-inputParameters.md) | [Exercise 3](/oldstable/tutorial/exercise3-messageEvents.md) | [Exercise 4](/oldstable/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/oldstable/tutorial/exercise5-eventBasedGateways.md)
 
-### docker-compose.yml
+#### docker-compose.yml
 ```yml
 version: '3.8'
 services:

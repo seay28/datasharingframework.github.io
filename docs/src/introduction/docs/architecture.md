@@ -33,7 +33,7 @@ Different processes can be executed simultaneously. For this, only a new process
 # Flexible Deployment
 The deployment of the architecture is flexible. The organisations can be deployed as a *star* schema (left) or as a *mesh* schema (right). In the Star schema (left), all Data Integration Centres (DIC) are connected to a central node (CRR - Central Research Repository), which transfers the information to all nodes (DIC). For security reasons, a data transfer hub (DTH) is connected upstream, which provides additional security so that the medical data is never transferred together with the authenticating data. 
 
-In the mesh scheme (right), the nodes (DIC) are all directly connected to each other and the information is transferred from node to node. Here in the FDPG (Forschungsdatenportal - Research Data Portal), the data can then be accessed for research purposes. More about this [here](/intro/use-cases/feasibility).
+In the mesh scheme (right), the nodes (DIC) are all directly connected to each other and the information is transferred from node to node. Here in the FDPG (Forschungsdatenportal - Research Data Portal), the data can then be accessed for research purposes. More about this [here](/introduction/use-cases/feasibility).
 
 ![Star schema](/photos/info/architecture/star.png =400x300) ![Mesh schema](/photos/info/architecture/mesh.png =350x300)
 

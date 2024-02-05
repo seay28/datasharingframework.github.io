@@ -4,12 +4,12 @@ icon: slides
 ---
  [Prerequisites](/oldstable/tutorial/prerequisites.md) | [Exercise 1](/oldstable/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/tutorial/exercise2-inputParameters.md) | Exercise 3 | [Exercise 4](/oldstable/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/oldstable/tutorial/exercise5-eventBasedGateways.md)
 
-## Exercise 3 - Message Events
+# Exercise 3 - Message Events
 Communication between organizations is modeled using message flow in BPMN processes. The third exercise shows how a process at one organization can trigger a process at another organization.
 
 To demonstrate communication between two organizations we will configure message flow between the processes ``highmedorg_helloDic`` and ``highmedorg_helloCos``. The processes are then to be executed at the organizations ``Test_DIC`` and ``Test_COS`` respectively in the docker test setup, with the former triggering execution of the latter by automatically sending a [Task](http://hl7.org/fhir/R4/task.html) from organization ``Test_DIC`` to organization ``Test_COS``.
 
-### Introduction
+#### Introduction
 ---
 #### Message Flow and FHIR Task resources
 
@@ -46,15 +46,15 @@ FHIR [ActivityDefinition](http://hl7.org/fhir/R4/activitydefinition.html) resour
 
 The authorization extension needs to be configured at least once and has four sub extensions:
 
-##### message-name [1..1]
+#### message-name [1..1]
 
 String value specifying the message name of [Message Start Event](https://docs.camunda.org/manual/7.17/reference/bpmn20/events/message-events/#message-start-event), [Intermediate Message Catch Event](https://docs.camunda.org/manual/7.17/reference/bpmn20/events/message-events/#message-intermediate-catching-event) or [Message Receive Task](https://docs.camunda.org/manual/7.17/reference/bpmn20/tasks/receive-task/) this authorization rule should match. Can only be specified once per authorization rule extension.
 
-##### task-profile [1..1]
+#### task-profile [1..1]
 
 Canonical URL value specifying the [Task](http://hl7.org/fhir/R4/task.html) profile this authorization rule should match. Can only be specified once per authorization rule extension.
 
-##### requester [1..]
+#### requester [1..]
 
 Coding value matching entries from the http://highmed.org/fhir/ValueSet/process-authorization-requester ValueSet:
 
@@ -70,7 +70,7 @@ Coding value matching entries from the http://highmed.org/fhir/ValueSet/process-
 
 - REMOTE_ALL All remote (non local) organizations regardless of their identifier or role in a consortium.
 
-##### recipient [1..]
+#### recipient [1..]
 
 Coding value matching entries from the http://highmed.org/fhir/ValueSet/process-authorization-recipient ValueSet.
 
@@ -120,7 +120,7 @@ The following example specifies that process execution can only be requested by 
 </extension>
 ```
 
-### Exercise Tasks
+#### Exercise Tasks
 ---
 1. Modify the ``highmedorg_helloDic`` process in the ``hello-dic.bpmn`` file and replace the [End Event](https://docs.camunda.org/manual/7.17/reference/bpmn20/events/none-events/#none-end-event) with a [Message End Event](https://docs.camunda.org/manual/7.17/reference/bpmn20/events/message-events/#message-end-event). Configure input parameters ``instantiatesUri``, ``profile`` and ``messageName`` in the BPMN model for the [Message End Event](https://docs.camunda.org/manual/7.17/reference/bpmn20/events/message-events/#message-end-event). Set the message name of the [Message End Event](https://docs.camunda.org/manual/7.17/reference/bpmn20/events/message-events/#message-end-event) and configure it to be executed using the HelloCosMessage class.
     Use http://highmed.org/fhir/StructureDefinition/task-hello-cos|#{version} as the profile and ``helloCos`` as the message name. Figure out what the appropriate ``instantiatesUri`` value is, based on the name (process definition key) of the process to be triggered.
@@ -132,7 +132,7 @@ The following example specifies that process execution can only be requested by 
 7. Configure the ``HelloCosMessage`` class as a spring in the ``TutorialConfig`` class.
 
 
-### Solution Verification
+#### Solution Verification
 ---
 #### Maven Build and Automated Tests
 

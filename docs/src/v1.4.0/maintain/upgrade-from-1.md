@@ -11,7 +11,7 @@ When upgrading from 1.0.0 or 1.1.0 it is important to migrate to [DSF 1.2.0 firs
 :::
 
 
-## Modify DSF FHIR Server Setup
+# Modify DSF FHIR Server Setup
 1. Preparation / Backup
     * We recommend to create a backup of the `/opt/fhir` directory before proceeding with the upgrade.  
     For example using: `sudo cp -rp /opt/fhir /opt/fhir_backup_pre_1.4.0_upgrade`
@@ -38,7 +38,7 @@ services:
     docker compose up -d && docker compose logs -f
     ```
 
-## Modify DSF BPE Server Setup
+# Modify DSF BPE Server Setup
 1. Preparation / Backup
     * We recommend to create a backup of the `/opt/bpe` directory before proceeding with the upgrade.  
     For example using: `sudo cp -rp /opt/bpe /opt/bpe_backup_pre_1.4.0_upgrade`

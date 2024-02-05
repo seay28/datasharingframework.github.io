@@ -4,11 +4,11 @@ icon: slides
 ---
  [Prerequisites](/oldstable/tutorial/prerequisites.md) | [Exercise 1](/oldstable/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/tutorial/exercise2-inputParameters.md) | [Exercise 3](/oldstable/tutorial/exercise3-messageEvents.md) | [Exercise 4](/oldstable/tutorial/exercise4-exclusiveGateways.md) | Exercise 5
 
- ## Exercise 5 - Event Based Gateways and Intermediate Events
+ # Exercise 5 - Event Based Gateways and Intermediate Events
 
 In the final exercise we will look at message flow between three organizations as well as how to continue a waiting process if no return message arrives. With this exercise we will add a third process and complete a message loop from ``Test_DIC`` to ``Test_COR`` to ``Test_HRP`` back to ``Test_DIC``.
 
-### Introduction
+#### Introduction
 ---
 #### Managing Multiple- and Missing Messages
 
@@ -18,7 +18,7 @@ In order to solve this problem we can add an [Event Based Gateway](https://docs.
 
 ![](/photos/guideline/tutorial/ex5.png)
 
-##### Timer Events
+#### Timer Events
 
 For [Timer Events](https://docs.camunda.org/manual/7.17/reference/bpmn20/events/timer-events/) the duration until the timer fires is specified using the [ISO 8601 Durations](https://en.wikipedia.org/wiki/ISO_8601#Durations) format. Examples can be found in the [Camunda 7 documentation](https://docs.camunda.org/manual/7.17/reference/bpmn20/events/timer-events/#time-duration).
 
@@ -34,15 +34,15 @@ FHIR [ActivityDefinition](http://hl7.org/fhir/R4/activitydefinition.html) resour
 
 The authorization extension needs to be configured at least once and has four sub extensions:
 
-##### message-name [1..1]
+#### message-name [1..1]
 
 String value specifying the message name of [Message Start Event](https://docs.camunda.org/manual/7.17/reference/bpmn20/events/message-events/#message-start-event), [Intermediate Message Catch Event](https://docs.camunda.org/manual/7.17/reference/bpmn20/events/message-events/#message-intermediate-catching-event) or [Message Receive Task](https://docs.camunda.org/manual/7.17/reference/bpmn20/tasks/receive-task/) this authorization rule should match. Can only be specified once per authorization rule extension.
 
-##### task-profile [1..1]
+#### task-profile [1..1]
 
 Canonical URL value specifying the [Task](http://hl7.org/fhir/R4/task.html) profile this authorization rule should match. Can only be specified once per authorization rule extension.
 
-##### requester [1..]
+#### requester [1..]
 Coding value matching entries from the http://highmed.org/fhir/ValueSet/process-authorization-requester ValueSet:
 
 - LOCAL_ORGANIZATION A local organization with a specific identifier. The organization identifier needs to specified using the http://highmed.org/fhir/StructureDefinition/extension-process-authorization-organization extension.
@@ -57,7 +57,7 @@ Coding value matching entries from the http://highmed.org/fhir/ValueSet/process-
 
 - REMOTE_ALL All remote (non local) organizations regardless of their identifier or role in a consortium.
 
-##### recipient [1..]
+#### recipient [1..]
 
 Coding value matching entries from the http://highmed.org/fhir/ValueSet/process-authorization-recipient ValueSet.
 
@@ -123,7 +123,7 @@ The following example specifies that process execution can only be requested by 
 </extension>
 ```
 
-### Exercise Tasks
+#### Exercise Tasks
 --- 
 1. Modify the ``HelloCosMessage`` and use the value from the [Task.input](http://hl7.org/fhir/R4/task.html) parameter of the ``helloDic`` [Task](http://hl7.org/fhir/R4/task.html) to send it to the ``highmedorg_helloCos`` process via a [Task.input](http://hl7.org/fhir/R4/task.html) parameter in the ``helloCos`` Task. Override the ``getAdditionalInputParameters`` to configure a [Task.input](http://hl7.org/fhir/R4/task.html) parameter to be send.
 2. Modify the ``highmedorg_helloCos`` process to use a [Message End Event](https://docs.camunda.org/manual/7.17/reference/bpmn20/events/message-events/#message-end-event) to trigger the process in file ``hello-hrp.bpmn``. Figure out the values for the ``instantiatesUri``, ``profile`` and ``messageName`` input parameters of the [Message End Event](https://docs.camunda.org/manual/7.17/reference/bpmn20/events/message-events/#message-end-event) based on the [AcitvityDefinition](http://hl7.org/fhir/R4/activitydefinition.html) in file ``hello-hrp.xml``.
@@ -137,7 +137,7 @@ The following example specifies that process execution can only be requested by 
 5. Add the process in file ``hello-hrp.bpmn`` to the ``TutorialProcessPluginDefinition`` and configure the FHIR resources needed for the three processes.
 6. Add the ``HelloCos``, ``HelloHrpMessage`` , ``HelloHrp`` and ``GoodbyeDicMessage`` classes as spring beans.
 
-### Solution Verification
+#### Solution Verification
 ---
 #### Maven Build and Automated Tests
 

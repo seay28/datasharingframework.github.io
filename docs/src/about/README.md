@@ -1,10 +1,10 @@
 ---
 title: About
-icon: creative
+icon: info
 ---
 ---
 
-## Overview
+# Overview
 
 - [Contact & Community](contact.md)
 - [Contributors](team.md)

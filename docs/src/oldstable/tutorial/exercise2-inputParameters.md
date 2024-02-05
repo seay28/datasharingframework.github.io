@@ -5,10 +5,10 @@ icon: slides
  [Prerequisites](/oldstable/tutorial/prerequisites.md) | [Exercise 1](/oldstable/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/tutorial/exercise11-processDebugging.md) | Exercise 2 | [Exercise 3](/oldstable/tutorial/exercise3-messageEvents.md) | [Exercise 4](/oldstable/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/oldstable/tutorial/exercise5-eventBasedGateways.md)
 
 
-## Exercise 2 - Input Parameters
+# Exercise 2 - Input Parameters
 In order to configure processes that are packaged as process plugins, we will take a look at two possibilities on how to pass parameters to a process. The goal of this exercise is to enhance the ``highmedorg_helloDic`` process by trying them both.
 
-### Introduction
+#### Introduction
 ---
 DSF process plugins can be configured with input parameters using two different approaches:
 
@@ -51,7 +51,7 @@ It is also possible to restrict read access of FHIR resources to organizations w
 The write access rules for [Task](http://hl7.org/fhir/R4/task.html) resources are defined through the [ActivityDefinition](http://hl7.org/fhir/R4/activitydefinition.html) resources belonging to the process. We will take a look at this in [exercise 3](/oldstable/tutorial/exercise3-messageEvents.md) and [exercise 5](/oldstable/tutorial/exercise5-eventBasedGateways.md).
 
 
-### Exercise Tasks
+#### Exercise Tasks
 ---
 1. Add an environment variable to enable/disable logging to the ``TutorialConfig`` class specify the default value as ``false``.
 2. Inject the value of the environment variable in to ``HelloDic`` class, by modifying its constructor and using the new field of the ``TutorialConfig`` class.
@@ -65,7 +65,7 @@ The write access rules for [Task](http://hl7.org/fhir/R4/task.html) resources ar
 10. Adapt the starter class ``TutorialExampleStarter`` by adding the new input parameter with an arbitrary string.
 
 
-### Solution Verification
+#### Solution Verification
 ---
 #### Maven Build and Automated Tests
 

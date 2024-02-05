@@ -3,7 +3,7 @@ Upgrading the DSF from 0.9.1 to 0.9.2 involves modifying the docker-compose.yml 
 
 **As the upgrade from 0.9.0 to 0.9.1 does not require any changes except the change of the version numbers, you can directly follow the following instructions.**
 
-## Modify DSF FHIR Server Setup
+# Modify DSF FHIR Server Setup
 1. Preparation / Backup
     * We recommend to create a backup of the `/opt/fhir` directory before proceeding with the upgrade.  
     For example using: `sudo cp -rp /opt/fhir /opt/fhir_backup_pre_0.9.2_upgrade`
@@ -36,7 +36,7 @@ Upgrading the DSF from 0.9.1 to 0.9.2 involves modifying the docker-compose.yml 
     docker-compose up -d && docker-compose logs -f
     ```
 
-## Modify DSF BPE Server Setup
+# Modify DSF BPE Server Setup
 1. Preparation / Backup
     * We recommend to create a backup of the `/opt/bpe` directory before proceeding with the upgrade.  
     For example using: `sudo cp -rp /opt/bpe /opt/bpe_backup_pre_0.9.2_upgrade`

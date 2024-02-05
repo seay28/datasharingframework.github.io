@@ -23,12 +23,12 @@ export default hopeTheme({
   },  
   {
       text: "Introduction",
-      icon: "info",
+      icon: "read",
       prefix: "/introduction/",
       link: "/introduction/",
       children: [
         {
-          icon: "info",
+          icon: "read",
           children: ["docs/", "use-cases/", "publications", "security", "tutorials/"],
         },
       ]
@@ -47,25 +47,22 @@ export default hopeTheme({
   },
   {
     text: "Versions",
-    icon: "code",
-    prefix: "/versions/",
-    link: "/versions/",
+    icon: "software",
     children: [
       {
-        icon: "code",
-        children: ["docs/", "use-cases/", "publications", "security", "tutorials/"],
+        icon: "software",
+        children: ["stable/","versions/v1.3.2/","versions/v1.3.1/","versions/v1.3.0/","versions/v1.2.0/","versions/v1.1.0/", "oldstable/"],
       },
-
-    children: [{ text: "v1.4.0 (stable)", link: "/stable/" }, { text: "v1.3.2", link: "/v1.3.2/" }, { text: "v1.3.1", link: "/v1.3.1/" }, { text: "v1.3.0", link: "/v1.3.0/" }, { text: "v1.2.0", link: "/v1.2.0/" }, { text: "v1.1.0", link: "/v1.1.0/" }, { text: "v1.0.0", link: "/v1.0.0/" }, { text: "v0.9.3 (oldstable)", link: "/oldstable/"}],
+    ]
   },
   {
     text: "About",
-    icon: "creative",
+    icon: "info",
     prefix: "/about/",
     link: "/about/",  
     children: [
       {
-        icon: "creative",
+        icon: "info",
         children: ["contact", "team", "partners", "public", "faq"],
       },
     ],
@@ -79,7 +76,7 @@ export default hopeTheme({
 
 
  sidebar: {
-  "/": [
+  "/introduction/": [
     {
       text: "Home",
       icon: "home",
@@ -87,14 +84,14 @@ export default hopeTheme({
     },
     {
       text: "Dokumentation",
-      icon: "info",
+      icon: "note",
       prefix: "/introduction/docs/",
       link: "/introduction/docs/",
       children: ["introduction.md", "basics", "architecture", "securityDesign", "allowList", "process-plugins", "networkSetup"], 
     },
     {
       text: "Use-Cases",
-      icon: "any",
+      icon: "view",
       prefix: "/introduction/use-cases/",
       link: "/introduction/use-cases/",
       children: ["feasibility", "num"], 
@@ -184,7 +181,7 @@ export default hopeTheme({
     },
     {
       text: "Contribute",
-      icon: "info",
+      icon: "creative",
       link: "contribute",
       prefix: "contribute/",
       children: [
@@ -196,77 +193,12 @@ export default hopeTheme({
       {
         text: "Documentation",
         link: "documentation",
-        icon: "info"
+        icon: "note"
       }
     ]
     },
   ],
-  "/v1.4.0/": [
-    {
-      text: "Home",
-      icon: "home",
-      link: "/",
-    },
-    "",
-    {
-      text: "Maintain a DSF instance",
-      icon: "tool",
-      prefix: "maintain/",
-      link: "maintain/",
-      children: ["install", "upgrade-from-1", "upgrade-from-0", "allowList-mgm", {
-        text: "FHIR Reverse Proxy",
-        icon: "module",
-        prefix: "fhir-reverse-proxy/",
-        link: "fhir-reverse-proxy/",
-        children: [{
-			icon: "config", 
-			text: "Configuration",
-			link: "configuration"
-		}]
-      }, {
-        text: "FHIR Server",
-        icon: "module",
-        prefix: "fhir/",
-        link: "fhir/",
-        children: [{
-			icon: "config", 
-			text: "Configuration",
-			link: "configuration"
-		}, {
-			icon: "config",
-			text: "Access Control",
-			link: "access-control"
-		}, {
-			icon: "config",
-			text: "OpenID Connect",
-			link: "oidc"
-			}]
-      }, {
-        text: "BPE Server",
-        icon: "module",
-        prefix: "bpe/",
-        link: "bpe/",
-        children: [{
-			icon: "config", 
-			text: "Configuration",
-			link: "configuration"
-		}]
-      },
-      {
-        text: "Install Plugins",
-        icon: "plugin",
-        link: "install-plugins"
-    }],
-    },
-    {
-      text: "Develop process plugins",
-      icon: "plugin",
-      prefix: "develop/",
-      link: "develop/",
-      children: ["create", "upgrade-from-0" ],
-    },
-  ],
-  "/v1.3.2/": [
+  "/versions/v1.3.2/": [
     {
       text: "Home",
       icon: "home",
@@ -276,6 +208,11 @@ export default hopeTheme({
       text: "Current version",
       icon: "update",
       link: "/stable",
+    },
+    {
+      text: "DSF 1.3.2",
+      icon: "software",
+      link: "/versions/v1.3.2/",
     },
     {
       text: "Maintain a DSF instance",
@@ -335,7 +272,7 @@ export default hopeTheme({
       children: ["create", "upgrade-from-0" ],
     },
   ],
-  "/v1.3.1/": [
+  "/versions/v1.3.1/": [
     {
       text: "Home",
       icon: "home",
@@ -345,6 +282,11 @@ export default hopeTheme({
       text: "Current version",
       icon: "update",
       link: "/stable",
+    },
+    {
+      text: "DSF 1.3.1",
+      icon: "software",
+      link: "/versions/v1.3.1/",
     },
     {
       text: "Maintain a DSF instance",
@@ -404,7 +346,7 @@ export default hopeTheme({
       children: ["create", "upgrade-from-0" ],
     },
   ],
-  "/v1.3.0/": [
+  "/versions/v1.3.0/": [
     {
       text: "Home",
       icon: "home",
@@ -414,6 +356,11 @@ export default hopeTheme({
       text: "Current version",
       icon: "update",
       link: "/stable",
+    },
+    {
+      text: "DSF 1.3.0",
+      icon: "software",
+      link: "/versions/v1.3.0/",
     },
     {
       text: "Maintain a DSF instance",
@@ -473,7 +420,7 @@ export default hopeTheme({
       children: ["create", "upgrade-from-0" ],
     },
   ],
-  "/v1.2.0/": [
+  "/versions/v1.2.0/": [
     {
       text: "Home",
       icon: "home",
@@ -483,6 +430,11 @@ export default hopeTheme({
       text: "Current version",
       icon: "update",
       link: "/stable",
+    },
+    {
+      text: "DSF 1.2.0",
+      icon: "software",
+      link: "/versions/v1.2.0/",
     },
     {
       text: "Maintain a DSF instance",
@@ -537,7 +489,7 @@ export default hopeTheme({
       children: ["create", "upgrade-from-0" ],
     },
   ],
-  "/v1.1.0/": [
+  "/versions/v1.1.0/": [
     {
       text: "Home",
       icon: "home",
@@ -547,6 +499,11 @@ export default hopeTheme({
       text: "Current version",
       icon: "update",
       link: "/stable",
+    },
+    {
+      text: "DSF 1.1.0",
+      icon: "software",
+      link: "/versions/v1.1.0/",
     },
     {
       text: "Maintain a DSF instance",
@@ -601,7 +558,7 @@ export default hopeTheme({
       children: ["create", "upgrade-from-0" ],
     },
   ],
-  "/v1.0.0/": [
+  "/versions/v1.0.0/": [
     {
       text: "Home",
       icon: "home",
@@ -611,6 +568,11 @@ export default hopeTheme({
       text: "Current version",
       icon: "update",
       link: "/stable",
+    },
+    {
+      text: "DSF 1.0.0",
+      icon: "software",
+      link: "/versions/v1.0.0/",
     },
     {
       text: "Maintain a DSF instance",
@@ -643,7 +605,7 @@ export default hopeTheme({
     },
     {
       text: "Version 0.9.x",
-      icon: "guide",
+      icon: "software",
       children: ["introduction", "generalinformation/", "code/", "build/", "releases/", "tutorial/"], 
     },
   ],
@@ -654,10 +616,29 @@ export default hopeTheme({
       link: "/",
     },
     {
-      text: "About",
-      icon: "creative",
-      link: "/about",
-      children: ["contact", "team", "partners", "public", "faq"], 
+      text: "Contact & Community",
+      icon: "call",
+      link: "/about/contact",
+    },
+    {
+      text: "Team",
+      icon: "group",
+      link: "/about/team",
+    },
+    {
+      text: "Partners",
+      icon: "proxy",
+      link: "/about/partners",
+    },
+    {
+      text: "Public Funding",
+      icon: "free",
+      link: "/about/public",
+    },
+    {
+      text: "FAQ",
+      icon: "question",
+      link: "/about/faq",
     },
   ],
   "/hackathon": [],

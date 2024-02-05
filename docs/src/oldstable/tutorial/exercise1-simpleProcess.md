@@ -4,13 +4,13 @@ icon: slides
 ---
  [Prerequisites](/oldstable/tutorial/prerequisites.md) | Exercise 1 | [Exercise 1.1](/oldstable/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/tutorial/exercise2-inputParameters.md) | [Exercise 3](/oldstable/tutorial/exercise3-messageEvents.md) | [Exercise 4](/oldstable/tutorial/exercise4-exclusiveGateways.md) | [Exercise 5](/oldstable/tutorial/exercise5-eventBasedGateways.md)
 
-## Exercise 1 - Simple Process
+# Exercise 1 - Simple Process
 
 The first exercise focuses on setting up the testing environment used in this tutorial and shows how to implement and execute a simple BPMN process.
 
 With this exercise we will take a look at the general setup of the tutorial code base, modify a service class and execute the service within a simple demo process.
 
-### Introduction
+#### Introduction
 ---
 #### Tutorial Code Base Structure and Docker Test Setup
 
@@ -34,14 +34,14 @@ FHIR [ActivityDefinition](http://hl7.org/fhir/R4/activitydefinition.html) resour
 
 We will take a closer look as [ActivityDefinition](http://hl7.org/fhir/R4/activitydefinition.html) resources in [Exercise 3](/oldstable/tutorial/exercise3-messageEvents.md) and [Exercise 5](/oldstable/tutorial/exercise5-eventBasedGateways.md).
 
-### Exercise Tasks
+#### Exercise Tasks
 ---
 1. Add a log message to the ``HelloDic#doExecute`` method that logs the recipient organization identifier from the "leading" Task.
 2. Register the ``HelloDic`` class as a singleton bean in the TutorialConfig class.
 3. Set the HelloDic class as the service implementation of the appropriate service task within the ``hello-dic.bpmn`` process model.
 4. Modify the ActivityDefinition for the ``highmedorg_helloDic`` process to only allow local clients to instantiate the process via a ``helloDic`` message.
 
-### Solution Verification
+#### Solution Verification
 ---
 #### Maven Build and Automated Tests
 

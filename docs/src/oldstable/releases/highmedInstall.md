@@ -1,11 +1,11 @@
 This setup guide uses pre-build docker images for DSF Version 0.9.3. This guide is **only** suitable for HiGHmed organizations.  
 If you are not a member of HiGHmed, see [NUM-CODEX Install](NUM‐CODEX-DSF-0.9.3-Deployment).
 
-## Prerequisites
-### Virtual Machines
+# Prerequisites
+#### Virtual Machines
 * DSF FHIR VM: min. 4 GB RAM, 4 vCPU, 20 GB HDD
 * DSF BPE VM: min. 4 GB RAM, 4 vCPU, 20 GB HDD
-### Docker / Docker-Compose
+#### Docker / Docker-Compose
 Both VMs need latest docker and docker-compose. For the latest install guide see https://docs.docker.com/engine/install and https://docs.docker.com/compose/install
 
 docker:
@@ -24,12 +24,12 @@ sudo curl -L "https://github.com/docker/compose/releases/download/v2.17.3/docker
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-### Client/Server Certificates
+#### Client/Server Certificates
 Two Certificates from the DFN-PKI Global G2 (via DFN e.V.), GÉANT TCS (via DFN e.V.) or D-Trust (via TMF e.V.) are needed, more infos see [Authentication](../generalinformation/authentication)
 * Certificate A: Server Certificate (DFN PKI Profile: 'Web Server', Common-Name: Your external DSF FHIR Servers FQDN)
 * Certificate B: Client Certificate (DFN PKI Profile: '802.1X Client', Common-Name: Your DSF BPE Servers FQDN)
 
-### Network setup / Network access
+#### Network setup / Network access
 For additional information on the network setup see [Network-and-Architecture](../generalinformation/networkSetup).
 * The DSF FHIR server needs to be accessible via the internet and able to access the internet without TLS interception.
 * The BPE FHIR server should only be accessible by the internal network and able to access your DSF FHIR server via its external FQDN and the internet without TLS interception.
@@ -45,11 +45,11 @@ Here is a quick overview of the expected network setup. Connections to the fTTP,
 | DSF FHIR (GECCO Transfer Hub) | DSF FHIR (local)              | 443  | https (HTTP HEAD only) |
 
 
-### On-Boarding Excel Spreadsheet
+#### On-Boarding Excel Spreadsheet
 You are required to fill out the on-boarding Excel spreadsheet, provided with the NUM-CODEX hackathon invite, and send it to the GECCO Transfer Hub. If the GECCO Transfer Hub already received and validated your On-Boarding Excel spreadsheet and you do not have to change any information, you can skip this step.
 
-## Setup
-### Prepare Certificates
+# Setup
+#### Prepare Certificates
 1. Server Certificate (certificate A)  
     _This certificate will be used as the DSF FHIR servers server certificate (ssl_certificate_file.pem, ssl_certificate_key_file.pem)_
     * Store PEM encoded certificate as `ssl_certificate_file.pem`
@@ -60,7 +60,7 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
     * Store PEM encoded certificate as `client_certificate.pem`
     * Store encrypted or not encrypted, PEM encoded private-key as `client_certificate_private_key.pem`
 
-### DSF FHIR Server
+#### DSF FHIR Server
 1. Add Group/User  
     Add group and user used by the DSF FHIR java application. Ubuntu compatible commands below:
     ```
@@ -148,7 +148,7 @@ You are required to fill out the on-boarding Excel spreadsheet, provided with th
 1. Start the DSF FHIR Server  
     Start using: `docker-compose up -d && docker-compose logs -f` (Ctrl-C will close log, but not stop container)
 
-### DSF BPE Server
+#### DSF BPE Server
 1. Add Group/User  
     Add group and user used by the DSF BPE java application. Ubuntu compatible commands below:
     ```

@@ -2,6 +2,7 @@
 title: Upgrade from DSF 0.9.x
 icon: update
 ---
+---
 
 A direct upgrade from DSF 0.9.x to DSF 1.x is not supported. 
 

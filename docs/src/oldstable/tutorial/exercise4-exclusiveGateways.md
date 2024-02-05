@@ -4,10 +4,10 @@ icon: slides
 ---
  [Prerequisites](/oldstable/tutorial/prerequisites.md) | [Exercise 1](/oldstable/tutorial/exercise1-simpleProcess.md) | [Exercise 1.1](/oldstable/tutorial/exercise11-processDebugging.md) | [Exercise 2](/oldstable/tutorial/exercise2-inputParameters.md) | [Exercise 3](/oldstable/tutorial/exercise3-messageEvents.md) | Exercise 4 | [Exercise 5](/oldstable/tutorial/exercise5-eventBasedGateways.md)
  
-##  Exercise 4 - Exclusive Gateways
+#  Exercise 4 - Exclusive Gateways
 Different execution paths in a process based on the state of process variables can be achieved using Exclusive Gateways. In Exercise 4 we will examine how this can be implemented by modifying the ``highmedorg_helloDic`` process.
 
-### Introduction
+#### Introduction
 ---
 #### Exclusive Gateways
 
@@ -28,7 +28,7 @@ Via the ``DelegateExecution execution`` parameter of the ``doExecute`` method of
 ```
 For more details on process variables see the [Camunda documentation](https://docs.camunda.org/manual/7.17/user-guide/process-engine/variables/).
 
-### Exercise Tasks
+#### Exercise Tasks
 ---
 
 1. In the ``HelloDic`` class, write an algorithm deciding based on the "leading" Task's input parameter ``tutorial-input``, whether the ``highmedorg_helloCos`` process should be started.
@@ -36,7 +36,7 @@ For more details on process variables see the [Camunda documentation](https://do
 3. Add an exclusive gateway to the ``highmedorg_helloDic`` process model and two outgoing sequence flows - the first starting process ``highmedorg_helloDic``, the second stopping process ``highmedorg_helloDic`` without starting process ``highmedorg_helloCos``.
 4. Add a condition expressions to each outgoing sequence flow based on the previously stored execution variable.
 
-### Solution Verification
+#### Solution Verification
 --- 
 #### Maven Build and Automated Tests
 
