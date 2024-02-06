@@ -2,9 +2,11 @@
 title: Access Control
 icon: config
 ---
+ [Configuration](Configuration.md) | Access Control | [OpenID Connect](oidc.md)
+
 ---
 
-# Overview
+## Overview
 
 The DSF FHIR server implements a subset of the FHIR R4 [REST API](http://hl7.org/fhir/R4/http.html). When accessing the API with a web browser a limited graphical user interface is shown. Without any additional configuration the API and user interface is only accessible with the X.509 client certificate configured for the organization via the configuration parameter: [DEV_DSF_FHIR_SERVER_ORGANIZATION_THUMBPRINT](configuration#dev-dsf-fhir-server-organization-thumbprint)
 
@@ -36,34 +38,34 @@ certtool --fingerprint --hash=sha512 --infile=certificate.pem
 
 Multiple user roles can be specified and all matching roles will be applied to an authenticated users. Use an empty string `""` or a single block scalar `|` character as the value for the configuration parameter [DEV_DSF_FHIR_SERVER_ROLECONFIG](configuration#dev-dsf-fhir-server-roleconfig) if no roles should be configured.
 
-# Matching Users
+## Matching Users
 
 To apply roles, users can be matched via the `thumbprint`, `email`, `token-role` or `token-group` properties. A single value or a list of values can be specified.
 
-#### thumbprint
+### thumbprint
 
 The property `thumbprint` can used to specify one or multiple SHA-512 certificate thumbprints. Roles from this rule are applied to the authenticating user if the certificate matches one of the specified thumbprints.
 
-#### email
+### email
 
 Using the property `email` users can be matched against e-mail addresses specified in X.509 client certificates and in OpenID Connect access tokens. Values will be matched against e-mail addresses specified in the subject DN (via PKCS#9 extension 1.2.840.113549.1.9.1) and RFC-822 Name entries of the Subject Alternative Name field. If the user authenticates via OpenID Connect, the `email` [claim](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims) from the access token will be matched against the property values.
 
-#### token-role and token-group
+### token-role and token-group
 
 With the properties `token-role` and `token-group` role and group names can be specified to match against role and group claims within OAuth 2.0 access tokens.
 
 
-# DSF and Practitioner Roles
+## DSF and Practitioner Roles
 
 To types of roles can be applied to matched users. 
 
-#### dsf-role
+### dsf-role
 
 DSF roles specified via the `dsf-role` property define general access to the REST API and user interface. Allowed values are:
 
 `CREATE`, `READ`, `UPDATE`, `DELETE`, `SEARCH`, `HISTORY`, `PERMANENT_DELETE` and `WEBSOCKET`.
 
-#### practitioner-role
+### practitioner-role
 
 In order to allow users to start processes, the property `practitioner-role` can be used to assign codes from FHIR [CodeSystem](http://hl7.org/fhir/R4/codesystem.html) resources. Codes are specified in the form `system-url|code`.
 If the uses has a code specified here that match with a `requester` extension within the process plugin's [ActivityDefinition](http://hl7.org/fhir/R4/activitydefinition.html) resource, the user can start the process if he also has the `dsf-role` `CREATE`.
@@ -73,7 +75,7 @@ Process plugins can defined and use there own code-systems. However, the DSF spe
 `UAC_USER`, `COS_USER`, `CRR_USER`, `DIC_USER`, `DMS_USER`, `DTS_USER`, `HRP_USER`, `TTP_USER`, `AMS_USER` and `DSF_ADMIN`.
 
 
-# Examples
+## Examples
 
 The first example defines a group of DSF administrators. Two client certificates match against this role:
 

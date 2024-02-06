@@ -2,6 +2,8 @@
 title: Team
 icon: group
 ---
+ [Contact & Community](contact.md) | Team | [Partners](partners.md) | [Public Funding](public.md) | [FAQ](faq.md)
+
 ---
 
 <B>The funded project team includes:</B>

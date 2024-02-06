@@ -2,6 +2,8 @@
 title: Upgrade from DSF 0.9.x
 icon: update
 ---
+ [Install DSF 1.3.1](install.md) | [Upgrade from DSF 1.3.0](upgrade-from-1.md) | Upgrade processes from 0.9.x | [Allow List Management](allowList-mgm.md) | [FHIR Reverse Proxy](fhir-reverse-proxy/README.md) | [FHIR Server](fhir/README.md) | [BPE Server](bpe/README.md) | [Install Plugins](install-plugins.md)  
+
 ---
 
 A direct upgrade from DSF 0.9.x to DSF 1.x is not supported. 

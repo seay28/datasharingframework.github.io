@@ -2,6 +2,8 @@
 title: Upgrade from DSF 1.1.0
 icon: update
 ---
+ [Install DSF 1.2.0](install.md) | Upgrade from DSF 1.1.0 | [Upgrade processes from 0.9.x](upgrade-from-0.md) | [Allow List Management](allowList-mgm.md) | [FHIR Reverse Proxy](fhir-reverse-proxy/README.md) | [FHIR Server](fhir/README.md) | [BPE Server](bpe/README.md)  
+
 ---
 
 Upgrading the DSF from 1.1.0 to 1.2.0 involves modifying the docker-compose.yml files and recreating the containers.
@@ -11,7 +13,7 @@ Upgrading the DSF from 1.1.0 to 1.2.0 involves modifying the docker-compose.yml 
 If you want to migrate from DSF 0.9.x, please follow [these instructions](upgrade-from-0).
 :::
 
-# Modify DSF FHIR Server Setup
+## Modify DSF FHIR Server Setup
 1. Preparation / Backup
     * We recommend to create a backup of the `/opt/fhir` directory before proceeding with the upgrade.  
     For example using: `sudo cp -rp /opt/fhir /opt/fhir_backup_pre_1.2.0_upgrade`
@@ -53,7 +55,7 @@ services:
     docker compose up -d && docker compose logs -f
     ```
 
-# Modify DSF BPE Server Setup
+## Modify DSF BPE Server Setup
 1. Preparation / Backup
     * We recommend to create a backup of the `/opt/bpe` directory before proceeding with the upgrade.  
     For example using: `sudo cp -rp /opt/bpe /opt/bpe_backup_pre_1.2.0_upgrade`

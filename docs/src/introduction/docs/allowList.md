@@ -2,9 +2,11 @@
 title: Allow Lists
 icon: share
 ---
+ [Introduction](introduction.md) | [Basics and Standards](basics.md) | [Architecture](architecture.md) | [Security by Design](securityDesign.md) | Allow Lists | [Process Plugins](process-plugins.md) | [Network Setup and General Architecture](networkSetup.md)
+
 ---
 
-# Goal
+## Goal
 The main objective is to allow only authorized organizations to do what "we" allow them to do (e.g. query data).
 First, we need a list of organizations that we trust. Secondly, we need a way to ensure that the other party is a member of the parent organization. Thirdly, a list of actions we want to allow the organization to perform is needed. An organization can have different roles in different use cases. 
 
@@ -12,5 +14,5 @@ The Allow List consists of Organization-, Endpoint- and OrganisationAffiliation-
 
 ![Architecture](/photos/info/allowList/allowList-architecture.png)
 
-# Allow List Managment
+## Allow List Managment
 [Here](/stable/maintain/allowList-mgm.md) you can read all the information if you want to create or update an Allow List.

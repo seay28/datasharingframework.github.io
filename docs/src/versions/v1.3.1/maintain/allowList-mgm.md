@@ -2,17 +2,19 @@
 title: Allow List Management
 icon: share
 ---
+ [Install DSF 1.3.1](install.md) | [Upgrade from DSF 1.3.0](upgrade-from-1.md) | [Upgrade processes from 0.9.x](upgrade-from-0.md) | Allow List Management | [FHIR Reverse Proxy](fhir-reverse-proxy/README.md) | [FHIR Server](fhir/README.md) | [BPE Server](bpe/README.md) | [Install Plugins](install-plugins.md)  
+
 ---
 
-You can read all about the concept of Allow Lists [in our introduction](/introduction/info/allowList.md).
+You can read all about the concept of Allow Lists [in our introduction](/introduction/docs/allowList.md).
 
-# Overview
+## Overview
 To simplify the DSF Allow List Management we have built a portal for administration. The portal is managed by the GECKO Institute at Heilbronn University. You as an DSF administrator can create or update your Allow List information. The information you provide on this portal will be transferred to us and will be used to built Allow List bundles that get distributed to the communication partners of the distributed processes. 
 
 The DSF Allow List management tool uses client certificates for authentication. You can either use a personal client certificate or the client certificate from your DSF BPE, which needs to be added to your web-browsers certificate store.
 
 
-# Prerequisites
+## Prerequisites
 1. Deployed DSF instance (test or production infrastructure)
     1.1  If none exists yet, read [the installation guide](install)
 2. Certificate 
@@ -23,7 +25,7 @@ The DSF Allow List management tool uses client certificates for authentication. 
 6. Access to the E-Mail address from your organization for verification 
  
 
-# Start here
+## Start here
 When you have fulfilled all the prerequisites, you can start managing your Allow Lists via the environment specific Allow List Management Tool:
 
 - [**Test** infrastructure](https://allowlist-test.gecko.hs-heilbronn.de)

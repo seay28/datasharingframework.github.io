@@ -2,6 +2,8 @@
 title: Upgrade from DSF 0.9.x
 icon: update
 ---
+ [Install DSF 1.0.0](install.md) | Upgrade from DSF 0.9.x | [Allow List Management](allowList-mgm.md) | [Configuration Parameters](configuration/README.md)
+
 ---
 
 

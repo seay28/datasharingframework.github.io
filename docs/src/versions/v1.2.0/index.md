@@ -1,7 +1,9 @@
 ---
 title: DSF 1.2.0
-icon: software
+icon: guide
 ---
+ [Current Version](/stable/) | DSF 1.2.0 | [Maintain a DSF instance](/versions/v1.2.0/maintain/) | [Develop Process Plugins](/versions/v1.2.0/develop/)
+
 ---
 
 
@@ -10,18 +12,18 @@ Data Sharing Framework 1.x is the new major release of the Data Sharing Framewor
 This is a major DSF release not compatible with 0.9.x and older version developed at https://github.com/highmed/highmed-dsf.
 :::
 
-# System Administrators
+## System Administrators
 
 - [Install DSF 1.2.0](maintain/install)
 - [Upgrade from DSF 1.x.](maintain/upgrade-from-1)
 - [Upgrade from DSF 0.9.x.](maintain/upgrade-from-0)
 
 
-# Developers
+## Developers
 - [Create a new process plugin](develop/create)
 - [Upgrade from DSF 0.9.x.](develop/upgrade-from-0)
 
-# New features
+## New features
 - Improved versioning to support up- and downwards-compatibility
 - Enhanced web ui to start processes in the web browser
 - Allow local user authentication and authorization with OpenID Connect

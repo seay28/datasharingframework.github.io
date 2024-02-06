@@ -2,6 +2,8 @@
 title: Network Setup and General Architecture
 icon: customize
 ---
+ [Introduction](introduction.md) | [Basics and Standards](basics.md) | [Architecture](architecture.md) | [Security by Design](securityDesign.md) | [Allow Lists](allowList.md) | [Process Plugins](process-plugins.md) | Network Setup and General Architecture
+
 ---
 
 The Data Sharing Framework consists of two components: A FHIR Endpoint Server used to except Task resources and provide resources for download by other organizations and a Business Process Engine Server run internal and not accessible by other organization to execute and coordinate processes.
@@ -20,7 +22,7 @@ The Data Sharing Framework consists of two components: A FHIR Endpoint Server us
 
 More information on Client- and Server-Certificates are available on the dedicated wiki page: [Authentication: Client/Server Certificates](Authentication)
 
-# Additional Reverse Proxy in external DMZ
+## Additional Reverse Proxy in external DMZ
 In some organizations an additional reverse proxy in an external DMZ is needed. This can be accomplished by using for example nginx or haproxy as a TCP-Proxy. Example configurations routing traffic using SNI can be found below. Configuring an additional reverse proxy to terminate the incoming TLS connection early is not recommended.
 
 ![Network Setup Diagramm](/photos/guideline/generalInformation/highmed_dsf_network_setup_ext_dmz.svg)

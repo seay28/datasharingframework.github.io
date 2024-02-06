@@ -2,9 +2,10 @@
 title: About
 icon: info
 ---
----
 
-# Overview
+
+
+## Overview
 
 - [Contact & Community](contact.md)
 - [Contributors](team.md)

@@ -2,7 +2,6 @@
 title: Hackathon
 icon: guide
 ---
----
 
 <!--
 <meta http-equiv="refresh" content="0;url=https://audimax.heiconf.uni-heidelberg.de/jxh4-jxx2-tm6c-d37q">

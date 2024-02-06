@@ -2,10 +2,12 @@
 title: Public Funding 
 icon: free
 ---
+ [Contact & Community](contact.md) | [Team](team.md) | [Partners](partners.md) | Public Funding | [FAQ](faq.md)
+
 ---
 
 ::: center
-# <b>DSF - Medical Informatics Structure "Data Sharing Framework Community" (2023-2026)</b>
+## DSF - Medical Informatics Structure "Data Sharing Framework Community" (2023-2026)
 :::
 ![](/photos/learnmore/funding/bmbf.png  =228x158) 
 
@@ -26,7 +28,7 @@ icon: free
 <!--
 ---
 ::: center
-# <b>NUM-RDP/Codex - Netzwerk  Universitätsmedizin "Routinedatenplattform " (20xx-20xx)</b>
+## NUM-RDP/Codex - Netzwerk  Universitätsmedizin "Routinedatenplattform " (20xx-20xx)
 :::
 Bild hinzufgen!
 
@@ -40,7 +42,7 @@ Text hinzufügen! <https://www.netzwerk-universitaetsmedizin.de/projekte/num-rdp
 -->
 
 ::: center
-# <b>Development of the DSF in the HiGHmed consortium -Contribution Heilbronn University and Heidelberg University (2018-2022)</b>
+## Development of the DSF in the HiGHmed consortium -Contribution Heilbronn University and Heidelberg University (2018-2022)
 :::
 [HiGHmed](https://www.highmed.org/en/home) aims to increase the efficiency of clinical research and improve patient care through new medical informatics solutions and cross-organizational data exchange. The concept will be developed on the basis of three defined prototypical use cases, which will ensure close integration with the requirements of patient care and medical research. The [GECKO Institute](https://www.hs-heilbronn.de/de/gecko) of HHN will establish a trusted third party with pseudonymization service to implement the goals of HiGHmed and is involved in the technical development of the DSF together with the partners (Funding code: 01ZZ1802E). Heidelberg University is in particular involved in the technical development of the DSF (Funding code: 01ZZ1802A).
 

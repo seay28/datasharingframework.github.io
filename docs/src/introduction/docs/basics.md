@@ -2,11 +2,13 @@
 title: Basics and Standards
 icon: study
 ---
+ [Introduction](introduction.md) | Basics and Standards | [Architecture](architecture.md) | [Security by Design](securityDesign.md) | [Allow Lists](allowList.md) | [Process Plugins](process-plugins.md) | [Network Setup and General Architecture](networkSetup.md)
+
 ---
 
 Here you can find some basic information about interoperability and the standards were using within the DSF before we go into details about the architecture. Here we only describe how the standards (FHIR and BPMN) are used within the DSF. If you want to gain a deeper knowledge of the standards, we recommend visiting these websites: [HL7 FHIR](https://www.hl7.org/fhir/) and [BPMN](https://www.bpmn.org/) 
 
-# Interoperability 
+## Interoperability 
 Interoperability is the ability of different systems to work together as seamlessly as possible. We can divide interoperability into four levels. 
 -	The *foundational level* defines the basic interconnectivity requirements which are necessary for a system or application to securely transmit data to and receive data from another system or application. Techniques such as HTTPS or REST are used for this.
 -	The second level is the *structural level*. It defines the format and the syntax of the data exchange. Therefore, data formats like JSON or XML can be used.
@@ -16,16 +18,16 @@ Interoperability is the ability of different systems to work together as seamles
 
 ![Levels of interoperability](/photos/info/basics/interoperability.png =600x)
 
-# HL7 FHIR
+## HL7 FHIR
 [Health Level Seven International (HL7) Fast Healthcare Interoperability Resources (FHIR)](https://www.hl7.org/fhir/) is a standard for data exchange that can be used as an information model for communication within and between systems. The standard is based on resources, references and profiles. With this concept, FHIR offers interoperability out of the box. The resources describe data formats. 150 specified resources cover the entire health system. An example of a resource would be a patient, which consists of data such as name or gender. These resources can refer to other resources by means of references. This connects the information units into a network. For seamless exchange of information, FHIR supports RESTful architectures and web standards such as XML or JSON, which makes it easier for developers to use FHIR.
 The FHIR profiles can be understood as a set of rules. They explain, for example, which attributes must be mandatorily specified or which terminology may be used. In addition, profiles and controlled vocabulary can be validated. 
 
-# BPMN
+## BPMN
 [Business Process Modelling Notation](https://www.bpmn.org/) is a modelling language that can be used to model and implement processes. The models can be used for the documentation of processes and for communication between different stakeholders. Furthermore, BPMN forms a standardised bridge between process design and process implementation. This is because it simplifies implementation. These processes are executed by a Business Process Engine. Basically, a BPE is a server that can read and execute the business process. More about this in the section on architecture.
 
 ![Example of a BPMN model (Ping-Pong-Process of the DSF)](/photos/info/basics/bpmn1.png)
 
-# Why are we using FHIR and BPMN?
+## Why are we using FHIR and BPMN?
 On the one hand we use FHIR because of the mentioned benefits. On the other hand FHIR fits great with BPMN and these two in combination are a great fit for what we do: 
 *Execute distributed data sharing Processes.*
 

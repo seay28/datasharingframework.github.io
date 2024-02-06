@@ -2,32 +2,34 @@
 title: Process Plugins
 icon: plugin
 ---
+ [Introduction](introduction.md) | [Basics and Standards](basics.md) | [Architecture](architecture.md) | [Security by Design](securityDesign.md) | [Allow Lists](allowList.md) | Process Plugins | [Network Setup and General Architecture](networkSetup.md)
+
 ---
 
-# Overview
+## Overview
 It is important to understand that the DSF is *only* the silent helper in the background: a middleware. The DSF is use case agnostic. This means that process plugins make it possible to execute almost any use case you can imagine with the DSF. Process plugins provide individual functionality. For example, it is possible to use the Ping Pong process to test bilateral communication or the [Feasibility process](/introduction/use-cases/feasibility) to perform feasibility queries for research.
 However, it is possible to deploy several process plugins together, even the same process plugin in different versions. A process plugin is basically an archive of BPMN 2.0 models, FHIR R4 resources and Java code. This process plugin is deployed as a Jar file on the BPE.
 
-# BPMN: Example
+## BPMN: Example
 BPMN models can be created with [Camunda Modeler](https://camunda.com/de). The following model is a BPMN model consisting of two lanes: These are the square boxes, i.e. Organization A and B. This process is intended only as an example to illustrate the formalities. We will look at realistic processes in the next [chapter](/introduction/use-cases).
 
 ![BPMN: Example](/photos/info/plugins/bpmn-example.png)
 
-# Ping Pong Process
+## Ping Pong Process
 The [ping process plugin](https://github.com/datasharingframework/dsf-process-ping-pong) can be used for (periodic) connection testing between organizations that are part of your DSF allow list. The following figure shows a representation of the process.
 
 ![Ping-Pong Process](/photos/info/use-cases/ping-pong.png)
 
 
 The ping pong process is composed of 3 different subprocesses:
-#### Autostart Ping Process
+### Autostart Ping Process
 The autostart ping process is used to execute connection tests in a predefined interval. This subprocess performs the following steps:
 
 - Start a timer with a predefined interval (default 24 h)
 - Start the ping process once per interval
 - Stop the timer after the current interval completes
 
-#### Ping Process
+### Ping Process
 The ping process is used to check outgoing and incoming connections to organizations in your allow-list. This subprocess performs the following steps:
 
 - Select organizations in your allow list that should receive a ping message
@@ -36,7 +38,7 @@ The ping process is used to check outgoing and incoming connections to organizat
 - Log status of ping/pong messages
 - Log errors if any occur
 
-#### Pong Process
+### Pong Process
 The pong process is used to send a response during the connection test to the requesting organization. This subprocess performs the following steps:
 
 - Receive ping message from requesting organizations

@@ -2,6 +2,8 @@
 title: Upgrade processes from 0.9.x
 icon: update
 ---
+ [Create a new process plugin](create.md) | Upgrade processes from 0.9.x
+
 ---
 
 ::: tip Work in progress
