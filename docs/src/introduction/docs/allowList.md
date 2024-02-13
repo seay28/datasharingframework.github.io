@@ -2,7 +2,7 @@
 title: Allow Lists
 icon: share
 ---
- [Introduction](introduction.md) | [Basics and Standards](basics.md) | [Architecture](architecture.md) | [Security by Design](securityDesign.md) | Allow Lists | [Process Plugins](process-plugins.md) | [Network Setup and General Architecture](networkSetup.md)
+ [Introduction](introduction.md) | [Basics and Standards](basics.md) | [Architecture](architecture.md) | [Security by Design](securityByDesign.md) | Allow Lists | [Process Plugins](process-plugins.md) | [Network Setup and General Architecture](networkSetup.md)
 
 ---
 

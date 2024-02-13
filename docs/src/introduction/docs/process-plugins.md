@@ -2,7 +2,7 @@
 title: Process Plugins
 icon: plugin
 ---
- [Introduction](introduction.md) | [Basics and Standards](basics.md) | [Architecture](architecture.md) | [Security by Design](securityDesign.md) | [Allow Lists](allowList.md) | Process Plugins | [Network Setup and General Architecture](networkSetup.md)
+ [Introduction](introduction.md) | [Basics and Standards](basics.md) | [Architecture](architecture.md) | [Security by Design](securityByDesign.md) | [Allow Lists](allowList.md) | Process Plugins | [Network Setup and General Architecture](networkSetup.md)
 
 ---
 

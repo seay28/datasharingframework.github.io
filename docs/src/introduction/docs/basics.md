@@ -2,7 +2,7 @@
 title: Basics and Standards
 icon: study
 ---
- [Introduction](introduction.md) | Basics and Standards | [Architecture](architecture.md) | [Security by Design](securityDesign.md) | [Allow Lists](allowList.md) | [Process Plugins](process-plugins.md) | [Network Setup and General Architecture](networkSetup.md)
+ [Introduction](introduction.md) | Basics and Standards | [Architecture](architecture.md) | [Security by Design](securityByDesign.md) | [Allow Lists](allowList.md) | [Process Plugins](process-plugins.md) | [Network Setup and General Architecture](networkSetup.md)
 
 ---
 

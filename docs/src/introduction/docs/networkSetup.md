@@ -2,7 +2,7 @@
 title: Network Setup and General Architecture
 icon: customize
 ---
- [Introduction](introduction.md) | [Basics and Standards](basics.md) | [Architecture](architecture.md) | [Security by Design](securityDesign.md) | [Allow Lists](allowList.md) | [Process Plugins](process-plugins.md) | Network Setup and General Architecture
+ [Introduction](introduction.md) | [Basics and Standards](basics.md) | [Architecture](architecture.md) | [Security by Design](securityByDesign.md) | [Allow Lists](allowList.md) | [Process Plugins](process-plugins.md) | Network Setup and General Architecture
 
 ---
 

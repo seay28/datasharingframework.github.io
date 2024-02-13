@@ -84,7 +84,7 @@ export default hopeTheme({
       icon: "note",
       prefix: "/introduction/docs/",
       link: "/introduction/docs/",
-      children: ["introduction.md", "basics", "architecture", "securityDesign", "allowList", "process-plugins", "networkSetup"], 
+      children: ["introduction.md", "basics", "architecture", "securityByDesign", "allowList", "process-plugins", "networkSetup"], 
     },
     {
       text: "Use-Cases",

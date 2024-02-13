@@ -2,7 +2,7 @@
 title: Introduction
 icon: customize
 ---
- Introduction | [Basics and Standards](basics.md) | [Architecture](architecture.md) | [Security by Design](securityDesign.md) | [Allow Lists](allowList.md) | [Process Plugins](process-plugins.md) | [Network Setup and General Architecture](networkSetup.md)
+ Introduction | [Basics and Standards](basics.md) | [Architecture](architecture.md) | [Security by Design](securityByDesign.md) | [Allow Lists](allowList.md) | [Process Plugins](process-plugins.md) | [Network Setup and General Architecture](networkSetup.md)
 
 ---
 
