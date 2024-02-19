@@ -12,7 +12,7 @@ You can find an overview of compatable process plugins below.
 
 ## MII processes
 
-- Feasibility: https://github.com/medizininformatik-initiative/feasibility-dsf-process/releases
+- Feasibility: https://github.com/medizininformatik-initiative/mii-process-feasibility/releases
 - KDS-Report: https://github.com/medizininformatik-initiative/mii-process-report/releases
 <!-- - MII-Data-Sharing: https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases -->
 - MII-Data-Transfer: https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases
