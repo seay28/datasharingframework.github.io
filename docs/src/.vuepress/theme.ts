@@ -156,6 +156,16 @@ export default hopeTheme({
 			link: "oidc"
 			}]
       }, {
+        text: "BPE Reverse Proxy",
+        icon: "module",
+        prefix: "bpe-reverse-proxy/",
+        link: "bpe-reverse-proxy/",
+        children: [{
+			icon: "config", 
+			text: "Configuration",
+			link: "configuration"
+		}]
+      }, {
         text: "BPE Server",
         icon: "module",
         prefix: "bpe/",
@@ -164,7 +174,15 @@ export default hopeTheme({
 			icon: "config", 
 			text: "Configuration",
 			link: "configuration"
-		}]
+		}, {
+			icon: "config",
+			text: "Access Control",
+			link: "access-control"
+		}, {
+			icon: "config",
+			text: "OpenID Connect",
+			link: "oidc"
+			}]
       },
       {
         text: "Install Plugins",
@@ -240,6 +258,16 @@ export default hopeTheme({
 			link: "oidc"
 			}]
       }, {
+        text: "BPE Reverse Proxy",
+        icon: "module",
+        prefix: "bpe-reverse-proxy/",
+        link: "bpe-reverse-proxy/",
+        children: [{
+			icon: "config", 
+			text: "Configuration",
+			link: "configuration"
+		}]
+      }, {
         text: "BPE Server",
         icon: "module",
         prefix: "bpe/",
@@ -248,7 +276,15 @@ export default hopeTheme({
 			icon: "config", 
 			text: "Configuration",
 			link: "configuration"
-		}]
+		}, {
+			icon: "config",
+			text: "Access Control",
+			link: "access-control"
+		}, {
+			icon: "config",
+			text: "OpenID Connect",
+			link: "oidc"
+			}]
       },
       {
         text: "Install Plugins",

@@ -12,5 +12,9 @@ icon: tool
   - [Configuration Parameters](fhir/configuration)
   - [Access Control](fhir/access-control)
   - [OpenID Connect](fhir/oidc)
+- BPE Reverse Proxy
+  - [Configuration Parameters](bpe-reverse-proxy/configuration)
 - BPE Server
   - [Configuration Parameters](bpe/configuration)
+  - [Access Control](bpe/access-control)
+  - [OpenID Connect](bpe/oidc)

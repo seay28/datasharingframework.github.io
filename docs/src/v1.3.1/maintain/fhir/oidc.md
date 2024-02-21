@@ -42,7 +42,7 @@ For example the configuration parameter [DEV_DSF_SERVER_AUTH_OIDC_PROVIDER_CLIEN
 ```yaml
 services:
   app:
-    image: ghcr.io/datasharingframework/fhir:1.1.0
+    image: ghcr.io/datasharingframework/fhir:1.3.1
     # ...
     secrets:
       - keycloak_root_ca.pem

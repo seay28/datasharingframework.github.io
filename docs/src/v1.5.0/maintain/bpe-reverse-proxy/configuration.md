@@ -5,13 +5,13 @@ icon: config
 
 ### APP_SERVER_IP
 - **Required:** Yes
-- **Description:** Hostname or IP-Address of the DSF FHIR server application container, the reverse proxy target
+- **Description:** Hostname or IP-Address of the DSF BPE server application container, the reverse proxy target
 - **Example:** `app`, `172.28.1.3`
 
 
 ### HTTPS_SERVER_NAME_PORT
 - **Required:** Yes
-- **Description:** External FQDN of your DSF FHIR server with port, typically `443`
+- **Description:** External FQDN of your DSF BPE server with port, typically `443`
 - **Example:** `my-external.fqdn:443`
 
 
@@ -42,7 +42,7 @@ icon: config
 ### SERVER_CONTEXT_PATH
 - **Required:** No
 - **Description:** Reverse proxy context path that delegates to the app server, `/` character at start, no `/` character at end, use `''` (empty string) to configure root as context path.
-- **Default:** `/fhir`
+- **Default:** `/bpe`
 
 
 ### SSL_CA_CERTIFICATE_FILE

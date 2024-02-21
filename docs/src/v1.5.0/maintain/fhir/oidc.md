@@ -4,7 +4,7 @@ icon: config
 ---
 
 ## Overview
-Access to the DSF FHIR server REST API and user interface can be configured via [access control roles](access-control). By default users are authenticated using X.509 client certificates, but authentication for local users via OAuth 2.0 OpenID Connect can also be enabled.
+Access to the DSF FHIR server REST API and user interface can be configured via [access control roles](access-control). By default users are only authenticated using X.509 client certificates, but authentication for local users via OAuth 2.0 OpenID Connect can also be enabled.
 
 The DSF FHIR server supports [Authorization Code Flow](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth) for the user interface as well as [Bearer Token Authentication](https://datatracker.ietf.org/doc/html/rfc6750) for the REST API. [Back-Channel Logout](https://openid.net/specs/openid-connect-backchannel-1_0.html) is also supported.
 
@@ -42,7 +42,7 @@ For example the configuration parameter [DEV_DSF_SERVER_AUTH_OIDC_PROVIDER_CLIEN
 ```yaml
 services:
   app:
-    image: ghcr.io/datasharingframework/fhir:1.1.0
+    image: ghcr.io/datasharingframework/fhir:1.5.0
     # ...
     secrets:
       - keycloak_root_ca.pem

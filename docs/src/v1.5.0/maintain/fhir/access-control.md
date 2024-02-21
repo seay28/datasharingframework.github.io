@@ -24,7 +24,7 @@ The listing below shows a minimal configuration to enable read access for a spec
               - SEARCH
               - HISTORY
 ```
-The list of user roles above contains a single entry `example_read_only_role`, matching the user via a client certificate SHA-512 thumprint and assigning three DSF roles.
+The list of user roles above contains a single rule-entry `example_read_only_role`, matching the user via a client certificate SHA-512 thumprint and assigning three DSF roles. Any string can be used as the name for the rule-enty.
 
 ::: tip Certificate Thumbprints
 SHA-512 certificate thumbprints in HEX form `[a-f0-9]{128}` can be calculated using:
@@ -54,7 +54,7 @@ With the properties `token-role` and `token-group` role and group names can be s
 
 ## DSF and Practitioner Roles
 
-To types of roles can be applied to matched users. 
+Two types of roles can be applied to matched users. 
 
 #### dsf-role
 
