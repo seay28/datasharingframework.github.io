@@ -28,12 +28,12 @@ export default hopeTheme({
           {
             text: "Introduction",
             icon: "info",
-            children: ["/intro", "/intro/use-cases/", "/intro/publications", "/intro/tutorials/"],
+            children: ["/intro/info/introduction", "/intro/use-cases/", "/intro/publications", "/intro/tutorials/"],
           },
           {
             text: "Security",
             icon: "safe",
-            link: "/security",
+            link: "/security/",
           }
         ]
     },
@@ -45,7 +45,7 @@ export default hopeTheme({
           {
             text: "Guideline v1.5.0 (stable)",
             icon: "info",
-            children: ["index", "maintain/install", "maintain/upgrade-from-0", "maintain/allowList-mgm", "maintain/install-plugins", "develop/create", "contribute"],
+            children: ["index", "maintain/install", "maintain/upgrade-from-0", "maintain/allowList-mgm", "maintain/install-plugins", "develop/create", "contribute/"],
           }
         ]
     },
@@ -100,7 +100,7 @@ export default hopeTheme({
         icon: "any",
         prefix: "intro/use-cases/",
         link: "intro/use-cases/",
-        children: ["feasibility", "NUM"], 
+        children: ["feasibility", "num"], 
       },
       {
         text: "Publications",
@@ -110,7 +110,7 @@ export default hopeTheme({
       {
         text: "Tutorials",
         icon: "edit",
-        link: "/intro/tutorials",
+        link: "/intro/tutorials/",
       }
     ],
     "/hackathon": [],
@@ -200,7 +200,7 @@ export default hopeTheme({
       {
         text: "Contribute",
         icon: "info",
-        link: "contribute",
+        link: "contribute/",
         prefix: "contribute/",
         children: [
         {
@@ -308,7 +308,7 @@ export default hopeTheme({
       {
         text: "Current version",
         icon: "update",
-        link: "/stable",
+        link: "/stable/",
       },
       {
         text: "Maintain a DSF instance",
@@ -377,7 +377,7 @@ export default hopeTheme({
       {
         text: "Current version",
         icon: "update",
-        link: "/stable",
+        link: "/stable/",
       },
       {
         text: "Maintain a DSF instance",
@@ -446,7 +446,7 @@ export default hopeTheme({
       {
         text: "Current version",
         icon: "update",
-        link: "/stable",
+        link: "/stable/",
       },
       {
         text: "Maintain a DSF instance",
@@ -515,7 +515,7 @@ export default hopeTheme({
       {
         text: "Current version",
         icon: "update",
-        link: "/stable",
+        link: "/stable/",
       },
       {
         text: "Maintain a DSF instance",
@@ -584,7 +584,7 @@ export default hopeTheme({
       {
         text: "Current version",
         icon: "update",
-        link: "/stable",
+        link: "/stable/",
       },
       {
         text: "Maintain a DSF instance",
@@ -648,7 +648,7 @@ export default hopeTheme({
       {
         text: "Current version",
         icon: "update",
-        link: "/stable",
+        link: "/stable/",
       },
       {
         text: "Maintain a DSF instance",
@@ -712,7 +712,7 @@ export default hopeTheme({
       {
         text: "Current version",
         icon: "update",
-        link: "/stable",
+        link: "/stable/",
       },
       {
         text: "Maintain a DSF instance",
