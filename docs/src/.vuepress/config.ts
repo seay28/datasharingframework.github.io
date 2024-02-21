@@ -1,11 +1,15 @@
+import { viteBundler } from '@vuepress/bundler-vite';
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-import { searchProPlugin } from "vuepress-plugin-search-pro";
-import { sitemapPlugin } from "vuepress-plugin-sitemap2";
 
 export default defineUserConfig({
   host: "127.0.0.1",
   base: "/",
+  
+  bundler: viteBundler({
+    viteOptions: {},
+    vuePluginOptions: {},
+  }),
 
   /*locales: {
     "/": {
@@ -19,16 +23,7 @@ export default defineUserConfig({
       description: "",
     },
   },*/
-  plugins: [
-    searchProPlugin({
-      // index all contents
-      indexContent: true,
-    }),
-    sitemapPlugin({
-      // your options
-      hostname: 'dsf.dev'
-    }),
-  ],
+  plugins: [],
 
   // Enable it with pwa
   shouldPrefetch: false,
