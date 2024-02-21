@@ -30,7 +30,7 @@ icon: config
 ### DEV_DSF_FHIR_CLIENT_TIMEOUT_CONNECT
 - **Property:** dev.dsf.fhir.client.timeout.connect
 - **Required:** No
-- **Description:** The timeout in milliseconds until a connection is established between this DSF FHIR server and a remote DSF FHIR server
+- **Description:** Timeout in milliseconds until a connection is established between this DSF FHIR server and a remote DSF FHIR server
 - **Recommendation:** Change default value only if timeout exceptions occur
 - **Default:** `2000`
 
@@ -38,7 +38,7 @@ icon: config
 ### DEV_DSF_FHIR_CLIENT_TIMEOUT_READ
 - **Property:** dev.dsf.fhir.client.timeout.read
 - **Required:** No
-- **Description:** The timeout in milliseconds until a reading a resource from a remote DSF FHIR server is aborted
+- **Description:** Timeout in milliseconds until a reading a resource from a remote DSF FHIR server is aborted
 - **Recommendation:** Change default value only if timeout exceptions occur
 - **Default:** `10000`
 
@@ -91,7 +91,7 @@ icon: config
 ### DEV_DSF_FHIR_DB_URL
 - **Property:** dev.dsf.fhir.db.url
 - **Required:** Yes
-- **Description:** The address of the database used for the DSF FHIR server
+- **Description:** Address of the database used for the DSF FHIR server
 - **Recommendation:** Change only if you don't use the provided docker-compose from the installation guide or made changes to the database settings/networking in the docker-compose
 - **Example:** `jdbc:postgresql://db/fhir`
 
@@ -106,7 +106,7 @@ icon: config
 ### DEV_DSF_FHIR_DB_USER_PASSWORD or DEV_DSF_FHIR_DB_USER_PASSWORD_FILE
 - **Property:** dev.dsf.fhir.db.user.password
 - **Required:** Yes
-- **Description:** The password to access the database from the DSF FHIR server
+- **Description:** Password to access the database from the DSF FHIR server
 - **Recommendation:** Use docker secret file to configure using *DEV_DSF_FHIR_DB_USER_PASSWORD_FILE*
 - **Example:** `/run/secrets/db_user.password`
 
@@ -121,7 +121,7 @@ icon: config
 ### DEV_DSF_FHIR_DB_USER_PERMANENT_DELETE_PASSWORD or DEV_DSF_FHIR_DB_USER_PERMANENT_DELETE_PASSWORD_FILE
 - **Property:** dev.dsf.fhir.db.user.permanent.delete.password
 - **Required:** Yes
-- **Description:** The password to access the database from the DSF FHIR server for permanent deletes
+- **Description:** Password to access the database from the DSF FHIR server for permanent deletes
 - **Recommendation:** Use docker secret file to configure using *DEV_DSF_FHIR_DB_USER_PERMANENT_DELETE_PASSWORD_FILE*
 - **Example:** `/run/secrets/db_user_permanent_delete.password`
 
@@ -129,7 +129,7 @@ icon: config
 ### DEV_DSF_FHIR_DB_USER_PERMANENT_DELETE_USERNAME
 - **Property:** dev.dsf.fhir.db.user.permanent.delete.username
 - **Required:** No
-- **Description:** The user name to access the database from the DSF FHIR server for permanent deletes
+- **Description:** Username to access the database from the DSF FHIR server for permanent deletes
 - **Recommendation:** Use a different user then *DEV_DSF_FHIR_DB_USER_USERNAME*
 - **Default:** `fhir_server_permanent_delete_user`
 
@@ -137,21 +137,45 @@ icon: config
 ### DEV_DSF_FHIR_DB_USER_USERNAME
 - **Property:** dev.dsf.fhir.db.user.username
 - **Required:** No
-- **Description:** The user name to access the database from the DSF FHIR server
+- **Description:** Username to access the database from the DSF FHIR server
 - **Default:** `fhir_server_user`
+
+
+### DEV_DSF_FHIR_DEBUG_LOG_MESSAGE_CURRENTUSER
+- **Property:** dev.dsf.fhir.debug.log.message.currentUser
+- **Required:** No
+- **Description:** To enable logging of the currently requesting user set to `true`.
+- **Recommendation:** This debug function should only be activated during development. WARNNING: Confidential information may be leaked via the debug log!
+- **Default:** `false`
+
+
+### DEV_DSF_FHIR_DEBUG_LOG_MESSAGE_DBSTATEMENT
+- **Property:** dev.dsf.fhir.debug.log.message.dbStatement
+- **Required:** No
+- **Description:** To enable logging of DB queries set to `true`.
+- **Recommendation:** This debug function should only be activated during development. WARNNING: Confidential information may be leaked via the debug log!
+- **Default:** `false`
+
+
+### DEV_DSF_FHIR_DEBUG_LOG_MESSAGE_WEBSERVICEREQUEST
+- **Property:** dev.dsf.fhir.debug.log.message.webserviceRequest
+- **Required:** No
+- **Description:** To enable logging of webservices requests set to `true`.
+- **Recommendation:** This debug function should only be activated during development. WARNNING: Confidential information may be leaked via the debug log!
+- **Default:** `false`
 
 
 ### DEV_DSF_FHIR_SERVER_BASE_URL
 - **Property:** dev.dsf.fhir.server.base.url
 - **Required:** Yes
-- **Description:** The base address of this DSF FHIR server to read/store fhir resources
+- **Description:** Base address of this DSF FHIR server to read/store fhir resources
 - **Example:** `https://foo.bar/fhir`
 
 
 ### DEV_DSF_FHIR_SERVER_INIT_BUNDLE
 - **Property:** dev.dsf.fhir.server.init.bundle
 - **Required:** No
-- **Description:** The fhir bundle containing the initial Allow-List, loaded on startup of the DSF FHIR server
+- **Description:** Fhir bundle containing the initial Allow-List, loaded on startup of the DSF FHIR server
 - **Recommendation:** Change only if you don't use the provided files from the installation guide, have local changes in the Allow-List or received an Allow-List from another source
 - **Default:** `conf/bundle.xml`
 
@@ -159,7 +183,7 @@ icon: config
 ### DEV_DSF_FHIR_SERVER_ORGANIZATION_IDENTIFIER_VALUE
 - **Property:** dev.dsf.fhir.server.organization.identifier.value
 - **Required:** Yes
-- **Description:** The local identifier value used in the Allow-List
+- **Description:** Local identifier value used in the Allow-List
 - **Recommendation:** By convention: The shortest possible FQDN that resolve the homepage of the organization
 - **Example:** `hospital.com`
 
@@ -174,7 +198,7 @@ icon: config
 ### DEV_DSF_FHIR_SERVER_PAGE_COUNT
 - **Property:** dev.dsf.fhir.server.page.count
 - **Required:** No
-- **Description:** The page size returned by the DSF FHIR server when reading/searching fhir resources
+- **Description:** Page size returned by the DSF FHIR server when reading/searching fhir resources
 - **Default:** `20`
 
 
@@ -190,6 +214,12 @@ icon: config
 - **Description:** To disable static resource caching, set to `false`
 - **Recommendation:** Only set to `false` for development
 - **Default:** `true`
+
+
+### DEV_DSF_FHIR_SERVER_UI_THEME
+- **Property:** dev.dsf.fhir.server.ui.theme
+- **Required:** No
+- **Description:** UI theme parameter, adds a color indicator to the ui to distinguish `dev`, `test` and `prod` environments im configured; supported values: `dev`, `test` and `prod`
 
 
 ### DEV_DSF_PROXY_NOPROXY

@@ -208,7 +208,7 @@ icon: config
 ### DEV_DSF_BPE_DB_URL
 - **Property:** dev.dsf.bpe.db.url
 - **Required:** Yes
-- **Description:** The address of the database used for the DSF BPE server
+- **Description:** Address of the database used for the DSF BPE server
 - **Recommendation:** Change only if you don't use the provided docker-compose from the installation guide or made changes to the database settings/networking in the docker-compose
 - **Example:** `jdbc:postgresql://db/bpe`
 
@@ -223,7 +223,7 @@ icon: config
 ### DEV_DSF_BPE_DB_USER_CAMUNDA_PASSWORD or DEV_DSF_BPE_DB_USER_CAMUNDA_PASSWORD_FILE
 - **Property:** dev.dsf.bpe.db.user.camunda.password
 - **Required:** Yes
-- **Description:** The password to access the database from the DSF BPE server for camunda processes
+- **Description:** Password to access the database from the DSF BPE server for camunda processes
 - **Recommendation:** Use docker secret file to configure using *DEV_DSF_BPE_DB_USER_CAMUNDA_PASSWORD_FILE*
 - **Example:** `/run/secrets/db_user_camunda.password`
 
@@ -231,7 +231,7 @@ icon: config
 ### DEV_DSF_BPE_DB_USER_CAMUNDA_USERNAME
 - **Property:** dev.dsf.bpe.db.user.camunda.username
 - **Required:** No
-- **Description:** The user name to access the database from the DSF BPE server for camunda processes
+- **Description:** Username to access the database from the DSF BPE server for camunda processes
 - **Recommendation:** Use a different user then in *DEV_DSF_BPE_DB_USER_USERNAME*
 - **Default:** `camunda_server_user`
 
@@ -246,7 +246,7 @@ icon: config
 ### DEV_DSF_BPE_DB_USER_PASSWORD or DEV_DSF_BPE_DB_USER_PASSWORD_FILE
 - **Property:** dev.dsf.bpe.db.user.password
 - **Required:** Yes
-- **Description:** The password to access the database from the DSF BPE server
+- **Description:** Password to access the database from the DSF BPE server
 - **Recommendation:** Use docker secret file to configure using *DEV_DSF_BPE_DB_USER_PASSWORD_FILE*
 - **Example:** `/run/secrets/db_user.password`
 
@@ -254,8 +254,24 @@ icon: config
 ### DEV_DSF_BPE_DB_USER_USERNAME
 - **Property:** dev.dsf.bpe.db.user.username
 - **Required:** No
-- **Description:** The user name to access the database from the DSF BPE server
+- **Description:** Username to access the database from the DSF BPE server
 - **Default:** `bpe_server_user`
+
+
+### DEV_DSF_BPE_DEBUG_LOG_MESSAGE_CURRENTUSER
+- **Property:** dev.dsf.bpe.debug.log.message.currentUser
+- **Required:** No
+- **Description:** To enable logging of the currently requesting user set to `true`.
+- **Recommendation:** This debug function should only be activated during development. WARNNING: Confidential information may be leaked via the debug log!
+- **Default:** `false`
+
+
+### DEV_DSF_BPE_DEBUG_LOG_MESSAGE_DBSTATEMENT
+- **Property:** dev.dsf.bpe.debug.log.message.dbStatement
+- **Required:** No
+- **Description:** To enable logging of DB queries set to `true`.
+- **Recommendation:** This debug function should only be activated during development. WARNNING: Confidential information may be leaked via the debug log!
+- **Default:** `false`
 
 
 ### DEV_DSF_BPE_DEBUG_LOG_MESSAGE_ONACTIVITYEND
@@ -290,6 +306,14 @@ icon: config
 - **Default:** `false`
 
 
+### DEV_DSF_BPE_DEBUG_LOG_MESSAGE_WEBSERVICEREQUEST
+- **Property:** dev.dsf.bpe.debug.log.message.webserviceRequest
+- **Required:** No
+- **Description:** To enable logging of webservices requests set to `true`.
+- **Recommendation:** This debug function should only be activated during development. WARNNING: Confidential information may be leaked via the debug log!
+- **Default:** `false`
+
+
 ### DEV_DSF_BPE_FHIR_CLIENT_CERTIFICATE
 - **Property:** dev.dsf.bpe.fhir.client.certificate
 - **Required:** Yes
@@ -317,7 +341,7 @@ icon: config
 ### DEV_DSF_BPE_FHIR_CLIENT_LOCAL_TIMEOUT_CONNECT
 - **Property:** dev.dsf.bpe.fhir.client.local.timeout.connect
 - **Required:** No
-- **Description:** The timeout in milliseconds until a connection is established with the local DSF FHIR server
+- **Description:** Timeout in milliseconds until a connection is established with the local DSF FHIR server
 - **Recommendation:** Change default value only if timeout exceptions occur
 - **Default:** `2000`
 
@@ -325,7 +349,7 @@ icon: config
 ### DEV_DSF_BPE_FHIR_CLIENT_LOCAL_TIMEOUT_READ
 - **Property:** dev.dsf.bpe.fhir.client.local.timeout.read
 - **Required:** No
-- **Description:** The timeout in milliseconds until reading a resource from the local DSF FHIR server is aborted
+- **Description:** Timeout in milliseconds until reading a resource from the local DSF FHIR server is aborted
 - **Recommendation:** Change default value only if timeout exceptions occur
 - **Default:** `60000`
 
@@ -340,7 +364,7 @@ icon: config
 ### DEV_DSF_BPE_FHIR_CLIENT_REMOTE_TIMEOUT_CONNECT
 - **Property:** dev.dsf.bpe.fhir.client.remote.timeout.connect
 - **Required:** No
-- **Description:** The timeout in milliseconds until a connection is established with a remote DSF FHIR server
+- **Description:** Timeout in milliseconds until a connection is established with a remote DSF FHIR server
 - **Recommendation:** Change default value only if timeout exceptions occur
 - **Default:** `5000`
 
@@ -348,7 +372,7 @@ icon: config
 ### DEV_DSF_BPE_FHIR_CLIENT_REMOTE_TIMEOUT_READ
 - **Property:** dev.dsf.bpe.fhir.client.remote.timeout.read
 - **Required:** No
-- **Description:** The timeout in milliseconds until a reading a resource from a remote DSF FHIR server is aborted
+- **Description:** Timeout in milliseconds until a reading a resource from a remote DSF FHIR server is aborted
 - **Recommendation:** Change default value only if timeout exceptions occur
 - **Default:** `60000`
 
@@ -378,7 +402,7 @@ icon: config
 ### DEV_DSF_BPE_FHIR_SERVER_BASE_URL
 - **Property:** dev.dsf.bpe.fhir.server.base.url
 - **Required:** Yes
-- **Description:** The base address of the local DSF FHIR server to read/store fhir resources
+- **Description:** Base address of the local DSF FHIR server to read/store fhir resources
 - **Example:** `https://foo.bar/fhir`
 
 
@@ -607,6 +631,34 @@ icon: config
 - **Required:** No
 - **Description:** Number of parallel Task / QuestionnaireResponse threads to start new or continue existing processes, a value `<= 0` means number of cpu cores
 - **Default:** `-1`
+
+
+### DEV_DSF_BPE_SERVER_BASE_URL
+- **Property:** dev.dsf.bpe.server.base.url
+- **Required:** No
+- **Description:** Base address of the BPE server, configure when exposing the web-ui
+- **Example:** `https://foo.bar/bpe`
+- **Default:** `https`
+
+
+### DEV_DSF_BPE_SERVER_ROLECONFIG
+- **Property:** dev.dsf.bpe.server.roleConfig
+- **Required:** No
+- **Description:** Role config YAML as defined in [FHIR Server: Access Control](access-control).
+
+
+### DEV_DSF_BPE_SERVER_STATIC_RESOURCE_CACHE
+- **Property:** dev.dsf.bpe.server.static.resource.cache
+- **Required:** No
+- **Description:** To disable static resource caching, set to `false`
+- **Recommendation:** Only set to `false` for development
+- **Default:** `true`
+
+
+### DEV_DSF_BPE_SERVER_UI_THEME
+- **Property:** dev.dsf.bpe.server.ui.theme
+- **Required:** No
+- **Description:** UI theme parameter, adds a color indicator to the ui to distinguish `dev`, `test` and `prod` environments im configured; supported values: `dev`, `test` and `prod`
 
 
 ### DEV_DSF_PROXY_NOPROXY
