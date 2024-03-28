@@ -5,6 +5,8 @@ import theme from "./theme.js";
 export default defineUserConfig({
   host: "127.0.0.1",
   base: "/",
+
+  head: [['link', { rel: 'icon', href: '/photos/home/logo-small.svg' }]],
   
   bundler: viteBundler({
     viteOptions: {},

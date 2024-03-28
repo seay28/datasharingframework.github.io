@@ -771,9 +771,13 @@ export default hopeTheme({
 
 
   plugins: {
-	searchPro: {
-		indexContent: true,
-	},
+    linksCheck: {
+      dev: true,
+      build: "error"
+    },
+    searchPro: {
+      indexContent: true,
+    },
     photoSwipe: false,
     components: {
       // components you want
@@ -792,10 +796,10 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
-      chart: true,
+      chart: false,
       codetabs: true,
       demo: false,
-      echarts: true,
+      echarts: false,
       figure: true,
       flowchart: false,
       gfm: true,
@@ -806,7 +810,7 @@ export default hopeTheme({
       katex: false,
       mark: true,
       mathjax: false,
-      mermaid: true,
+      mermaid: false,
       playground: {
         presets: [],
       },
@@ -828,8 +832,7 @@ export default hopeTheme({
       tabs: false,
       tasklist: false,
       vPre: false,
-      vuePlayground: false,
-      checkLinks: { status: "always"}
-    },
+      vuePlayground: false
+    }
   },
 });

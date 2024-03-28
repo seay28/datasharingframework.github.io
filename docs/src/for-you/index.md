@@ -47,6 +47,6 @@ If you're looking to leverage the DSF for your research or you're interested in 
 
 Should you have any questions or need personalized assistance, don't hesitate to reach out to the DSF core team directly at **dsf-gecko@hs-heilbronn.de**.
 
-Embark on your DSF journey today and [join a community](../stable/contribute/) committed to advancing biomedical research through secure, interoperable data sharing.
+Embark on your DSF journey today and [join a community](../stable/condfdfstribute/) committed to advancing biomedical research through secure, interoperable data sharing.
 
 
