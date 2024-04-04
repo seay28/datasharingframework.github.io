@@ -833,7 +833,7 @@ export default hopeTheme({
  },
 
  footer: "<a href='https://www.hs-heilbronn.de/impressum'>Imprint</a>  |  <a href='https://www.hs-heilbronn.de/de/datenschutz'>Data Privacy</a>  |  <a href='/about/contact'>Contact</a>",
- copyright: false,
+ copyright: "Copyright © 2024 DSF-Team",
  displayFooter: true,
  
 
