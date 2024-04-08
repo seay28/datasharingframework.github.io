@@ -1,3 +1,8 @@
+---
+title: ValueSet
+icon: creative
+---
+
 ### ValueSet
 
 [ValueSets](https://www.hl7.org/fhir/R4/valueset.html) bind codes from [CodeSystems](../../concepts/fhir/codesystem.md) to coded elements like

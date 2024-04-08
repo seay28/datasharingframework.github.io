@@ -1,3 +1,8 @@
+---
+title: Creating Task Resources Based on a Definition
+icon: creative
+---
+
 ### Creating Task Resources Based on a Definition
 
 This short guide should help you understand how you can create [Task](../concepts/fhir/task.md)
@@ -24,7 +29,7 @@ element, we are done with this chain.
 In forge, you should now be able to open the `StructureDefinition` folder and select the `task-start-dic-process.xml` profile.
 It should look something like this:
 
-![Forge overview](../../exercises/figures/forge_overview.png)
+![Forge overview](/photos/developer-documentation/forge_overview.png)
 
 #### 3rd Step: Building the Task Resource
 We will now go through each element one by one and include it into our [Task](../concepts/fhir/task.md)
@@ -83,7 +88,7 @@ By now your [Task](../concepts/fhir/task.md) resources should look something lik
 
 Let us look at a more complex element like the `requester` element:
 
-![Forge requester view](../../exercises/figures/forge_requester_view.png)
+![Forge requester view](/photos/developer-documentation/forge_requester_view.png)
 
 We will start the same way we started with primitive elements, by adding the `requester` element:
 ```xml
@@ -180,7 +185,7 @@ resource should look something like this:
 [Slicings](https://www.hl7.org/fhir/R4/profiling.html#slicing) are a bit different from regular elements. Let us look at the
 slice `message-name`:
 
-![Forge slice message name](../../exercises/figures/forge_slice_message_name.png)
+![Forge slice message name](/photos/developer-documentation/forge_slice_message_name.png)
 
 If we were to continue including slices to the [Task](../concepts/fhir/task.md) resource like we did so far,
 we would add a `message-name` element to our XML like this:

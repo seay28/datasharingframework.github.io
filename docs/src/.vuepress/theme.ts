@@ -34,6 +34,11 @@ export default hopeTheme({
             text: "Security",
             icon: "safe",
             link: "/security/",
+          },
+          {
+            text: "Developer Documentation",
+            icon: "info",
+            link: "/developer-documentation/"
           }
         ]
     },
@@ -88,7 +93,7 @@ export default hopeTheme({
         icon: "info",
         prefix: "intro/",
         link: "intro/",
-        children: ["info/introduction.md", "info/basics", "info/architecture", "info/security", "info/allowList", "info/process-plugins"], 
+        children: ["info/introduction.md", "info/basics", "info/architecture", "info/security", "info/allowList", "info/process-plugins", ""], 
       },
       {
         text: "Security",
@@ -762,7 +767,48 @@ export default hopeTheme({
         icon: "guide",
         children: ["introduction", "generalinformation/", "code/", "build/", "releases/", "tutorial/"], 
       },
-    ]
+    ],
+    "/developer-documentation/": [
+      {
+        text: "Developer Documentation",
+        icon: "info",
+        link: "/developer-documentation/",
+        children: [{
+          text: "Concepts",
+          icon: "info",
+          prefix: "concepts/",
+          link: "concepts/",
+          children: [{
+            text: "BPMN",
+            icon: "info",
+            prefix: "bpmn/",
+            link: "bpmn/",
+            children: ["intro.md", "sequence-flow.md", "service-tasks.md", "gateways.md", "conditions.md", "messaging.md", "timer-intermediate-catching-events.md"], 
+          },
+          {
+            text: "FHIR",
+            icon: "info",
+            prefix: "fhir/",
+            link: "fhir/",
+            children: ["introduction.md", "task.md", "activitydefinition.md", "codesystem.md", "valueset.md"], 
+          },
+          {
+            text: "DSF",
+            icon: "info",
+            prefix: "dsf/",
+            link: "dsf/",
+            children: ["about-version-placeholders-and-urls.md", "bpmn-process-execution.md", "bpmn-process-variables.md", "certificates.md", "draft-task-resources.md", "environment-variables.md", "examples-for-requester-and-recipient-elements.md", "message-correlation.md", "message-delegates.md", "organization-identifiers.md", "process-api.md", "read-access-tag.md", "service-delegates.md", "spring-integration.md", "the-process-plugin-definition.md"], 
+          }]
+        },
+        {
+          text: "Guides",
+          icon: "info",
+          prefix: "guides/",
+          link: "guides/",
+          children: ["accessing-bpmn-process-variables.md", "accessing-task-resources-during-execution.md", "adding-task-input-parameters-to-task-profiles.md", "configuring-the-read-access-tag.md", "creating-an-activity-definition.md", "creating-codesystems-for-dsf-processes.md", "creating-task-resources-based-on-a-definition.md", "creating-valuesets-for-dsf-processes.md", "managing-mutiple-incoming-messages-and-missing-messages.md", "setting-targets-for-message-events.md", "starting-a-process-via-task-resources.md"]
+        }]
+      }
+    ],
   },
 
   footer: "<a href='https://www.hs-heilbronn.de/impressum'>Imprint</a> • <a href='https://www.hs-heilbronn.de/de/datenschutz'>Data Privacy</a>",

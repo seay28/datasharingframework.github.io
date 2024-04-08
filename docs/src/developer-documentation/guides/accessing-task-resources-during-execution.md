@@ -1,3 +1,8 @@
+---
+title: Accessing Task Resources During Execution
+icon: creative
+---
+
 ### Accessing Task Resources During Execution
 
 If you want access to the [Task](../concepts/fhir/task.md) resources in your [Service](../concepts/dsf/service-delegates.md) / [Message](../concepts/dsf/message-delegates.md) Delegates, the `Variables` class will

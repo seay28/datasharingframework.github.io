@@ -1,3 +1,8 @@
+---
+title: Environment Variables
+icon: creative
+---
+
 ### Environment Variables
 
 Environment variables offer a way to make configuration data available at the start of a [BPMN process execution](../../concepts/dsf/bpmn-process-execution.md).

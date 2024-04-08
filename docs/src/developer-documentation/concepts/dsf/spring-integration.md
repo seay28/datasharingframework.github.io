@@ -1,3 +1,8 @@
+---
+title: Spring Integration
+icon: creative
+---
+
 ### Spring Integration
 
 Since the DSF also employs the use of the [Spring Framework](https://spring.io/projects/spring-framework) you will also

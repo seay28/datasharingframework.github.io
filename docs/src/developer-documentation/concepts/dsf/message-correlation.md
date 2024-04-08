@@ -1,3 +1,8 @@
+---
+title: Message Correlation
+icon: creative
+---
+
 ### Message Correlation
 
 In order for messages to be able to be sent back and forth between organizations with potentially multiple of the

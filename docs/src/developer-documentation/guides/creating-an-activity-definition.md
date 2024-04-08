@@ -1,3 +1,8 @@
+---
+title: Creating an ActivityDefinition
+icon: creative
+---
+
 ### Creating an ActivityDefinition
 
 This guide will teach you how to create an ActivityDefinition based on the [dsf-activity-definition](https://github.com/datasharingframework/dsf/blob/main/dsf-fhir/dsf-fhir-validation/src/main/resources/fhir/StructureDefinition/dsf-activity-definition-1.0.0.xml) profile for your process plugin.

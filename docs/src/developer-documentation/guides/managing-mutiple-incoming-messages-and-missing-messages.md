@@ -1,3 +1,8 @@
+---
+title: Managing Multiple Incoming Messages and Missing Messages
+icon: creative
+---
+
 ### Managing Multiple Incoming Messages and Missing Messages
 
 If an already running process instance is waiting for a message from another organization, the corresponding FHIR [Task](../concepts/fhir/task.md) may never arrive.
@@ -13,7 +18,7 @@ The following BPMN collaboration diagram shows how the process at the first orga
 or missing messages:
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../../exercises/figures/exercise5_event_based_gateway_inverted.svg">
-  <source media="(prefers-color-scheme: light)" srcset="../../exercises/figures/exercise5_event_based_gateway.svg">
-  <img alt="BPMN collaboration diagram with an Event Based Gateway" src="../../exercises/figures/exercise5_event_based_gateway.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="/photos/developer-documentation/exercise5_event_based_gateway_inverted.svg">
+  <source media="(prefers-color-scheme: light)" srcset="/photos/developer-documentation/exercise5_event_based_gateway.svg">
+  <img alt="BPMN collaboration diagram with an Event Based Gateway" src="/photos/developer-documentation/exercise5_event_based_gateway.svg">
 </picture>

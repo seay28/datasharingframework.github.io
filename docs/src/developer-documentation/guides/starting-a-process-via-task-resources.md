@@ -1,3 +1,8 @@
+---
+title: Starting a Process via Task Resources
+icon: creative
+---
+
 ### Starting a Process via Task Resources
 
 To start a BPMN process, you need to create new a [Task](../concepts/fhir/task.md) resource in the DSF FHIR server

@@ -1,3 +1,8 @@
+---
+title: Service Tasks
+icon: creative
+---
+
 ### Service Tasks
 
 You will primarily use [Service Tasks](https://docs.camunda.org/manual/7.20/reference/bpmn20/tasks/service-task/)

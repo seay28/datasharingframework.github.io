@@ -1,3 +1,8 @@
+---
+title: Setting Targets for Message Events
+icon: creative
+---
+
 ### Setting Targets for Message Events
 
 Setting a target for a message event requires a `Target` object. To create one, you require a target's organization identifier, endpoint identifier and endpoint address.

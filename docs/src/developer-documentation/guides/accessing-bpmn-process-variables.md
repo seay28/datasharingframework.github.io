@@ -1,3 +1,8 @@
+---
+title: Accessing BPMN Process Variables
+icon: creative
+---
+
 ### Accessing BPMN Process Variables
 
 After creating a [Service Delegate](../concepts/dsf/service-delegates.md) or [Message Delegate](../concepts/dsf/message-delegates.md), you might want to

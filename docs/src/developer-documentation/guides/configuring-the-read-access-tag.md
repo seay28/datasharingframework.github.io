@@ -1,3 +1,8 @@
+---
+title: Configuring the Read Access Tag
+icon: creative
+---
+
 ### Configuring the Read Access Tag
 
 To start off, you want to take a look at the [CodeSystem](https://github.com/datasharingframework/dsf/blob/main/dsf-fhir/dsf-fhir-validation/src/main/resources/fhir/CodeSystem/dsf-read-access-tag-1.0.0.xml) defined for the [Read Access Tag](../concepts/dsf/read-access-tag.md)

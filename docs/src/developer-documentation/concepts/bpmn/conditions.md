@@ -1,3 +1,8 @@
+---
+title: Conditions
+icon: creative
+---
+
 ### Conditions
 
 [Conditions](https://docs.camunda.org/manual/7.20/user-guide/process-engine/expression-language/#conditions)

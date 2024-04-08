@@ -1,3 +1,8 @@
+---
+title: Message Delegates
+icon: creative
+---
+
 ### Message Delegates
 
 Message Delegates are the Java representation of the [Message Events](../../concepts/bpmn/messaging.md) in your BPMN model.

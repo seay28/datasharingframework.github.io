@@ -1,3 +1,9 @@
+---
+title: Messaging
+icon: creative
+---
+
+
 ### Messaging
 
 In order to enable communication with other lanes, pools or even entirely separate processes you need to be able
@@ -7,9 +13,9 @@ uses Message Flow. Message Flow is typically represented by a dashed line arrow 
 The following BPMN collaboration diagram shows message exchange between two processes.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="figures/exercise3_message_flow_inverted.svg">
-  <source media="(prefers-color-scheme: light)" srcset="figures/exercise3_message_flow.svg">
-  <img alt="BPMN collaboration diagram with two processes using message flow to exchange information between two organizations" src="figures/exercise3_message_flow.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="/photos/developer-documentation/exercise3_message_flow_inverted.svg">
+  <source media="(prefers-color-scheme: light)" srcset="/photos/developer-documentation/exercise3_message_flow.svg">
+  <img alt="BPMN collaboration diagram with two processes using message flow to exchange information between two organizations" src="/photos/developer-documentation/exercise3_message_flow.svg">
 </picture>
 
 #### Message Start Event

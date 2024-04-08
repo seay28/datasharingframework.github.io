@@ -1,3 +1,8 @@
+---
+title: Gateways
+icon: creative
+---
+
 ### Gateways
 
 [Gateways](https://docs.camunda.org/manual/7.20/reference/bpmn20/gateways/) allow you to control the [Sequence Flow](../../concepts/bpmn/sequence-flow.md). Different

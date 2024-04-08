@@ -1,3 +1,8 @@
+---
+title: Timer Intermediate Catching Events
+icon: creative
+---
+
 ### Timer Intermediate Catching Events
 
 A [Timer Intermediate Catching Event](https://docs.camunda.org/manual/7.17/reference/bpmn20/events/timer-events/#timer-intermediate-catching-event)

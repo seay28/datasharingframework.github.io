@@ -1,3 +1,8 @@
+---
+title: Creating ValueSets for DSF Processes
+icon: creative
+---
+
 ### Creating ValueSets for DSF Processes
 
 You might find yourself in the situation where you need to create a [ValueSet](../concepts/fhir/valueset.md).

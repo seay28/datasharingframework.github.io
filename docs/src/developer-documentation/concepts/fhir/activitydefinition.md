@@ -1,3 +1,8 @@
+---
+title: ActivityDefinition
+icon: creative
+---
+
 ### ActivityDefinition
 
 [ActivityDefinitions](http://hl7.org/fhir/R4/activitydefinition.html) are used by the DSF to advertise which processes are

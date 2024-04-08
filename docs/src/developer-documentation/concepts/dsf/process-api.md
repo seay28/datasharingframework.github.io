@@ -1,3 +1,8 @@
+---
+title: DSF Process API Package
+icon: creative
+---
+
 ### DSF Process API Package
 
 The [DSF Process API package](https://mvnrepository.com/artifact/dev.dsf/dsf-bpe-process-api-v1) consists of a set of utility classes designed to provide easy access to solutions for process plugin use cases.

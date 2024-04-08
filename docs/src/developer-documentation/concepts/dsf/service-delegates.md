@@ -1,3 +1,8 @@
+---
+title: Service Delegates
+icon: creative
+---
+
 ### Service Delegates
 
 Service Delegates are the Java representation of the [Service Tasks](../../concepts/bpmn/service-tasks.md) in your BPMN model.

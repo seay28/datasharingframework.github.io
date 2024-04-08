@@ -1,4 +1,9 @@
-## FHIR
+---
+title: Introduction
+icon: creative
+---
+
+## FHIR Introduction
 
 The DSF uses a variety of [FHIR resources](https://dsf.dev/intro/info/basics.html#why-are-we-using-fhir-and-bpmn). The DSF uses XML as the format for FHIR resources.  
 The most important resources for plugin development are [ActivityDefinitions](../../concepts/fhir/activitydefinition.md), [Tasks](../../concepts/fhir/task.md),

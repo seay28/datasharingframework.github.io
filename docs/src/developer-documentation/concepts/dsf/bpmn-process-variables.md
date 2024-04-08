@@ -1,3 +1,8 @@
+---
+title: BPMN Process Variables
+icon: creative
+---
+
 ### BPMN Process Variables
 
 BPMN process variables hold additional information which has to be available during BPMN process execution.

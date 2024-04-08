@@ -1,3 +1,8 @@
+---
+title: Draft Task Resources
+icon: creative
+---
+
 ### Draft Task Resources
 
 [Task](../../concepts/fhir/task.md) resources with status `draft` are used to create the DSF FHIR server's functionality

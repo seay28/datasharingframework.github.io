@@ -1,3 +1,8 @@
+---
+title: Certificates
+icon: creative
+---
+
 ### Certificates
 
 There is a number of certificates that need to be generated in order for DSF instances to communicate with each other securely.

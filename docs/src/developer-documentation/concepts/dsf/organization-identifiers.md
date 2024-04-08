@@ -1,3 +1,8 @@
+---
+title: Organization Identifiers
+icon: creative
+---
+
 ### Organization Identifiers
 DSF FHIR server instances always have something called an `organization identifer`. It uniquely identifies
 the organization the DSF FHIR server instance belongs to for its [Allow-List mechanism](https://dsf.dev/intro/info/allowList.html). 

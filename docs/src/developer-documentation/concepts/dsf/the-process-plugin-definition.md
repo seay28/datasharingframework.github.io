@@ -1,3 +1,8 @@
+---
+title: The Process Plugin Definition
+icon: creative
+---
+
 ### The Process Plugin Definition
 
 In order for the DSF BPE server to load your plugin you need to provide it with the following information:

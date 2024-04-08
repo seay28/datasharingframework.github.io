@@ -1,3 +1,8 @@
+---
+title: Task
+icon: creative
+---
+
 ### Task
 
 The [FHIR Task](https://www.hl7.org/fhir/R4/task.html) resource enables the DSF's distributed communication.

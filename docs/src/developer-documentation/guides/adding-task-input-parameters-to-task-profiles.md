@@ -1,3 +1,8 @@
+---
+title: Adding Task Input Parameters to Task Profiles
+icon: creative
+---
+
 ### Adding Task Input Parameters to Task Profiles
 
 When adding a new [Input Parameter](../concepts/fhir/task.md#task-input-parameters) to a [Task](../concepts/fhir/task.md)
