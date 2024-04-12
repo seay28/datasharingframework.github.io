@@ -797,7 +797,7 @@ export default hopeTheme({
             icon: "info",
             prefix: "dsf/",
             link: "dsf/",
-            children: ["about-version-placeholders-and-urls.md", "bpmn-process-execution.md", "bpmn-process-variables.md", "certificates.md", "draft-task-resources.md", "environment-variables.md", "examples-for-requester-and-recipient-elements.md", "message-correlation.md", "message-delegates.md", "organization-identifiers.md", "process-api.md", "read-access-tag.md", "service-delegates.md", "spring-integration.md", "the-process-plugin-definition.md"], 
+            children: ["about-version-placeholders-and-urls.md", "bpmn-process-execution.md", "bpmn-process-variables.md", "draft-task-resources.md", "environment-variables.md", "examples-for-requester-and-recipient-elements.md", "message-correlation.md", "message-delegates.md", "organization-identifiers.md", "process-api.md", "read-access-tag.md", "service-delegates.md", "spring-integration.md", "the-process-plugin-definition.md"], 
           }]
         },
         {

@@ -5,10 +5,7 @@ icon: creative
 
 ### Creating CodeSystems for DSF Processes
 
-You might find yourself in a situation where you need to create a [CodeSystem](../concepts/fhir/codesystem.md).
-For example, when defining the type of an [Input Parameter](../concepts/fhir/task.md#task-input-parameters).
-[CodeSystems](../concepts/fhir/codesystem.md) for the DSF differ from regular [CodeSystems](../concepts/fhir/codesystem.md)
-in that some element's values are managed by the DSF BPE server. You can use the following XML as a template:
+You might find yourself in a situation where you need to create a [CodeSystem](../concepts/fhir/codesystem.md). For example, when defining the type of an [Input Parameter](../concepts/fhir/task.md#task-input-parameters). [CodeSystems](../concepts/fhir/codesystem.md) for the DSF differ from regular [CodeSystems](../concepts/fhir/codesystem.md) in that some element's values are managed by the DSF BPE server. You can use the following XML as a template:
 ```xml
 <CodeSystem xmlns="http://hl7.org/fhir">
     <meta>
@@ -40,8 +37,6 @@ in that some element's values are managed by the DSF BPE server. You can use the
     </concept>
 </CodeSystem> 
 ```
-Replace dummy values with appropriate values of your own. Do not change elements managed by the DSF BPE server.  
-You can add as many codes as you like by defining more `concept` elements.
+Replace dummy values with appropriate values of your own. Do not change elements managed by the DSF BPE server. You can add as many codes as you like by defining more `concept` elements.
 
-The DSF BPE server will read your [CodeSystem](../concepts/fhir/codesystem.md) from
-`tutorial-process/src/main/resources/fhir/CodeSystem`.
+The DSF BPE server will read your [CodeSystem](../concepts/fhir/codesystem.md) from `tutorial-process/src/main/resources/fhir/CodeSystem`.
