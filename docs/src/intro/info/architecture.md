@@ -29,6 +29,8 @@ Different processes can be executed simultaneously. For this, only a new process
 
 ![BPE](/photos/info/architecture/bpe-dark.svg#dark)
 
+The DSF BPE uses websocket (WSS) and webservice (HTTPS) connections to communicate with the DSF FHIR server. FHIR resources are created, read, updated and deleted via HTTP requests against the FHIR webservice API. The FHIR subscription mechanism is used to communicate Task resources with status 'requested' and QuestionnaireResponse resources with status 'completed' to the BPE via websockets. When the BPE starts and before the websocket connections are established, 'requested' Task resources and 'completed' QuestionnaireResponse not seen by the BPE are read via webservice requests.
+
 ## Flexible Deployment
 The deployment of the architecture is flexible. The organisations can be deployed as a *star* schema (left) or as a *mesh* schema (right). In the Star schema (left), all Data Integration Centres (DIC) are connected to a central node (CRR - Central Research Repository), which transfers the information to all nodes (DIC). For security reasons, a data transfer hub (DTH) is connected upstream, which provides additional security so that the medical data is never transferred together with the authenticating data. 
 
