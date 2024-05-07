@@ -8,7 +8,7 @@ icon: creative
 
 In order to enable communication with other lanes, pools or even entirely separate processes you need to be able to exchange information. In BPMN, you can use [Message Events](https://docs.camunda.org/manual/7.20/reference/bpmn20/events/message-events/) to model this information exchange. Modeling communication with [Message Events](https://docs.camunda.org/manual/7.20/reference/bpmn20/events/message-events/) in the same diagram uses Message Flow. Message Flow is typically represented by a dashed line arrow between BPMN elements with a black (send) or white (receive) envelope icon. The following BPMN collaboration diagram shows message exchange between two processes.
 
-![BPMN collaboration diagram with two processes using message flow to exchange information between two organizations](/photos/developer-documentation/exercise3_message_flow.svg)
+![BPMN collaboration diagram with two processes using message flow to exchange information between two organizations](/photos/developer-documentation/message_flow.svg)
 
 #### Message Start Event
 

@@ -12,7 +12,7 @@ At the same time, you might also expect to receive one out of a number of differ
 In order to solve both problems we can add an [Event Based Gateway](../concepts/bpmn/gateways.md#event-based-gateway) to the process waiting for a response and then either handle a [Task](../concepts/fhir/task.md) resource with the response and finish the process in a success state or trigger a [Timer Intermediate Catching Event](../concepts/bpmn/timer-intermediate-catching-events.md) after a defined wait period and finish the process in an error state. The following BPMN collaboration diagram shows how the process at the first organization would look like if we wanted to react to multiple different messages or missing messages:
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="/photos/developer-documentation/exercise5_event_based_gateway_inverted.svg">
-  <source media="(prefers-color-scheme: light)" srcset="/photos/developer-documentation/exercise5_event_based_gateway.svg">
-  <img alt="BPMN collaboration diagram with an Event Based Gateway" src="/photos/developer-documentation/exercise5_event_based_gateway.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="/photos/developer-documentation/event_based_gateway_inverted.svg">
+  <source media="(prefers-color-scheme: light)" srcset="/photos/developer-documentation/event_based_gateway.svg">
+  <img alt="BPMN collaboration diagram with an Event Based Gateway" src="/photos/developer-documentation/event_based_gateway.svg">
 </picture>
