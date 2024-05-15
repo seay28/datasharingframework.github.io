@@ -5,9 +5,9 @@ icon: creative
 
 ## Overview
 
-- [Contact & Community Guide](learnmore/contact)
-- [Contributors](learnmore/team)
-- [Partners](learnmore/partners)
-- [Public Funding](learnmore/public)
+- [Contact & Community Guide](/about/learnmore/contact.md)
+- [Contributors](/about/learnmore/team.md)
+- [Partners](/about/learnmore/partners.md)
+- [Public Funding](/about/learnmore/public.md)
 
 

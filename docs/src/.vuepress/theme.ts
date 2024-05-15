@@ -93,7 +93,7 @@ export default hopeTheme({
       {
         text: "Security",
         icon: "safe",
-        link: "/security",
+        link: "security/",
       },
       {
         text: "Use-Cases",
