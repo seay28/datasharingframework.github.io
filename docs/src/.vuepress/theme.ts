@@ -37,8 +37,8 @@ export default hopeTheme({
           },
           {
             text: "Developer Documentation",
-            icon: "info",
-            link: "/developer-documentation/"
+            icon: "creative",
+            link: "/develop/"
           }
         ]
     },
@@ -855,41 +855,35 @@ export default hopeTheme({
         children: ["introduction", "generalinformation/", "code/", "build/", "releases/", "tutorial/"], 
       },
     ],
-    "/developer-documentation/": [
+    "/develop/": [
       {
         text: "Developer Documentation",
-        icon: "info",
-        link: "/developer-documentation/",
+        icon: "creative",
+        link: "/develop/",
         children: [{
-          text: "Concepts",
-          icon: "info",
-          prefix: "concepts/",
-          link: "concepts/",
-          children: [{
             text: "BPMN",
-            icon: "info",
+            icon: "creative",
             prefix: "bpmn/",
             link: "bpmn/",
-            children: ["intro.md", "sequence-flow.md", "service-tasks.md", "gateways.md", "conditions.md", "messaging.md", "timer-intermediate-catching-events.md"], 
+            children: ["conditions.md", "gateways.md", "messaging.md", "sequence-flow.md", "service-tasks.md", "timer-intermediate-catching-events.md"], 
           },
           {
             text: "FHIR",
-            icon: "info",
+            icon: "creative",
             prefix: "fhir/",
             link: "fhir/",
-            children: ["introduction.md", "task.md", "activitydefinition.md", "codesystem.md", "valueset.md"], 
+            children: ["activitydefinition.md", "codesystem.md", "task.md", "valueset.md"], 
           },
           {
             text: "DSF",
-            icon: "info",
+            icon: "creative",
             prefix: "dsf/",
             link: "dsf/",
-            children: ["about-version-placeholders-and-urls.md", "bpmn-process-execution.md", "bpmn-process-variables.md", "draft-task-resources.md", "environment-variables.md", "examples-for-requester-and-recipient-elements.md", "message-correlation.md", "message-delegates.md", "organization-identifiers.md", "process-api.md", "read-access-tag.md", "service-delegates.md", "spring-integration.md", "the-process-plugin-definition.md"], 
-          }]
+            children: ["versions-placeholders-urls.md", "bpmn-process-execution.md", "bpmn-process-variables.md", "draft-task-resources.md", "environment-variables.md", "requester-and-recipient.md", "message-correlation.md", "message-delegates.md", "organization-identifiers.md", "process-plugin-api.md", "read-access-tag.md", "service-delegates.md", "spring-framework-integration.md", "process-plugin-definition.md"], 
         },
         {
           text: "Guides",
-          icon: "info",
+          icon: "creative",
           prefix: "guides/",
           link: "guides/",
           children: ["accessing-bpmn-process-variables.md", "accessing-task-resources-during-execution.md", "adding-task-input-parameters-to-task-profiles.md", "configuring-the-read-access-tag.md", "creating-an-activity-definition.md", "creating-codesystems-for-dsf-processes.md", "creating-task-resources-based-on-a-definition.md", "creating-valuesets-for-dsf-processes.md", "managing-mutiple-incoming-messages-and-missing-messages.md", "setting-targets-for-message-events.md", "starting-a-process-via-task-resources.md"]
