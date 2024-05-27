@@ -879,14 +879,14 @@ export default hopeTheme({
             icon: "creative",
             prefix: "dsf/",
             link: "dsf/",
-            children: ["versions-placeholders-urls.md", "bpmn-process-execution.md", "bpmn-process-variables.md", "draft-task-resources.md", "environment-variables.md", "requester-and-recipient.md", "message-correlation.md", "message-delegates.md", "organization-identifiers.md", "process-plugin-api.md", "read-access-tag.md", "service-delegates.md", "spring-framework-integration.md", "process-plugin-definition.md"], 
+            children: ["bpmn-process-execution.md", "bpmn-process-variables.md", "draft-task-resources.md", "environment-variables.md", "message-correlation.md", "message-delegates.md", "organization-identifiers.md", "process-plugin-api.md", "process-plugin-definition.md", "read-access-tag.md", "requester-and-recipient.md", "service-delegates.md", "spring-framework-integration.md", "versions-placeholders-urls.md"], 
         },
         {
           text: "Guides",
           icon: "creative",
           prefix: "guides/",
           link: "guides/",
-          children: ["accessing-bpmn-process-variables.md", "accessing-task-resources-during-execution.md", "adding-task-input-parameters-to-task-profiles.md", "configuring-the-read-access-tag.md", "creating-an-activity-definition.md", "creating-codesystems-for-dsf-processes.md", "creating-task-resources-based-on-a-definition.md", "creating-valuesets-for-dsf-processes.md", "managing-mutiple-incoming-messages-and-missing-messages.md", "setting-targets-for-message-events.md", "starting-a-process-via-task-resources.md"]
+          children: ["accessing-bpmn-process-variables.md", "accessing-task-resources-during-execution.md", "adding-task-input-parameters-to-task-profiles.md", "configuring-read-access-tags.md", "creating-activity-definitions.md", "creating-codesystems-for-dsf-processes.md", "creating-task-resources-based-on-a-definition.md", "creating-valuesets-for-dsf-processes.md", "managing-mutiple-incoming-messages-and-missing-messages.md", "setting-targets-for-message-events.md", "starting-a-process-via-task-resources.md"]
         }]
       }
     ],

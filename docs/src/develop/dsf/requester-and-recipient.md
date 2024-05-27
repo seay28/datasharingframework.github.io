@@ -1,5 +1,5 @@
 ---
-title: Requester and Recipient Elements
+title: Requester and Recipient
 icon: creative
 ---
 
