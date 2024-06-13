@@ -10,16 +10,19 @@ Wir laden Sie herzlich zu unserem kommenden Hackathon **am 18.06. von 10:00 Uhr 
 
 Agenda:
 
-1. Einführung in Neuerungen
-   1. Begrüßung und Einführung in die neuen Funktionen und Verbesserungen des DSFs
-   1. Präsentation der Änderungen der MII DSF-Prozessplugins, sowie von Blaze und Flare 
-2. Updates MII-Komponenten: DSF, Feasibility, Data Sharing, Data Transfer, KDS Report, Blaze, Flare mit neuer KDS Ontologie
+1. Einführung in Neuerungen:
+   - Begrüßung und Einführung in die neuen Funktionen und Verbesserungen des DSFs
+   - Präsentation der Änderungen der MII DSF-Prozessplugins, sowie von Blaze und Flare 
+2. Updates MII-Komponenten:  
+   - DSF
+   - Feasibility
+   - Data Sharing
+   - Data Transfer
+   - KDS Report
+   - Blaze
+   - Flare mit neuer KDS Ontologie
 3. Testen des Prozessplugins "Data Sharing":
-   1. Praktische Anwendung des "Data Sharing"-Prozessplugins auf unserer Testinfrastruktur.
-
-
-
-Weitere Details und Webkonferenz: https://dsf.dev/hackathon
+   - Praktische Anwendung des "Data Sharing"-Prozessplugins auf unserer Testinfrastruktur.
 
 Ziel der Veranstaltung ist es die Test- und Produktivsysteme möglichst aller Standorte auf den neusten Stand zu patchen.
 
