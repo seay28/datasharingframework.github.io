@@ -5,6 +5,12 @@ icon: guide
 
 <!--<meta http-equiv="refresh" content="0;url=https://audimax.heiconf.uni-heidelberg.de/jxh4-jxx2-tm6c-d37q">-->
 
+::: tip Zusammenfassung
+- Konferenz: https://audimax.heiconf.uni-heidelberg.de/jxh4-jxx2-tm6c-d37q
+- [Vorbereitung](#vorbereitung)
+- [Installationshinweise](#installationshinweise)
+:::
+
 Wir laden Sie herzlich zu unserem kommenden Hackathon **am 18.06. von 10:00 Uhr bis 15:30 Uhr** ein. Diese Veranstaltung bietet die Gelegenheit, sich mit den neuesten Updates und Funktionen unserer Komponenten vertraut zu machen.
 
 
@@ -49,6 +55,23 @@ Weitere Details zum Data Sharing Prozess sind hier zu finden:
 https://github.com/medizininformatik-initiative/mii-process-data-sharing/wiki
 
 Eine Installation kann vor oder während des Hackathons durchgeführt werden.
+
+## Installationshinweise
+
+### DSF
+[Installation](https://dsf.dev/stable/maintain/install.html) oder [Update](https://dsf.dev/stable/maintain/upgrade-from-1.html)
+
+### Prozessplugins
+- DSF Ping Pong 1.0.1.0 [Release Notes](https://github.com/datasharingframework/dsf-process-ping-pong/releases/tag/v1.0.1.0)
+- DSF Allowlist Plugin 1.0.0.1 [Release Notes](https://github.com/datasharingframework/dsf-process-allow-list/releases/tag/v1.0.0.1)
+- MII Feasibility 1.0.0.5 [Instructions](https://github.com/medizininformatik-initiative/feasibility-deploy/wiki/DSF-Middleware-Setup)
+- MII Process Report 1.1.0.0 for Test Infrastructure [Instructions](https://github.com/medizininformatik-initiative/mii-process-report/wiki/Process-Report-Deployment-v1.1.x.x). Please use 1.0.x.x for Prod for now [Instructions](https://github.com/medizininformatik-initiative/mii-process-report/wiki/Process-Report-Deployment-v1.0.x.x)
+- MII Process Data Transfer 1.1.0.0 [Instructions](https://github.com/medizininformatik-initiative/mii-process-data-transfer/wiki/Process-Data-Transfer-Deployment-v1.0.x.x)
+- MII Process Data Sharing 1.0.0.1 [Instructions](https://github.com/medizininformatik-initiative/mii-process-data-sharing/wiki/Process-Data-Sharing-Deployment-v1.0.x.x)
+
+### Weitere Anwendungen
+- Flare [Instructions](https://github.com/medizininformatik-initiative/flare)
+- Blaze 0.27.1 [Instructions](https://github.com/samply/blaze/blob/master/docs/deployment/README.md)
 
 
 
