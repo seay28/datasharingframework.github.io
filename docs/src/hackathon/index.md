@@ -66,7 +66,7 @@ Eine Installation kann vor oder während des Hackathons durchgeführt werden.
 - DSF Allowlist Plugin 1.0.0.1 [Release Notes](https://github.com/datasharingframework/dsf-process-allow-list/releases/tag/v1.0.0.1)
 - MII Feasibility 1.0.0.5 [Instructions](https://github.com/medizininformatik-initiative/feasibility-deploy/wiki/DSF-Middleware-Setup)
 - MII Process Report 1.1.0.0 for Test Infrastructure [Instructions](https://github.com/medizininformatik-initiative/mii-process-report/wiki/Process-Report-Deployment-v1.1.x.x). Please use 1.0.x.x for Prod for now [Instructions](https://github.com/medizininformatik-initiative/mii-process-report/wiki/Process-Report-Deployment-v1.0.x.x)
-- MII Process Data Transfer 1.1.0.0 [Instructions](https://github.com/medizininformatik-initiative/mii-process-data-transfer/wiki/Process-Data-Transfer-Deployment-v1.0.x.x)
+- MII Process Data Transfer 1.0.1.0 [Instructions](https://github.com/medizininformatik-initiative/mii-process-data-transfer/wiki/Process-Data-Transfer-Deployment-v1.0.x.x)
 - MII Process Data Sharing 1.0.0.1 [Instructions](https://github.com/medizininformatik-initiative/mii-process-data-sharing/wiki/Process-Data-Sharing-Deployment-v1.0.x.x)
 
 ### Weitere Anwendungen
