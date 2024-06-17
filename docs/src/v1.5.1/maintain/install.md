@@ -220,8 +220,8 @@ By default, we will log both to the console (collected by docker) and to files i
 On a successful BPE start, you should see the following entries in your BPE log:
 
 ```
-INFO Grizzly(1) - ClientEndpoint.onOpen(37) | Websocket connected {uri: wss://FHIR_SERVER_FQDN/fhir/ws, session-id: SOME_RANDOM_UUID1}
-INFO Grizzly(1) - ClientEndpoint.onOpen(37) | Websocket connected {uri: wss://FHIR_SERVER_FQDN/fhir/ws, session-id: SOME_RANDOM_UUID2}
+INFO Grizzly(1) -  INFO Grizzly(1) - ClientEndpoint.onOpen(37) | Websocket open, session SOME_RANDOM_UUID1
+INFO Grizzly(1) -  INFO Grizzly(1) - ClientEndpoint.onOpen(37) | Websocket open, session SOME_RANDOM_UUID2
 ```
 
 ### On-Boarding
