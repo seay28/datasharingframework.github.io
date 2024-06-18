@@ -73,6 +73,9 @@ Eine Installation kann vor oder während des Hackathons durchgeführt werden.
 - Flare [Instructions](https://github.com/medizininformatik-initiative/flare)
 - Blaze 0.27.1 [Instructions](https://github.com/samply/blaze/blob/master/docs/deployment/README.md)
 
+## Data Sharing Demodaten
+- https://github.com/medizininformatik-initiative/mii-process-data-sharing/blob/develop/src/test/resources/fhir/Bundle/Dic1FhirStore_Demo_Bundle.xml
+
 
 
 Falls Sie Fragen zum Hackathon oder der Installation des DSF haben, melden Sie sich gerne über den DSF-Community Zulip-Channel oder dsf-gecko@hs-heilbronn.de. 
