@@ -81,6 +81,6 @@ Eine Installation kann vor oder während des Hackathons durchgeführt werden.
 Falls Sie Fragen zum Hackathon oder der Installation des DSF haben, melden Sie sich gerne über den DSF-Community Zulip-Channel oder dsf-gecko@hs-heilbronn.de. 
 
 ::: tip Gemeinsame technische Sprechstunde der DSF-Community und des FDPG+
-- Montags, 16:00-17:00 Uhr
+- Montags, 13:00-14:00 Uhr
 - Ort: https://dsf.dev/sprechstunde
 :::
