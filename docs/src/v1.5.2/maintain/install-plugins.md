@@ -14,15 +14,16 @@ To install and learn more about each Process Plugin, you can visit the Marketpla
 
 | Process Plugin            | released for test             | released for production       |
 | ------------------------- | ----------------------------- | ----------------------------- |
-| Ping Pong                 | [v1.0.1.0](https://github.com/datasharingframework/dsf-process-ping-pong/releases/tag/v1.0.1.0) | [v1.0.1.0](https://github.com/datasharingframework/dsf-process-ping-pong/releases/tag/v1.0.1.0) |
-| Allow-List                | [v1.0.0.1](https://github.com/datasharingframework/dsf-process-allow-list/releases/tag/v1.0.0.1) | [v1.0.0.1](https://github.com/datasharingframework/dsf-process-allow-list/releases/tag/v1.0.0.1) |
-| MII Process Feasibility   | [v1.0.0.5](https://github.com/medizininformatik-initiative/mii-process-feasibility/releases/tag/v1.0.0.5) | [v1.0.0.5](https://github.com/medizininformatik-initiative/mii-process-feasibility/releases/tag/v1.0.0.5) |
-| MII Process Report        | [v1.1.0.1](https://github.com/medizininformatik-initiative/mii-process-report/releases/tag/v1.1.0.1) | [v1.1.0.1](https://github.com/medizininformatik-initiative/mii-process-report/releases/tag/v1.1.0.1) |
-| MII Process Data Transfer | [v1.0.0.1](https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases/tag/v1.0.0.1) | [v1.0.0.1](https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases/tag/v1.0.0.1) |
-| MII Process Data Sharing  | [v1.0.1.0](https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases/tag/v1.0.1.0) | [v1.0.1.0](https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases/tag/v1.0.1.0) |
-| RDP Process               | [v1.1.0.0](https://github.com/num-codex/codex-processes-ap1/releases/tag/v1.1.0.0) | [v1.0.0.0](https://github.com/num-codex/codex-processes-ap1/releases/tag/v1.0.0.0) |
+| [Ping-Pong](https://github.com/datasharingframework/dsf-process-ping-pong/releases)                 | [v1.0.1.0](https://github.com/datasharingframework/dsf-process-ping-pong/releases/tag/v1.0.1.0) | [v1.0.1.0](https://github.com/datasharingframework/dsf-process-ping-pong/releases/tag/v1.0.1.0) |
+| [Allow-List](https://github.com/datasharingframework/dsf-process-allow-list/releases)                | [v1.0.0.1](https://github.com/datasharingframework/dsf-process-allow-list/releases/tag/v1.0.0.1) | [v1.0.0.1](https://github.com/datasharingframework/dsf-process-allow-list/releases/tag/v1.0.0.1) |
+| [MII Process Feasibility](https://github.com/medizininformatik-initiative/mii-process-feasibility/releases)   | [v1.0.0.5](https://github.com/medizininformatik-initiative/mii-process-feasibility/releases/tag/v1.0.0.5) | [v1.0.0.5](https://github.com/medizininformatik-initiative/mii-process-feasibility/releases/tag/v1.0.0.5) |
+| [MII Process Report](https://github.com/medizininformatik-initiative/mii-process-report/releases)        | [v1.1.0.1](https://github.com/medizininformatik-initiative/mii-process-report/releases/tag/v1.1.0.1) | [v1.1.0.1](https://github.com/medizininformatik-initiative/mii-process-report/releases/tag/v1.1.0.1) |
+| [MII Process Data Transfer](https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases) | [v1.0.0.1](https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases/tag/v1.0.0.1) | [v1.0.0.1](https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases/tag/v1.0.0.1) |
+| [MII Process Data Sharing](https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases) | [v1.0.1.0](https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases/tag/v1.0.1.0) | [v1.0.1.0](https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases/tag/v1.0.1.0) |
+| [NUM-RDP](https://github.com/num-codex/codex-processes-ap1/releases)              | [v1.1.0.0](https://github.com/num-codex/codex-processes-ap1/releases/tag/v1.1.0.0) | [v1.0.0.0](https://github.com/num-codex/codex-processes-ap1/releases/tag/v1.0.0.0) |
 
 
+- Explore and install Process Plugins in the Marketplace. Details on each plugin are available [here](https://hub.dsf.dev/).
 - Deploying the process plugin to the DSF involves copy the process jar-file and configuring environment variable for the business process engine (BPE).
 
 
@@ -30,24 +31,26 @@ To install and learn more about each Process Plugin, you can visit the Marketpla
 - A DSF installation of version 1.0.0 or higher. An installation guide can be found [here](https://dsf.dev/stable/maintain/install.html).
 
 ### Deployment
-- Add the process jar-file to the DSF BPE folder `/opt/bpe/process`
-- Make sure the process is readable by the bpe user or group
+- Add the process jar-file to the DSF BPE folder `/opt/bpe/process`: 
+```
+wget (your jar-file download link)
+```
+
+For example:
+```
+ wget https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases/download/v1.0.0.1/mii-process-data-sharing-1.0.0.1.jar
+```
+
+- Make sure the process is readable by the bpe user or group, for example by executing:
+```
+sudo chmod 440 (your jar-file name.jar)
+sudo chown root:bpe (your jar-file name.jar)
+```
+For example:
+```
+sudo chmod 440 mii-process-data-sharing-1.0.0.1.jar
+sudo chown root:bpe mii-process-data-sharing-1.0.0.1.jar
+```
+
 - Modify the process exclude config in `/opt/bpe/docker-compose.yml`
-
-
-
-## **Releases**:
-### Common processes
-
-- [Ping-Pong](https://github.com/datasharingframework/dsf-process-ping-pong/releases)
-- [Allow-List](https://github.com/datasharingframework/dsf-process-allow-list/releases)
-
-### MII processes
-
-- [Feasibility](https://github.com/medizininformatik-initiative/mii-process-feasibility/releases)
-- [KDS-Report](https://github.com/medizininformatik-initiative/mii-process-report/releases)
-- [MII-Data-Sharing](https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases)
-- [MII-Data-Transfer](https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases)
-
-### NUM processes
-- [NUM-RDP](https://github.com/num-codex/codex-processes-ap1/releases)
+- **Reminder:** Check required configurations in `docker-compose.yml`
