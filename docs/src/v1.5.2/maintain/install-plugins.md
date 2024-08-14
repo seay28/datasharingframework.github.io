@@ -9,7 +9,7 @@ To install and learn more about each Process Plugin, you can visit the Marketpla
 
 
 ## **Overview**
-- You can find an overview of compatable process plugins below (last updated 25/07/2024).
+- You can find an overview of compatable process plugins below (last updated 14/08/2024).
 
 
 | Process Plugin            | released for test             | released for production       |
