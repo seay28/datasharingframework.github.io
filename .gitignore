@@ -1,7 +1,7 @@
 /.settings/
 /.project
-docs/node_modules/
-docs/src/.vuepress/.cache/
-docs/src/.vuepress/.temp/
-docs/src/.vuepress/dist/
-docs/yarn.lock
+/node_modules/
+/src/.vuepress/.cache/
+/src/.vuepress/.temp/
+/src/.vuepress/dist/
+yarn.lock
