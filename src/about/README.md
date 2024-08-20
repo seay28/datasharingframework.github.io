@@ -1,11 +1,11 @@
 ---
-title: About
+title: About us
 icon: creative
 ---
 
 ## Overview
 
-- [Contact & Community Guide](learnmore/contact)
-- [Contributors](learnmore/team)
-- [Partners](learnmore/partners)
-- [Public Funding](learnmore/public)
+- [Contact & Community Guide](./contact)
+- [Contributors](./team)
+- [Partners](./partners)
+- [Public Funding](./public)

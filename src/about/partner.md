@@ -1,5 +1,5 @@
 ---
-title: Partners
+title: Partner
 icon: proxy
 ---
 
