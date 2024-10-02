@@ -14,7 +14,7 @@ icon: guide
 # Hackathon vom 22.10.2024
 
 ::: tip Zusammenfassung
-- Konferenz: 
+<!--- Konferenz: -->
 - [Vorbereitung](#vorbereitung)
 - [Installationshinweise](#installationshinweise)
 :::
@@ -24,11 +24,11 @@ Liebe Community,
 die Modul 2B Projekte FDPG+ und DSF Community möchten Sie herzlich zu einem Hackathon am 22.10.2024 von 10:00-16:00 Uhr einladen.
 Leiten Sie bitte die Einladung an die technischen Kolleg*innen in den DIZ und den DMSt weiter.
 
-Fokus des Hackathons liegt auf der Erprobung der neuen Machbarkeit und des neuen Datenselektion- und -Extraktionstools ([TORCH[(https://github.com/medizininformatik-initiative/torch)) im Zusammenspiel mit den DSF Data Sharing Prozessen. Ergänzend wird der [FHIR Data Evaluator](https://github.com/medizininformatik-initiative/fhir-data-evaluator) vorgestellt und Updates zum DSF, dem Feasibility Prozess Plugin und dem Allowlist Management präsentiert.
+Fokus des Hackathons liegt auf der Erprobung der neuen Machbarkeit und des neuen Datenselektion- und -Extraktionstools ([TORCH](https://github.com/medizininformatik-initiative/torch)) im Zusammenspiel mit den DSF Data Sharing Prozessen. Ergänzend wird der [FHIR Data Evaluator](https://github.com/medizininformatik-initiative/fhir-data-evaluator) vorgestellt und Updates zum DSF, dem Feasibility Prozess Plugin und dem Allowlist Management präsentiert.
 
 Wie üblich sollen die Tools und Prozesse hands-on auf der Testinfrastruktur erprobt und deployed werden, dazu folgen weitere Informationen kurz vor dem Hackathon.
 
-Vorläufiger Zeitplan: Link
+Vorläufiger Zeitplan: 
 
 10:00-12:30 : Vorstellungen und Updates
 
@@ -52,10 +52,8 @@ Julian Gründner und Maximilian Kurscheidt
 für FDPG+ und DSF Community
 
 
-
 ## Vorbereitung
 In diesem Hackathon ist das Aktualisieren der Systeme ein aktiver Bestandteil und bedarf keiner speziellen Vorbereitung. Für das Testen der Data Sharing Prozesse sollten jedoch einige Voraussetzungen bereits vor dem Termin erfüllt sein.
-###TBD
 
 ### Netzwerkfreigaben
 
@@ -76,6 +74,9 @@ https://github.com/medizininformatik-initiative/mii-process-data-sharing/wiki
 Eine Installation kann vor oder während des Hackathons durchgeführt werden.
 
 ## Installationshinweise
+::: ⚠️ 
+Versionen der unten aufgeführten Tools können sich noch bis zum Hackathon ändern.
+:::
 
 ### DSF
 [Installation](https://dsf.dev/stable/maintain/install.html) oder [Update](https://dsf.dev/stable/maintain/upgrade-from-1.html)
@@ -91,11 +92,11 @@ Eine Installation kann vor oder während des Hackathons durchgeführt werden.
 ### Weitere Anwendungen
 - Flare [Instructions](https://github.com/medizininformatik-initiative/flare)
 - Blaze 0.30.0 [Instructions](https://github.com/samply/blaze/blob/master/docs/deployment/README.md)
-- FHIR Evaluator [Instructions]()
-- TORCH [Instructions]()
+- FHIR Evaluator [Instructions](https://github.com/medizininformatik-initiative/fhir-data-evaluator)
+- TORCH [Instructions](https://github.com/medizininformatik-initiative/torch)
 
 ## Data Sharing Demodaten
-- https://github.com/medizininformatik-initiative/mii-process-data-sharing/blob/develop/src/test/resources/fhir/Bundle/Dic1FhirStore_Demo_Bundle.xml
+- [Demodaten](https://github.com/medizininformatik-initiative/mii-process-data-sharing/blob/develop/src/test/resources/fhir/Bundle/Dic1FhirStore_Demo_Bundle.xml)
 
 
 
