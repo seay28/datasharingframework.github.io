@@ -74,7 +74,7 @@ https://github.com/medizininformatik-initiative/mii-process-data-sharing/wiki
 Eine Installation kann vor oder während des Hackathons durchgeführt werden.
 
 ## Installationshinweise
-::: ⚠️ 
+::: tip ⚠️ 
 Versionen der unten aufgeführten Tools können sich noch bis zum Hackathon ändern.
 :::
 
