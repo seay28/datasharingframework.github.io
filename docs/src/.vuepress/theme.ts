@@ -1032,6 +1032,18 @@ export default hopeTheme({
 
 
   plugins: {
+    markdownImage: {
+      figure: true,
+      lazyload: true,
+      mark: true,
+      size: true,
+    },
+    markdownMath: {
+    },
+	markdownTab: {
+      codeTabs: true,
+      tabs: false,
+    },
     linksCheck: {
       dev: true,
       build: "error"
@@ -1058,19 +1070,12 @@ export default hopeTheme({
       align: true,
       attrs: true,
       chart: false,
-      codetabs: true,
       demo: false,
       echarts: false,
-      figure: true,
       flowchart: false,
       gfm: true,
-      imgLazyload: true,
-      imgSize: true,
-      imgMark: true,
       include: true,
-      katex: false,
       mark: true,
-      mathjax: false,
       mermaid: false,
       playground: {
         presets: [],
@@ -1090,7 +1095,6 @@ export default hopeTheme({
       ],
       sub: true,
       sup: true,
-      tabs: false,
       tasklist: false,
       vPre: false,
       vuePlayground: false
