@@ -22,6 +22,8 @@ icon: blog
 
 - H. Hund, R. Wettstein, M. Kurscheidt, S.T. Schweizer, C. Zilske, C. Fegeler, **Interoperability Is a Process- The Data Sharing Framework**, Stud Health Technol Inform, 310 (2024) 28-32, [doi:10.3233/SHTI230921](https://ebooks.iospress.nl/doi/10.3233/SHTI230921)
 
+- S.T. Schweizer, H. Hund, M. Kurscheidt, C. Zilske, J.P. Böhringer, C. Fegeler, **Handling Complexity in Decentralized Research Networks: The Data Sharing Framework Allowlist Management Application**, Stud Health Technol Inform, 317 (2024) 85-93, [doi:10.3233/SHTI240841](https://ebooks.iospress.nl/doi/10.3233/SHTI240841)
+
 ### Recorded Talks
 #### GMDS Conference 2022
 - [Hands On! - Introduction to the Data Sharing Framework from a User Perspective ](https://www.youtube.com/playlist?list=PLsHs7HOt6jDMe3PNevpo-uGsDTWVSMsYZ)
