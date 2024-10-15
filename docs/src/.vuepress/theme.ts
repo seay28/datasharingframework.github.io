@@ -43,7 +43,7 @@ export default hopeTheme({
         prefix: "/stable/",
         children: [
           {
-            text: "Guideline v1.5.2 (stable)",
+            text: "Guideline v1.6.0 (stable)",
             icon: "info",
             children: ["index", "maintain/install", "maintain/upgrade-from-0", "maintain/allowList-mgm", "maintain/install-plugins", "develop/create", "contribute/"],
           }
@@ -66,7 +66,7 @@ export default hopeTheme({
       text: "Versions",
       icon: "note",
       // children:["/v1/"],
-      children: [{ text: "v1.5.2 (stable)", link: "/stable/" }, { text: "v1.5.1", link: "/v1.5.1/" }, { text: "v1.5.0", link: "/v1.5.0/" }, { text: "v1.4.0", link: "/v1.4.0/" }, { text: "v1.3.2", link: "/v1.3.2/" }, { text: "v1.3.1", link: "/v1.3.1/" }, { text: "v1.3.0", link: "/v1.3.0/" }, { text: "v1.2.0", link: "/v1.2.0/" }, { text: "v1.1.0", link: "/v1.1.0/" }, { text: "v1.0.0", link: "/v1.0.0/" }, { text: "v0.9.3 (oldstable)", link: "/oldstable/"}],
+      children: [{ text: "v1.6.0 (stable)", link: "/stable/" }, { text: "v1.5.2", link: "/v1.5.2/" }, { text: "v1.5.1", link: "/v1.5.1/" }, { text: "v1.5.0", link: "/v1.5.0/" }, { text: "v1.4.0", link: "/v1.4.0/" }, { text: "v1.3.2", link: "/v1.3.2/" }, { text: "v1.3.1", link: "/v1.3.1/" }, { text: "v1.3.0", link: "/v1.3.0/" }, { text: "v1.2.0", link: "/v1.2.0/" }, { text: "v1.1.0", link: "/v1.1.0/" }, { text: "v1.0.0", link: "/v1.0.0/" }, { text: "v0.9.3 (archived)", link: "/oldstable/"}],
     },
     {
       text: "",
@@ -216,7 +216,7 @@ export default hopeTheme({
       ]
       },
     ],
-    "/v1.5.2/": [
+    "/v1.6.0/": [
       {
         text: "Home",
         icon: "home",
@@ -299,13 +299,104 @@ export default hopeTheme({
         children: ["create", "upgrade-from-0" ],
       },
     ],
+    "/v1.5.2/": [
+      {
+        text: "Home",
+        icon: "home",
+        link: "/",
+      },
+      {
+        text: "Current version",
+        icon: "update",
+        link: "/stable/",
+      },
+      {
+        text: "Maintain a DSF instance",
+        icon: "tool",
+        prefix: "maintain/",
+        link: "maintain/",
+        children: ["install", "upgrade-from-1", "upgrade-from-0", "allowList-mgm", {
+          text: "FHIR Reverse Proxy",
+          icon: "module",
+          prefix: "fhir-reverse-proxy/",
+          link: "fhir-reverse-proxy/",
+          children: [{
+  			icon: "config", 
+  			text: "Configuration",
+  			link: "configuration"
+  		}]
+        }, {
+          text: "FHIR Server",
+          icon: "module",
+          prefix: "fhir/",
+          link: "fhir/",
+          children: [{
+  			icon: "config", 
+  			text: "Configuration",
+  			link: "configuration"
+  		}, {
+  			icon: "config",
+  			text: "Access Control",
+  			link: "access-control"
+  		}, {
+  			icon: "config",
+  			text: "OpenID Connect",
+  			link: "oidc"
+  			}]
+        }, {
+          text: "BPE Reverse Proxy",
+          icon: "module",
+          prefix: "bpe-reverse-proxy/",
+          link: "bpe-reverse-proxy/",
+          children: [{
+  			icon: "config", 
+  			text: "Configuration",
+  			link: "configuration"
+  		}]
+        }, {
+          text: "BPE Server",
+          icon: "module",
+          prefix: "bpe/",
+          link: "bpe/",
+          children: [{
+  			icon: "config", 
+  			text: "Configuration",
+  			link: "configuration"
+  		}, {
+  			icon: "config",
+  			text: "Access Control",
+  			link: "access-control"
+  		}, {
+  			icon: "config",
+  			text: "OpenID Connect",
+  			link: "oidc"
+  			}]
+        },
+        {
+          text: "Install Plugins",
+          icon: "plugin",
+          link: "install-plugins"
+      }],
+      },
+      {
+        text: "Develop process plugins",
+        icon: "plugin",
+        prefix: "develop/",
+        link: "develop/",
+        children: ["create", "upgrade-from-0" ],
+      },
+    ],
     "/v1.5.1/": [
       {
         text: "Home",
         icon: "home",
         link: "/",
       },
-      "",
+      {
+        text: "Current version",
+        icon: "update",
+        link: "/stable/",
+      },
       {
         text: "Maintain a DSF instance",
         icon: "tool",
@@ -941,6 +1032,18 @@ export default hopeTheme({
 
 
   plugins: {
+    markdownImage: {
+      figure: true,
+      lazyload: true,
+      mark: true,
+      size: true,
+    },
+    markdownMath: {
+    },
+	markdownTab: {
+      codeTabs: true,
+      tabs: false,
+    },
     linksCheck: {
       dev: true,
       build: "error"
@@ -967,19 +1070,12 @@ export default hopeTheme({
       align: true,
       attrs: true,
       chart: false,
-      codetabs: true,
       demo: false,
       echarts: false,
-      figure: true,
       flowchart: false,
       gfm: true,
-      imgLazyload: true,
-      imgSize: true,
-      imgMark: true,
       include: true,
-      katex: false,
       mark: true,
-      mathjax: false,
       mermaid: false,
       playground: {
         presets: [],
@@ -999,7 +1095,6 @@ export default hopeTheme({
       ],
       sub: true,
       sup: true,
-      tabs: false,
       tasklist: false,
       vPre: false,
       vuePlayground: false
