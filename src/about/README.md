@@ -7,5 +7,5 @@ icon: creative
 
 - [Contact & Community Guide](./contact)
 - [Contributors](./team)
-- [Partners](./partners)
-- [Public Funding](./public)
+- [Partner](./partner)
+- [Public Funding](./funding)

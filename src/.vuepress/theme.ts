@@ -72,20 +72,6 @@ export default hopeTheme({
   sidebar: {
     "/": [],
     "/hackathon": [],
-    "/about/":  [
-      {
-        text: "Home",
-        icon: "home",
-        link: "/",
-      },
-      {
-        text: "About",
-        icon: "creative",
-        prefix: "learnmore/",
-        link: "learnmore/",
-        children: ["contact", "team", "partners", "public"], 
-      },
-    ],
   },
 
   footer: "<a href='https://www.hs-heilbronn.de/impressum'>Imprint</a> • <a href='https://www.hs-heilbronn.de/de/datenschutz'>Data Privacy</a>",
