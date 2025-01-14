@@ -2,11 +2,10 @@
 title: Sprechstunde
 icon: guide
 ---
-
-::: warning Gemeinsame technische Sprechstunde der DSF-Community und des FDPG+
-- aktuell: Weihnachtspause
-- nächster Termin: 13.01.2025
-- Montags, 13:00-14:00 Uhr
+::: Warning Sprechstunde wird ab 20.01.2025 von 14:00-15:00 Uhr stattfinden, aufgrund der FDPG Datenausleitungssprechstunde.
+:::
+::: Tip Gemeinsame technische Sprechstunde der DSF-Community und des FDPG+
+- Montags, 14:00-15:00 Uhr
 - Ort: https://dsf.dev/sprechstunde
 :::
 
