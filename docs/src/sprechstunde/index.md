@@ -2,8 +2,12 @@
 title: Sprechstunde
 icon: guide
 ---
-::: Warning Sprechstunde wird ab 20.01.2025 von 14:00-15:00 Uhr stattfinden, aufgrund der FDPG Datenausleitungssprechstunde.
+
+::: Warning Terminverschiebung
+Die Sprechstunde wird aufgrund der FDPG Datenausleitungssprechstunde ab dem 20.01.2025 von 14:00-15:00 Uhr stattfinden.
 :::
+
+
 ::: Tip Gemeinsame technische Sprechstunde der DSF-Community und des FDPG+
 - Montags, 14:00-15:00 Uhr
 - Ort: https://dsf.dev/sprechstunde
