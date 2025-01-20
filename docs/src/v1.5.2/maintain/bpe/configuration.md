@@ -638,7 +638,7 @@ icon: config
 - **Required:** No
 - **Description:** Base address of the BPE server, configure when exposing the web-ui
 - **Example:** `https://foo.bar/bpe`
-- **Default:** `https`
+- **Default:** `https://localhost/bpe`
 
 
 ### DEV_DSF_BPE_SERVER_ROLECONFIG
