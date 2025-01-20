@@ -45,10 +45,11 @@ icon: config
 
 ### DEV_DSF_FHIR_CLIENT_TRUST_SERVER_CERTIFICATE_CAS
 - **Property:** dev.dsf.fhir.client.trust.server.certificate.cas
-- **Required:** Yes
+- **Required:** No
 - **Description:** PEM encoded file with one or more trusted root certificates to validate server certificates for https connections to remote DSF FHIR servers
 - **Recommendation:** Use docker secret file to configure
-- **Example:** `/run/secrets/app_client _trust_certificates.pem`
+- **Example:** `/run/secrets/app_client_trust_certificates.pem`
+- **Default:** `ca/ServerCertRootCAs.pem`
 
 
 ### DEV_DSF_FHIR_CLIENT_VERBOSE
@@ -76,7 +77,7 @@ icon: config
 ### DEV_DSF_FHIR_DB_LIQUIBASE_PASSWORD or DEV_DSF_FHIR_DB_LIQUIBASE_PASSWORD_FILE
 - **Property:** dev.dsf.fhir.db.liquibase.password
 - **Required:** Yes
-- **Description:** The password to access the database from the DSF FHIR server to execute database migrations
+- **Description:** Password to access the database from the DSF FHIR server to execute database migrations
 - **Recommendation:** Use docker secret file to configure by using *DEV_DSF_FHIR_DB_LIQUIBASE_PASSWORD_FILE*
 - **Example:** `/run/secrets/db_liquibase.password`
 
@@ -84,7 +85,7 @@ icon: config
 ### DEV_DSF_FHIR_DB_LIQUIBASE_USERNAME
 - **Property:** dev.dsf.fhir.db.liquibase.username
 - **Required:** No
-- **Description:** The user name to access the database from the DSF FHIR server to execute database migrations
+- **Description:** Username to access the database from the DSF FHIR server to execute database migrations
 - **Default:** `liquibase_user`
 
 
@@ -99,7 +100,7 @@ icon: config
 ### DEV_DSF_FHIR_DB_USER_GROUP
 - **Property:** dev.dsf.fhir.db.user.group
 - **Required:** No
-- **Description:** The name of the user group to access the database from the DSF FHIR server
+- **Description:** Name of the user group to access the database from the DSF FHIR server
 - **Default:** `fhir_users`
 
 
@@ -114,7 +115,7 @@ icon: config
 ### DEV_DSF_FHIR_DB_USER_PERMANENT_DELETE_GROUP
 - **Property:** dev.dsf.fhir.db.user.permanent.delete.group
 - **Required:** No
-- **Description:** The name of the user group to access the database from the DSF FHIR server for permanent deletes
+- **Description:** Name of the user group to access the database from the DSF FHIR server for permanent deletes
 - **Default:** `fhir_permanent_delete_users`
 
 
@@ -144,24 +145,24 @@ icon: config
 ### DEV_DSF_FHIR_DEBUG_LOG_MESSAGE_CURRENTUSER
 - **Property:** dev.dsf.fhir.debug.log.message.currentUser
 - **Required:** No
-- **Description:** To enable logging of the currently requesting user set to `true`.
-- **Recommendation:** This debug function should only be activated during development. WARNNING: Confidential information may be leaked via the debug log!
+- **Description:** To enable logging of the currently requesting user set to `true`
+- **Recommendation:** This debug function should only be activated during development; WARNNING: Confidential information may be leaked via the debug log!
 - **Default:** `false`
 
 
 ### DEV_DSF_FHIR_DEBUG_LOG_MESSAGE_DBSTATEMENT
 - **Property:** dev.dsf.fhir.debug.log.message.dbStatement
 - **Required:** No
-- **Description:** To enable logging of DB queries set to `true`.
-- **Recommendation:** This debug function should only be activated during development. WARNNING: Confidential information may be leaked via the debug log!
+- **Description:** To enable logging of DB queries set to `true`
+- **Recommendation:** This debug function should only be activated during development; WARNNING: Confidential information may be leaked via the debug log!
 - **Default:** `false`
 
 
 ### DEV_DSF_FHIR_DEBUG_LOG_MESSAGE_WEBSERVICEREQUEST
 - **Property:** dev.dsf.fhir.debug.log.message.webserviceRequest
 - **Required:** No
-- **Description:** To enable logging of webservices requests set to `true`.
-- **Recommendation:** This debug function should only be activated during development. WARNNING: Confidential information may be leaked via the debug log!
+- **Description:** To enable logging of webservices requests set to `true`
+- **Recommendation:** This debug function should only be activated during development; WARNNING: Confidential information may be leaked via the debug log!
 - **Default:** `false`
 
 
@@ -205,7 +206,7 @@ icon: config
 ### DEV_DSF_FHIR_SERVER_ROLECONFIG
 - **Property:** dev.dsf.fhir.server.roleConfig
 - **Required:** No
-- **Description:** Role config YAML as defined in [FHIR Server: Access Control](access-control).
+- **Description:** Role config YAML as defined in [FHIR Server: Access Control](access-control)
 
 
 ### DEV_DSF_FHIR_SERVER_STATIC_RESOURCE_CACHE
@@ -252,20 +253,20 @@ icon: config
 
 ### DEV_DSF_SERVER_API_HOST
 - **Property:** dev.dsf.server.api.host
-- **Required:** Yes
+- **Required:** No
 - **Description:** API connector host, default in docker image: `0.0.0.0`
 - **Default:** `127.0.0.1`
 
 
 ### DEV_DSF_SERVER_API_PORT
 - **Property:** dev.dsf.server.api.port
-- **Required:** Yes
+- **Required:** No
 - **Description:** API connector port, default in docker image: `8080`
 
 
 ### DEV_DSF_SERVER_AUTH_CLIENT_CERTIFICATE_HEADER
 - **Property:** dev.dsf.server.auth.client.certificate.header
-- **Required:** Yes
+- **Required:** No
 - **Description:** Name of HTTP header with client certificate from reverse proxy
 - **Default:** `X-ClientCert`
 
@@ -368,10 +369,11 @@ icon: config
 
 ### DEV_DSF_SERVER_AUTH_TRUST_CLIENT_CERTIFICATE_CAS
 - **Property:** dev.dsf.server.auth.trust.client.certificate.cas
-- **Required:** Yes
-- **Description:** PEM encoded file with one or more trusted root certificates to validate client certificates for https connections from local and remote clients
+- **Required:** No
+- **Description:** PEM encoded file with one or more trusted full CA chains to validate client certificates for https connections from local and remote clients
 - **Recommendation:** Use docker secret file to configure
 - **Example:** `/run/secrets/app_client_trust_certificates.pem`
+- **Default:** `ca/ClientCertCaChains.pem`
 
 
 ### DEV_DSF_SERVER_CERTIFICATE
@@ -404,19 +406,19 @@ icon: config
 
 ### DEV_DSF_SERVER_CONTEXT_PATH
 - **Property:** dev.dsf.server.context.path
-- **Required:** Yes
+- **Required:** No
 - **Description:** Web application context path, default in `bpe` docker image: `/bpe`, default in `fhir` docker image: `/fhir`
 - **Recommendation:** Only modify for testing
 
 
 ### DEV_DSF_SERVER_STATUS_HOST
 - **Property:** dev.dsf.server.status.host
-- **Required:** Yes
+- **Required:** No
 - **Description:** Status connector host
 - **Default:** `127.0.0.1`
 
 
 ### DEV_DSF_SERVER_STATUS_PORT
 - **Property:** dev.dsf.server.status.port
-- **Required:** Yes
+- **Required:** No
 - **Description:** Status connector port, default in docker image: `10000`
