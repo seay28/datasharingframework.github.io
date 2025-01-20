@@ -49,7 +49,7 @@ icon: config
 - **Description:** PEM encoded file with one or more trusted root certificates to validate server certificates for https connections to remote DSF FHIR servers
 - **Recommendation:** Use docker secret file to configure
 - **Example:** `/run/secrets/app_client_trust_certificates.pem`
-- **Default:** `ca/ServerCertRootCAs.pem`
+- **Default:** `ca/server_cert_root_cas.pem`
 
 
 ### DEV_DSF_FHIR_CLIENT_VERBOSE
@@ -358,6 +358,7 @@ icon: config
 - **Description:** PEM encoded file with one or more trusted root certificates to validate server certificates for https connections to the OIDC provider
 - **Recommendation:** Use docker secret file to configure
 - **Example:** `/run/secrets/oidc_provider_trust_certificates.pem`
+- **Default:** `ca/server_cert_root_cas.pem`
 
 
 ### DEV_DSF_SERVER_AUTH_OIDC_PROVIDER_REALM_BASE_URL
@@ -373,7 +374,7 @@ icon: config
 - **Description:** PEM encoded file with one or more trusted full CA chains to validate client certificates for https connections from local and remote clients
 - **Recommendation:** Use docker secret file to configure
 - **Example:** `/run/secrets/app_client_trust_certificates.pem`
-- **Default:** `ca/ClientCertCaChains.pem`
+- **Default:** `ca/client_cert_ca_chains.pem`
 
 
 ### DEV_DSF_SERVER_CERTIFICATE
