@@ -4,23 +4,23 @@ icon: plugin
 ---
 
 ::: tip Marketplace for process plugins
-To install and learn more about each Process Plugin, you can visit the Marketplace [here](https://hub.dsf.dev/).
+To install and learn more about each Process Plugin, you can visit the Marketplace [here](https://hub.dsf.dev).
 :::
 
 
 ## **Overview**
-- You can find an overview of compatable process plugins below (last updated 14/08/2024).
+- You can find an overview of compatable process plugins below (last updated 2025-01-22).
 
 
-| Process Plugin            | released for test             | released for production       |
-| ------------------------- | ----------------------------- | ----------------------------- |
-| [Ping-Pong](https://github.com/datasharingframework/dsf-process-ping-pong/releases)                 | [v1.0.1.0](https://github.com/datasharingframework/dsf-process-ping-pong/releases/tag/v1.0.1.0) | [v1.0.1.0](https://github.com/datasharingframework/dsf-process-ping-pong/releases/tag/v1.0.1.0) |
-| [Allow-List](https://github.com/datasharingframework/dsf-process-allow-list/releases)                | [v1.0.0.1](https://github.com/datasharingframework/dsf-process-allow-list/releases/tag/v1.0.0.1) | [v1.0.0.1](https://github.com/datasharingframework/dsf-process-allow-list/releases/tag/v1.0.0.1) |
-| [MII Process Feasibility](https://github.com/medizininformatik-initiative/mii-process-feasibility/releases)   | [v1.0.0.7](https://github.com/medizininformatik-initiative/mii-process-feasibility/releases/tag/v1.0.0.7) | [v1.0.0.7](https://github.com/medizininformatik-initiative/mii-process-feasibility/releases/tag/v1.0.0.7) |
-| [MII Process Report](https://github.com/medizininformatik-initiative/mii-process-report/releases)        | [v1.1.1.1](https://github.com/medizininformatik-initiative/mii-process-report/releases/tag/v1.1.1.1) | [v1.1.1.1](https://github.com/medizininformatik-initiative/mii-process-report/releases/tag/v1.1.1.1) |
-| [MII Process Data Transfer](https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases) | [v1.0.2.1](https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases/tag/v1.0.2.1) | [v1.0.2.1](https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases/tag/v1.0.2.1) |
-| [MII Process Data Sharing](https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases) | [v1.0.1.1](https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases/tag/v1.0.1.1) | [v1.0.1.1](https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases/tag/v1.0.1.1) |
-| [NUM-RDP](https://github.com/num-codex/codex-processes-ap1/releases)              | [v1.1.0.0](https://github.com/num-codex/codex-processes-ap1/releases/tag/v1.1.0.0) | [v1.1.0.0](https://github.com/num-codex/codex-processes-ap1/releases/tag/v1.1.0.0) |
+| Process Plugin | released for test | released for production |
+| -------------- | ----------------- | ----------------------- |
+| [Ping-Pong](https://github.com/datasharingframework/dsf-process-ping-pong/releases) | [v1.0.1.0](https://github.com/datasharingframework/dsf-process-ping-pong/releases/tag/v1.0.1.0) | [v1.0.1.0](https://github.com/datasharingframework/dsf-process-ping-pong/releases/tag/v1.0.1.0) |
+| [Allow-List](https://github.com/datasharingframework/dsf-process-allow-list/releases) | [v1.0.0.1](https://github.com/datasharingframework/dsf-process-allow-list/releases/tag/v1.0.0.1) | [v1.0.0.1](https://github.com/datasharingframework/dsf-process-allow-list/releases/tag/v1.0.0.1) |
+| [MII Process Feasibility](https://github.com/medizininformatik-initiative/mii-process-feasibility/releases) | [v1.0.0.7](https://github.com/medizininformatik-initiative/mii-process-feasibility/releases/tag/v1.0.0.7) | [v1.0.0.7](https://github.com/medizininformatik-initiative/mii-process-feasibility/releases/tag/v1.0.0.7) |
+| [MII Process Report](https://github.com/medizininformatik-initiative/mii-process-report/releases) | [v1.1.2.0](https://github.com/medizininformatik-initiative/mii-process-report/releases/tag/v1.1.2.0) | [v1.1.2.0](https://github.com/medizininformatik-initiative/mii-process-report/releases/tag/v1.1.2.0) |
+| [MII Process Data Transfer](https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases) | [v1.0.3.0](https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases/tag/v1.0.3.0) | [v1.0.3.0](https://github.com/medizininformatik-initiative/mii-process-data-transfer/releases/tag/v1.0.3.0) |
+| [MII Process Data Sharing](https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases) | [v1.0.2.0](https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases/tag/v1.0.2.0) | [v1.0.2.0](https://github.com/medizininformatik-initiative/mii-process-data-sharing/releases/tag/v1.0.2.0) |
+| [NUM-RDP](https://github.com/num-codex/codex-processes-ap1/releases) | [v1.1.0.0](https://github.com/num-codex/codex-processes-ap1/releases/tag/v1.1.0.0) | [v1.1.0.0](https://github.com/num-codex/codex-processes-ap1/releases/tag/v1.1.0.0) |
 
 
 - Explore and install Process Plugins in the Marketplace. Details on each plugin are available [here](https://hub.dsf.dev/).
