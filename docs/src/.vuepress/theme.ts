@@ -126,7 +126,7 @@ export default hopeTheme({
         icon: "tool",
         prefix: "maintain/",
         link: "maintain/",
-        children: ["install", "upgrade-from-1", "upgrade-from-0", "allowList-mgm", {
+        children: ["install", "upgrade-from-1", "upgrade-from-0", "allowList-mgm", "root-certificates", "passwords-secrets", {
           text: "FHIR Reverse Proxy",
           icon: "module",
           prefix: "fhir-reverse-proxy/",
@@ -228,7 +228,7 @@ export default hopeTheme({
         icon: "tool",
         prefix: "maintain/",
         link: "maintain/",
-        children: ["install", "upgrade-from-1", "upgrade-from-0", "allowList-mgm", {
+        children: ["install", "upgrade-from-1", "upgrade-from-0", "allowList-mgm", "root-certificates", "passwords-secrets", {
           text: "FHIR Reverse Proxy",
           icon: "module",
           prefix: "fhir-reverse-proxy/",

@@ -90,7 +90,7 @@ icon: config
 - **Property:** dev.dsf.bpe.debug.log.message.currentUser
 - **Required:** No
 - **Description:** To enable logging of the currently requesting user set to `true`
-- **Recommendation:** This debug function should only be activated during development; WARNNING: Confidential information may be leaked via the debug log!
+- **Recommendation:** This debug function should only be activated during development; WARNING: Confidential information may be leaked via the debug log!
 - **Default:** `false`
 
 
@@ -98,7 +98,7 @@ icon: config
 - **Property:** dev.dsf.bpe.debug.log.message.dbStatement
 - **Required:** No
 - **Description:** To enable logging of DB queries set to `true`
-- **Recommendation:** This debug function should only be activated during development; WARNNING: Confidential information may be leaked via the debug log!
+- **Recommendation:** This debug function should only be activated during development; WARNING: Confidential information may be leaked via the debug log!
 - **Default:** `false`
 
 
@@ -122,7 +122,7 @@ icon: config
 - **Property:** dev.dsf.bpe.debug.log.message.variables
 - **Required:** No
 - **Description:** To enable logging of bpmn variables for every bpmn activity start or end, when logging of these events is enabled, set to `true`
-- **Recommendation:** This debug function should only be activated during process plugin development; WARNNING: Confidential information may be leaked via the debug log!
+- **Recommendation:** This debug function should only be activated during process plugin development; WARNING: Confidential information may be leaked via the debug log!
 - **Default:** `false`
 
 
@@ -130,7 +130,7 @@ icon: config
 - **Property:** dev.dsf.bpe.debug.log.message.variablesLocal
 - **Required:** No
 - **Description:** To enable logging of local bpmn variables for every bpmn activity start or end, when logging of these events is enabled, set to `true`
-- **Recommendation:** This debug function should only be activated during process plugin development; WARNNING: Confidential information may be leaked via the debug log!
+- **Recommendation:** This debug function should only be activated during process plugin development; WARNING: Confidential information may be leaked via the debug log!
 - **Default:** `false`
 
 
@@ -138,7 +138,7 @@ icon: config
 - **Property:** dev.dsf.bpe.debug.log.message.webserviceRequest
 - **Required:** No
 - **Description:** To enable logging of webservices requests set to `true`
-- **Recommendation:** This debug function should only be activated during development; WARNNING: Confidential information may be leaked via the debug log!
+- **Recommendation:** This debug function should only be activated during development; WARNING: Confidential information may be leaked via the debug log!
 - **Default:** `false`
 
 

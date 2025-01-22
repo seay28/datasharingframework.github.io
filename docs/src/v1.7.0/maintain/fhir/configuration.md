@@ -146,7 +146,7 @@ icon: config
 - **Property:** dev.dsf.fhir.debug.log.message.currentUser
 - **Required:** No
 - **Description:** To enable logging of the currently requesting user set to `true`
-- **Recommendation:** This debug function should only be activated during development; WARNNING: Confidential information may be leaked via the debug log!
+- **Recommendation:** This debug function should only be activated during development; WARNING: Confidential information may be leaked via the debug log!
 - **Default:** `false`
 
 
@@ -154,7 +154,7 @@ icon: config
 - **Property:** dev.dsf.fhir.debug.log.message.dbStatement
 - **Required:** No
 - **Description:** To enable logging of DB queries set to `true`
-- **Recommendation:** This debug function should only be activated during development; WARNNING: Confidential information may be leaked via the debug log!
+- **Recommendation:** This debug function should only be activated during development; WARNING: Confidential information may be leaked via the debug log!
 - **Default:** `false`
 
 
@@ -162,7 +162,7 @@ icon: config
 - **Property:** dev.dsf.fhir.debug.log.message.webserviceRequest
 - **Required:** No
 - **Description:** To enable logging of webservices requests set to `true`
-- **Recommendation:** This debug function should only be activated during development; WARNNING: Confidential information may be leaked via the debug log!
+- **Recommendation:** This debug function should only be activated during development; WARNING: Confidential information may be leaked via the debug log!
 - **Default:** `false`
 
 

@@ -90,21 +90,22 @@ Here is a quick overview of the expected network setup.
    * `/opt/fhir/log`
 
 1. Add certificates and keys
-    * Add the server certificate (certificate _A_) and the corresponding private-key to **/opt/fhir/secrets/**
+    * Add the server certificate (certificate _A_), the corresponding private-key and the certificate chain (one file with all intermediate certificates, excluding the root CA) to **/opt/fhir/secrets/**
         * ssl_certificate_file.pem (chmod: 440, chown: fhir:docker)
         * ssl_certificate_key_file.pem (chmod: 440, chown: fhir:docker)
+        * ssl_certificate_chain_file.pem  (chmod: 440, chown: fhir:docker)
     * Add the client certificate (Certificate _B_) and the corresponding private-key to **/opt/fhir/secrets/**
         * client_certificate.pem (chmod: 440, chown: fhir:docker)
         * client_certificate_private_key.pem (chmod: 440, chown: fhir:docker)
     * If the private key is encrypted, add a password file with the password as the only content to **/opt/fhir/secrets/client_certificate_private_key.pem.password**
     * If the private key is not encrypted, remove the corresponding docker secret lines from the `docker-compose.yml` file
         ```
-        L39:      - app_client_certificate_private_key.pem.password
+        L34:      - app_client_certificate_private_key.pem.password
         ...
-        L54:      DEV_DSF_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
+        L47:      DEV_DSF_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
         ...
-        L141:  app_client_certificate_private_key.pem.password:
-        L142:    file: ./secrets/client_certificate_private_key.pem.password
+        L109:  app_client_certificate_private_key.pem.password:
+        L110:    file: ./secrets/client_certificate_private_key.pem.password
         ```
 
     ::: tip How to chmod / chown
@@ -118,12 +119,6 @@ Here is a quick overview of the expected network setup.
 
     :::
 
-1. Uncomment one of the certificate chain entries in the docker-compose file base on the certificate authority that signed your DSF FHIR server certificate (certificate A). For example use the following two lines if the server certificate is signed by `DFN-Verein Global Issuing CA`
-    ```
-    L114:  ssl_certificate_chain_file.pem:
-    L115:    file: ./secrets/ssl_certificate_chain_file_DFN-Verein.pem
-    ```
-
 1. Modify database passwords
     * **/opt/fhir/secrets/db_liquibase.password**
         * Generate a random password (min. 32 characters recommended) and replace the content of the file.
@@ -134,9 +129,9 @@ Here is a quick overview of the expected network setup.
 
 1. Modify the docker-compose.yml file and set environment variables to the appropriate values
     * **services -> proxy -> environment:**
-        * **HTTPS_SERVER_NAME_PORT**: _TODO_DSF_FHIR_SERVER_EXTERNAL_FQDN:443_
-            Set your FHIR servers external FQDN, e.g. `foo.bar.de` -> `foo.bar.de:443`
-        * For additional environment variables, see [DSF configuration parameters - FHIR Reverse Proxy](fhir-reverse-proxy/configuration)
+        * **HTTPS_SERVER_NAME_PORT**: `dsf.todo.organization.com:443`
+            Set your FHIR servers external FQDN, e.g. `https://foo.bar.de` -> `foo.bar.de:443`
+        * For additional environment variables, see the FHIR Reverse Proxy [Configuration Parameters](fhir-reverse-proxy/configuration) page.
     * **services -> app -> environment:**
         * **DEV_DSF_FHIR_SERVER_ORGANIZATION_IDENTIFIER_VALUE**: `todo.organization.com`  
             Set your Organizations DSF identifier, aka the shortest FQDN that resolves to the main homepage of the organization, e.g. `hs-heilbronn.de`
@@ -148,7 +143,7 @@ Here is a quick overview of the expected network setup.
         * **DEV_DSF_FHIR_SERVER_ROLECONFIG**: `|`
             (Optional) You can add other client certificates (e.g. personal certificates from admins) to your DSF instance. For additional information, see the FHIR server [Access Control](fhir/access-control) page.
             
-        * For additional environment variables, see FHIR server [Configuration Parameters](fhir/configuration) page.
+        * For additional environment variables, see the FHIR server [Configuration Parameters](fhir/configuration) page.
 
 1. Start the DSF FHIR Server  
     Start using: `docker compose up -d && docker compose logs -f` (Ctrl-C will close log, but not stop container)
@@ -179,12 +174,12 @@ Here is a quick overview of the expected network setup.
     * If the private key is encrypted, add a password file with the password as the only content to **/opt/bpe/secrets/client_certificate_private_key.pem.password**
     * If the private key is not encrypted, remove the corresponding docker secret lines from the `docker-compose.yml` file
         ```
-        L13:      - app_client_certificate_private_key.pem.password
+        L12:      - app_client_certificate_private_key.pem.password
         ...
-        L35:      DEV_DSF_BPE_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
+        L32:      DEV_DSF_BPE_FHIR_CLIENT_CERTIFICATE_PRIVATE_KEY_PASSWORD_FILE: /run/secrets/app_client_certificate_private_key.pem.password
         ...
-        L89:  app_client_certificate_private_key.pem.password:
-        L90:    file: ./secrets/client_certificate_private_key.pem.password
+        L83:  app_client_certificate_private_key.pem.password:
+        L84:    file: ./secrets/client_certificate_private_key.pem.password
         ```
 1. Modify database passwords
     * **/opt/bpe/secrets/db_liquibase.password**
