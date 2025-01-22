@@ -3,7 +3,7 @@ title: Maintain a DSF instance
 icon: tool
 ---
 ## Overview
-- [Install DSF 1.5.2](install)
+- [Install DSF 1.6.0](install)
 - [Upgrade from DSF 0.9.x](upgrade-from-0)
 - [Allow List Management](allowList-mgm)
 - FHIR Reverse Proxy
