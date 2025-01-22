@@ -275,7 +275,7 @@ icon: config
 - **Property:** dev.dsf.server.auth.oidc.authorization.code.flow
 - **Required:** No
 - **Description:** Set to `true` to enable OIDC authorization code flow
-- **Recommendation:** Requires *DEV_DSF_SERVER_AUTH_OIDC_PROVIDER_REALM_BASE_URL*, *DEV_DSF_SERVER_AUTH_OIDC_CLIENT_ID* and *DEV_DSF_SERVER_AUTH_OIDC_CLIENT_SECRET* to be specified
+- **Recommendation:** Requires *DEV_DSF_SERVER_AUTH_OIDC_PROVIDER_REALM_BASE_URL*, *DEV_DSF_SERVER_AUTH_OIDC_CLIENT_ID* and *DEV_DSF_SERVER_AUTH_OIDC_CLIENT_SECRET* or *DEV_DSF_SERVER_AUTH_OIDC_CLIENT_SECRET_FILE* to be specified
 - **Default:** `false`
 
 
@@ -308,10 +308,12 @@ icon: config
 - **Description:** OIDC provider client_id, must be specified if *DEV_DSF_SERVER_AUTH_OIDC_AUTHORIZATION_CODE_FLOW* is enabled
 
 
-### DEV_DSF_SERVER_AUTH_OIDC_CLIENT_SECRET
+### DEV_DSF_SERVER_AUTH_OIDC_CLIENT_SECRET or DEV_DSF_SERVER_AUTH_OIDC_CLIENT_SECRET_FILE
 - **Property:** dev.dsf.server.auth.oidc.client.secret
 - **Required:** No
 - **Description:** OIDC provider client_secret, must be specified if *DEV_DSF_SERVER_AUTH_OIDC_AUTHORIZATION_CODE_FLOW* is enabled
+- **Recommendation:** Use docker secret file to configure
+- **Example:** `/run/secrets/oidc_provider_client.secret`
 
 
 ### DEV_DSF_SERVER_AUTH_OIDC_PROVIDER_CLIENT_CERTIFICATE
