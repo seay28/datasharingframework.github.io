@@ -63,6 +63,7 @@ Here is a quick overview of the expected network setup.
     _This certificate will be used as the DSF FHIR servers server certificate (ssl_certificate_file.pem, ssl_certificate_key_file.pem)_
     * Store PEM encoded certificate as `ssl_certificate_file.pem`
     * Store unencrypted, PEM encoded private-key as `ssl_certificate_key_file.pem`
+    * Store PEM encoded certificate chain (all intermediate CAs between the server and the root certificate, excluding root) as `ssl_certificate_chain_file.pem`
 
 1. Client Certificate (Certificate _B_)  
     _This certificate will be used as the DSF BPE servers client certificate (client_certificate.pem, client_certificate_private_key.pem) as well as the DSF FHIR servers client certificate (client_certificate.pem, client_certificate_private_key.pem)_
