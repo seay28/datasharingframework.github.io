@@ -36,17 +36,16 @@ The **Data Sharing Framework (DSF)** is a concept for a secure middleware to dis
 
 ![DSF concept](/photos/info/introduction/dsf-concept.png)
 
-
-## Rolf Hansen Memorial Award 2023 goes to [Hauke Hund](https://github.com/hhund)
-We are very pleased to have won the Rolf Hansen Memorial Award at [EFMI MIE 2023](https://www.mie2023.org/) in Gothenburg. The Rolf Hansen Memorial Award is presented annually by the European Federation for Medical Informatics (EFMI) for an outstanding paper as well as for an excellent presentation. It is named after Rolf Hansen (1931-1993), a well-known Norwegian medical informatician and former president of EFMI. Hauke Hund presented his Paper: *No Transfer Without Validation: A Data Sharing Framework Use Case* in May at the EFMI MIE. [doi:10.3233/SHTI230066 ](https://ebooks.iospress.nl/doi/10.3233/SHTI230066) 
-
-<!--
 ## Upcoming Events
-::: info TODO title 
-::: left
-TODO text
+::: info DSF Spring School 2025 
+::: tip Eckdaten
+- Datum: 02. April, 10:00 Uhr bis 04. April, 16:00 Uhr
+- Ort: Hochschule Heilbronn - Techcampus, Max-Planck-Str. 39, Heilbronn
+- Teilnahmegebühren: 100€/ Person mit Verpflegung* (Anreise und Übernachtungskosten müssen selbst getragen werden)
+- Bitte registriert euch bis zum 15. März [hier](https://eveeno.com/DSF-Spring-School-2025)
+- Weitere Informationen zur [Agenda und der Veranstaltung](https://dsf.dev/spring-school/) 
 :::
--->
+
 
 #### Feel free to contact us via <a href="mailto:dsf-gecko@hs-heilbronn.de">dsf-gecko@hs-heilbronn.de</a> and we will take care of your request as soon as possible.
 
