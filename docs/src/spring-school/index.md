@@ -19,7 +19,7 @@ Gerne könnt ihr die Veranstaltung auch nutzen, um die Entwicklung von Prozess P
 
 - Datum: 02. April, 10:00 Uhr bis 04. April, 16:00 Uhr
 - Ort: Hochschule Heilbronn - Techcampus, Max-Planck-Str. 39, Heilbronn
-- Teilnahmegebühren: 100€/ Person für Verpflegung* (Anreise und Übernachtungskosten müssen selbst getragen werden)
+- Teilnahmegebühren: 100€/ Person mit Verpflegung* (Anreise und Übernachtungskosten müssen selbst getragen werden)
 
 :::
 
@@ -34,6 +34,7 @@ Bitte registriert euch bis zum 15. März unter: https://eveeno.com/DSF-Spring-Sc
 Für Rückfragen stehen wir gerne unter dsf-gecko@hs-heilbronn.de zur Verfügung, weitere Informationen und eine Agenda findet ihr weiter unten.
 Wir freuen uns darauf, mit euch gemeinsam bei unserer Spring School an relevanten Themen zu arbeiten.
 
+\*Enthalten sind: Mittagessen, Getränke und Snacks für 3 Tage und Abendessen an Tag 2
 
 ## Agenda
 
