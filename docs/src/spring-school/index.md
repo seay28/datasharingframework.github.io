@@ -19,7 +19,7 @@ Gerne könnt ihr die Veranstaltung auch nutzen, um die Entwicklung von Prozess P
 
 - Datum: 02. April, 10:00 Uhr bis 04. April, 16:00 Uhr
 - Ort: Hochschule Heilbronn - Techcampus, Max-Planck-Str. 39, Heilbronn
-- Teilnahmegebühren: 50€/ Person für Verpflegung* (Anreise und Übernachtungskosten müssen selbst getragen werden)
+- Teilnahmegebühren: 100€/ Person für Verpflegung* (Anreise und Übernachtungskosten müssen selbst getragen werden)
 
 :::
 
