@@ -34,7 +34,7 @@ Bitte registriert euch bis zum 15. März unter: https://eveeno.com/DSF-Spring-Sc
 Für Rückfragen stehen wir gerne unter dsf-gecko@hs-heilbronn.de zur Verfügung, weitere Informationen und eine Agenda findet ihr weiter unten.
 Wir freuen uns darauf, mit euch gemeinsam bei unserer Spring School an relevanten Themen zu arbeiten.
 
-*Enthalten sind: Mittagessen, Getränke und Snacks für 3 Tage und Abendessen an Tag 2
+\*Enthalten sind: Mittagessen, Getränke und Snacks für 3 Tage und Abendessen an Tag 2
 
 ## Agenda
 
