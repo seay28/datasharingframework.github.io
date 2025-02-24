@@ -128,11 +128,11 @@ Upgrading the DSF from 1.6.0 to 1.7.0 involves modifying the docker-compose.yml 
     ```
 
 4. Verify your upgrade:
-    * Verify the DSF FHIR server is running in version 1.6.0. The log should contain a message:  
+    * Verify the DSF FHIR server is running in version 1.7.0. The log should contain a message:  
         `INFO main - BuildInfoReaderImpl.logBuildInfo(137) | Artifact: dsf-fhir-server-jetty, version: 1.7.0, [...]`
     * Verify the DSF FHIR server started without errors
     * Verify the DSF FHIR server is accessible via https, for example by browsing to https://your-dsf-endpoint.de/fhir/ (authentication with your client-certificate)
-    * Verify the DSF BPE server is running in version 1.6.0. The log should contain a message:  
+    * Verify the DSF BPE server is running in version 1.7.0. The log should contain a message:  
         `INFO main - BuildInfoReaderImpl.logBuildInfo(137) | Artifact: dsf-bpe-server-jetty, version: 1.7.0, [...]`
     * Verify the DSF BPE server started without errors
     * Verify your install with a ping/pong test  
