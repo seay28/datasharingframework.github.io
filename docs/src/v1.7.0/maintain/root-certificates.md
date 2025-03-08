@@ -47,7 +47,7 @@ Defaults are configured for the list of issuing, intermediate and root CAs used 
 Use the following environment variable to configure non default .pem files or override the existing files using docker bind mounts:
 * [DEV_DSF_SERVER_AUTH_TRUST_CLIENT_CERTIFICATE_CAS](bpe/configuration.html#dev-dsf-server-auth-trust-client-certificate-cas)
   Default Value: [ca/client_cert_ca_chains.pem](/download/1.7.0/client_cert_ca_chains.pem)
-* [DEV_DSF_FHIR_CLIENT_TRUST_SERVER_CERTIFICATE_CAS](bpe/configuration.html#dev-dsf-fhir-client-trust-server-certificate-cas)
+* [DEV_DSF_BPE_FHIR_CLIENT_TRUST_SERVER_CERTIFICATE_CAS](bpe/configuration.html#dev-dsf-bpe-fhir-client-trust-server-certificate-cas)
   Default Value: [ca/server_cert_root_cas.pem](/download/1.7.0/server_cert_root_cas.pem)
   [DEV_DSF_BPE_MAIL_TRUST_SERVER_CERTIFICATE_CAS](bpe/configuration.html#dev-dsf-bpe-mail-trust-server-certificate-cas)
   Default Value: [ca/server_cert_root_cas.pem](/download/1.7.0/server_cert_root_cas.pem)
