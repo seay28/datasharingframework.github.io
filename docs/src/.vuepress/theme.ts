@@ -115,6 +115,7 @@ export default hopeTheme({
     ],
     "/hackathon": [],
     "/spring-school": [],
+    "/news": [],
     "/stable/": [
       {
         text: "Home",

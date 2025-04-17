@@ -36,14 +36,10 @@ The **Data Sharing Framework (DSF)** is a concept for a secure middleware to dis
 
 ![DSF concept](/photos/info/introduction/dsf-concept.png)
 
-## Upcoming Events
-::: info DSF Spring School 2025 
-- Date: 02. April 2025, 10:00am to 04. April 2025, 16:00pm
-- Where: Hochschule Heilbronn - Techcampus, Max-Planck-Str. 39, Heilbronn
-- Registration Fee: 100€/ Person including catering (Travel and accommodation costs must be covered by the participants themselves)
-- Please register by 15. March [here](https://eveeno.com/DSF-Spring-School-2025)
-- Further information about the [agenda and the event](https://dsf.dev/spring-school/) 
-:::
+## News
+Placeholder Spring School 2025
+
+[Read more (in german)](/news/spring-school-2025/)
 
 
 #### Feel free to contact us via <a href="mailto:dsf-gecko@hs-heilbronn.de">dsf-gecko@hs-heilbronn.de</a> and we will take care of your request as soon as possible.
