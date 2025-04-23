@@ -3,8 +3,9 @@ title: Spring School 2025
 ---
 
 # Recap of the DSF Spring School 2025
-Over three days, 20 committed members of the DSF community gathered at Heilbronn University for the DSF Spring School 2025.  
-![SpringSchool](../../.vuepress/public/photos/news/springschool.jpg)
+Over three days, 20 committed members of the DSF community gathered at Heilbronn University for the DSF Spring School 2025. 
+
+![Spring School Participants](/photos/news/springschool.jpg)
 *Participants of the DSF Spring School 2025 at the Tech Campus Heilbronn (Friday, April 4, 2025)*
 
 
@@ -16,7 +17,7 @@ During an introductory round, participants had the opportunity to get to know ea
 
 Participants also had repeated opportunities to take part in focused working sessions, where topics such as monitoring, process plugins, use cases, and more were discussed and further developed to deepen understanding. The first day concluded with a group dinner at Pier 58.
 
-![HandsonSession](../../.vuepress/public/photos/news/letzterTag1.png)
+![HandsonSessionl Participants](/photos/news/letzerTag1.jpg)
 *Hands-on session with DSF Community*
 
 **Day 2 – Thursday, April 3, 2025**
@@ -32,5 +33,6 @@ These community talks marked the beginning of the more relaxed part of the "Hack
 **Day 3 – Friday, April 4, 2025**
 
 The last day was all about the final sprint of the hackathon.The groups continued working intensively on their plugins and projects. There was also a dedicated session on secure deployment and build reproducibility, allowlist management, and handling certificates. To wrap things up, all participants came together for a group photo and a brief recap of the past three days. A heartfelt thank you goes out to all participants for their dedication and creative contributions, which made the DSF Spring School 2025 a truly great experience!
-![FinalDay](../../.vuepress/public/photos/news/letzterTag2.png)
+
+![FinalDay](/photos/news/letzterTag2.png)
 *Final push at the DSF: Participants continue to develop their concepts, plugins, and more!*
