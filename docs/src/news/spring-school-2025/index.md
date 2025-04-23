@@ -17,7 +17,7 @@ During an introductory round, participants had the opportunity to get to know ea
 
 Participants also had repeated opportunities to take part in focused working sessions, where topics such as monitoring, process plugins, use cases, and more were discussed and further developed to deepen understanding. The first day concluded with a group dinner at Pier 58.
 
-![HandsonSessionl Participants](/photos/news/letzerTag1.png)
+![HandsonSessionl Participants](/photos/news/letzterTag1.png)
 *Hands-on session with DSF Community*
 
 **Day 2 – Thursday, April 3, 2025**
