@@ -18,5 +18,3 @@ Our Team at the FHIR DevDays2025:
 * **Maximilian Kurscheidt** 
 * **Simon Schweizer** 
 * **Jan Böhringer** 
-
-  
